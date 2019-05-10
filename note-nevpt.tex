@@ -22,6 +22,7 @@
 
 \begin{document}
 \title{Some notes on N-Electron Valence state Perturbation Theory}
+\author{齋藤　雅明}
 
 \maketitle
 
@@ -42,6 +43,8 @@ NEVPT摂動理論では、以下の０次ハミルトニアン (Dyall Hamiltonia
   & h_i = \int d\mathbf{r} \ \phi^{*}_i (\mathbf{r})\left[-\frac{1}{2}\nabla^{2}-\sum_A^\text{Atoms} \frac{Z_A}{|\mathbf{R_A}-\mathbf{r}|}\right]\phi_i(\mathbf{r}) \\
   & (ij|kl) = \int d\mathbf{r_1} \int d\mathbf{r_2} \ \phi^{*}_i (\mathbf{r_1}) \phi^{*}_j (\mathbf{r_1}) \frac{1}{|\mathbf{r_1}-\mathbf{r_2}|} \phi_k(\mathbf{r_2}) \phi_l(\mathbf{r_2}) \\
 \end{align}
+%
+本稿では、$ijkl\cdots$、$pqrs\cdots$、$abcd\cdots$はそれぞれ閉殻MO、活性MO、そして仮想MOを表す。
 %
 CASSCF (あるいはDMRG) 波動関数は式(\ref{eq:Dyall})の固有関数となる:
 %
@@ -187,7 +190,7 @@ NEVPT2と類似した内部縮約型多参照摂動理論にCASPT2がある。CA
 \end{align}
 Dyallハミルトニアンにおける$H_\text{act}$部分が二体の相互作用を含むのに対し、式(\ref{eq:Fgen})は一体の相互作用しか含まない。しかしながらCAS波動関数は厳密には式(\ref{eq:Fgen})の固有関数とはならない:
 \begin{align}
-  F_\text{generalized}|\Psi_0\rangle \neq E_0|\Psi_0\rangle \label{eq:Fgen}
+  F_\text{generalized}|\Psi_0\rangle \neq E_0|\Psi_0\rangle \label{eq:Fgen-eig}
 \end{align}
 それ故、非余剰ICBを、$H_0$の固有関数として構築することができない。これは即ち、異なるICBが$H_0$を挟んで結合することを意味する。
 \begin{align}
