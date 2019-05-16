@@ -53,7 +53,7 @@
 \begin{align}
   V(z)=Fz \label{eq:Vz}
 \end{align}
-が印加された場合を考える。球座様では式(\ref{eq:Vz})は
+が印加された場合を考える。球座標系では式(\ref{eq:Vz})は
 \begin{align}
   V(r,\theta)=Fr\cos\theta \label{eq:Vrtheta}
 \end{align}
@@ -71,7 +71,7 @@
 と与えられる。
 
 \noindent
-{\bf 問題B.} 幅aの無限に高い箱型ポテンシャル内の自由粒子の量子状態について考える。ここで波動関数は$0\geq x\geq a$の範囲でのみ0でない値を持つこととする。
+{\bf 問題B.} 幅aの無限に高い箱型ポテンシャル内の自由粒子の量子状態について考える。ここで波動関数は$0\leq x\leq a$の範囲でのみ0でない値を持つこととする。
 
 \noindent
 {\bf 問い5} 問題Bで与えられている境界条件の下で一次元自由粒子のSchr\"odinger方程式を解き、エネルギーと波動関数を求めよ。
@@ -132,7 +132,7 @@
 \begin{align}
   \Theta_{\alpha_1\alpha_2}(r,\phi,\theta)=\alpha_1\Psi_{1s}(r,\phi,\theta)+\alpha_2\Psi_{2p_z}(r,\phi,\theta)
 \end{align}
-を用い、$\alpha_1$及び$\alpha_2$を最適化し、基底状態エネルギーを電場強度Fの関数として計算せよ。また以下の関係を用いて良い。
+を用い、変分パラメータ$\alpha_1$及び$\alpha_2$を最適化し、基底状態エネルギーを電場強度Fの関数として計算せよ。また以下の関係を用いて良い。
 \begin{align}
   &H_\text{hydrogen}\Psi_{1s}(r,\phi,\theta)=-\frac{1}{2}\Psi_{1s}(r,\phi,\theta) \\
   &H_\text{hydrogen}\Psi_{2p_z}(r,\phi,\theta)=-\frac{1}{8}\Psi_{1s}(r,\phi,\theta)
@@ -142,12 +142,14 @@
 {\bf 問い13} 式(\ref{eq:3dp})で与えられる3次元調和振動子動径Hamiltonianの基底状態波動関数を計算せよ。
 
 \section{積分公式}
-
 \begin{align}
   &\int_0^\infty x^n \exp(-ax) dx = \frac{n!}{a^{n+1}} \\
   &\int_0^\infty x^{2n} \exp(-ax^2) dx = \frac{1\cdot3\cdot5\cdots(2n-1)}{2^{n+1}a^n}\sqrt{\frac{\pi}{a}} \\
   &\int_0^\infty x^{2n+1} \exp(-ax^2) dx = \frac{n!}{2 a^{n+1}}
 \end{align}
 
+\section{さいごに}
+
+誤植を発見した場合や、つじつまが合わない問題があった場合、齋藤までお知らせください。
 
 \end{document}
