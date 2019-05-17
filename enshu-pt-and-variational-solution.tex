@@ -49,13 +49,13 @@
 {\bf 解答1}
 エネルギー期待値の分母及び分子はそれぞれ
 \begin{align}
-  \langle\Theta_\alpha|\Theta_\alpha\rangle&=\int_0^{2\pi}\int_0^\pi d\theta\sin\theta\int_0^\infty dr r^2 \exp(-2\alpha r^2) \nonumber \\ 
-  &=4\pi\int_0^\infty dr r^2 \exp(-2\alpha r^2) \nonumber \\
+  \langle\Theta_\alpha|\Theta_\alpha\rangle&=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r^2 \exp(-2\alpha r^2) \nonumber \\ 
+  &=4\pi\int_0^\infty dr \ r^2 \exp(-2\alpha r^2) \nonumber \\
   &=4\pi\frac{1}{8\alpha}\sqrt{\frac{\pi}{2\alpha}}
 \end{align}
 \begin{align}
-  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=\int_0^{2\pi}\int_0^\pi d\theta\sin\theta\int_0^\infty dr r^2 \exp(-\alpha r^2) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r^2)\nonumber \\
-  &=4\pi\int_0^\infty dr r^2 \exp(-\alpha r^2) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r^2)\nonumber \\
+  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r^2 \exp(-\alpha r^2) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r^2)\nonumber \\
+  &=4\pi\int_0^\infty dr \ r^2 \ \exp(-\alpha r^2) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r^2)\nonumber \\
   &=4\pi\int_0^\infty dr \left[ 3\alpha r^2 \exp(-2\alpha r^2) - 2\alpha^2 r^4 \exp(-2\alpha r^2) - r \exp(-2\alpha r^2) \right] \nonumber \\
   &=4\pi\left[ \frac{3}{8}\sqrt{\frac{\pi}{2\alpha}} - \frac{3}{16}\sqrt{\frac{\pi}{2\alpha}} - \frac{1}{4\alpha}\right]
 \end{align}
@@ -79,16 +79,16 @@
 {\bf 問い2} 問い1と同様の計算を試行関数$\Theta_\alpha(r)=\exp(-\alpha r)$を用いて行い、問い1の結果と比較せよ。
 
 \noindent
-{\bf 解答1}
+{\bf 解答2}
 問い1解答と同様にエネルギー期待値の分母と分子をそれぞれ計算する。
 \begin{align}
-  \langle\Theta_\alpha|\Theta_\alpha\rangle&=\int_0^{2\pi}\int_0^\pi d\theta\sin\theta\int_0^\infty dr r \exp(-2\alpha r) \nonumber \\ 
-  &=4\pi\int_0^\infty dr r^2 \exp(-2\alpha r) \nonumber \\
+  \langle\Theta_\alpha|\Theta_\alpha\rangle&=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r \exp(-2\alpha r) \nonumber \\ 
+  &=4\pi\int_0^\infty dr \ r^2 \exp(-2\alpha r) \nonumber \\
   &=4\pi\frac{1}{4\alpha^3}
 \end{align}
 \begin{align}
-  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=\int_0^{2\pi}\int_0^\pi d\theta\sin\theta\int_0^\infty dr r^2 \exp(-\alpha r) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r)\nonumber \\
-  &=4\pi\int_0^\infty dr r^2 \exp(-\alpha r) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r)\nonumber \\
+  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r^2 \exp(-\alpha r) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r)\nonumber \\
+  &=4\pi\int_0^\infty dr \ r^2 \ \exp(-\alpha r) \left[ -\frac{1}{2r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right) - \frac{1}{r} \right]\exp(-\alpha r)\nonumber \\
   &=4\pi\int_0^\infty dr \left[ \alpha r\exp(-2\alpha r) -\frac{\alpha^2}{2}r^2\exp(-2\alpha r)-r \exp(-2\alpha r) \right] \nonumber \\
   &=4\pi\int_0^\infty dr \left[ (\alpha-1) r\exp(-2\alpha r) -\frac{\alpha^2}{2}r^2\exp(-2\alpha r) \right] \nonumber \\
   &=4\pi\left[ \frac{\alpha-1}{4\alpha^2} - \frac{1}{8\alpha} \right]
@@ -126,11 +126,51 @@
 と与えられる。
 
 \noindent
+{\bf 解答3}
+一次摂動エネルギーは
+\begin{align}
+  E^{(1)}=\langle\Psi^{(0)}|V|\Psi^{(0)}\rangle
+\end{align}
+と与えられる。ここで$\Psi^{(0)}$は0次波動関数である。故に
+\begin{align}
+  E^{(1)}&=\langle\Psi_{1s}|V|\Psi_{1s}\rangle \nonumber \\
+  &=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r^2 \Psi_{1s}(r,\phi,\theta) V(r,\theta) \Psi_{1s}(r,\phi,\theta) \nonumber \\
+  &=2 F \int_0^\pi d\theta\sin\theta\cos\theta\int_0^\infty dr \ r^3 \exp(-2r) 
+\end{align}
+となるが、ここで
+\begin{align}
+  \int_0^\pi d\theta\sin\theta\cos\theta = 0
+\end{align}
+となる。故に
+\begin{align}
+E^{(1)}=0
+\end{align}
+である。
+
+\noindent
 {\bf 問い4} 問い3と同様の計算を2$p_z$状態にある水素原子に対して計算せよ。2$p_z$波動関数は
 \begin{align}
   \Psi_{2p_z}=\frac{1}{4\sqrt{2\pi}} r \exp(-\frac{r}{2})
 \end{align}
 と与えられる。
+
+\noindent
+{\bf 解答4}
+問い3と同様に計算する。
+\begin{align}
+  E^{(1)}&=\langle\Psi_{2p_z}|V|\Psi_{2p_z}\rangle \nonumber \\
+  &=\int_0^{2\pi}d\phi\int_0^\pi d\theta\sin\theta\int_0^\infty dr \ r^2 \Psi_{2p_z}(r,\phi,\theta) V(r,\theta) \Psi_{2p_z}(r,\phi,\theta) \nonumber \\
+  &=\frac{F}{16} \int_0^\pi d\theta\sin\theta\cos^3\theta\int_0^\infty dr \ r^5 \exp(-r) 
+\end{align}
+ここで第二因子は
+\begin{align}
+  \int_0^\pi d\theta\sin\theta\cos^3\theta = 0
+\end{align}
+となる。故に
+\begin{align}
+  E^{(1)}&=0
+\end{align}
+となる。
 
 \noindent
 {\bf 問題B.} 幅aの無限に高い箱型ポテンシャル内の自由粒子の量子状態について考える。ここで波動関数は$0\geq x\geq a$の範囲でのみ0でない値を持つこととする。
