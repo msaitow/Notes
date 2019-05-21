@@ -179,7 +179,79 @@ E^{(1)}=0
 {\bf 問い5} 問題Bで与えられている境界条件の下で一次元自由粒子のSchr\"odinger方程式を解き、エネルギーと波動関数を求めよ。
 
 \noindent
+{\bf 解答5} 解くべきSchr\"odinger方程式は
+\begin{align}
+  \left(\frac{d^2}{dx^2}+\frac{2mE}{\hbar^2}\right)\Psi(x)=0 \label{eq:ido0}
+\end{align}
+であり、この二階常微分方程式方程式の一般解は
+\begin{align}
+  \Psi(x)=A\cos\alpha x + B\sin\alpha x \label{eq:ido1}
+\end{align}
+と与えられる。式(\ref{eq:ido1})をSchr\"odinger方程式に代入し、
+\begin{align}
+  &\frac{d^2\Psi(x)}{dx^2}=-A\alpha^2\cos\alpha x-B\alpha^2\sin\alpha x \\
+  &\alpha=\pm\frac{\sqrt{2mE}}{\hbar}\label{eq:alpha}
+\end{align}
+となる。式(\ref{eq:ido1})は既に正負両方の符号の指数を含むので、どちらか一方のみを用いれば良い。式(\ref{eq:ido1})に以下の境界条件を適用する。
+\begin{align}
+  &\Psi(0)=0 \\
+  &\Psi(a)=0
+\end{align}
+その結果、
+\begin{align}
+  \Psi(0)&=A= 0 \\
+  \Psi(a)&=A\cos\alpha a + B\sin\alpha a = 0
+\end{align}
+を得る。故に
+\begin{align}
+  &\Psi(a)=B\sin\alpha a = 0 \\
+  &\Rightarrow \alpha a = n\pi \ \ (n=1,2,\cdots) \label{eq:alpha2}
+\end{align}
+となる。ここで$n=0$の場合、空間のあらゆる点において$\Psi(x)=0$となり、粒子が箱の中のどこにも見出されないという結論となってしまう。その為、$n$は1以上の整数となる。境界条件を満たす波動関数は
+\begin{align}
+  \Psi(x)=B\sin\frac{n\pi}{a} x \label{eq:ido2}
+\end{align}
+となり、エネルギーは式(\ref{eq:alpha})と式(\ref{eq:alpha2})とを比較することで、
+\begin{align}
+  &\frac{\sqrt{2mE}}{\hbar}=\frac{n\pi}{a}\\
+  &E=\frac{n^2\pi^2\hbar^2}{2ma^2}
+\end{align}
+を得る。式(\ref{eq:ido2})を規格化し、$B$を決定する。
+\begin{align}
+  B^2\int_0^a dx \ \sin^2\frac{n\pi}{a}x &= B^2\int_0^a dx \ \frac{1-\cos\frac{2n\pi}{a}x}{2} \nonumber \\
+  &=B^2\frac{a}{2}=1 \\
+  &\Rightarrow B=\sqrt{\frac{2}{a}}
+\end{align}
+規格化された波動関数は
+\begin{align}
+  \Psi(x)=\sqrt{\frac{2}{a}}\sin\frac{n\pi}{a} x \label{eq:ido3}
+\end{align}
+となる。
+
+\noindent
 {\bf 問い6} 問い5で得られた波動関数に対して、$V(x)=\frac{V_0}{a}x$と与えられる摂動が印加された場合の一次のエネルギー変化を求めよ。
+
+\noindent
+{\bf 解答6}
+\begin{align}
+  E^{(1)}&=\langle\Psi|V|\Psi\rangle \nonumber \\
+  &=\frac{2V_0}{a^2}\int_0^a dx \ x\sin^2\frac{n\pi}{a} x
+\end{align}
+を計算する。$y=\frac{n\pi x}{a}$と置けば、
+\begin{align}
+  E^{(1)}=\frac{2V_0}{n^2\pi^2}\int_0^{n\pi} dy \ y \sin^2 y
+\end{align}
+となる。解答5より
+\begin{align}
+  \int dx \ \sin^2 x = \frac{x}{2}-\frac{\sin2x}{4} 
+\end{align}
+であるから、部分積分を行うと
+\begin{align}
+  E^{(1)}&=\frac{2V_0}{n^2\pi^2}\left(\left[y\left(\frac{1}{2}y-\frac{1}{4}\sin2y\right)\right]^{n\pi}_0-\int^{n\pi}_0 dy \ \left(\frac{1}{2}y-\frac{1}{4}\sin2y\right) \right) \nonumber \\
+  &=V_0 - \frac{V_0}{2}+\frac{V_0}{2n^2\pi^2}\left(-\frac{1}{2}+\frac{1}{2}\right) \nonumber \\
+  &=\frac{V_0}{2}
+\end{align}
+を得る。
 
 \noindent
 {\bf 問い7} 問題Bの箱型ポテンシャルを3次元に拡張する。半径aの球形の箱に閉じ込められた粒子の動径波動関数を考える。水素原子の場合と同様に、ポテンシャルは角度にのみ依存するために、エネルギーは動径方程式のみから決定され、波動関数の角度部分は球面調和関数となる。基底状態波動関数に対する動径方程式のHamiltonianは
@@ -193,11 +265,76 @@ E^{(1)}=0
 と置き、$\Phi$に関する方程式を求めよ。またこれが一次元箱型ポテンシャルのSchr\"odinger方程式と一致することを示せ。
 
 \noindent
+{\bf 解答7}
+\begin{align}
+  \frac{d\Psi_\text{radial}}{dr}&=-\frac{\Phi}{r^2}+\frac{1}{r}\frac{d\Phi}{dr} \\
+  \frac{d^2\Psi_\text{radial}}{dr^2}&=\frac{2}{r^3}\Phi-\frac{2}{r^2}\frac{d\Phi}{dr}+\frac{1}{r}\frac{d^2\Phi}{dr^2}
+\end{align}
+上式をSchr\"odinger方程式に代入する。左辺は
+\begin{align}
+  -\frac{\hbar^2}{2mr^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right)\Psi_\text{radial}=-\frac{\hbar^2}{m}\left[\frac{1}{r}\frac{d\Psi_\text{radial}}{dr}+\frac{1}{2}\frac{d^2\Psi_\text{radial}}{dr^2}\right]\label{eq:sahen}
+\end{align}
+上式第一項は
+\begin{align}
+  -\frac{\hbar^2}{m}\left[\frac{1}{r}\frac{d\Psi_\text{radial}}{dr}\right]&=-\frac{\hbar^2}{2m}\left[\frac{2}{r}\frac{d\Psi_\text{radial}}{dr}\right] \nonumber \\
+  &=-\frac{\hbar^2}{2m}\frac{2}{r}\left(-\frac{\Phi}{r^2}+\frac{1}{r}\frac{d\Phi}{dr}\right) \nonumber \\
+  &=-\frac{\hbar^2}{2m}\left(-\frac{2\Phi}{r^3}+\frac{2}{r^2}\frac{d\Phi}{dr}\right)
+\end{align}
+となり、第二項は
+\begin{align}
+  -\frac{\hbar^2}{2m}\left[\frac{d^2\Psi_\text{radial}}{dr^2}\right] = -\frac{\hbar^2}{2m}\left(\frac{2}{r^3}\Phi-\frac{2}{r^2}\frac{d\Phi}{dr}+\frac{1}{r}\frac{d^2\Phi}{dr^2}\right)
+\end{align}
+となる。故に式(\ref{eq:sahen})は
+\begin{align}
+-\frac{\hbar^2}{2mr^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial}{\partial r}\right)\Psi_\text{radial}=-\frac{\hbar^2}{2mr}\frac{d^2\Phi}{dr^2}
+\end{align}
+となる。Schr\"odinger方程式は
+\begin{align}
+  &-\frac{\hbar^2}{2mr}\frac{d^2\Phi}{dr^2}=\frac{E}{r}\Phi \\
+  &\Rightarrow -\frac{\hbar^2}{2m}\frac{d^2\Phi}{dr^2}=E\Phi \label{eq:shroe}
+\end{align}
+となり、1次元箱型ポテンシャルの場合と同型となる。
+
+\noindent
 {\bf 問い8} 式(\ref{eq:freep})で与えられるHamiltonianの固有関数の一般解は
 \begin{align}
   \Psi_\text{radial}(r)=A\frac{\cos\alpha r}{r} + B\frac{\sin\alpha r}{r} \label{eq:gensol}
 \end{align}
 と与えられる。式(\ref{eq:gensol})を用いて、$\Psi(a)=0$及び$\Psi(0)\neq\infty$という境界条件を満たす球形箱型ポテンシャル内の粒子の基底状態波動関数及び基底状態エネルギーを求めよ。
+
+\noindent
+{\bf 解答8}
+$\Phi$が1次元箱型ポテンシャルの場合と同様となるので、$\Psi_\text{radial}$の一般解は式(\ref{eq:gensol})となる。これに対して境界条件を適用する。式(\ref{eq:gensol})の第一項のために、$\lim_{r\rightarrow0}\Psi_\text{radial}(r)\rightarrow\infty$となるから、$A=0$となる。また
+\begin{align}
+  \lim_{r\rightarrow0}\left[B\frac{\sin\alpha r}{r}\right]&=\frac{B}{\alpha}\lim_{R\rightarrow0}\frac{\sin R}{R} \nonumber \\
+  &=\frac{B}{\alpha}\lim_{R\rightarrow0}\cos R \nonumber \\
+  &=\frac{B}{\alpha}
+\end{align}
+となる。ここで$R=\alpha r$とおき、ロピタルの定理を用いた。故に$\Psi_\text{radial}(0)\neq\infty$を満たす。また
+\begin{align}
+  \lim_{r\rightarrow a}\Psi_\text{radial}(r)&=\frac{B}{\alpha}\sin\alpha a \\
+  &\Rightarrow \alpha a = \pi \\
+  &\Rightarrow \alpha = \frac{\pi}{a} \\
+\end{align}
+となるから、境界条件を満たす基底状態波動関数は
+\begin{align}
+  \Psi_\text{radial}(r)=\frac{B}{r}\sin\frac{\pi r}{a}
+\end{align}
+となる。続いて規格化を行い、$B$を決定する。
+\begin{align}
+  \int_\Omega dV^3 \ |\Psi_\text{GS}|^{2}&=\int^{2\pi}_0d\phi\int^{\pi}_0d\theta\sin\theta\int_0^\infty dr \ r^2 \Psi_\text{radial}(r)^2 \nonumber \\
+  &=4\pi B^2 \int^a_0 \sin^2\frac{\pi}{a} r \nonumber \\
+  &=2\pi aB^2\rightarrow 1
+\end{align}
+故に規格化された波動関数は
+\begin{align}
+  \Psi_\text{radial}(r)=\frac{1}{\sqrt{2\pi a}r}\sin\frac{\pi r}{a}
+\end{align}
+となる。また式(\ref{eq:shroe})が1次元の問題と同型であるから
+\begin{align}
+  E_\text{GS}=\frac{\hbar^2\pi^2}{2ma^2}
+\end{align}
+となる。
 
 \noindent
 {\bf 問い9} 問い8で得られた球形箱型ポテンシャルの基底状態エネルギーに対して、$\Theta(r)=(a-r)^2$という試行関数を用いた場合のエネルギーを求めよ。これは変分パラメータを含まないが、真の基底状態エネルギーの上限を与えるはずである。
