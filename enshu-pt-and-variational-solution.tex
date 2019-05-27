@@ -386,7 +386,34 @@ $\Phi$が1次元箱型ポテンシャルの場合と同様となるので、$\Ps
 
 \noindent
 {\bf 解答10}
-    
+\begin{align}
+  \langle\Theta_\alpha|\Theta_\alpha\rangle&=4\pi\int_0^\infty dr \ r^2\exp(-2\alpha r) \nonumber \\
+  &=\frac{\pi}{\alpha^3}
+\end{align}
+また
+\begin{align}
+  - \frac{\hbar^2}{2\mu r^2}\frac{d}{dr}\left(r^2\frac{d}{dr}\right)\exp(-\alpha r) = - \frac{\hbar^2}{2\mu r^2} \left[\alpha^2 r^2 \exp(-\alpha r) - 2\alpha r \exp(-\alpha r)\right]
+\end{align}
+となるから
+\begin{align}
+  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=4\pi\int_0^\infty dr \ r^2\exp(-\alpha r)\left[ - \frac{\hbar^2}{2\mu r^2} \left\{\alpha^2 r^2 \exp(-\alpha r) - 2\alpha r \exp(-\alpha r)\right\} + \frac{1}{2}kr^2\exp(-\alpha r)\right] \nonumber \\
+  &=\frac{\pi\hbar^2}{2\mu\alpha} + \frac{3\pi k}{2\alpha^5}
+\end{align}
+更にエネルギー期待値は
+\begin{align}
+  \frac{\langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle}{\langle\Theta_\alpha|\Theta_\alpha\rangle} &= \left(\frac{\pi\hbar^2}{2\mu\alpha} + \frac{3\pi k}{2\alpha^5}\right)\frac{\alpha^3}{\pi} \nonumber \\
+  &=\frac{\hbar^2\alpha^2}{2\mu} + \frac{3k}{2\alpha^2}
+\end{align}
+となる。故に
+\begin{align}
+  &\frac{\partial E}{\partial\alpha} = - \frac{3k}{\alpha^3}+\frac{\hbar^2\alpha}{m}\rightarrow0 \\
+  &\Rightarrow \alpha_\text{min} = \left( \frac{3mk}{\hbar^2} \right)^{1/4}
+\end{align}
+となる。最小エネルギーは
+\begin{align}
+  E_\text{min}\equiv E[\alpha_\text{min}] = \sqrt{3}\hbar\omega
+\end{align}
+となる。
 
 \noindent
 {\bf 問い11} 式(\ref{eq:3dp})のHamiltonianで記述される系の基底状態エネルギーを、以下の試行関数を用いて計算せよ。
@@ -394,6 +421,32 @@ $\Phi$が1次元箱型ポテンシャルの場合と同様となるので、$\Ps
   \Theta_\alpha(r)=\exp(-\alpha r) \label{eq:3dp-slater}
 \end{align}
 式(\ref{eq:3dp-slater})において$\alpha$は変分パラメータである。得られたエネルギーが真の値$\frac{3}{2}\hbar\omega$の上限値であることを示せ。
+
+\noindent
+{\bf 解答11}
+問い10と同様に計算を行う。
+\begin{align}
+  \langle\Theta_\alpha|\Theta_\alpha\rangle&=4\pi\int_0^\infty dr \ r^2\exp(-2\alpha r^2) \nonumber \\
+  &=\frac{\pi}{2\alpha}\sqrt{\frac{\pi}{2\alpha}}
+\end{align}
+\begin{align}
+  - \frac{\hbar^2}{2\mu r^2}\frac{d}{dr}\left(r^2\frac{d}{dr}\right)\exp(-\alpha r^2) = - \frac{\hbar^2}{2\mu r^2} \left[- 6 \alpha r^2 \exp(-\alpha r^2) + 4\alpha^2 r^4 \exp(-\alpha r^2)\right]
+\end{align}
+\begin{align}
+  \langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle&=4\pi\int_0^\infty dr \ r^2\exp(-\alpha r)\left[ - \frac{\hbar^2}{2\mu r^2} \left\{\alpha^2 r^2 \exp(-\alpha r) - 2\alpha r \exp(-\alpha r)\right\} + \frac{1}{2}kr^2\exp(-\alpha r)\right] \nonumber \\
+  &=\left(\frac{3\pi k}{16\alpha}+\frac{3\pi\hbar^2}{4\mu}\right)\sqrt{\frac{\pi}{2\alpha}}
+\end{align}
+\begin{align}
+  \frac{\langle\Theta_\alpha|H_\text{radial}|\Theta_\alpha\rangle}{\langle\Theta_\alpha|\Theta_\alpha\rangle} &= \left(\frac{3\pi k}{16\alpha}+\frac{3\pi\hbar^2}{4\mu}\right)\sqrt{\frac{\pi}{2\alpha}} \cdot \frac{2\alpha}{\pi}\sqrt{\frac{2\alpha}{\pi}} \nonumber \\
+  &=\frac{8k}{6\alpha}+\frac{3\hbar^2 \alpha}{2\mu}
+\end{align}
+\begin{align}
+  &\frac{\partial E}{\partial\alpha} = - \frac{3k}{8\alpha^2}+\frac{3\hbar^2}{2\mu} \\
+  &\Rightarrow \alpha_\text{min} = \left( \frac{\mu k}{4\hbar^2} \right)^{1/2}
+\end{align}
+\begin{align}
+  E_\text{min}\equiv E[\alpha_\text{min}] = \frac{3}{2}\hbar\omega
+\end{align}
 
 \section{補助問題}
 

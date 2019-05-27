@@ -1,0 +1,92 @@
+\documentclass[11pt,pra,aps]{revtex4}
+\usepackage{graphicx}
+%\usepackage{overcite}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{braket}
+\usepackage{epstopdf}
+\usepackage{moreverb}
+
+\usepackage{color}                            
+                                              
+\newcommand{\red}[1]{\textcolor{red}{#1}}     
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\boxz}[1]{\boxed{\phantom{\text{#1}}}}
+\newcommand{\boxa}[1]{\boxed{\phantom{}}}
+
+%%\renewcommand{\baselinestretch}{2.0}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+\title{水素分子イオンとH\"uckel分子軌道法}
+\author{齋藤　雅明 \\ 量子化学研究室 \\ email: masa.saitow@chem.nagoya-u.ac.jp}
+
+\maketitle
+
+\noindent
+{\bf 問題A.} 以下の文を読んで、空欄を埋めよ。
+
+\noindent
+水素分子イオンの基底量子状態を考える。水素分子イオンは、正電荷を持つ二つの\boxz{陽子}と一つの電子からなる。Hamiltonian演算子の\boxz{最低固有}を持つ固有関数として与えられる基底状態波動関数は、電子と原子核の座標に依存する関数であるが、\boxz{Born-Oppenheimer}近似を用いることで、原子核部分と電子部分とに分離される。この近似の基づく、非相対論的電子Hamiltonian演算子は原子単位で\boxz{$H=-\frac{1}{2}\nabla^2-\frac{1}{r_\text{A}}-\frac{1}{r_\text{B}}+\frac{1}{R}$}と与えられる。水素分子イオンの量子状態は、厳密には\boxz{3}体問題であり、厳密解は得られない。しかしながらこの近似により、時間\text{非依存}シュレーディンガー方程式は、実効的な\boxz{1}体問題へと帰着され、解析的な求解が可能となる。この近似に基づく水素分子イオンの電子波動関数は数学的には非常に複雑となり、直感的に電子状態を理解するのは困難である。そこで、二つの水素原子軌道関数の重ね合わせとして表現し、重ね合わせの係数を\boxz{変分}原理に基づき最適化する。これを\boxz{LCAO}-MO法という。
+
+\noindent
+{\bf 問題B.} 水素分子イオンの電子波動関数を次の試行関数を用いて近似する。
+\begin{align}
+  \Psi_{+}=C(\Phi_\text{A1s}+\Phi_\text{B1s})\label{eq:kikakuka}
+\end{align}
+ここで$\Phi_\text{A1s}$及び$\Phi_\text{B1s}$はそれぞれ核A及びBに中心を持つ水素1s関数であり、対称性から$\Phi_\text{A1s}$と、$\Phi_\text{B1s}$とが同じ係数を持つ。
+\begin{align}
+  \Phi_\text{A1s}=\frac{1}{\sqrt{\pi}}\exp(-r_\text{A})
+\end{align}
+ここで以下の問いに答えよ。
+
+\noindent
+{\bf 問い1} 式(\ref{eq:kikakuka})において、規格化定数$C$を決定せよ。ここで$\Phi_\text{A1s}$及び$\Phi_\text{B1s}$との重なりは
+\begin{align}
+  S=\int_\Omega d\mathbf{r} \ \Phi_\text{A1s}(\mathbf{r})^{*} \Phi_\text{B1s}(\mathbf{r}) \label{eq:S}
+\end{align}    
+として扱え。
+
+\noindent
+{\bf 問い2} 式(\ref{eq:kikakuka})による水素分子イオンの基底状態エネルギーが
+\begin{align}
+  E_+=E_\text{1s}+\frac{J+K}{1+S}
+\end{align}    
+となることを示せ。ここでクーロン積分$J$及び交換積分$K$は
+\begin{align}
+  J=\int_\Omega d\mathbf{r} \ \Phi_\text{A1s}(\mathbf{r})^{*} \left(-\frac{1}{r_\text{B}}+\frac{1}{R}\right) \Phi_\text{A1s}(\mathbf{r})
+\end{align}
+\begin{align}
+  K=\int_\Omega d\mathbf{r} \ \Phi_\text{B1s}(\mathbf{r})^{*} \left(-\frac{1}{r_\text{B}}+\frac{1}{R}\right) \Phi_\text{A1s}(\mathbf{r})
+\end{align}
+と与えられる。また$E_\text{1s}$は水素1s軌道エネルギーである。
+
+\noindent
+{\bf 問い3} 式(\ref{eq:S})の積分を、回転楕円体座標系で評価し、結果が
+\begin{align}
+  S(R)=\exp(-R)\left(1+R+\frac{R^2}{3}\right)
+\end{align}
+となることを示せ。
+
+\noindent
+{\bf 問い4} 式(\ref{eq:S})の積分を、変数変換で評価し、結果が問い3と一致することを示せ。
+
+
+\section{積分公式}
+\begin{align}
+  &\int_0^\infty x^n \exp(-ax) dx = \frac{n!}{a^{n+1}} \\
+  &\int_0^\infty x^{2n} \exp(-ax^2) dx = \frac{1\cdot3\cdot5\cdots(2n-1)}{2^{n+1}a^n}\sqrt{\frac{\pi}{a}} \\
+  &\int_0^\infty x^{2n+1} \exp(-ax^2) dx = \frac{n!}{2 a^{n+1}}
+\end{align}
+
+\section{さいごに}
+
+誤植を発見した場合や、つじつまが合わない問題があった場合、齋藤までお知らせください。
+
+\end{document}
