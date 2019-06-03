@@ -102,18 +102,27 @@
 \begin{align}
   S(R)=\frac{R^3}{2} \int_1^\infty d\lambda \ \left(\lambda^2-\frac{1}{3}\right) \exp(-R\lambda) \label{eq:sol4-2}
 \end{align}
-ここで公式を用いて
+を得る。ここで公式を用いて
 \begin{align}
   I(\lambda)\equiv\int d\lambda \ \lambda^2 \exp(-R\lambda) = -\exp(-R\lambda)\left(\frac{\lambda^2}{R}+\frac{2\lambda}{R^2}+\frac{2}{R^3}\right)
 \end{align}
-とする。ここで式(\ref{eq:sol4-2})の積分計算には$I(\infty)$が必要となる。これは不定形の極限であり
+とする。ここで式(\ref{eq:sol4-2})の$\lambda^2$を含む積分計算には$I(\infty)$が必要となる。これは不定形の極限であり
 \begin{align}
   I(\infty)=\lim_{\lambda\rightarrow\infty} I(\lambda)&=-\lim_{\lambda\rightarrow\infty} \frac{\left(\frac{\lambda^2}{R}+\frac{2\lambda}{R^2}+\frac{2}{R^3}\right)}{\exp(R\lambda)} \nonumber \\
   &=-\lim_{\lambda\rightarrow\infty} \frac{\left(\frac{2\lambda}{R}+\frac{2}{R^2}\right)}{R\exp(R\lambda)} \nonumber \\
   &=-\lim_{\lambda\rightarrow\infty} \frac{\left(\frac{2}{R}\right)}{R^2\exp(R\lambda)} \nonumber \\
   &=0
 \end{align}  
-となる。ここでロピタルの定理を二回使った。
+となる。ここでロピタルの定理を二回使った。故に
+\begin{align}
+  \int_1^\infty d\lambda \ \lambda^2 \exp(-R\lambda)=I(\infty)-I(1)=-I(1)=\exp(-R)\left(\frac{1}{R}+\frac{2}{R^2}+\frac{2}{R^3}\right)
+\end{align}
+となる。式(\ref{eq:sol4-2})は最終的には
+\begin{align}
+  S(R)&=\frac{R^3}{2}\left[\exp(-R)\left(\frac{1}{R}+\frac{2}{R^2}+\frac{2}{R^3}\right) - \frac{\exp(-R)}{3R}\right] \nonumber \\
+  &=\exp(-R)\left(\frac{R^2}{3}+R+1\right)
+\end{align}
+となる。
 
 %\noindent
 %{\bf 問い5} 式(\ref{eq:S})の積分を、変数変換で評価し、結果が問い3と一致することを示せ。
