@@ -1,6 +1,6 @@
 \documentclass[11pt,pra,aps]{revtex4}
-\usepackage{graphicx}
-%\usepackage{overcite}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
 \usepackage{rotating}
 \usepackage{array}
 \usepackage{amsmath}
@@ -68,26 +68,46 @@
 と与えられる。また$E_\text{1s}$は水素1s軌道エネルギーである。
 
 \noindent
-{\bf 問い4} 式(\ref{eq:S})の積分を、回転楕円体座標系で評価し、結果が
+{\bf 問い4} 式(\ref{eq:S})の積分を、楕円体座標系(elliptic coordinates; Fig. \ref{fig:elliptic})で評価し、結果が
 \begin{align}
   S(R)=\exp(-R)\left(1+R+\frac{R^2}{3}\right)
 \end{align}
 となることを示せ。
+{
+  \begin{figure}[H]
+    \begin{center}
+    \scalebox{0.1}{\includegraphics{elliptic.pdf}}
+    %\includegraphics[scale=0.5]{elliptic.pdf}
+    \caption{\label{fig:elliptic}
+      {
+        A volume element in elliptic corrdinate system is given as $d\mathbf{r}=\frac{R^3}{8}(\lambda^2-\mu^2)d\lambda d\mu d\phi$ where $\lambda$ and $\mu$ are defined as $\lambda=\frac{r_A+r_B}{R}$ and $\mu=\frac{r_A-r_B}{R}$. The integration ranges for $\lambda$, $\mu$ and $\phi$ are $1\leq \lambda<\infty$, $-1\leq\mu\leq 1$ and $0\leq\phi\leq 2\pi$, respectively.
+      }
+    }
+    \end{center}
+  \end{figure}
+}
+
+%\noindent
+%{\bf 問い5} 式(\ref{eq:S})の積分を、変数変換で評価し、結果が問い3と一致することを示せ。
 
 \noindent
-{\bf 問い5} 式(\ref{eq:S})の積分を、変数変換で評価し、結果が問い3と一致することを示せ。
-
-\noindent
-{\bf 問い6} クーロン積分J及び交換積分Kは核間距離Rの関数として
+{\bf 問い5}
+水素分子イオンの反結合性軌道は
+\begin{align}
+  \Psi_{-}=C(\Phi_\text{A1s}-\Phi_\text{B1s})\label{eq:hanketugou}
+\end{align}
+と近似される。式(\ref{eq:hanketugou})から得られるエネルギーが
+\begin{align}
+  E_-=E_\text{1s}+\frac{J-K}{1-S}  
+\end{align}
+となることを示せ。
+また、結合性及び反結合性軌道エネルギーは、水素原子の1s軌道エネルギーを基準として、Fig. \ref{fig:suiso}のようになる。結合性軌道のみが極小点を持つのは何故か。
+このときクーロン積分J及び交換積分Kは核間距離Rの関数として
 \begin{align}
   &J(R)=\exp(-2R)\left(1+\frac{1}{R}\right) \label{eq:J} \\
   &K(R)=\frac{S(R)}{R}-\exp(-R)\left(1+R\right) \label{eq:K}
 \end{align}
-と計算される。水素分子イオンの結合性及び反結合性軌道は
-\begin{align}
-  \Psi_{-}=C(\Phi_\text{A1s}-\Phi_\text{B1s})\label{eq:hanketugou}
-\end{align}
-と近似される。結合性及び反結合性軌道エネルギーは、水素原子の1s軌道エネルギーを基準として、Fig. \ref{fig:suiso}のようになる。結合性軌道のみが極小点を持つのは何故か。
+と計算される。
 
 \noindent
     {\bf 問題B.} 炭化水素化合物の$\pi$対称性を持つ分子軌道を単純H\"uckel法で計算する。単純H\"ckelモデルでは、$i$番目の$\pi$あるいは$\pi^*$分子軌道は、その分子を構成する$2p_z$軌道の線型結合で近似される。
@@ -96,23 +116,23 @@
 \end{align}
 式(\ref{eq:hueckel})における$C$-係数は変分的に決定される。単純H\"uckelモデルでは、以下の大胆な近似を導入する:
 \begin{itemize}
-\item Hamiltonian行列の対角要素 ($\langle\psi_{2p_z\text{A}}|H|\psi_{2p_z\text{A}}\rangle$) を単一の定数$\alpha$で近似。
-\item 隣り合う原子上の$2p_z$軌道間のHamiltonian行列要素 ($\langle\psi_{2p_z\text{A}}|H|\psi_{2p_z\text{A+1}}\rangle$) を単一の定数$\beta$と近似。
+\item Hamiltonian行列の対角要素 ($\langle\psi_{2p_z\text{A}}|H|\psi_{2p_z\text{A}}\rangle$) を単一の定数$\alpha$として近似。
+\item 隣り合う原子上の$2p_z$軌道間のHamiltonian行列要素 ($\langle\psi_{2p_z\text{A}}|H|\psi_{2p_z\text{A+1}}\rangle$) を単一の定数$\beta$として近似。
 \item 上記以外のHamiltonian行列要素は全て0とする。
 \item $2p_z$軌道間の重なり行列は単位行列とする。
 \end{itemize}
 
 \noindent
-{\bf 問い7} ベンゼンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。
+{\bf 問い6} ベンゼンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。
 
 \noindent
-{\bf 問い8} シクロブタジエンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。シクロブタジエンの基底電子状態についてHundの規則を適用せよ。シクロブタジエンの安定性を2つの孤立エテン分子の安定性と比較せよ。
+{\bf 問い7} シクロブタジエンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。シクロブタジエンの基底電子状態についてHundの規則を適用せよ。シクロブタジエンの安定性を2つの孤立エテン分子の安定性と比較せよ。
 
 \noindent
-{\bf 問い9} トリメチルメタンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。トリメチルメタンの$\pi$軌道エネルギーを2つの孤立エテン分子のエネルギーと比較せよ。
+{\bf 問い8} トリメチルメタンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。トリメチルメタンの$\pi$軌道エネルギーを2つの孤立エテン分子のエネルギーと比較せよ。
 
 \noindent
-{\bf 問い10} 
+{\bf 問い9} ブタジエンの$\pi$及び$\pi^*$軌道関数及び軌道エネルギーを求めよ。またシクロブタジエンでは、$\pi$電子が均一に炭素原子上に分布していることを示せ。ここで原子$A$上の$\pi$電子密度は$q_A=\sum_i n_i |C^i_{2p_z\text{A}}|^2$と与えられる。ここで$n_i$は分子軌道$i$を占有する電子数である。
 
 \section{積分公式}
 \begin{align}
