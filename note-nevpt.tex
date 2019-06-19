@@ -3,7 +3,7 @@
 %\usepackage{overcite}
 \usepackage{rotating}
 \usepackage{array}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
 \usepackage{multirow}
 \usepackage{setspace}
 \usepackage{braket}
@@ -20,6 +20,8 @@
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thetable}{S\arabic{table}}
 
+% platex ./note-nevpt.tex && dvipdfmx ./note-nevpt.dvi && open ./note-nevpt.pdf
+
 \begin{document}
 \title{Some notes on N-Electron Valence state Perturbation Theory}
 \author{齋藤　雅明}
@@ -28,23 +30,33 @@
 
 \section{Dyallハミルトニアン}
 
-NEVPT摂動理論では、以下の０次ハミルトニアン (Dyall Hamiltonian) を用いる:
+NEVPT摂動理論\cite{angeliintroduction2001,angelin-electron2002,angelinew2006,angelithird-order2006}では, 以下の０次ハミルトニアン (Dyall Hamiltonian) \cite{dyallthe1995}を用いる:
 %
 \begin{align}
   & H_\text{Dyall} = H_\text{inact} + H_\text{act} + C \label{eq:Dyall}\\
   & H_\text{inact} = \sum_{ij} F_{ij} E^i_j + \sum_{ab} F_{ab} E^a_b \\ 
   & H_\text{act}   = \sum_{pq} (h^\text{eff})_{pq}E^p_q + \frac{1}{2}\sum_{pqrs} (pr|qs) E^{pq}_{rs} \\ 
-  & C = 2\sum_i h_i + \sum_{ij} [2(ii|jj)-(ij|ij)] - 2\sum_i F_{ii}\label{eq:C}
+  & C = 2\sum_i h_{ii} + \sum_{ij} [2(ii|jj)-(ij|ij)] - 2\sum_i F_{ii}\label{eq:C}
 \end{align}
 %
-ここで$F$は一般化Fock行列である。一電子及び二電子積分は次のように与えられる:
+ここで$F$は一般化Fock行列及びコアFock行列 ($h^\text{eff}$) は
+\begin{align}
+  F_{wx} &= h_{wx} + \sum_{yz} \left[ (wx|yz) - \frac{1}{2}(wy|xz)\right] D_y^z \nonumber \\
+         &= h_{wx} + \sum_{ij} \left[2(wx|ii) - (wi|xi)\right] + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right] D_p^q \nonumber \\
+         &= (h^\text{eff})_{wx} + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right] D_p^q \label{eq:genFock} \\
+  (h^\text{eff})_{wx} &= h_{wx} + \sum_{ij} \left[ (wx|ij) - \frac{1}{2}(wi|xj)\right] D_i^j \nonumber \\
+                      &= h_{wx} + \sum_{ij} \left[2(wx|ii) - (wi|xi)\right] \label{eq:heff}
+\end{align}
+と定義される。また一電子及び二電子積分は次のように与えられる:
 %
 \begin{align}
-  & h_i = \int d\mathbf{r} \ \phi^{*}_i (\mathbf{r})\left[-\frac{1}{2}\nabla^{2}-\sum_A^\text{Atoms} \frac{Z_A}{|\mathbf{R_A}-\mathbf{r}|}\right]\phi_i(\mathbf{r}) \\
+  & h_{ij} = \int d\mathbf{r} \ \phi^{*}_i (\mathbf{r})\left[-\frac{1}{2}\nabla^{2}-\sum_A^\text{Atoms} \frac{Z_A}{|\mathbf{R_A}-\mathbf{r}|}\right]\phi_j(\mathbf{r}) \\
   & (ij|kl) = \int d\mathbf{r_1} \int d\mathbf{r_2} \ \phi^{*}_i (\mathbf{r_1}) \phi^{*}_j (\mathbf{r_1}) \frac{1}{|\mathbf{r_1}-\mathbf{r_2}|} \phi_k(\mathbf{r_2}) \phi_l(\mathbf{r_2}) \\
 \end{align}
 %
-本稿では、$ijkl\cdots$、$pqrs\cdots$、$abcd\cdots$はそれぞれ閉殻MO、活性MO、そして仮想MOを表す。
+本稿では, $ijkl\cdots$, $pqrs\cdots$, $abcd\cdots$はそれぞれ閉殻MO, 活性MO, そして仮想MOを表す。また$wxyz$は一般のMO空間を表す。
+%
+%式(\ref{eq:genFock}) -- (\ref{eq:heff})を用いると, Dyall ハミルトニアン中の定数C (式(\ref{eq:C})) は
 %
 CASSCF (あるいはDMRG) 波動関数は式(\ref{eq:Dyall})の固有関数となる:
 %
@@ -52,38 +64,55 @@ CASSCF (あるいはDMRG) 波動関数は式(\ref{eq:Dyall})の固有関数と�
   H_\text{Dyall}|\Psi_0\rangle = E_0|\Psi_0\rangle \label{eq:E0}
 \end{align}
 %
-歴史的にはDyallハミルトニアンは、式(\ref{eq:E0})を満たすように設計された０次ハミルトニアンである。ここで以下の関係が成立する:
+歴史的にはDyallハミルトニアンは, 式(\ref{eq:E0})を満たすように設計された０次ハミルトニアンである。ここで以下の関係が成立する:
 %
 \begin{align}
   & H_\text{inact}|\Psi_0\rangle = \left(2\sum_i F_{ii}\right)|\Psi_0\rangle \label{eq:Einact}\\
   & H_\text{act}|\Psi_0\rangle = E_\text{act}|\Psi_0\rangle \label{eq:Eact}
 \end{align}
 %
-式(\ref{eq:Dyall})、(\ref{eq:C})、(\ref{eq:E0}) -- (\ref{eq:Eact})から
+式(\ref{eq:Dyall}), (\ref{eq:C}), (\ref{eq:E0}) -- (\ref{eq:Eact})から
 %
 \begin{align}
-  E_0 = 2\sum_i h_i + \sum_{ij} [2(ii|jj)-(ij|ij)] + E_\text{act} \label{eq:E0-formula}
+  E_0 &= E_\text{core} + E_\text{act} \label{eq:E0-formula} \\
+  E_\text{core} &= 2\sum_i h_{ii} + \sum_{ij} [2(ii|jj)-(ij|ij)] \label{eq:E0-formula-Ecore} \\
+  E_\text{act} &= \sum_{pq} F_{pq} D_p^q + \frac{1}{2}\sum_{pqrs} (pq|rs) D^{pr}_{qs}\label{eq:E0-formula-Eact}  
 \end{align}
 %
-であることが分かる。式(\ref{eq:E0-formula})において、活性軌道が存在しない場合$E_\text{act}=0$となり、$E_0$がHartree-Fockエネルギーと一致することが分かる。
+であることが分かる。式(\ref{eq:E0-formula})において, 活性軌道が存在しない場合$E_\text{act}=0$となり, $E_0$が閉殻Hartree-Fock (HF) エネルギー ($E_\text{core}$) と一致することが分かる。
+
+HF波動関数に対する摂動論であるM\o ller-Plesset摂動論 (MBPT)\cite{MP2} の場合とは異なり, NEVPTでは0次の摂動エネルギーが参照となるCASSCFエネルギーと一致する。このとき1次のエネルギーは
+\begin{align}
+  E_1 &= \langle\Psi_0|V|\Psi_0\rangle=\langle\Psi_0|H-H_\text{Dyall}|\Psi_0\rangle=\langle\Psi_0|H|\Psi_0\rangle-\langle\Psi_0|\red{H_\text{Dyall}|\Psi_0\rangle} \nonumber \\
+      &= \blue{\langle\Psi_0|H|\Psi_0\rangle}-\red{E_0}\langle\Psi_0|\red{\Psi_0\rangle} = \blue{E_0} - E_0 = 0 \label{eq:E1}
+\end{align}
+となる。従って, MBPTの場合と同様に, 1次までの摂動エネルギーは参照波動関数のエネルギーと一致し, 参照波動関数に取り込まれない (動的) 電子相関の寄与は2次から現れる。また式(\ref{eq:E1})において, 参照波動関数のエネルギーは
+\begin{align}
+  E_0=\langle\Psi_0|H|\Psi_0\rangle
+\end{align}
+と計算されるが, 一般に
+\begin{align}
+  H|\Psi_0\rangle \neq E_0|\Psi_0\rangle
+\end{align}
+である点に注意する。
 
 \section{NEVPT2波動関数}
 
-摂動理論では、一次の波動関数が得られれば、２次のエネルギー補正が得られる。
+摂動理論では, 一次の波動関数が得られれば, ２次のエネルギー補正が得られる。
 \begin{align}
   & |\Psi_1\rangle = \sum_I |\Psi_0^I\rangle\frac{\langle\Psi_0^I|\left(H-H_0\right)|\Psi_0\rangle}{E_0-E_0^I} \label{eq:psi1} \\
   & E_2 = \langle\Psi_0|\left(H-H_0\right)|\Psi_1\rangle = \sum_I \frac{\langle\Psi_0|\left(H-H_0\right)|\Psi_0^I\rangle\langle\Psi_0^I|\left(H-H_0\right)|\Psi_0\rangle}{E_0-E_0^I} \\
 \end{align}
-式(\ref{eq:psi1})において、一次の波動関数を構成する摂動子 (perturber) 関数は、以下の関係を満足するように選ばれる:
+式(\ref{eq:psi1})において, 一次の波動関数を構成する摂動子 (perturber) 関数は, 以下の関係を満足するように選ばれる:
 \begin{align}
   H_0|\Psi_0^I\rangle=E_0^I|\Psi_0^I\rangle \label{eq:eigen}
 \end{align}
-$H_0$がDyallハミルトニアン、$\Psi_0$がCAS波動関数である場合、摂動子としては$\Psi_0$からの一電子及び二電子励起関数が用いられる。CAS波動関数は一般に複数のSlater行列式の線型結合である。故に$\Psi_0$からの励起関数は、M\o ller-Plesset摂動論で用いられるような単一の励起行列式ではなく、複数の励起行列式の線型結合として与えられる。
+$H_0$がDyallハミルトニアン, $\Psi_0$がCAS波動関数である場合, 摂動子としては$\Psi_0$からの一電子及び二電子励起関数が用いられる。CAS波動関数は一般に複数のSlater行列式の線型結合である。故に$\Psi_0$からの励起関数は, M\o ller-Plesset摂動論で用いられるような単一の励起行列式ではなく, 複数の励起行列式の線型結合として与えられる。
 \begin{align}
   |\Psi_{ij}^{ab}\rangle&=E_{ij}^{ab}|\Psi_0\rangle=E_{ij}^{ab}\sum_I^\text{reference} C_I|\Psi_I\rangle \nonumber \\
   &=\sum_I^\text{reference} C_I\left(E_{ij}^{ab}|\Psi_I\rangle\right)=\sum_I^\text{reference} C_I|\Psi_{ij,I}^{ab}\rangle \label{eq:icb}
 \end{align}
-式(\ref{eq:icb})で与えられるような励起関数を、内部縮約基底 (ICB: internally-contracted basis) という。CAS波動関数が単一のSlater行列式で表される極限では、ICBは単一の二電子励起行列式となる。CAS波動関数からの一電子及び二電子励起で生成されるICBが張る線型空間を一次相互作用空間 (FOIS: first-order interacting space) と呼ぶ。FOISの基底となるICBには次の8タイプが存在する。
+式(\ref{eq:icb})で与えられるような励起関数を, 内部縮約基底 (ICB: internally-contracted basis) という。\cite{WMeyerMTC} CAS波動関数が単一のSlater行列式で表される極限では, ICBは単一の二電子励起行列式となる。CAS波動関数からの一電子及び二電子励起で生成されるICBが張る線型空間を一次相互作用空間 (FOIS: first-order interacting space) と呼ぶ。FOISの基底となるICBには次の8タイプが存在する。
 \begin{align}
   |\Psi_{ij}^{ab}\rangle,\ |\Psi_{pi}^{ab}\rangle,\ |\Psi_{pq}^{ab}\rangle \ \ \text{(external)} \label{eq:ext}
 \end{align}
@@ -93,39 +122,39 @@ $H_0$がDyallハミルトニアン、$\Psi_0$がCAS波動関数である場合�
 \begin{align}
   |\Psi_{ip}^{qr}\rangle,\ |\Psi_{ij}^{pq}\rangle \ \ \text{(internal)} \label{eq:int}
 \end{align}
-では式(\ref{eq:ext}) -- (\ref{eq:int})で与えられるICBは、Dyallハミルトニアンを$H_0$とした場合、式(\ref{eq:eigen})を満たすであろうか？実のところ、式(\ref{eq:eigen})を満たすのは上記8タイプのうち、$\Psi_{ij}^{ab}$のみである。
+では式(\ref{eq:ext}) -- (\ref{eq:int})で与えられるICBは, Dyallハミルトニアンを$H_0$とした場合, 式(\ref{eq:eigen})を満たすであろうか？実のところ, 式(\ref{eq:eigen})を満たすのは上記8タイプのうち, $\Psi_{ij}^{ab}$のみである。
 \begin{align}
   H_\text{Dyall}|\Psi_{ij}^{ab}\rangle=\left(E_0-F_{ii}-F_{jj}+F_{aa}+F_{bb}\right)|\Psi_{ij}^{ab}\rangle
 \end{align}
-また一般に、$E$-演算子により生成されるICB (以降、余剰ICBと呼ぶ) はFOISの基底としては線型従属であり、尚且つ互いに正規直交しない。そこでNEVPTを含む内部縮約型多参照電子相関理論では、余剰ICBの線型結合を取り、正規直交ICB (非余剰ICB) を構築する。この際、正準化を行うことで、式(\ref{eq:eigen})を満たすように非余剰ICBを構築することが可能となる。
+また一般に, $E$-演算子により生成されるICB (以降, 余剰ICBと呼ぶ) はFOISの基底としては線型従属であり, 尚且つ互いに正規直交しない。そこでNEVPTを含む内部縮約型多参照電子相関理論では, 余剰ICBの線型結合を取り, 正規直交ICB (非余剰ICB) を構築する。この際, 正準化を行うことで, 式(\ref{eq:eigen})を満たすように非余剰ICBを構築することが可能となる。
 
-余剰ICBである$|\Psi_{pq}^{ab}\rangle$を例にとり、これの非余剰化を行う。つまり下式における$C$-係数を決定する。
+余剰ICBである$|\Psi_{pq}^{ab}\rangle$を例にとり, これの非余剰化を行う。つまり下式における$C$-係数を決定する。
 \begin{align}
   |\Psi_{\rho}^{ab}\rangle=\sum_{pq} \ C_{\rho}^{pq} |\Psi_{pq}^{ab}\rangle \label{eq:Cm2}
 \end{align}
-式(\ref{eq:Cm2})において、$\Psi_{\rho}^{ab}$は非余剰ICBである。$(p,q)$の組み合わせは、$N_\text{active}^2$通りあるが、一般に$N_\rho<N_\text{active}^2$である。故に$C$-行列はユニタリーではない点に注意する。$C$-行列は次の一般化固有値方程式を解くことで決定する。
+式(\ref{eq:Cm2})において, $\Psi_{\rho}^{ab}$は非余剰ICBである。$(p,q)$の組み合わせは, $N_\text{active}^2$通りあるが, 一般に$N_\rho<N_\text{active}^2$である。故に$C$-行列はユニタリーではない点に注意する。$C$-行列は次の一般化固有値方程式を解くことで決定する。
 \begin{align}
   \sum_{rs} \langle\Psi_{pq}^{ab}|H_\text{Dyall}|\Psi_{rs}^{ab}\rangle C_\rho^{rs}=E_{\rho}^{ab}\sum_{rs} \langle\Psi_{pq}^{ab}|\Psi_{rs}^{ab}\rangle C_\rho^{rs} \label{eq:eqH0}
 \end{align}
-式(\ref{eq:eqH0})の次元はあくまでも$N_\text{active}^2$であり、$a$及び$b$は最終的には消去される。式(\ref{eq:eqH0})の右辺において
+式(\ref{eq:eqH0})の次元はあくまでも$N_\text{active}^2$であり, $a$及び$b$は最終的には消去される。式(\ref{eq:eqH0})の右辺において
 \begin{align}
-  \langle\Psi_{pq}^{ab}|\Psi_{rs}^{ab}\rangle = \langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle \delta_a^a \delta_b^b = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle = D_{rs}^{pq}
+  \langle\Psi_{pq}^{ab}|\Psi_{rs}^{ab}\rangle = \langle\Psi_0|\left(E^{pq}_{ab}\right)^\dagger E_{rs}^{ab}|\Psi_0\rangle = \langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle \delta_a^a \delta_b^b = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle = D_{rs}^{pq}
 \end{align}
 となる。故に式(\ref{eq:eqH0})の右辺は
 \begin{align}
-  \text{(右辺)}=E_\rho\sum_{rs} D^{pq}_{rs} C_\rho^{rs}
+  \text{(右辺)}=E_\rho^{ab}\sum_{rs} D^{pq}_{rs} C_\rho^{rs}
 \end{align}
 となる。式(\ref{eq:eqH0})の左辺に式(\ref{eq:Dyall})を代入すると
 \begin{align}
   \langle\Psi_{pq}^{ab}|H_\text{Dyall}|\Psi_{rs}^{ab}\rangle = \langle\Psi_{pq}^{ab}|H_\text{inact}+H_\text{act}+C|\Psi_{rs}^{ab}\rangle
 \end{align}
-となり、右辺のそれぞれを展開すると
+となり, 右辺のそれぞれを展開すると
 \begin{align}
   &\langle\Psi_{pq}^{ab}|H_\text{inact}|\Psi_{rs}^{ab}\rangle=\left(2\sum_i F_{ii}+F_{aa}+F_{bb}\right)D^{rs}_{pq} \label{eq:inact} \\
   &\langle\Psi_{pq}^{ab}|H_\text{act}  |\Psi_{rs}^{ab}\rangle=\sum_{tu}^{act} (h^\text{eff})_{tu} D^{pqt}_{rsu} + \sum_{tuvw}^\text{act} \frac{1}{2}(tv|uw) D^{pqtu}_{rsvw} \label{eq:nocommH0}\\ 
-  &\langle\Psi_{pq}^{ab}|C|\Psi_{rs}^{ab}\rangle=C \ D^{rs}_{pq} \label{eq:C}
+  &\langle\Psi_{pq}^{ab}|C|\Psi_{rs}^{ab}\rangle=C \ D^{rs}_{pq} \label{eq:C-Dyall}
 \end{align}
-となる。問題は$H_\text{act}$である。上式通りにこれを評価すると、最大で4体の縮約密度行列 (4-RDM) が現れる。これは$N_\text{active}^8$の大きさのデータであり、$N_\text{active}=30$の場合、そのサイズは約5テラバイトとなる。故に、もし可能であればこの項を消去したい。実は、式(\ref{eq:E0})を用いることで、一切の近似を導入することなしに、4-RDMを含む項を消去可能である。そこで、次の等式を考える。
+となる。問題は$H_\text{act}$である。上式通りにこれを評価すると, 最大で4体の縮約密度行列 (4-RDM) が現れる。これは$N_\text{active}^8$の大きさのデータであり, $N_\text{active}=30$の場合, そのサイズは約5テラバイトとなる。故に, もし可能であればこの項を消去したい。実は, 式(\ref{eq:E0})を用いることで, 一切の近似を導入することなしに, 4-RDMを含む項を消去可能である。そこで, 次の等式を考える。
 \begin{align}
   \langle\Psi_0|E^{pq}_{ab}[H_\text{act},E_{rs}^{ab}]|\Psi_0\rangle&=\langle\Psi_0|E^{pq}_{ab}H_\text{act}E_{rs}^{ab}|\Psi_0\rangle-\langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}\red{H_\text{act}|\Psi_0\rangle} \nonumber \\
   &=\langle\Psi_0|E^{pq}_{ab}H_\text{act}E_{rs}^{ab}|\Psi_0\rangle-E_\text{act}\langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle
@@ -134,23 +163,28 @@ $H_0$がDyallハミルトニアン、$\Psi_0$がCAS波動関数である場合�
 \begin{align}
   \langle\Psi_0|E^{pq}_{ab}H_\text{act}E_{rs}^{ab}|\Psi_0\rangle=\red{\langle\Psi_0|E^{pq}_{ab}[H_\text{act},E_{rs}^{ab}]|\Psi_0\rangle}+E_\text{act}\langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle \label{eq:comm}
 \end{align}
-が得られる。ここで右辺第二項は$E_\text{act}\langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle=E_\text{act}D^{pq}_{rs}$となる。式(\ref{eq:comm})における右辺第一項は4-RDMを含まない。これは交換子を介することで、最大のランクを持つ相互作用項がキャンセルされる為である。式(\ref{eq:comm})を用いると
+が得られる。ここで右辺第二項は$E_\text{act}\langle\Psi_0|E^{pq}_{ab}E_{rs}^{ab}|\Psi_0\rangle=E_\text{act}D^{pq}_{rs}$となる。式(\ref{eq:comm})における右辺第一項は4-RDMを含まない。
+\begin{align}
+  \langle\Psi_0|E^{pq}_{ab}[H_\text{act},E_{rs}^{ab}]|\Psi_0\rangle &= - \sum_{t} (h^\text{eff})_{rt} D^{pq}_{ts} - \sum_{tuv} (rt|uv) D^{pqu}_{tsv} - \frac{1}{2} \sum_{tu} (ru|tu) D^{pq}_{ts} \nonumber \\
+  &- \sum_{t} (h^\text{eff})_{st} D^{qp}_{tr} - \sum_{tuv} (st|uv) D^{qpu}_{trv} - \frac{1}{2} \sum_{tu} (su|tu) D^{qp}_{tr} - \sum_{tu} (rt|su) D^{pq}_{tu} \label{eq:comm-wick}
+\end{align}
+これは交換子を介することで, 最大のランクを持つ相互作用項がキャンセルされる為である。式(\ref{eq:comm})を用いると
 \begin{align}
   \langle\Psi_0|E^{pq}_{ab}H_\text{act}E_{rs}^{ab}|\Psi_0\rangle &= - \sum_{t} (h^\text{eff})_{rt} D^{pq}_{ts} - \sum_{tuv} (rt|uv) D^{pqu}_{tsv} - \frac{1}{2} \sum_{tu} (ru|tu) D^{pq}_{ts} \nonumber \\
   &- \sum_{t} (h^\text{eff})_{st} D^{qp}_{tr} - \sum_{tuv} (st|uv) D^{qpu}_{trv} - \frac{1}{2} \sum_{tu} (su|tu) D^{qp}_{tr} - \sum_{tu} (rt|su) D^{pq}_{tu} \nonumber \\
   &+E_\text{act}D^{pq}_{rs} \label{eq:commH0}
 \end{align}
-となる。式(\ref{eq:commH0})は4-RDMを含まないにも関わらず、式(\ref{eq:nocommH0})とは完全に同一な値を持つ。
+となる。式(\ref{eq:commH0})は4-RDMを含まないにも関わらず, 式(\ref{eq:nocommH0})とは完全に同一な値を持つ。
 
-式(\ref{eq:inact}), (\ref{eq:C})及び(\ref{eq:comm})を式(\ref{eq:eqH0})に代入し
+式(\ref{eq:inact}), (\ref{eq:C-Dyall})及び(\ref{eq:comm})を式(\ref{eq:eqH0})に代入し、右辺と同様な項を移項すると
 \begin{align}
   \sum_{rs} \langle\Psi_0|E^{pq}_{ab}[H_\text{act},E_{rs}^{ab}]|\Psi_0\rangle C_\rho^{rs}=\left(E_{\rho}^{ab}-F_{aa}-F_{bb}\red{-2\sum_i F_{ii}-C-E_\text{act}}\right)\sum_{rs} D^{pq}_{rs} C_\rho^{rs} \label{eq:eqH0_2}
 \end{align}
-上式赤字部分と式(\ref{eq:E0-formula})と比較することで
+上式赤字部分と式(\ref{eq:E0-formula}) -- (\ref{eq:E0-formula-Eact}) と比較することで
 \begin{align}
   \sum_{rs} \langle\Psi_0|E^{pq}_{ab}[H_\text{act},E_{rs}^{ab}]|\Psi_0\rangle C_\rho^{rs}=\left(E_{\rho}^{ab}-F_{aa}-F_{bb}\red{-E_0}\right)\sum_{rs} D^{pq}_{rs} C_\rho^{rs} \label{eq:eqH0_2}
 \end{align}
-となり、更にここで
+となり, 更にここで
 \begin{align}
   E_{\rho}^{ab}=F_{aa}+F_{bb}+E_0-e_\rho
 \end{align}
@@ -169,43 +203,48 @@ $H_0$がDyallハミルトニアン、$\Psi_0$がCAS波動関数である場合�
 \end{align}
 となる。ここで式(\ref{eq:E0})及び$\langle\Psi_{\rho}^{ab}|\Psi_0\rangle=0$を用いた。式(\ref{eq:S-2})は最終的には
 \begin{align}
-  E^{(-2)}=\sum_{\rho ab} \frac{\langle\Psi_0|H|\Psi_{\rho}^{ab}\rangle\langle\Psi_{\rho}^{ab}|H|\Psi_0\rangle}{F_{aa}+F_{bb}-e_\rho} \label{eq:S-2_2}
+  E^{(-2)}=-\sum_{\rho ab} \frac{\langle\Psi_0|H|\Psi_{\rho}^{ab}\rangle\langle\Psi_{\rho}^{ab}|H|\Psi_0\rangle}{F_{aa}+F_{bb}-e_\rho} \label{eq:S-2_2}
 \end{align}
 と書き換えられる。また式(\ref{eq:S-2_2})における分子は
 \begin{align}
-  \langle\Psi_{\rho}^{ab}|H|\Psi_0\rangle=\sum_{pq}C_\rho^{pq} \langle\Psi_0|E_{ab}^{pq}H|\Psi_0\rangle
+  \langle\Psi_{\rho}^{ab}|H|\Psi_0\rangle&=\sum_{pq}C_\rho^{pq} \langle\Psi_0|E_{ab}^{pq}H|\Psi_0\rangle \nonumber \\
+  &=\sum_{pq}C_\rho^{pq} \sum_{rs} (ra|sb) D^{pq}_{rs}
 \end{align}
 となる。ここでBorn-Oppenheimer ハミルトニアン及び余剰ICBを含む行列要素は
 \begin{align}
-  &H=\sum_{eh}^\text{all} h_{ef} E^e_f+\frac{1}{2}\sum_{efgh}^\text{all} (eg|fh) E^{ef}_{gh} \label{eq:HBO} \\
+  &H=\sum_{wx}^\text{all} h_{wx} E^w_x+\frac{1}{2}\sum_{wxyz}^\text{all} (wy|xz) E^{wx}_{yz} \label{eq:HBO} \\
   &\langle\Psi_0|E_{ab}^{pq}H|\Psi_0\rangle=\sum_{rs} (ra|sb) D^{pq}_{rs} \label{eq:numerator}
 \end{align}
-と与えられる。式(\ref{eq:HBO})において、$efgh$は全てのMO空間を走る。
+と与えられる。式(\ref{eq:HBO})において, $efgh$は全てのMO空間を走る。
 
-NEVPT2計算ではまず、$\Psi_{ij}^{ab}$を除く7タイプの各余剰ICBに対し、式(\ref{eq:eqH0_3})に相当する一般化固有値方程式を解き、非余剰化行列($C$-行列)及びエネルギー固有値を求める (Table \ref{tab:ICBs})。続いて、分子(式(\ref{eq:num}))を計算し、式(\ref{eq:S-2_2})を計算する。
+NEVPT2計算ではまず, $\Psi_{ij}^{ab}$を除く7タイプの各余剰ICBに対し, 式(\ref{eq:eqH0_3})に相当する一般化固有値方程式を解き, 非余剰化行列($C$-行列)及びエネルギー固有値を求める (Table \ref{tab:ICBs})。続いて, 分子(式(\ref{eq:num}))を計算し, 式(\ref{eq:S-2_2})を計算する。
 
-NEVPT2と類似した内部縮約型多参照摂動理論にCASPT2がある。CASPT2とNEVPT2との唯一の本質的な相違点は用いる０次ハミルトニアンである。NEVPT2ではDyallハミルトニアンを用いるのに対して、CASPT2では一般化Fock演算子を用いる。
+NEVPT2と類似した内部縮約型多参照摂動理論にCASPT2がある。\cite{doi:10.1021/j100377a012,doi:10.1063/1.462209} CASPT2とNEVPT2との唯一の本質的な相違点は用いる０次ハミルトニアンである。NEVPT2ではDyallハミルトニアンを用いるのに対して, CASPT2では一般化Fock演算子を用いる。
 \begin{align}
-  F_\text{generalized}=\sum_{eh}^\text{all} F_{eh} E^e_h \label{eq:Fgen}
+  F_\text{generalized}=\sum_{wx}^\text{all} F_{wx} E^w_x \label{eq:Fgen}
 \end{align}
-Dyallハミルトニアンにおける$H_\text{act}$部分が二体の相互作用を含むのに対し、式(\ref{eq:Fgen})は一体の相互作用しか含まない。しかしながらCAS波動関数は厳密には式(\ref{eq:Fgen})の固有関数とはならない:
+Dyallハミルトニアンにおける$H_\text{act}$部分が二体の相互作用を含むのに対し, 式(\ref{eq:Fgen})は一体の相互作用しか含まない。しかしながらCAS波動関数は厳密には式(\ref{eq:Fgen})の固有関数とはならない:
 \begin{align}
-  F_\text{generalized}|\Psi_0\rangle \neq E_0|\Psi_0\rangle \label{eq:Fgen-eig}
+  F_\text{generalized}|\Psi_0\rangle \neq E_0^{'} |\Psi_0\rangle \label{eq:Fgen-eig}
 \end{align}
-それ故、非余剰ICBを、$H_0$の固有関数として構築することができない。これは即ち、異なるICBが$H_0$を挟んで結合することを意味する。
+それ故, 非余剰ICBを, $H_0$の固有関数として構築することができない。これは即ち, 異なるICBが$H_0$を挟んで結合することを意味する。
 \begin{align}
   \langle \Psi_I|F_\text{generalized}|\Psi_J\rangle\neq0 \label{eq:coupling}
 \end{align}
-上式にて、$I$、$J$はTable \ref{tab:ICBs}における余剰あるいは非余剰ICBである。この一般化Fock演算子の性質のために、CASPT2法では次の線型方程式を解き、一次の摂動波動関数を得る必要がある。
+上式にて, $I$, $J$はTable \ref{tab:ICBs}における余剰あるいは非余剰ICBである。この一般化Fock演算子の性質のために, CASPT2法では次の線型方程式を解き, 一次の摂動波動関数を得る必要がある。
 \begin{align}
-  \left(\mathbf{F}-E_0\right)\mathbf{T}=-\mathbf{V} \label{eq:CAPT2}
+  \left(\mathbf{F}-E^{'}_0\right)\mathbf{T}=-\mathbf{V} \label{eq:CAPT2}
 \end{align}
-一般に式(\ref{eq:CAPT2})は大次元であるため、直接法ではなく、共役勾配法などの間接法を用いて繰り返しの手続きを用いて解かれる。式(\ref{eq:CAPT2})において、$\mathbf{F}$及び$\mathbf{V}$の行列要素ははそれぞれ
+式(\ref{eq:CAPT2})における$E_0^{'}$は
+\begin{align}
+  E_0^{'}=\langle\Psi_0|F_\text{generalized}|\Psi_0\rangle=2\sum_i F_{ii}+\sum_{pq} F_{pq} D_p^q
+\end{align}
+と与えられる。一般に式(\ref{eq:CAPT2})は大次元であるため, 直接法ではなく, 共役勾配法などの間接法を用いて繰り返しの手続きを用いて解かれる。式(\ref{eq:CAPT2})において, $\mathbf{F}$及び$\mathbf{V}$の行列要素ははそれぞれ
 \begin{align}
   &F_{IJ}=\langle\Psi_I|F_\text{generalized}|\Psi_J\rangle \label{eq:fij} \\
   &V_{I} =\langle\Psi_I|H-F_\text{generalized}|\Psi_0\rangle = \langle\Psi_I|H|\Psi_0\rangle
 \end{align}
-と定義される。式(\ref{eq:CAPT2})の解として、摂動振幅$T$が得られ、これを用いて一次の波動関数は
+と定義される。式(\ref{eq:CAPT2})の解として, 摂動振幅$T$が得られ, これを用いて一次の波動関数は
 \begin{align}
   |\Psi_1\rangle&=\sum_{ijab} t_{ab}^{ij} |\Psi_{ij}^{ab}\rangle+\sum_{\rho iab} t_{ab}^{\rho i} |\Psi_{\rho i}^{ab}\rangle+\sum_{\rho ab} t_{ab}^{\rho} |\Psi_{\rho}^{ab}\rangle \nonumber \\
   &+\sum_{\rho a} t_{\rho}^a |\Psi_{\rho}^{a}\rangle +\sum_{\rho ia} t_{\rho i}^a |\Psi_{\rho i}^{a}\rangle + \sum_{ij\rho a} t_{ij}^{\rho a} \Psi_{ij}^{\rho a}\rangle \nonumber \\
@@ -215,11 +254,11 @@ Dyallハミルトニアンにおける$H_\text{act}$部分が二体の相互作�
 \begin{align}
   E^{(2)}=\mathbf{V}^\dagger\mathbf{T}
 \end{align}
-として計算される。NEVPT2では、非余剰ICBは厳密に$H_\text{Dyall}$の固有関数として構築される。従ってCASPT2で見られるような異なる非余剰ICBの$H_0$を介した結合は生じない。
+として計算される。NEVPT2では, 非余剰ICBは厳密に$H_\text{Dyall}$の固有関数として構築される。従ってCASPT2で見られるような異なる非余剰ICBの$H_0$を介した結合は生じない。
 \begin{align}
   \langle\Psi_I|H_\text{Dyall}|\Psi_J\rangle=0 \\ \text{if }I\neq J
 \end{align}
-その為、繰り返しの手続きで$\mathbf{T}$を解く必要はなく、２次の摂動エネルギーは式(\ref{eq:S-2_2})のように閉じた式で与えられる。
+その為, 繰り返しの手続きで$\mathbf{T}$を解く必要はなく, ２次の摂動エネルギーは式(\ref{eq:S-2_2})のように閉じた式で与えられる。
 
 \begin{table}[h]
 \caption{\label{tab:ICBs}
@@ -246,5 +285,6 @@ Dyallハミルトニアンにおける$H_\text{act}$部分が二体の相互作�
 \end{ruledtabular}
 \end{table}
 
+\bibliography{saitow}
 
 \end{document}
