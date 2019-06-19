@@ -24,7 +24,7 @@
 
 \begin{document}
 \title{Some notes on N-Electron Valence state Perturbation Theory}
-\author{齋藤　雅明}
+\author{齋藤 雅明}
 
 \maketitle
 
@@ -42,10 +42,10 @@ NEVPT摂動理論\cite{angeliintroduction2001,angelin-electron2002,angelinew2006
 ここで$F$は一般化Fock行列及びコアFock行列 ($h^\text{eff}$) は
 \begin{align}
   F_{wx} &= h_{wx} + \sum_{yz} \left[ (wx|yz) - \frac{1}{2}(wy|xz)\right] D_y^z \nonumber \\
-         &= h_{wx} + \sum_{ij} \left[2(wx|ii) - (wi|xi)\right] + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right] D_p^q \nonumber \\
+         &= h_{wx} + \sum_{i} \left[2(wx|ii) - (wi|xi)\right] + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right] D_p^q \nonumber \\
          &= (h^\text{eff})_{wx} + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right] D_p^q \label{eq:genFock} \\
   (h^\text{eff})_{wx} &= h_{wx} + \sum_{ij} \left[ (wx|ij) - \frac{1}{2}(wi|xj)\right] D_i^j \nonumber \\
-                      &= h_{wx} + \sum_{ij} \left[2(wx|ii) - (wi|xi)\right] \label{eq:heff}
+                      &= h_{wx} + \sum_{i} \left[2(wx|ii) - (wi|xi)\right] \label{eq:heff}
 \end{align}
 と定義される。また一電子及び二電子積分は次のように与えられる:
 %
@@ -215,7 +215,7 @@ $H_0$がDyallハミルトニアン, $\Psi_0$がCAS波動関数である場合, �
   &H=\sum_{wx}^\text{all} h_{wx} E^w_x+\frac{1}{2}\sum_{wxyz}^\text{all} (wy|xz) E^{wx}_{yz} \label{eq:HBO} \\
   &\langle\Psi_0|E_{ab}^{pq}H|\Psi_0\rangle=\sum_{rs} (ra|sb) D^{pq}_{rs} \label{eq:numerator}
 \end{align}
-と与えられる。式(\ref{eq:HBO})において, $efgh$は全てのMO空間を走る。
+と与えられる。式(\ref{eq:HBO})において, $wxyz$は全てのMO空間を走る。
 
 NEVPT2計算ではまず, $\Psi_{ij}^{ab}$を除く7タイプの各余剰ICBに対し, 式(\ref{eq:eqH0_3})に相当する一般化固有値方程式を解き, 非余剰化行列($C$-行列)及びエネルギー固有値を求める (Table \ref{tab:ICBs})。続いて, 分子(式(\ref{eq:num}))を計算し, 式(\ref{eq:S-2_2})を計算する。
 
