@@ -52,7 +52,36 @@ hoge
 %
 \section{Theory}\label{Sec:theory}
 
-\subsection{The Coupled-Electron Pair Pertuurbation Theory}\label{Subsec:cept2}
+\subsection{Notations and Convention}
+%
+Throughout this paper, we use $ijkl\cdots$, $pqrs\cdots$ and $abcd\cdots$ to represent the doubly-occupied, active and virtual MOs, respectively, while the generic MOs are indicated by $wxyz\cdots$.
+%
+Derivation of the working equations of our PNO-CEPT is based on the reduced spin-free excitation operators
+%
+\begin{align}
+  &E^w_x = \sum_{\sigma=\{\alpha,\beta\}} a^{w\sigma}a_{x\sigma} \\
+  &E^{wx}_{yz} = \sum_{\sigma,\tau=\{\alpha,\beta\}} a^{w\sigma}a^{x\tau}a_{z\tau}a_{y\sigma}
+\end{align}
+%
+where $a^{w}$ ($a_w$) represents the Fermionic creation (annihilation) operator that acts on $w$-th spatial MO.
+%
+
+
+\subsection{Brief Summary of PNO-CASPT2 Algorithm}
+%
+In CASPT2 method, the generalized Fock operator is used as the zeroth-order Hamiltonian
+%
+\begin{align}
+  F=\sum_{wx} f_{wx} E^x_w
+\end{align}
+%
+where $f$ and $E$ represent the generalized Fock matrix and the spin-free excitation operator, respectively.
+%
+The generalilized Fock matrix is defined as
+
+
+
+\subsection{The Coupled-Electron Pair Perturbation Theory}\label{Subsec:cept2}
 %
 The CCSD wave function is defined with an exponential operator acting on the reference HF function ($\Psi_0$)
 %
