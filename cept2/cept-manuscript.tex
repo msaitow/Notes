@@ -1,0 +1,457 @@
+%\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
+\documentclass[aip,jcp,amsmath]{revtex4-1}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{txfonts}
+\usepackage{mathrsfs}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{longtable}
+\usepackage{rotating}
+%\usepackage[dvipdfmx]{graphicx}
+\newcommand{\half}{{\textstyle \frac{1}{2}}}
+\newcommand{\quarter}{{\textstyle \frac{1}{4}}}
+\newcommand{\centerc}[1]{\multicolumn{1}{c}{#1}}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\allowdisplaybreaks
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue
+}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+
+\title{\color{blue}
+  A Multireference Coupeld-Eletron Pair Approximation combined with Complete-Active Space Perturbation Theory in Local Pair-Natural Orbital Framework}
+\date{\today}
+\author{Masaaki \surname{Saitow}}
+\email{msaitow514@gmail.com}
+\affiliation{Department of Chemistry, Graduate School of Science, Nagoya University, 1-5 Chikusa-ku, Nagoya, Aichi 464-8602, Japan}
+
+\author{Takeshi \surname{Yanai}}
+\affiliation{Department of Chemistry, Graduate School of Science and Institute of Transformative Bio-Molecules (WPI-ITbM), Nagoya University, 1-5 Chikusa-ku, Nagoya, Aichi 464-8602, Japan}
+\affiliation{Japan Science and Technology Agency, PRESTO, 4-1-8 Honcho, Kawaguchi, Saitama 332-0012, Japan}
+
+\begin{abstract}  
+  %
+  Hoge
+  %
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+%
+hoge
+%
+\section{Theory}\label{Sec:theory}
+
+\subsection{The Coupled-Electron Pair Pertuurbation Theory}\label{Subsec:cept2}
+%
+The CCSD wave function is defined with an exponential operator acting on the reference HF function ($\Psi_0$)
+%
+\subsection{PNO-based Code Generation}
+
+\section{Results and discussion}\label{Sec:results}
+
+\section{Conclusion}\label{Sec:Conclusion}
+
+\section*{supplementary material}
+
+\begin{acknowledgments}  
+  
+\end{acknowledgments}
+
+\bibliography{saitow}
+
+%\newpage
+%
+%{
+%  \begin{table}[!ht]
+%    \caption{Major truncation parameters used in the DLPNO-CCSD methods and the values for default settings ({\tt NormalPNO}).}
+%    \begin{center}
+%      \begin{tabular}{lllll}
+%        \hline
+%        \hline
+%        Cutoff && Objective && Default Settings\\
+%        \hline
+%        TCutDO   && Size of orbital and pair domains && $1.00\times10^{-2}$\\ 
+%        TCutMKN  && Size of auxiliary domains        && $1.00\times10^{-3}$\\
+%        TCutPair && Number of CCSD pairs             && $1.00\times10^{-4}$\\
+%        TCutPNO  && Number of PNOs                   && $3.33\times10^{-7}$\\
+%        \hline
+%        \hline
+%      \end{tabular}
+%    \end{center}
+%    \label{tab:parameters}
+%  \end{table}%
+%}
+%
+%\newpage
+%
+%{
+%  \begin{table}[!ht]
+%    \caption{The tightened truncation settings ({\tt Default1} and {\tt Default2}) for the accurate computation of the electronic and magnetic properties in comparison with the conventional {\tt NormalPNO}
+%     and {\tt TightPNO} settings.}
+%    \begin{center}
+%      \begin{tabular}{rrrrrrrrrrrrrr}
+%        \hline
+%        \hline
+%            {}              && TCutMKN             && TCutDO             && TCutPNO             && TCutPNOSingles      && TScalePNOCore      && TScalePNOSOMO\\
+%            \hline
+%            {\tt NormalPNO} && $1.0\times 10^{-3}$ && $1.0\times10^{-2}$ && $3.33\times10^{-7}$ && $9.99\times10^{-9}$ && $1.0\times10^{-2}$ &&              $1.0$ \\ 
+%            {\tt TightPNO}  && $1.0\times 10^{-4}$ && $5.0\times10^{-3}$ && $1.00\times10^{-7}$ && $3.00\times10^{-9}$ && $1.0\times10^{-2}$ &&              $1.0$ \\ 
+%            {\tt Default1}  && $1.0\times 10^{-4}$ && $5.0\times10^{-3}$ && $1.00\times10^{-7}$ &&              $0.00$ && $1.0\times10^{-3}$ && $1.0\times10^{-1}$ \\
+%            {\tt Default2}  && $1.0\times 10^{-4}$ && $5.0\times10^{-3}$ && $1.00\times10^{-8}$ &&              $0.00$ && $1.0\times10^{-3}$ && $1.0\times10^{-1}$ \\         
+%        \hline
+%        \hline
+%      \end{tabular}
+%    \end{center}
+%    \label{tab:default-settings}
+%  \end{table}%
+%}
+%
+%%%-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW
+%\newpage
+%
+%{
+%\squeezetable
+%\begin{longtable}[!ht]{rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr}
+%  \caption{\label{tab:default1and2}
+%    Isotropic and anisotropic HFCCs in MHz calculated by DLPNO-CCSD wave function using {\tt Default1} and {\tt Default2} settings without frozen core treatment.
+%    The absolute errors from the canonical CCSD values are shown in parenthesis.
+%  }
+%\\
+%\hline
+%\hline
+%               &&              && && \multicolumn{12}{c}{\tt Default1} && && && \multicolumn{12}{c}{\tt Default2} \\
+%\cline{4-20} \cline{22-37}
+%Molecule       && Atom         && \multicolumn{3}{c}{A${}_\text{iso}$}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(1)}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(2)}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(3)}
+%                               &&
+%                               && \multicolumn{3}{c}{A${}_\text{iso}$}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(1)}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(2)}
+%                               && \multicolumn{3}{c}{A${}_\text{aniso}$(3)} \\
+%\hline
+%BO             &&  ${}^{11}$B  && 1042.1    && ( 4.3) && -26.9  && ( 0.2) &&  -26.9 && ( 0.2) &&   53.8 && ( 0.4) && && 1039.5 && ( 1.7) &&  -26.7 && ( 0.0) &&  -26.7 && ( 0.0) &&   53.4 && ( 0.1) \\ 
+%               &&  ${}^{17}$O  && -10.8     && ( 0.8) && 21.3   && ( 0.2) &&   21.3 && ( 0.2) &&  -42.5 && ( 0.4) && &&  -10.1 && ( 0.1) &&   21.4 && ( 0.1) &&   21.4 && ( 0.1) &&  -42.7 && ( 0.2) \\  
+%CN             &&  ${}^{13}$C  && 643.8     && (12.6) && -56.2  && ( 0.0) &&  -56.2 && ( 0.0) &&  112.5 && ( 0.0) && &&  633.6 && ( 2.3) &&  -56.3 && ( 0.1) &&  -56.3 && ( 0.1) &&  112.6 && ( 0.1) \\ 
+%               &&  ${}^{14}$N  && -22.6     && ( 0.9) && 39.8   && ( 0.2) &&  -19.9 && ( 0.1) &&  -19.9 && ( 0.1) && &&  -23.4 && ( 0.1) &&   40.0 && ( 0.0) &&  -20.0 && ( 0.0) &&  -20.0 && ( 0.0) \\ 
+%CO${}^+$       &&  ${}^{13}$C  && 1573.5    && (11.2) && -49.4  && ( 0.2) &&  -49.4 && ( 0.2) &&   98.8 && ( 0.5) && && 1565.1 && ( 2.8) &&  -49.2 && ( 0.1) &&  -49.2 && ( 0.1) &&   98.4 && ( 0.1) \\ 
+%               &&  ${}^{17}$O  && 25.2      && ( 0.7) && -74.3  && ( 0.2) &&   37.1 && ( 0.1) &&   37.1 && ( 0.1) && &&   25.6 && ( 0.3) &&  -74.4 && ( 0.1) &&   37.2 && ( 0.1) &&   37.2 && ( 0.1) \\ 
+%NO             &&  ${}^{14}$N  && 20.6      && ( 0.7) && -37.4  && ( 0.2) &&  -39.8 && ( 0.1) &&   77.2 && ( 0.2) && &&   20.9 && ( 0.5) &&  -37.2 && ( 0.0) &&  -39.7 && ( 0.0) &&   77.0 && ( 0.0) \\ 
+%               &&  ${}^{17}$O  && -34.3     && ( 0.5) && 61.9   && ( 0.1) &&   72.4 && ( 0.0) && -134.4 && ( 0.1) && &&  -34.3 && ( 0.4) &&   62.0 && ( 0.0) &&   72.4 && ( 0.0) && -134.4 && ( 0.1) \\ 
+%OH             &&  ${}^{17}$O  && -40.3     && ( 3.3) && 140.9  && ( 0.1) &&  143.1 && ( 0.1) && -284.0 && ( 0.2) && &&  -41.5 && ( 2.1) &&  140.8 && ( 0.0) &&  143.2 && ( 0.2) && -284.0 && ( 0.2) \\ 
+%               &&  ${}^{ 1}$H  && -70.8     && ( 0.7) && 89.2   && ( 0.1) &&  -15.7 && ( 0.0) &&  -73.5 && ( 0.1) && &&  -70.8 && ( 0.7) &&   89.2 && ( 0.1) &&  -15.6 && ( 0.0) &&  -73.5 && ( 0.1) \\ 
+%HCO            &&  ${}^{ 1}$H  && 345.0     && ( 0.2) && -16.5  && ( 0.0) &&   -9.1 && ( 0.0) &&   25.6 && ( 0.0) && &&  345.1 && ( 0.2) &&  -16.5 && ( 0.0) &&   -9.1 && ( 0.0) &&   25.6 && ( 0.0) \\ 
+%               &&  ${}^{17}$O  && -41.4     && ( 0.8) && 49.1   && ( 0.1) &&   58.6 && ( 0.2) && -107.7 && ( 0.3) && &&  -42.1 && ( 0.1) &&   49.2 && ( 0.0) &&   58.8 && ( 0.0) && -107.9 && ( 0.1) \\ 
+%               &&  ${}^{13}$C  && 382.5     && ( 0.2) && -49.9  && ( 0.1) &&  -41.7 && ( 0.2) &&   91.5 && ( 0.3) && &&  382.4 && ( 0.0) &&  -49.8 && ( 0.0) &&  -41.5 && ( 0.0) &&   91.3 && ( 0.1) \\ 
+%H2CO           &&  ${}^{13}$C  && -93.6     && ( 1.2) && 10.5   && ( 0.1) &&    9.3 && ( 0.1) &&  -19.7 && ( 0.0) && &&  -94.8 && ( 0.0) &&   10.6 && ( 0.0) &&    9.2 && ( 0.1) &&  -19.8 && ( 0.1) \\ 
+%               &&  ${}^{17}$O  && -58.3     && ( 3.5) && 117.4  && ( 0.4) &&  143.4 && ( 0.1) && -260.8 && ( 0.5) && &&  -60.8 && ( 1.1) &&  117.3 && ( 0.2) &&  143.3 && ( 0.0) && -260.6 && ( 0.3) \\ 
+%               &&  ${}^{ 1}$H  && 278.7     && ( 0.8) && -10.2  && ( 0.0) &&   -7.5 && ( 0.0) &&   17.6 && ( 0.0) && &&  279.4 && ( 0.1) &&  -10.2 && ( 0.0) &&   -7.5 && ( 0.0) &&   17.7 && ( 0.0) \\ 
+%H${}_2$O$^+$   &&  ${}^{ 1}$H  && -75.1     && ( 0.4) && 74.6   && ( 0.1) &&  -21.8 && ( 0.0) &&  -52.8 && ( 0.1) && &&  -75.0 && ( 0.2) &&   74.6 && ( 0.1) &&  -21.8 && ( 0.1) &&  -52.8 && ( 0.1) \\ 
+%               &&  ${}^{17}$O  && -72.0     && ( 3.3) && 149.1  && ( 0.2) &&  154.1 && ( 0.0) && -303.1 && ( 0.2) && &&  -73.4 && ( 1.9) &&  149.1 && ( 0.1) &&  154.1 && ( 0.0) && -303.1 && ( 0.2) \\ 
+%CH${}_3$       &&  ${}^{13}$C  && 69.0      && ( 3.7) && -78.4  && ( 0.0) &&  -78.4 && ( 0.0) &&  156.8 && ( 0.0) && &&   71.6 && ( 1.2) &&  -78.4 && ( 0.1) &&  -78.4 && ( 0.1) &&  156.9 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -69.6     && ( 0.9) && 38.4   && ( 0.1) &&    2.9 && ( 0.1) &&  -41.3 && ( 0.0) && &&  -69.5 && ( 0.8) &&   38.5 && ( 0.1) &&    2.9 && ( 0.1) &&  -41.4 && ( 0.0) \\ 
+%C${}_3$H${}_5$ &&  ${}^{13}$C  && 50.7      && ( 1.7) && -50.2  && ( 0.1) &&  -48.6 && ( 0.1) &&   98.9 && ( 0.1) && &&   51.7 && ( 0.7) &&  -50.3 && ( 0.0) &&  -48.7 && ( 0.0) &&   99.0 && ( 0.0) \\ 
+%               &&  ${}^{13}$C  && -56.8     && ( 0.1) && 18.1   && ( 0.1) &&   12.4 && ( 0.1) &&  -30.5 && ( 0.2) && &&  -57.4 && ( 0.8) &&   18.1 && ( 0.1) &&   12.5 && ( 0.0) &&  -30.6 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -46.0     && ( 0.4) && 24.6   && ( 0.1) &&    1.9 && ( 0.1) &&  -26.5 && ( 0.1) && &&  -46.0 && ( 0.4) &&   24.9 && ( 0.2) &&    1.6 && ( 0.3) &&  -26.5 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -42.8     && ( 0.2) && 22.8   && ( 0.1) &&    0.0 && ( 0.1) &&  -22.8 && ( 0.0) && &&  -42.9 && ( 0.3) &&   23.0 && ( 0.1) &&   -0.5 && ( 0.4) &&  -22.5 && ( 0.3) \\ 
+%               &&  ${}^{ 1}$H  && 13.8      && ( 0.1) && -5.4   && ( 0.0) &&   -2.3 && ( 0.1) &&    7.7 && ( 0.1) && &&   13.5 && ( 0.1) &&   -5.4 && ( 0.0) &&   -2.3 && ( 0.1) &&    7.8 && ( 0.1) \\ 
+%O${}_2$H       &&  ${}^{17}$O  && -32.3     && ( 1.1) && 45.7   && ( 0.1) &&   52.9 && ( 0.4) &&  -98.6 && ( 0.4) && &&  -33.4 && ( 0.1) &&   45.8 && ( 0.0) &&   53.2 && ( 0.0) &&  -99.0 && ( 0.0) \\ 
+%               &&  ${}^{17}$O  && -56.6     && ( 5.7) && 124.3  && ( 0.3) &&  125.6 && ( 0.2) && -249.9 && ( 0.5) && &&  -59.6 && ( 2.7) &&  124.1 && ( 0.1) &&  125.5 && ( 0.1) && -249.6 && ( 0.2) \\ 
+%               &&  ${}^{ 1}$H  && -23.8     && ( 0.7) && 31.5   && ( 0.1) &&  -11.3 && ( 0.0) &&  -20.3 && ( 0.1) && &&  -24.2 && ( 0.2) &&   31.6 && ( 0.1) &&  -11.3 && ( 0.0) &&  -20.3 && ( 0.0) \\ 
+%CO${}_2^-$     &&  ${}^{17}$O  && -86.8     && ( 2.7) && 37.9   && ( 0.1) &&   31.0 && ( 0.2) &&  -68.8 && ( 0.3) && &&  -88.6 && ( 0.9) &&   37.8 && ( 0.0) &&   30.9 && ( 0.1) &&  -68.7 && ( 0.1) \\ 
+%               &&  ${}^{13}$C  && 364.1     && ( 0.4) && -44.7  && ( 0.1) &&  -37.5 && ( 0.5) &&   82.2 && ( 0.5) && &&  364.0 && ( 0.4) &&  -44.7 && ( 0.1) &&  -37.3 && ( 0.2) &&   82.0 && ( 0.3) \\ 
+%NH${}_2$       &&  ${}^{14}$N  && 24.0      && ( 1.4) && -43.2  && ( 0.1) &&  -44.1 && ( 0.0) &&   87.3 && ( 0.1) && &&   24.6 && ( 0.8) &&  -43.2 && ( 0.0) &&  -44.2 && ( 0.0) &&   87.3 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -65.6     && ( 0.9) && 62.1   && ( 0.1) &&   -5.1 && ( 0.1) &&  -57.0 && ( 0.1) && &&  -65.4 && ( 0.6) &&   62.1 && ( 0.1) &&   -5.1 && ( 0.1) &&  -57.1 && ( 0.0) \\ 
+%NO${}_2$       &&  ${}^{14}$N  && 146.7     && ( 0.1) && -23.5  && ( 0.1) &&  -19.8 && ( 0.3) &&   43.3 && ( 0.4) && &&  146.5 && ( 0.3) &&  -23.5 && ( 0.1) &&  -19.6 && ( 0.1) &&   43.0 && ( 0.1) \\ 
+%               &&  ${}^{17}$O  && -54.2     && ( 1.9) && 54.2   && ( 2.2) &&   56.4 && ( 2.2) && -110.6 && ( 0.0) && &&  -55.0 && ( 1.0) &&   54.2 && ( 2.2) &&   56.4 && ( 2.3) && -110.6 && ( 0.0) \\ 
+%NF${}_2$       &&  ${}^{14}$N  && 45.0      && ( 2.1) && -48.8  && ( 0.2) &&  -51.7 && ( 0.1) &&  100.6 && ( 0.3) && &&   46.2 && ( 1.0) &&  -48.7 && ( 0.1) &&  -51.6 && ( 0.0) &&  100.4 && ( 0.1) \\ 
+%               &&  ${}^{19}$F  && 155.8     && ( 7.0) && -194.8 && ( 2.9) && -257.4 && ( 1.0) &&  452.2 && ( 3.9) && &&  157.3 && ( 5.6) && -196.6 && ( 1.0) && -258.7 && ( 0.2) &&  455.3 && ( 0.8) \\ 
+%NF${}_3^+$     &&  ${}^{14}$N  && 93.8      && ( 4.0) && -50.8  && ( 0.3) &&  -50.8 && ( 0.3) &&  101.6 && ( 0.5) && &&   96.1 && ( 1.7) &&  -50.6 && ( 0.1) &&  -50.6 && ( 0.1) &&  101.2 && ( 0.2) \\ 
+%               &&  ${}^{19}$F  && 286.7     && (17.9) && -342.6 && ( 1.6) && -193.3 && ( 2.9) &&  535.8 && ( 4.4) && &&  298.3 && ( 6.3) && -344.4 && ( 0.2) && -195.0 && ( 1.1) &&  539.4 && ( 0.9) \\ 
+%O${}_3^-$      &&  ${}^{17}$O  && -30.9     && ( 1.5) && 48.8   && ( 0.2) &&   53.5 && ( 0.0) && -102.3 && ( 0.2) && &&  -29.4 && ( 3.0) &&   48.3 && ( 0.8) &&   52.8 && ( 0.6) && -101.1 && ( 1.4) \\ 
+%               &&  ${}^{17}$O  && -74.7     && ( 5.8) && 83.3   && ( 0.4) &&   87.7 && ( 0.1) && -171.1 && ( 0.4) && &&  -76.7 && ( 3.8) &&   87.4 && ( 4.4) &&   92.1 && ( 4.4) && -179.5 && ( 8.8) \\ 
+%ClO${}_2$      &&  ${}^{17}$O  && -29.5     && ( 1.7) && 58.3   && ( 0.1) &&   58.6 && ( 0.1) && -116.9 && ( 0.0) && &&  -30.0 && ( 1.3) &&   58.2 && ( 0.1) &&   58.8 && ( 0.2) && -117.0 && ( 0.1) \\ 
+%               &&  ${}^{25}$Cl && 39.3      && ( 3.4) && -75.3  && ( 0.1) &&  -79.9 && ( 0.3) &&  155.2 && ( 0.2) && &&   40.9 && ( 1.8) &&  -75.4 && ( 0.2) &&  -79.9 && ( 0.3) &&  155.3 && ( 0.1) \\ 
+%MgF            &&  ${}^{25}$Mg && -311.7    && ( 2.0) && 3.9    && ( 0.1) &&    3.9 && ( 0.1) &&   -7.8 && ( 0.1) && && -313.2 && ( 0.6) &&    3.9 && ( 0.0) &&    3.9 && ( 0.0) &&   -7.7 && ( 0.0) \\ 
+%               &&  ${}^{19}$F  && 189.3     && ( 2.1) && -56.4  && ( 2.2) &&  -56.4 && ( 2.2) &&  112.9 && ( 4.4) && &&  189.5 && ( 1.9) &&  -57.5 && ( 1.1) &&  -57.5 && ( 1.1) &&  115.0 && ( 2.2) \\ 
+%SH${}^+$       &&  ${}^{32}$S  && 34.2      && ( 0.5) && -97.7  && ( 0.1) &&   48.9 && ( 0.1) &&   48.9 && ( 0.1) && &&   33.9 && ( 0.8) &&  -97.6 && ( 0.1) &&   48.8 && ( 0.0) &&   48.8 && ( 0.0) \\ 
+%               &&  ${}^{ 1}$H  && -52.6     && ( 0.2) && 22.6   && ( 0.1) &&  -11.3 && ( 0.1) &&  -11.3 && ( 0.1) && &&  -52.5 && ( 0.2) &&   22.6 && ( 0.1) &&  -11.3 && ( 0.1) &&  -11.3 && ( 0.1) \\ 
+%SO             &&  ${}^{32}$S  && 13.1      && ( 1.1) && 31.9   && ( 0.0) &&   31.9 && ( 0.1) &&  -63.8 && ( 0.1) && &&   14.1 && ( 0.2) &&   31.9 && ( 0.0) &&   31.9 && ( 0.0) &&  -63.7 && ( 0.0) \\ 
+%               &&  ${}^{17}$O  && -38.5     && ( 0.9) && 63.2   && ( 0.1) &&  -31.6 && ( 0.1) &&  -31.6 && ( 0.0) && &&  -38.6 && ( 0.7) &&   63.2 && ( 0.0) &&  -31.6 && ( 0.0) &&  -31.6 && ( 0.0) \\ 
+%SiH${}_3$      &&  ${}^{29}$Si && -185.3    && ( 0.8) && 93.6   && ( 0.1) &&   93.6 && ( 0.0) && -187.3 && ( 0.1) && && -183.6 && ( 0.8) &&   93.6 && ( 0.0) &&   93.6 && ( 0.0) && -187.1 && ( 0.0) \\ 
+%               &&  ${}^{ 1}$H  && -62.7     && ( 0.2) && 7.4    && ( 0.1) &&    6.6 && ( 0.1) &&  -14.0 && ( 0.0) && &&  -62.6 && ( 0.1) &&    7.4 && ( 0.1) &&    6.6 && ( 0.1) &&  -14.0 && ( 0.0) \\ 
+%S${}_2$        &&  ${}^{32}$S  && 16.9      && ( 1.0) && -52.0  && ( 0.1) &&   26.0 && ( 0.0) &&   26.0 && ( 0.1) && &&   17.7 && ( 0.1) &&  -51.9 && ( 0.0) &&   26.0 && ( 0.0) &&   26.0 && ( 0.0) \\ 
+%NH             &&  ${}^{14}$N  && 15.3      && ( 0.6) && -45.0  && ( 0.1) &&   22.5 && ( 0.0) &&   22.5 && ( 0.0) && &&   15.6 && ( 0.3) &&  -45.0 && ( 0.1) &&   22.5 && ( 0.0) &&   22.5 && ( 0.0) \\ 
+%               &&  ${}^{ 1}$H  && -63.8     && ( 0.7) && 61.9   && ( 0.0) &&  -30.9 && ( 0.0) &&  -30.9 && ( 0.0) && &&  -63.7 && ( 0.6) &&   61.9 && ( 0.0) &&  -30.9 && ( 0.0) &&  -30.9 && ( 0.0) \\ 
+%OH${}^+$       &&  ${}^{17}$O  && -43.3     && ( 1.0) && 159.2  && ( 0.2) &&  -79.6 && ( 0.1) &&  -79.6 && ( 0.1) && &&  -43.8 && ( 0.6) &&  159.2 && ( 0.2) &&  -79.6 && ( 0.1) &&  -79.6 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -72.1     && ( 0.5) && 86.5   && ( 0.1) &&  -43.3 && ( 0.0) &&  -43.3 && ( 0.0) && &&  -72.0 && ( 0.4) &&   86.5 && ( 0.1) &&  -43.3 && ( 0.0) &&  -43.3 && ( 0.0) \\ 
+%O${}_2$        &&  ${}^{17}$O  && -51.4     && ( 1.4) && 93.7   && ( 0.2) &&  -46.9 && ( 0.1) &&  -46.9 && ( 0.1) && &&  -52.2 && ( 0.6) &&   93.6 && ( 0.0) &&  -46.8 && ( 0.0) &&  -46.8 && ( 0.0) \\ 
+%CH${}_2$       &&  ${}^{13}$C  && 253.7     && ( 0.3) && -75.0  && ( 0.1) &&   27.2 && ( 0.0) &&   47.9 && ( 0.1) && &&  254.3 && ( 0.8) &&  -75.0 && ( 0.0) &&   27.2 && ( 0.0) &&   47.8 && ( 0.1) \\ 
+%               &&  ${}^{ 1}$H  && -14.7     && ( 0.4) && 38.8   && ( 0.0) &&  -15.2 && ( 0.0) &&  -23.6 && ( 0.1) && &&  -14.8 && ( 0.3) &&   38.8 && ( 0.0) &&  -15.2 && ( 0.0) &&  -23.5 && ( 0.0) \\ 
+%AAE            &&              &&           &&   2.2  &&        &&   0.3  &&        &&   0.2  &&        &&   0.4  && &&        &&   1.0  &&        &&   0.2  &&        &&   0.2  &&        &&   0.3  \\ 
+%
+%\hline
+%\hline
+%\end{longtable}
+%}
+%%%-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW
+%
+%\newpage
+%
+%{
+%\squeezetable
+%\begin{longtable}[!ht]{rrrrrrrrrrrrrrrrrr}
+%  \caption{\label{tab:sinnecker}
+%    %
+%    The DLPNO-based isotropic and anisotropic HFCCs in MHz on the {\it p}-benzosemiquinone radical anion in solvated in water in comparison with those obtained by various DFTs and the experimental values.
+%    %
+%    The number of water molecules are indicated in the parenthesis.
+%    %
+%    The def2-TZVPP basis set was used for all the calculations without frozen core.    
+%  }
+%\\
+%\hline
+%\hline
+%
+%                   &&  && DLPNO-CCSD   && B3LYP && CAM-B3LYP && PBE   && M06-2X && B2PLYP && Exp. \\
+%\hline
+%{\bf Bridging Hydrogen} (${}^1$H) &&           &&       &&       &&       &&       &&       &&       &&       \\
+%H${}_2$O ($\times$ 4)   && A${}_\text{aniso}$(1) &&  -2.9 &&  -3.0 &&  -3.0 &&  -2.9 &&  -3.0 &&  -2.9 &&  -3.0 \\
+%                        && A${}_\text{aniso}$(2) &&  -3.1 &&  -3.3 &&  -3.3 &&  -3.2 &&  -3.3 &&  -3.1 &&  -3.0 \\
+%                        && A${}_\text{aniso}$(3) &&   6.0 &&   6.3 &&   6.3 &&   6.1 &&   6.3 &&   6.0 &&   6.0 \\
+%                        && A${}_\text{iso  }$    &&   0.5 &&   0.2 &&   0.3 &&  -0.0 &&   0.5 &&   0.2 &&   0.3 \\
+%H${}_2$O ($\times$ 20)  && A${}_\text{aniso}$(1) &&  -2.8 &&  -2.9 &&  -3.0 &&  -2.9 &&  -2.9 &&  -2.8 &&  -3.0 \\
+%                        && A${}_\text{aniso}$(2) &&  -3.2 &&  -3.3 &&  -3.3 &&  -3.2 &&  -3.3 &&  -3.2 &&  -3.0 \\
+%                        && A${}_\text{aniso}$(3) &&   6.0 &&   6.3 &&   6.3 &&   6.1 &&   6.2 &&   6.0 &&   6.0 \\
+%                        && A${}_\text{iso  }$    &&   0.3 &&  -0.1 &&   0.1 &&  -0.3 &&   0.2 &&  -0.0 &&   0.3 \\
+%{\bf Carbonyl Oxygens} (${}^{17}$O) &&           &&       &&       &&       &&       &&       &&       &&       \\
+%H${}_2$O ($\times$ 4)   && A${}_\text{aniso}$(1) &&  35.9 &&  39.2 &&  39.7 &&  36.9 &&  36.3 &&  36.1 &&  30.5 \\
+%                        && A${}_\text{aniso}$(2) &&  36.7 &&  39.9 &&  40.4 &&  37.1 &&  40.1 &&  36.9 &&  38.9 \\
+%                        && A${}_\text{aniso}$(3) && -72.6 && -79.0 && -80.1 && -74.0 && -76.4 && -72.9 && -69.5 \\
+%                        && A${}_\text{iso  }$    && -28.3 && -22.3 && -22.7 && -13.0 && -15.5 && -23.4 && -22.1 \\
+%H${}_2$O ($\times$ 20)  && A${}_\text{aniso}$(1) &&  34.6 &&  38.0 &&  38.4 &&  36.0 &&  35.3 &&  35.3 &&  30.5 \\
+%                        && A${}_\text{aniso}$(2) &&  35.5 &&  38.8 &&  39.2 &&  36.3 &&  39.0 &&  36.0 &&  38.9 \\
+%                        && A${}_\text{aniso}$(3) && -70.1 && -76.8 && -77.6 && -72.3 && -74.3 && -71.3 && -69.5 \\
+%                        && A${}_\text{iso  }$    && -27.7 && -22.1 && -22.4 && -13.0 && -14.5 && -23.4 && -22.1 \\
+%{\bf Quinone Hydrogens} (${}^1$H) &&           &&       &&       &&       &&       &&       &&       &&       \\
+%H${}_2$O ($\times$ 4)   && A${}_\text{aniso}$(1) &&  -2.1 &&  -2.3 &&  -2.3 &&  -2.1 &&  -2.6 &&  -2.2 &&  -2.4 \\
+%                        && A${}_\text{aniso}$(2) &&  -3.7 &&  -3.4 &&  -3.4 &&  -3.4 &&  -3.2 &&  -3.6 &&  -3.5 \\
+%                        && A${}_\text{aniso}$(3) &&   5.8 &&   5.7 &&   5.7 &&   5.6 &&   5.8 &&   5.8 &&   5.9 \\
+%                        && A${}_\text{iso  }$    &&  -6.3 &&  -5.7 &&  -5.5 &&  -5.7 &&  -7.2 &&  -6.3 &&  -6.4 \\
+%H${}_2$O ($\times$ 20)  && A${}_\text{aniso}$(1) &&  -2.2 &&  -2.3 &&  -2.4 &&  -2.2 &&  -2.6 &&  -2.3 &&  -2.4 \\
+%                        && A${}_\text{aniso}$(2) &&  -3.7 &&  -3.4 &&  -3.4 &&  -3.4 &&  -3.4 &&  -3.6 &&  -3.5 \\
+%                        && A${}_\text{aniso}$(3) &&   5.9 &&   5.7 &&   5.8 &&   5.6 &&   6.0 &&   5.9 &&   5.9 \\
+%                        && A${}_\text{iso  }$    &&  -6.2 && - 5.6 &&  -5.3 &&  -5.5 &&  -7.7 &&  -6.2 &&  -6.4 \\
+%\hline
+%\hline
+%\end{longtable}
+%}
+%
+%\newpage
+%
+%{
+%\squeezetable
+%\begin{longtable}[!ht]{rrrrrrrrrr}
+%  \caption{\label{tab:transtion-metals}
+%    %
+%    The first-order components in the HFCCs computed by the DLPNO-CCSD method and various commonly-used DFTs with the def2-TZVPP level of the basis set.
+%    %
+%    For all the DFT calculations, the ZORA for relativistic correction and the ZORA-recontracted version of basis were used.
+%    %
+%    The estimated sum of isotropic and anisotropic HFCCs was calculated by subtracting the scaled SOC contribution from the experimental value.
+%    %
+%    Unless specifically indicated, the sign of the HFCCs is not known from the experiment.    
+%  }
+%\\
+%\hline
+%\hline
+%
+%
+%                             &&                                     && A${}_\text{total}$(1)
+%                                                                    && A${}_\text{total}$(2)
+%                                                                    && A${}_\text{total}$(3) \\
+%\hline                                                                                                     \\
+%{\bf V(H${}_2$O)${}_6$}      && DLPNO-CCSD ({\tt Default1})         && -226      && -226      && -227      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -228      && -228      && -228      \\
+%                             && B3LYP                               && -179      && -180      && -180      \\
+%                             && PBE                                 && -184      && -184      && -185      \\
+%                             && M06-2X                              && -40       && -40       && -40       \\
+%                             && B2PLYP                              && -214      && -214      && -214      \\
+%                             && CAM-B3LYP                           && -178      && -178      && -178      \\
+%                             && Exp.                                && -247      && -247      && -247      \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf VO(H${}_2$O)${}_5$}     && DLPNO-CCSD ({\tt Default1})         && -521      && -222      && -222      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -521      && -222      && -221      \\
+%                             && B3LYP                               && -469      && -167      && -168      \\
+%                             && PBE                                 && -442      && -154      && -154      \\
+%                             && M06-2X                              && -474      && -165      && -163      \\
+%                             && B2PLYP                              && -579      && -287      && -281      \\
+%                             && CAM-B3LYP                           && -471      && -168      && -167      \\
+%                             && Exp.                                && -547      && -212      && -212      \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf VO(acac)${}_2$}         && DLPNO-CCSD ({\tt Default1})         && -491      && -185      && -174      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -492      && -189      && -177      \\
+%                             && B3LYP                               && -246      && -30       && -20       \\
+%                             && PBE                                 && -407      && -127      && -110      \\
+%                             && M06-2X                              && n.c.      && n.c.      && n.c.      \\
+%                             && B2PLYP                              && -351      && -67       && -44       \\
+%                             && CAM-B3LYP                           && -290      && -30       && -16       \\
+%                             && Exp                                 && 520       && 190       && 190       \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cr(H${}_2$O)${}_6$}     && DLPNO-CCSD ({\tt Default1})         && 44        && 44        && 44        \\
+%                             && DLPNO-CCSD ({\tt Default2})         && 44        && 44        && 44        \\
+%                             && B3LYP                               && 33        && 33        && 33        \\
+%                             && PBE                                 && 32        && 33        && 33        \\
+%                             && M06-2X                              && 123       && 123       && 123       \\
+%                             && B2PLYP                              && 42        && 42        && 43        \\
+%                             && CAM-B3LYP                           && 33        && 33        && 33        \\
+%                             && Exp.                                && 55        && 55        && 55        \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cr(N)(CN)${}_5$}        && DLPNO-CCSD ({\tt Default1})         && 109       && 42        && 42        \\
+%                             && DLPNO-CCSD ({\tt Default2})         && 106       && 39        && 39        \\
+%                             && B3LYP                               && 93        && 30        && 30        \\
+%                             && PBE                                 && 80        && 18        && 18        \\
+%                             && M06-2X                              && 257       && 214       && 214       \\
+%                             && B2PLYP                              && 110       && 7         && 6         \\
+%                             && CAM-B3LYP                           && 95        && 37        && 37        \\
+%                             && Exp.                                && 107       && 42        && 42        \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cr(N)(cyc)(NCCH${}_3$)} && DLPNO-CCSD ({\tt Default1})         && 126       && 53        && 54        \\
+%                             && DLPNO-CCSD ({\tt Default2})         && 127       && 54        && 55        \\
+%                             && B3LYP                               && 116       && 44        && 43        \\
+%                             && PBE                                 && 101       && 28        && 27        \\
+%                             && M06-2X                              && 306       && 255       && 255       \\
+%                             && B2PLYP                              && n.c.      && n.c.      && n.c.      \\
+%                             && CAM-B3LYP                           && 122       && 52        && 51        \\
+%                             && Exp.                                && 115       && 44        && 44        \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Mn(H${}_2$O)${}_6$}     && DLPNO-CCSD ({\tt Default1})         && -260      && -260      && -260      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -258      && -258      && -258      \\
+%                             && B3LYP                               && -163      && -163      && -163      \\
+%                             && PBE                                 && -156      && -156      && -156      \\
+%                             && M06-2X                              && -436      && -436      && -436      \\
+%                             && B2PLYP                              && -220      && -220      && -220      \\
+%                             && CAM-B3LYP                           && -165      && -165      && -165      \\
+%                             && Exp.                                && -245      && -245      && -245      \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Mn(N)(cyc)(NCCH${}_3$)} && DLPNO-CCSD ({\tt Default1})         && -559      && -161      && -160      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -545      && -147      && -145      \\
+%                             && B3LYP                               && -461      && -130      && -128      \\
+%                             && PBE                                 && -433      && -38       && -35       \\
+%                             && M06-2X                              && -1171     && -916      && -914      \\
+%                             && B2PLYP                              && -586      && 158       && 144       \\
+%                             && CAM-B3LYP                           && -462      && -163      && -160      \\
+%                             && Exp.                                && 560       && 180       && 180       \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Ni(H)(CO)${}_3$}        && DLPNO-CCSD ({\tt Default1})         && -77       && 101       && 102       \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -73       && 104       && 104       \\
+%                             && B3LYP                               && -95       && 78        && 79        \\
+%                             && PBE                                 && -89       && 64        && 65        \\
+%                             && M06-2X                              && 0         && 124       && 187       \\
+%                             && B2PLYP                              && -95       && 106       && 106       \\
+%                             && CAM-B3LYP                           && -97       && 85        && 86        \\
+%                             && Exp.                                && -84       && 47        && 47        \\
+%                             && Estimated A${}_\text{iso+aniso}$    && -83       && 67        && 67        \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cu(NH${}_3$)${}_4$}     && DLPNO-CCSD ({\tt Default1})         && -1020     && -187      && -189      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -1020     && -194      && -192      \\
+%                             && B3LYP                               && -848      && -103      && -106      \\
+%                             && PBE                                 && -712      && -63       && -66       \\
+%                             && M06-2X                              && -1001     && -104      && -113      \\
+%                             && B2PLYP                              && -1039     && -158      && -162      \\
+%                             && CAM-B3LYP                           && -885      && -113      && -117      \\
+%                             && Exp.                                && 586       && 71        && 71        \\
+%                             && Estimated A${}_\text{iso+aniso}$    && 940       && 142       && 142       \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cu(acac)${}_2$}         && DLPNO-CCSD ({\tt Default1})         && -1061     && -178      && -179      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -1059     && -184      && -185      \\
+%                             && B3LYP                               && -889      && -113      && -118      \\
+%                             && PBE                                 && -714      && -76       && -83       \\
+%                             && M06-2X                              && -1190     && -284      && -287      \\
+%                             && B2PLYP                              && -1084     && -167      && -164      \\
+%                             && CAM-B3LYP                           && -931      && -119      && -115      \\
+%                             && Exp.                                && -550      && -60       && -60       \\
+%                             && Estimated A${}_\text{iso+aniso}$    && -975      && -168      && -158      \\
+%                             &&                                     &&           &&           &&           \\
+%{\bf Cu(en)${}_2$}           && DLPNO-CCSD ({\tt Default1})         && -1021     && -200      && -202      \\
+%                             && DLPNO-CCSD ({\tt Default2})         && -1023     && -214      && -212      \\
+%                             && B3LYP                               && -853      && -134      && -134      \\
+%                             && PBE                                 && -704      && -84       && -84       \\
+%                             && M06-2X                              && -1090     && -219      && -220      \\
+%                             && B2PLYP                              && -1062     && -194      && -193      \\
+%                             && CAM-B3LYP                           && -896      && -146      && -147      \\
+%                             && Exp.                                && 608       && 83        && 83        \\
+%                             && Estimated A${}_\text{iso+aniso}$    && 911       && 158       && 158       \\
+%                             &&                                     &&           &&           &&           \\
+%\hline
+%\hline
+%\end{longtable}
+%}
+%
+%\newpage
+%
+%{
+%  \begin{figure}[H]
+%    \scalebox{0.9}{\includegraphics{Simone-BarGraph.pdf}}
+%    \caption{\label{fig:Simone-BarGraph}
+%      {
+%        %
+%        The AAEs in isotropic and anisotropic components of the HFCCs for 28 small radicals computed by the DLPNO-CCSD and various DFTs.
+%        %
+%        For the DFT calculations, no approximations were used in the two-electron integral generations such as RI or COSX algorithm.
+%      }
+%    }
+%  \end{figure}
+%}
+%
+%\newpage
+%
+%{
+%  \begin{figure}[H]
+%    \scalebox{0.5}{\includegraphics{phenoxyl-v1.pdf}}
+%    \caption{\label{fig:phenoxyl-PNO-convergence}
+%      {
+%        %
+%        The convergence of (a) EFG tensors and (b) anisotropic and (c) isotropic HFCCs calculated using the unrelaxed DLPNO-CCSD density toward the canonical CCSD values.
+%        %
+%        The def2-TZVPP basis set and AutoAux procedure for the RI treatment.
+%        %
+%        No frozen core settings were used in all the calculations.
+%        %
+%        The following truncation settings were used for domain and pair truncations;
+%        %
+%        TCutPairs=$1.0\times 10^{-5}$ / TCutDO=$1.0\times 10^{-2}$ / TCutMKN=$1.0\times 10^{-3}$ / TCutPNOSingles=$0.0$ / TScalePNOCore=$1.0\times 10^{-3}$ / TScalePNOSOMO=$1.0\times 10^{-1}$.
+%      }
+%    }
+%  \end{figure}
+%}
+%
+%\newpage
+%
+%{
+%  \begin{figure}[H]
+%    \scalebox{0.8}{\includegraphics{Sinnecker-20-mod2}}
+%    \caption{\label{fig:Sinnecker-Water20}
+%      {
+%        %
+%        The structure of the {\it p}-benzosemiquinone radical in coordination with 20 water molecules taken from Ref.~\onlinecite{doi:10.1021/ja0392014}.
+%        %
+%        The bridging hydrogen atoms are indicated by the blue circles.
+%      }
+%    }
+%  \end{figure}
+%}
+
+\end{document}
