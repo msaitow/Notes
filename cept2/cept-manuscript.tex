@@ -91,8 +91,20 @@ the semi-internal subspaces and
 \end{align}
 %
 for the internal subspaces.
+%
+The energy and residual equations involve an expectation value of a string of $E$-operators with respect to the reference such as $\langle\Psi_0|E^{pq}_{ab}E_{wx}^{yz}\cdots|\Psi_0\rangle$.
+%
+Such an expectation value is evaluated by invoking Wick's theorem for the $E$-operators and is reduced to a reduced-density matrix composed only of active MO indices:
+%
+\begin{align}
+  &D^{p}_{q} = \langle\Psi_0|E^{p}_{q}|\Psi_0\rangle  \\
+  &D^{pq}_{rs} = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle
+\end{align}
 
 \subsection{Brief Summary of PNO-CASPT2 Algorithm}
+
+%
+As we follow a similar vein to the original formalism by Katz and Werner, we only outline the PNO-CASPT2 theory in this section.
 %
 In CASPT2 method, the generalized Fock operator is used as the zeroth-order Hamiltonian
 %
@@ -103,13 +115,54 @@ In CASPT2 method, the generalized Fock operator is used as the zeroth-order Hami
 where $f$ represents the generalized Fock matrix
 %
 \begin{align}
-  f_{wx} = h_{wx} + \sum_i [2(wx|ii)-(wi|xi)] + 
+  &f_{wx} = (f_\text{core})_{wx} + \sum_{pq} \left[(wx|pq)-\frac{1}{2}(wp|xq)\right]D^p_q \\
+  &(f_\text{core})_{wx} = h_{wx} + \sum_{i} [2(wx|ii)-(wi|xi)]. 
+\end{align}
+%
+The PNO-CASPT2 wave function is defined as
+%
+\begin{align}
+  |\Psi_\text{PNO-CASPT2}\rangle&=\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi_{ij}^{a_{ij}b_{ij}}\rangle+\sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi_{{\rho i}}^{a_{\rho i}b_{\rho i}}\rangle+\sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi_{{\rho}}^{a_{\rho}b_{\rho}}\rangle\nonumber \\
+  & + \sum_{\rho ij}\sum_{a_{ij}} t_{a_{ij}\rho}^{ij}|\Psi_{ij}^{\rho a}\rangle +\sum_{\rho i}\sum_a t_{a}^{\rho i}|\Psi_{\rho i}^{a}\rangle +\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle \nonumber \\
+  &+ \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
+\end{align}
+%
+in the non-redundant ICB which is constructed by orthonormalizing and canonicalizing the redundant ICBs.
+%
+For instance, an nr-ICB with double excitations to the active space, $\{\Psi^{\rho}_{ij}\}$, is related to its redundant counterpart as
+%
+\begin{align}
+  |\Psi_{ij}^{\rho}\rangle=\sum_{pq} C_{pq}^{\rho} |\tilde{\Psi}_{ij}^{pq}\rangle = \sum_{pq} C_{pq}^{\rho} E_{ij}^{pq} |\Psi_0\rangle
+\end{align}
+%
+where the orthonormalization matrix, $\mathbf{C}$, is obtained by solving the generalized eigenvalue problem:
+%
+\begin{align}
+  \sum_{rs}\langle\Psi_0|E_{pq}^{ij}FE_{rs}^{ij}|\Psi_0\rangle C_{rs}^\rho=E_{\rho ij}\sum_{rs}\langle\Psi_0|E_{pq}^{ij}E_{rs}^{ij}|\Psi_0\rangle C_{rs}^\rho.
+\end{align}
+
+The PNO-CASPT2 amplitudes are determined by solving the residual equations
+%
+\begin{align}
+  r^I=\frac{\partial}{\partial t^I}\mathscr{F}_\text{PNO-CASPT2}=\sum_J \langle\Psi^I|F-\langle F\rangle|\Psi_J\rangle t^J-\langle\Psi^I|H|\Psi_0\rangle\rightarrow 0 \label{eq:caspt2-residua}
+\end{align}
+%
+where the Hylleraas-type energy functional for PNO-CASPT2 ansatz is given as
+%
+\begin{align}
+  \mathscr{F}_\text{PNO-CASPT2}=\langle\Psi|H|\Psi_0\rangle+\langle\Psi_0|H|\Psi\rangle+\langle\Psi|F-\langle F\rangle|\Psi\rangle.
+\end{align}
+%
+In typical canonical CASPT2 implementation, the residua (Eq. \ref{eq:caspt2-residua}) are evaluated in redundant ICB representation using the amplitudes back-transformed into the redundant basis, and then transformed into the non-redundant representation, for instance for $\{\Psi^{\rho}_{ij}\}$ subspace, as
+%
+\begin{align}
+  r^{\rho}_{ij}=\sum_{\rho} C_{rs}^\rho \tilde{r}^{pq}_{ij}.
 \end{align}
 
 %
-The generalilized Fock matrix is defined as
-
-
+In Eq. (\ref{eq:pno-caspt2}), the PNOs are introduced only for the external ICBs and a semi-internal subspace spanned by $\{\Psi_{ij}^{\rho a}\}$ function.
+%
+Since the PNOs are dependent not only on the douby-occpued MOs but also on the non-redundadant ICBs, 
 
 \subsection{The Coupled-Electron Pair Perturbation Theory}\label{Subsec:cept2}
 %
