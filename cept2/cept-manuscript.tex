@@ -200,12 +200,19 @@ In our current implementation, we generate a full set of canonical 2-external in
 %
 This choice limits the applicability of our PNO-CASPT2 only up to systems composed of not more than 2,000 AO functions.
 %
-To overcome such a difficulty, domain truncation should be introduced in the RI 3-index integral generation and the final 2-external integral construction steps as done in the original PNO-CASPT2 implementation and the variants of the domain-based local pair-natural orbital coupled-cluster implementations.\cite{manymany...}
+To overcome such a difficulty, domain truncation should be introduced in the RI 3-index integral generation and the final 2-external integral construction steps as done in the original PNO-CASPT2 implementations,\cite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019,doi:10.1063/1.5097644} in the DLPNO-CC and NEVPT2 algorithms by Neese and coworkers\cite{riplingeran2013,riplingernatural2013,pinskisparse2015,riplingersparse2016,doi:10.1063/1.4981521,:/content/aip/journal/jcp/144/9/10.1063/1.4942769,dipayan2016,doi:10.1063/1.5027114} and in the PNO-LCC programs by Werner {\it et al.}.\cite{doi:10.1021/ct500725e,doi:10.1021/acs.jctc.5b00843,wernersdecay,doi:10.1021/acs.jctc.7b00554}
 
+%
+We have also implemented real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts in our PNO-CASPT2 program in the same way as the canonical CASPT2 program.
+%
+The conventional formulation of the imaginary shifts is based on the diagonality in the diagonal blocks of zeroth-order Hamiltonian matrix in FOIS which is not satisfied if the DOMOs are localized.
+%
+Therefore, in our PNO-CASPT2 implementatin, the off-diagonal elements in the diagonal blocks are discarded, leading to a semi-canonical imaginary shift.
 
 \subsection{The Coupled-Electron Pair Perturbation Theory}\label{Subsec:cept2}
 %
-The CCSD wave function is defined with an exponential operator acting on the reference HF function ($\Psi_0$)
+In the PNO-CEPT2 ansatz, we minimize the following energy functonal:
+
 %
 \subsection{PNO-based Code Generation}
 
