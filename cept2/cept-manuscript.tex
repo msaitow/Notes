@@ -260,14 +260,14 @@ where $\{E\}$ and $\{A\}$ represent the external and the remaining subspaces in 
 %
 If one evaluates the diagonal block for $\{\Psi_{\rho}^{a_{\rho}b_{\rho}}\}$ straightforwardly using Wick's theorem, there are two terms involving 4-body RDM whose size is approximately 32 gigabyte for systems composed of 16 active MOs.
 %
-To eliminate such expensive contractions, we employ a commutator-based transformation originally proposed by Angeli and coworkers
+To eliminate such expensive contractions, we employ a commutator-based transformation originally proposed by Angeli and coworkers\cite{angeliintroduction2001,angelin-electron2002,angelinew2006}
 %
 \begin{align}
   r_{a_\rho b_\rho}^{\rho} &= \sum_{\tau}\sum_{c_\tau d_\tau}\langle\Psi_{a_\rho b_\rho}^{\rho}|H-E_0|\Psi_{\tau}^{c_\tau d_\tau}\rangle t_{c_\tau d_\tau}^\tau \nonumber \\
   &= \sum_{\tau}\sum_{c_\tau d_\tau} \sum_{pqrs} C_{pq}^\rho \langle\Psi_0|E_{_{a_\rho b_\rho}}^{pq}(H-E_0)E_{pq}^{c_\tau d_\tau}|\Psi_0\rangle C_{rs}^\tau t_{c_\tau d_\tau}^\tau \nonumber \\
-  &= \sum_{\tau}\sum_{c_\tau d_\tau} \sum_{pqrs} C_{pq}^\rho \langle\Psi_0|E_{_{a_\rho b_\rho}}^{pq}[H,E_{pq}^{c_\tau d_\tau}]|\Psi_0\rangle C_{rs}^\tau t_{c_\tau d_\tau}^\tau
+  &= \sum_{\tau}\sum_{c_\tau d_\tau} \sum_{pqrs} C_{pq}^\rho \langle\Psi_0|E_{_{a_\rho b_\rho}}^{pq}[H,E_{pq}^{c_\tau d_\tau}]|\Psi_0\rangle C_{rs}^\tau t_{c_\tau d_\tau}^\tau \label{eq:comm}
 \end{align}
-as we have also utilized in our previous works for developing an approximated FIC-MRCI variants with a DMRG reference function.
+as we have also utilized in our previous works for developing an approximated FIC-MRCI variants with a DMRG reference function.\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270}
 %
 Note that both the CEPT2 and the CIPT2\cite{celanithe2004} methods use the energy functional of the similar form.
 %
@@ -283,6 +283,10 @@ Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave functio
 
 %
 Unlike CIPT2 which is designed to mitigate the intruder state problems typically stemming from the $\{\Psi_i^\rho\}$, $\{\Psi_\rho^a\}$ and the reference subspaces, in CEPT2, we use the CASPT2 ansatz for those subspaces.
+%
+In the single-reference case, it is known that the CEPA/0 energy can be irregular thus showing discontinuity in the potential energy surface.
+%
+To remedy this drawback, Taube introduced a regularization scheme which is closely related to the imaginary shift in the CASPT2 framework.\cite{doi:10.1063/1.3115467}
 %
 Therefore, we have implemented the real- and semi-canonical imaginary shifts and the Hylleraas corrections to minimize the errors caused by such shifts.
 
@@ -301,9 +305,21 @@ This is also the case for the code generations employing the PNOs spanning the v
 %
 Even though the global optimization scheme proposed by Hanrath and Engels-Putzka for developing the efficient higher-order CC codes\cite{hanrathan2010,engels-putzkaa2011} can also also used in such a context, in order to keep the generator tool relatively simple yet effective, we use a more heuristic strategy for forming the optimal binary contractions.
 %
-Typical PNO terms in the PNO-CEPT2 read
+In canonical MO basis, typical contraction terms in the CEPT2 model read
 %
-
+\begin{align}
+  r_{ab}^\rho &\leftarrow \frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{c}(f_\text{core})_{cb} D^{pq}_{rs} t_{ca}^\tau C_{sr}^\tau C_{pq}^\rho \nonumber \\
+  &-\frac{1}{4}\sum_\tau\sum_{pqrst} (f_\text{core})_{ts} D^{pq}_{rs} t_{ba}^\tau C_{pq}^\tau C_{tr}^\rho \nonumber \\
+  &+\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (uc|qa) D^{pqr}_{stu} t_{cb}^\tau C_{st}^\rho C_{pr}^\tau \nonumber \\
+  &+\frac{1}{4}\sum_\tau\sum_{pqrstuv} (ur|tv) D^{pqr}_{stu} t_{ba}^\tau C_{pq}^\rho C_{vs}^\tau  \nonumber \\
+  &-\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (st|ru) D^{pq}_{rs} t_{ab}^\tau C_{qp}^\rho C_{ut}^\tau \nonumber \\
+  &+\frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{cd} (ac|bd) D^{pq}_{rs} t_{cd}^\tau C_{sr}^\rho C_{qp}^\tau \nonumber \\
+  &+\text{(18 more terms obtained by permuting pairs of indices)} \label{eq:rab}
+\end{align}
+%
+for the $\{\Psi_{\rho}^{ab}\}$ subspace.
+%
+Even though each term of Eq. (\ref{eq:rab}) is comosed of five tensor quantities resulting in XXX ways to form binary contractions, we find that the RDM is always contracted to two $\mathbf{C}$-matrices.
 
 \section{Results and discussion}\label{Sec:results}
 
