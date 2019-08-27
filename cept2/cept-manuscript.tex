@@ -258,6 +258,17 @@ By differentiating the above functional with respect to the amplitudes, one obta
 %
 where $\{E\}$ and $\{A\}$ represent the external and the remaining subspaces in FOIS, respectively.
 %
+If one evaluates the diagonal block for $\{\Psi_{\rho}^{a_{\rho}b_{\rho}}\}$ straightforwardly using Wick's theorem, there are two terms involving 4-body RDM whose size is approximately 32 gigabyte for systems composed of 16 active MOs.
+%
+To eliminate such expensive contractions, we employ a commutator-based transformation originally proposed by Angeli and coworkers
+%
+\begin{align}
+  r_{a_\rho b_\rho}^{\rho} &= \sum_{\tau}\sum_{c_\tau d_\tau}\langle\Psi_{a_\rho b_\rho}^{\rho}|H-E_0|\Psi_{\tau}^{c_\tau d_\tau}\rangle t_{c_\tau d_\tau}^\tau \nonumber \\
+  &= \sum_{\tau}\sum_{c_\tau d_\tau} \sum_{pqrs} C_{pq}^\rho \langle\Psi_0|E_{_{a_\rho b_\rho}}^{pq}(H-E_0)E_{pq}^{c_\tau d_\tau}|\Psi_0\rangle C_{rs}^\tau t_{c_\tau d_\tau}^\tau \nonumber \\
+  &= \sum_{\tau}\sum_{c_\tau d_\tau} \sum_{pqrs} C_{pq}^\rho \langle\Psi_0|E_{_{a_\rho b_\rho}}^{pq}[H,E_{pq}^{c_\tau d_\tau}]|\Psi_0\rangle C_{rs}^\tau t_{c_\tau d_\tau}^\tau
+\end{align}
+as we have also utilized in our previous works for developing an approximated FIC-MRCI variants with a DMRG reference function.
+%
 Note that both the CEPT2 and the CIPT2\cite{celanithe2004} methods use the energy functional of the similar form.
 %
 The only difference between them consists in the choice of the CEPA subspaces; in the CEPT2 ansatz the external configurations are treated at the CEPA level while in the CIPT2 method the CEPA functional is used for in subspaces with three active MO indices i.e, $\{\Psi_i^\rho\}$ and $\{\Psi_\rho^a\}$.
@@ -276,13 +287,21 @@ Unlike CIPT2 which is designed to mitigate the intruder state problems typically
 Therefore, we have implemented the real- and semi-canonical imaginary shifts and the Hylleraas corrections to minimize the errors caused by such shifts.
 
 %
-As our current implementation of the PNO-CEPT2 is still of pilot level, only the 4-external terms are fully evaluated in the PNO space.
+Our current implementation of the PNO-CEPT2 is still not of optimal form since only the 4-external terms and the 1-body terms such as those similar to the contractions from $\mathscr{F}_\text{PNO-CASPT2}^\text{ext}$ are fully evaluated in the PNO space.
 %
-All the remaining $\mathscr{F}_\text{PNO-CEPA/0}^\text{ext}$ terms, which may involve up to 2-external two-electron integrals, are constructed in the canonical space using the back-transformed $\mathbf{t}$ amplitudes into the canonical space.
+All the remaining terms from $\mathscr{F}_\text{PNO-CEPA/0}^\text{ext}$, which involve either 4-internal integral or 2-external integral of semi-joint pair-pair interaction type,\cite{neeseefficient2009cepa,neeseefficient2009} are constructed in the canonical space using the back-transformed $\mathbf{t}$ amplitudes into the canonical space.
+%
+Therefore, we only demonstrate and benchmark the accuracy of the PNO-CEPT2 model for small- to medium-size molecules and the benchmarking the efficiency is beyond the scope of this manuscript.
 
 \subsection{PNO-based Code Generation}
 %
 To generate an efficient contraction code, each of the tensor contraction terms should be divided into a stream of binary contractions.
+%
+This is also the case for the code generations employing the PNOs spanning the virtual space.
+%
+Even though the global optimization scheme proposed by Hanrath and Engels-Putzka for developing the efficient higher-order CC codes\cite{hanrathan2010,engels-putzkaa2011} can also also used in such a context, in order to keep the generator tool relatively simple yet effective, we use a more heuristic strategy for forming the optimal binary contractions.
+%
+Typical PNO terms in the PNO-CEPT2 read
 %
 
 
