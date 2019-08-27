@@ -304,24 +304,65 @@ To generate an efficient contraction code, each of the tensor contraction terms 
 This is also the case for the code generations employing the PNOs spanning the virtual space.
 %
 Even though the global optimization scheme proposed by Hanrath and Engels-Putzka for developing the efficient higher-order CC codes\cite{hanrathan2010,engels-putzkaa2011} can also also used in such a context, in order to keep the generator tool relatively simple yet effective, we use a more heuristic strategy for forming the optimal binary contractions.
+
 %
 In canonical MO basis, typical contraction terms in the CEPT2 model read
 %
 \begin{align}
-  r_{ab}^\rho &\leftarrow \frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{c}(f_\text{core})_{cb} D^{pq}_{rs} t_{ca}^\tau C_{sr}^\tau C_{pq}^\rho \nonumber \\
+  r_{ab}^\rho &\leftarrow \frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{c}(f_\text{core})_{ca} D^{pq}_{rs} t_{cb}^\tau C_{sr}^\tau C_{pq}^\rho \nonumber \\
   &-\frac{1}{4}\sum_\tau\sum_{pqrst} (f_\text{core})_{ts} D^{pq}_{rs} t_{ba}^\tau C_{pq}^\tau C_{tr}^\rho \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (uc|qa) D^{pqr}_{stu} t_{cb}^\tau C_{st}^\rho C_{pr}^\tau \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrstuv} (ur|tv) D^{pqr}_{stu} t_{ba}^\tau C_{pq}^\rho C_{vs}^\tau  \nonumber \\
-  &-\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (st|ru) D^{pq}_{rs} t_{ab}^\tau C_{qp}^\rho C_{ut}^\tau \nonumber \\
+  &-\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (st|ru) D^{pq}_{rs} t_{ba}^\tau C_{qp}^\rho C_{ut}^\tau \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{cd} (ac|bd) D^{pq}_{rs} t_{cd}^\tau C_{sr}^\rho C_{qp}^\tau \nonumber \\
   &+\text{(18 more terms obtained by permuting pairs of indices)} \label{eq:rab}
 \end{align}
 %
 for the $\{\Psi_{\rho}^{ab}\}$ subspace.
 %
-Even though each term of Eq. (\ref{eq:rab}) is comosed of five tensor quantities resulting in XXX ways to form binary contractions, we find that the RDM is always contracted to two orthonormalization matrices ($\mathbf{C}$).
+Even though each term of Eq. (\ref{eq:rab}) is composed of five tensor quantities resulting in XXX ways to form binary contractions, we find that the RDM is always contracted with two orthonormalization matrices ($\mathbf{C}$).
+%
+Moreover, if the MO integral involves at least one active MO indices, it is also contracted either with an RDM or with one $\mathbf{C}$ matrix.
+%
+Therefore, after forming such amplitude-independent intermediates, Eq (\ref{eq:rab}) becomes
+%
+\begin{align}
+  r_{ab}^\rho &\leftarrow \frac{1}{4}\sum_\tau\sum_{c}(f_\text{core})_{ca} (W_0)_{\rho\tau} t_{cb}^\tau - \frac{1}{4}\sum_\tau (fW_1)_{\rho\tau} t_{ba}^\tau +\frac{1}{4}\sum_\tau\sum_c (vW_2)_{\rho\tau,ca} t_{cb}^\tau \nonumber \\
+  &+\frac{1}{4}\sum_\tau (ur|tv) (W_3)_{\rho\tau} t_{ba}^\tau-\frac{1}{4}\sum_\tau\sum_c (W_4)_{\rho\tau} t_{ba}^\tau +\frac{1}{4}\sum_\tau\sum_{cd} (ac|bd) (W_5)_{\rho\tau} t_{cd}^\tau \nonumber \\
+  &+\text{(18 more terms obtained by permuting pairs of indices)}. \label{eq:rab-2}
+\end{align}
+%
+By comparing the indices of the amplitudes, the generator can form an additional intermediate
+%
+\begin{align}
+  (xW_6)_{\rho\tau}=(fW_1)_{\rho\tau}+(W_4)_{\rho\tau} \label{eq:interm}
+\end{align}
+%
+and the number of amplitude-dependent contractions are further reduced.
+%
+In our current PNO-CASPT2/CEPT2 implementation, all the amplitude independent-intermediates such as ($W_n$), ($fW_n$), ($vW_n$) and ($xW_n$) are constructed in canonical MO basis and stored in fast core-memory before proceeding to the PCG iterations for solving the amplitude equations in PNO space.
+%
+The amplitude-independent intermediates are surther subdivided into a stream of binary contractions and constructed using DGEMM subroutine assuming all the tensor quantities are stored in fast core-memory.
+
+%
+The CEPT2 residua (Eq. \ref{eq:rab-2}) with an additional intermediate (Eq. \ref{eq:interm}) are then transformed into PNO-based computer code assuming only the amplitudes and the residua are the native-PNO quantities.
+%
+At each step of the PCG iteration, the amplitude-dependent intermediates involving a Fock matrix are constructed such as
+%
+\begin{align}
+  &(fvvt)_{a_{\rho}b_{\rho}}^\rho=\sum_{c_{\rho}} (f_\text{core})_{a_{\rho}c_{\rho}}t_{c_{\rho}b_{\rho}}^\rho \nonumber \\
+  &(tfcc)_{a_{\rho i}b_{\rho i}}^\rho=\sum_{k} \sum_{a_{\rho k}b_{\rho k}} (f_\text{core})_{ik} S_{a_{\rho i}a_{\rho k}}t_{c_{\rho k}b_{\rho k}}^{\rho k} S_{b_{\rho k}b_{\rho i}} \nonumber \\
+\end{align}
+%
+where $\mathbf{S}$-matrices represent the PNO-PNO overlap matrices which are all stored on disk.
+%
+For those subspaces spanned only by canonical MOs and coupling matrix elements of canonical and the PNO subspaces, the PNO-based amplitudes are back-transformed into the canonical space and used to form the similar contractions.
+
 %
 
+
+%
+%The amplitudes and the residua are stored in a class called {\tt TensorContainer}
 
 \section{Results and discussion}\label{Sec:results}
 
