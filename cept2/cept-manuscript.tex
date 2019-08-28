@@ -1,5 +1,5 @@
-%\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
-\documentclass[aip,jcp,amsmath]{revtex4-1}
+\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
+%\documentclass[aip,jcp,amsmath]{revtex4-1}
 \usepackage{amsmath}
 \usepackage{color}
 \usepackage{txfonts}
@@ -40,15 +40,27 @@
 
 \begin{abstract}  
   %
-  Hoge
+  The Complete Active Space Second-order Perturbation Theory (CASPT2) has been one of the most widely used methods for caluclating the electronic structure of the multireference systems with semi-quantitative accuracy.
   %
+  As a simple, yet higher-order approach, we have developed a hybrid theory of the CASPT2 and a multireference variant of the Coupled-Electron Pair Approximation (CEPA) in the fully-internally contracted framework.
+  %
+  In the newly developed theory (CEPT2), the external components of the wave functions, which usually give the most significant contribution to the dynamic correlation energy, are solve at the CEPA level while the rests are treated at the CASPT2 level.
+  %
+  Moreover, using an automatic expression and code generation technique, we have implemented the CASPT2 and CEPT2 approaches in the pair-natural orbital (PNO) framework to reduce their computational costs with respect to the number of atomic orbital (AO) basis.
+  %
+  To highlight the accuracy of the CEPT2 approach and to assess the errors caused by the PNO truncation, we have performed benchmark calculations on small- to medium-size molecules including dissociation of N${}_2$ molecule.
+  %
+  MADA-MADA
+  
 \end{abstract}
 
 \maketitle
 
 \section{Introduction}
 %
-hoge
+Electronic structures that cannot be properly decsribed by a single Slater determinat are common in chemistry.
+%
+For instance, to 
 %
 \section{Theory}\label{Sec:theory}
 
@@ -94,7 +106,7 @@ for the internal subspaces.
 %
 The energy and residual equations involve an expectation value of a string of $E$-operators with respect to the reference such as $\langle\Psi_0|E^{pq}_{ab}E_{wx}^{yz}\cdots|\Psi_0\rangle$.
 %
-Such an expectation value is evaluated by invoking Wick's theorem for the $E$-operators and is reduced to a reduced-density matrix composed only of active MO indices:
+Such an expectation value is evaluated by invoking Wick's theorem for the $E$-operators and is reduced to a reduced-density matrix (RDM) composed only of active MO indices:
 %
 \begin{align}
   &D^{p}_{q} = \langle\Psi_0|E^{p}_{q}|\Psi_0\rangle  \\
@@ -122,9 +134,9 @@ where $f$ represents the generalized Fock matrix
 The PNO-CASPT2 wave function is defined as
 %
 \begin{align}
-  |\Psi\rangle&=\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi_{ij}^{a_{ij}b_{ij}}\rangle+\sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi_{{\rho i}}^{a_{\rho i}b_{\rho i}}\rangle+\sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi_{{\rho}}^{a_{\rho}b_{\rho}}\rangle\nonumber \\
-  & + \sum_{\rho ij}\sum_{a_{ij}} t_{a_{ij}\rho}^{ij}|\Psi_{ij}^{\rho a}\rangle +\sum_{\rho i}\sum_a t_{a}^{\rho i}|\Psi_{\rho i}^{a}\rangle +\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle \nonumber \\
-  &+ \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
+  |\Psi\rangle&=\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi_{ij}^{a_{ij}b_{ij}}\rangle+\sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi_{{\rho i}}^{a_{\rho i}b_{\rho i}}\rangle \nonumber \\
+  &+\sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi_{{\rho}}^{a_{\rho}b_{\rho}}\rangle + \sum_{\rho ij}\sum_{a_{ij}} t_{a_{ij}\rho}^{ij}|\Psi_{ij}^{\rho a}\rangle +\sum_{\rho i}\sum_a t_{a}^{\rho i}|\Psi_{\rho i}^{a}\rangle \nonumber \\
+  &+\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle \nonumber + \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
 \end{align}
 %
 in the non-redundant (nr-) ICB which is constructed by orthonormalizing and canonicalizing the redundant (r-) ICBs.
@@ -144,7 +156,8 @@ where the orthonormalization matrix, $\mathbf{C}$, is obtained by solving the ge
 The PNO-CASPT2 amplitudes are determined by solving the residual equations
 %
 \begin{align}
-  r^I=\frac{\partial}{\partial t^I}\mathscr{F}_\text{PNO-CASPT2}=\sum_J \langle\Psi^I|F-\langle F\rangle|\Psi_J\rangle t^J-\langle\Psi^I|H|\Psi_0\rangle\rightarrow 0 \label{eq:caspt2-residua}
+  r^I&=\frac{\partial}{\partial t^I}\mathscr{F}_\text{PNO-CASPT2} \nonumber \\
+     &=\sum_J \langle\Psi^I|F-\langle F\rangle|\Psi_J\rangle t^J-\langle\Psi^I|H|\Psi_0\rangle\rightarrow 0 \label{eq:caspt2-residua}
 \end{align}
 %
 where $IJ$ represent one of the eight non-redundant subspaces of FOIS.
@@ -224,6 +237,8 @@ Therefore, programming the residua (Eq. \ref{eq:caspt2-residua}) of diagonal blo
 However, in the PNO-based counterpart, all the matrix blocks involving at least one DOMO index should be programmed, leading to a drastic increase in the number of terms that should be derived and programmed.
 %
 To this end, we extended our code generator framework\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} such that codes for the PNO-based tensor contractions can also be generated.
+%
+In our program, the PNO-CASPT2 residul equations are solved by the preconditioned conjugate gradient (PCG) algorithm.
 
 %
 We have also implemented real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts in our PNO-CASPT2 program in the same way as the canonical CASPT2 program.
@@ -246,7 +261,8 @@ where $\bar{\Psi}^\text{ext}$ represents the external part of the wave function
 %
 \begin{align}
   |\Psi^\text{ext}\rangle&=|\Psi_0\rangle+|\bar{\Psi}^\text{ext}\rangle \nonumber \\
-                         &=|\Psi_0\rangle+\left[\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi^{a_{ij}b_{ij}}_{ij} + \sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi^{a_{\rho i}b_{\rho i}}_{\rho i}\rangle + \sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi^{a_{\rho}b_{\rho}}_{\rho}\rangle\right].
+  &=|\Psi_0\rangle+\left[\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi^{a_{ij}b_{ij}}_{ij} \right. \nonumber \\
+    &+ \left.\sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi^{a_{\rho i}b_{\rho i}}_{\rho i}\rangle + \sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi^{a_{\rho}b_{\rho}}_{\rho}\rangle\right].
 \end{align}
 %
 By differentiating the above functional with respect to the amplitudes, one obtains the PNO-CEPT2 residual equations as
@@ -313,7 +329,7 @@ In canonical MO basis, typical contraction terms in the CEPT2 model read
   &-\frac{1}{4}\sum_\tau\sum_{pqrst} (f_\text{core})_{ts} D^{pq}_{rs} t_{ba}^\tau C_{pq}^\tau C_{tr}^\rho \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (uc|qa) D^{pqr}_{stu} t_{cb}^\tau C_{st}^\rho C_{pr}^\tau \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrstuv} (ur|tv) D^{pqr}_{stu} t_{ba}^\tau C_{pq}^\rho C_{vs}^\tau  \nonumber \\
-  &-\frac{1}{4}\sum_\tau\sum_{pqrstu}\sum_c (st|ru) D^{pq}_{rs} t_{ba}^\tau C_{qp}^\rho C_{ut}^\tau \nonumber \\
+  &-\frac{1}{4}\sum_\tau\sum_{pqrstu} (st|ru) D^{pq}_{rs} t_{ba}^\tau C_{qp}^\rho C_{ut}^\tau \nonumber \\
   &+\frac{1}{4}\sum_\tau\sum_{pqrs}\sum_{cd} (ac|bd) D^{pq}_{rs} t_{cd}^\tau C_{sr}^\rho C_{qp}^\tau \nonumber \\
   &+\text{(18 more terms obtained by permuting pairs of indices)} \label{eq:rab}
 \end{align}
