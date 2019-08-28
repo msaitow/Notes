@@ -328,7 +328,7 @@ Therefore, after forming such amplitude-independent intermediates, Eq (\ref{eq:r
 %
 \begin{align}
   r_{ab}^\rho &\leftarrow \frac{1}{4}\sum_\tau\sum_{c}(f_\text{core})_{ca} (W_0)_{\rho\tau} t_{cb}^\tau - \frac{1}{4}\sum_\tau (fW_1)_{\rho\tau} t_{ba}^\tau +\frac{1}{4}\sum_\tau\sum_c (vW_2)_{\rho\tau,ca} t_{cb}^\tau \nonumber \\
-  &+\frac{1}{4}\sum_\tau (ur|tv) (W_3)_{\rho\tau} t_{ba}^\tau-\frac{1}{4}\sum_\tau\sum_c (W_4)_{\rho\tau} t_{ba}^\tau +\frac{1}{4}\sum_\tau\sum_{cd} (ac|bd) (W_5)_{\rho\tau} t_{cd}^\tau \nonumber \\
+  &+\frac{1}{4}\sum_\tau (W_3)_{\rho\tau} t_{ba}^\tau-\frac{1}{4}\sum_\tau\sum_c (W_4)_{\rho\tau} t_{ba}^\tau +\frac{1}{4}\sum_\tau\sum_{cd} (ac|bd) (W_5)_{\rho\tau} t_{cd}^\tau \nonumber \\
   &+\text{(18 more terms obtained by permuting pairs of indices)}. \label{eq:rab-2}
 \end{align}
 %
@@ -350,14 +350,23 @@ The CEPT2 residua (Eq. \ref{eq:rab-2}) with an additional intermediate (Eq. \ref
 At each step of the PCG iteration, the amplitude-dependent intermediates involving a Fock matrix are constructed such as
 %
 \begin{align}
-  &(fvvt)_{a_{\rho}b_{\rho}}^\rho=\sum_{c_{\rho}} (f_\text{core})_{a_{\rho}c_{\rho}}t_{c_{\rho}b_{\rho}}^\rho \nonumber \\
-  &(tfcc)_{a_{\rho i}b_{\rho i}}^\rho=\sum_{k} \sum_{a_{\rho k}b_{\rho k}} (f_\text{core})_{ik} S_{a_{\rho i}a_{\rho k}}t_{c_{\rho k}b_{\rho k}}^{\rho k} S_{b_{\rho k}b_{\rho i}} \nonumber \\
+  &(fvvt)_{a_{\rho}b_{\rho}}^\rho=\sum_{c_{\rho}} (f_\text{core})_{a_{\rho}c_{\rho}}t_{c_{\rho}b_{\rho}}^\rho \\
+  &(tfcc)_{a_{\rho i}b_{\rho i}}^\rho=\sum_{k} \sum_{a_{\rho k}b_{\rho k}} (f_\text{core})_{ik} S_{a_{\rho i}a_{\rho k}}t_{c_{\rho k}b_{\rho k}}^{\rho k} S_{b_{\rho k}b_{\rho i}}
 \end{align}
 %
-where $\mathbf{S}$-matrices represent the PNO-PNO overlap matrices which are all stored on disk.
+where $\mathbf{S}$ represent the pair-pair overlap matrices which are all stored on disk.
 %
-For those subspaces spanned only by canonical MOs and coupling matrix elements of canonical and the PNO subspaces, the PNO-based amplitudes are back-transformed into the canonical space and used to form the similar contractions.
+As in case of Eq. (\ref{eq:rab-2}), if the pair indices of the ampliudes and the residuum, which are $\tau$ and $\rho$, respectively, are different, the generator call a subroutine for projecting the amplitude from the $\tau$-PNOs space to the $\rho$-PNO space.
+%
+%This strategy can efficiently handle all the PNO-based tensor contractions that appear in the PNO-CASPT2 residua.
+This strategy can efficiently handle all the PNO-based tensor contractions that do not involve any two-electron intgrals in Eq. (\ref{eq:rab-2})
+%
+\begin{align}
+  lll
+\end{align}
 
+%
+For those subspaces which do not involve any PNOs and the coupling matrix elements of the canonical and the PNO subspaces, the PNO-based amplitudes are back-transformed into the canonical space and used to form the similar contractions.
 %
 
 
