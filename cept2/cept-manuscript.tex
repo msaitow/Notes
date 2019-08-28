@@ -58,17 +58,24 @@
 
 \section{Introduction}
 %
-Electronic structures that cannot be properly decsribed by a single Slater determinat are common in chemistry.
+Electronic structures that cannot be well approximated by a single Slater determinant are common in chemistry.
 %
-For instance, to 
+%Quantum chemical description of chemical reactions involving cleavage of covalent bonds is a very typical example
+Quantum chemical description of the low-spin open-shell states where there are multiple anti-ferromagnetically coupled electrons is a very typical example.\cite{NEESE2009526}
 %
+The electron correlation effect that plays an important role in these problems is often referred to as static correlation.\cite{doi:10.1021/cr2001417}
+%
+The most stratghtforward way to take into account the static correlation is to use the multireference (MR) wave function theories\cite{MCSCFandMRCI2011,doi:10.1021/cr300500z} that are based on the multiconfigurational self-consistent field (CASSCF) reference function.\cite{roosa1980,Roos1987,ruedenbergmcscf1979}
+%
+Note that there are tremendous efforts on utilizing the single-reference (SR)\cite{doi:10.1063/1.481769,doi:10.1063/1.1290609,doi:10.1021/jp056791e,doi:10.1021/acs.jctc.9b00456,doi:10.1063/1.4991020,doi:10.1063/1.5053605,doi:10.1063/1.5085314,doi:10.1021/acs.jpclett.7b00689,PhysRevB.96.155106,doi:10.1021/acs.jpclett.8b01754,doi:10.1021/acs.jctc.6b00137,doi:10.1063/1.5036542,doi:10.1002/jcc.25163} and the broken-symmetry density-functional theory (BS-DFT) framework for capturing the static correlation effects.
+
 \section{Theory}\label{Sec:theory}
 
 \subsection{Notations and Convention}
 %
 Throughout this paper, we use $ijkl\cdots$, $pqrs\cdots$ and $abcd\cdots$ to represent the doubly-occupied, active and virtual MOs, respectively, while the generic MOs are indicated by $wxyz\cdots$.
 %
-Derivation and the implementation of the working equations of the PNO-CEPT approach are based on the reduced spin-free excitation operators
+Derivation and the implementation of the working equations of the PNO-CEPT approach are based on the reduced spin-free excitation operators\cite{PhysRevA.43.3392,PhysRevA.41.2391,doi:10.1063/1.448859,Kutzelnigg_Mukherjee1997}
 %
 \begin{align}
   &E^w_x = \sum_{\sigma=\{\alpha,\beta\}} a^{w\sigma}a_{x\sigma} \label{eq:e1} \\
