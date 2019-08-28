@@ -359,11 +359,28 @@ where $\mathbf{S}$ represent the pair-pair overlap matrices which are all stored
 As in case of Eq. (\ref{eq:rab-2}), if the pair indices of the ampliudes and the residuum, which are $\tau$ and $\rho$, respectively, are different, the generator call a subroutine for projecting the amplitude from the $\tau$-PNOs space to the $\rho$-PNO space.
 %
 %This strategy can efficiently handle all the PNO-based tensor contractions that appear in the PNO-CASPT2 residua.
-This strategy can efficiently handle all the PNO-based tensor contractions that do not involve any two-electron intgrals in Eq. (\ref{eq:rab-2})
+%This strategy can efficiently handle all the PNO-based tensor contractions that do not involve any two-electron intgrals in Eq. (\ref{eq:rab-2})
+By this procedure, all the PNO-based tensor contractions which do not involve any two-electron integrals in Eq. (\ref{eq:rab-2}) are transformed into
 %
 \begin{align}
-  lll
+  r_{a_\rho b_\rho}^\rho &\leftarrow \frac{1}{4}\sum_\tau(W_0)_{\rho\tau} \left[\sum_{a_\tau b_\tau} S_{a_\rho a_\tau}(fvvt)_{a_\tau b_\tau}^\tau S_{b_\tau b_\rho}\right] - \frac{1}{4}\sum_\tau (xW_6)_{\rho\tau} \left[\sum_{a_\tau b_\tau} S_{b_\rho b_\tau} t_{b_\tau a_\tau}^\tau S_{a_\tau a_\rho}\right] \nonumber \\
+  &+ \frac{1}{4}\sum_\tau (W_3)_{\rho\tau} \left[\sum_{a_\tau b_\tau} S_{b_\rho b_\tau} t_{ba}^\tau S_{a_\tau a_\rho}\right] \label{eq:rab-3}
 \end{align}
+%
+and are constructed efficiently using DGEMM for projecting the PNOs from $\tau$-pair to $\rho$-pair and DAXPY for summing up each contribution into the residua.
+
+%
+All the 4-external terms that appear in PNO-CEPT2 such as the sixth term in Eq. (\ref{eq:rab-2}) have the similar structure
+%
+\begin{align}
+  &r_{a_{\rho}b_\rho}^\rho\leftarrow\frac{1}{4}\sum_{c_{\rho}d_{\rho}} (a_\rho c_\rho |b_\rho d_\rho ) \left[\sum_\tau (W_5)_{\rho\tau} \left[\sum_{c_{\tau}d_{\tau}} S_{a_\rho a_\tau} t_{c_\tau d_\tau}^\tau S_{b_\tau b_\rho} \right] \right] \\
+  &r_{a_{\rho i}b_{\rho i}}^{\rho i}\leftarrow 2\sum_{c_{\rho i}d_{\rho i}} (a_{\rho i} c_{\rho i} |b_{\rho i} d_{\rho i} ) \left[\sum_\tau (W_{124})_{\rho\tau} \left[\sum_{c_{\tau i}d_{\tau i}} S_{a_{\rho i} a_{\tau i}} t_{c_{\tau i} d_{\tau i}}^{\tau i} S_{b_{\tau i} b_{\rho i}} \right] \right]
+\end{align}
+%
+and so we have written an optimized subroutine for efficiently calculate those terms in the PNO basis which are called by the generator.
+%
+%The terms involving the 2-external integrals of semi-joint pair-pair interaction type such as the third term in Eq. (\ref{eq:rab-2}) or 4-internal $(ik|jl)$-type integrals cannot treated efficiently by this transformation strategy.
+
 
 %
 For those subspaces which do not involve any PNOs and the coupling matrix elements of the canonical and the PNO subspaces, the PNO-based amplitudes are back-transformed into the canonical space and used to form the similar contractions.
