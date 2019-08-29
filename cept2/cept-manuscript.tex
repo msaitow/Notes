@@ -61,13 +61,34 @@
 Electronic structures that cannot be well approximated by a single Slater determinant are common in chemistry.
 %
 %Quantum chemical description of chemical reactions involving cleavage of covalent bonds is a very typical example
-Quantum chemical description of the low-spin open-shell states where there are multiple anti-ferromagnetically coupled electrons is a very typical example.\cite{NEESE2009526}
+Electronic wave function of the low-spin open-shell states where there are multiple anti-ferromagnetically coupled electrons is a very typical example of such cases.\cite{NEESE2009526}
 %
 The electron correlation effect that plays an important role in these problems is often referred to as static correlation.\cite{doi:10.1021/cr2001417}
 %
 The most stratghtforward way to take into account the static correlation is to use the multireference (MR) wave function theories\cite{MCSCFandMRCI2011,doi:10.1021/cr300500z} that are based on the multiconfigurational self-consistent field (CASSCF) reference function.\cite{roosa1980,Roos1987,ruedenbergmcscf1979}
 %
-Note that there are tremendous attempts to utilize the single-reference (SR)\cite{doi:10.1063/1.481769,doi:10.1063/1.1290609,doi:10.1021/jp056791e,doi:10.1021/acs.jctc.9b00456,doi:10.1063/1.4991020,doi:10.1063/1.5053605,doi:10.1063/1.5085314,doi:10.1021/acs.jpclett.7b00689,PhysRevB.96.155106,doi:10.1021/acs.jpclett.8b01754,doi:10.1021/acs.jctc.6b00137,doi:10.1063/1.5036542,doi:10.1002/jcc.25163} framework for capturing the static correlation effects.
+Note that there are tremendous attempts to utilize the single-reference (SR) framework\cite{doi:10.1063/1.481769,doi:10.1063/1.1290609,doi:10.1021/jp056791e,doi:10.1021/acs.jctc.9b00456,doi:10.1063/1.4991020,doi:10.1063/1.5053605,doi:10.1063/1.5085314,doi:10.1021/acs.jpclett.7b00689,PhysRevB.96.155106,doi:10.1021/acs.jpclett.8b01754,doi:10.1021/acs.jctc.6b00137,doi:10.1063/1.5036542,doi:10.1002/jcc.25163} for capturing the static correlation effects.
+
+%
+%For achieving quantitative accuracy, it is often necessary to consider the remaining components of the electron correlation effect which is known as dynamic correlation.
+%
+%Amongst the MR wave function theories, the second-order perturbation expansions of the wave function (MRPT2) have been formulated in several different ways and implemented in most of common quantum chemistry program packages.
+%
+Amongst the MR wave function theories, the Second-order Complete-Active-Space Perturbation Theory (CASPT2) pioneered by Roos and coworkers\cite{doi:10.1021/j100377a012,doi:10.1063/1.462209} in early 90s have been used as a fundamental tool for achieving quantitative accuracy for systems of complicated electronic structure including organic molecules of doubly-excited nature\cite{doi:10.1063/1.2889385} and mono-\cite{doi:10.1021/ct900567c,doi:10.1021/acs.jctc.9b00166} and multinuclear\cite{Cramer2008,doi:10.1002/chem.201902766} transition metal complexes.
+%
+A newer variant of CASPT called N-Electron Valence-state Perturbvation Theory (NEVPT) was proposed by Angeli {\it et al.}\cite{angeliintroduction2001,angelin-electron2002,angelinew2006} using Dyall's zeroth-order Hamiltonian\cite{dyallthe1995} to overcome some of the shortcomings of CASPT approach.
+%
+As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($c^2v^2$) for system with a fixed number of active molecular orbitals (MOs) where $c$ and $v$ represent the number of doubly-occupied and virtual MOs, respectively.
+%
+T calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($c^2v^2$).
+%
+For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because theoir working equations involve the 1-, 2-, 3- and 4-body reduced-density matrices (RDMs).
+%
+Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) basis is often prohibited.
+
+%
+To improve the applicability of CASPT2 approach, 
+
 
 \section{Theory}\label{Sec:theory}
 
