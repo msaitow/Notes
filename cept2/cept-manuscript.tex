@@ -80,15 +80,21 @@ A newer variant of CASPT called N-Electron Valence-state Perturbvation Theory (N
 %
 As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($c^2v^2$) for system with a fixed number of active molecular orbitals (MOs) where $c$ and $v$ represent the number of doubly-occupied and virtual MOs, respectively.
 %
-T calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($c^2v^2$).
+Before calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($c^2v^2$).
 %
 For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because theoir working equations involve the 1-, 2-, 3- and 4-body reduced-density matrices (RDMs).
 %
-Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) basis is often prohibited.
+Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions is often prohibited.
 
 %
-To improve the applicability of CASPT2 approach, 
+To improve the applicability of CASPT2 approach, numerous efforts have been including use of frozen-natural orbitals (FNOs)\cite{doi:10.1063/1.3157463,doi:10.1021/acs.jctc.5b00479} in the virtual space in conjunction with the Cholesky decomposition technique for reducing the costs of MO integral transformation\cite{doi:10.1063/1.2953696,doi:10.1021/ct9000284,doi:10.1021/ct700263h,doi:10.1021/ct900612k} and of the tensor-hyper-contraction-based (THC-) CASPT2.\cite{doi:10.1063/1.5037283}
+%
+The density-fitting (DF) or resolution-of-the-identity (RI) approximation has also been used for accelerating CASPT2 computation.\cite{ShioWerner2013}
+%
+Recently, Katz and Werner developed a CASPT2 approach in the so-called pair-natural orbital (PNO) framework, which has been coined PNO-CASPT2, and demonstrated its applicability to large, real-life MR systems composed of up to approximately 3,000 AO functions.\cite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019,doi:10.1063/1.5097644}
 
+%
+The original concept of PNOs was already realized in 60s in order to accelerate the concergence of the configuration interaction expansions.\cite{:/content/aip/journal/jcp/40/12/10.1063/1.1725065,:/content/aip/journal/jcp/48/4/10.1063/1.1668917,:/content/aip/journal/jcp/42/3/10.1063/1.1696050,:/content/aip/journal/jcp/45/5/10.1063/1.1727841,meyer1971ionization,:/content/aip/journal/jcp/58/3/10.1063/1.1679283}
 
 \section{Theory}\label{Sec:theory}
 
