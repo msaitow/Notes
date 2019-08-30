@@ -1,3 +1,138 @@
+% Werner's something
+@article{publ9337428,
+  abstract = {We present benchmark results for the A24, S66, and X40 sets of intermolecular interaction energies obtained with our recently developed PNO-LCCSD(T)-F12 method. Using the aug-cc-pVQZ-F12 basis set and tight domain options, the root-mean-square (RMSD) and maximum (MAXD) deviations from the currently best CCSD(T)/CBS estimates for the S66 set amount to only 0.02 and 0.06 kcal mol–1, respectively. The corresponding triple-ζ (aug-cc-pVTZ-F12) results are similarly accurate, and even with double-ζ (aug-cc-pVDZ-F12) basis sets the RMSD and MAXD deviations amount to only 0.05 and 0.11 kcal mol–1, respectively. Preliminary PNO-LCCSD(T)-F12 calculations on the X40 set of intermolecular interactions of halogenated molecules yield interaction energies in reasonable agreement with the original CCSD(T)/CBS estimates. The PNO-LCCSD(T)-F12 method does not rely on error cancellations as the popular ΔCCSD(T) approach and can yield comparable or better accuracy at a fraction of the cost. This accuracy is of importance for ...},
+  author = {Ma, Qianli and Werner, Hans-Joachim},
+  doi = {10.1021/acs.jctc.8b01098},
+  issn = {1549-9618},
+  journal = {J. Chem. Theory Comput.},
+  title = {{Accurate Intermolecular Interaction Energies Using Explicitly Correlated Local Coupled Cluster Methods ［PNO-LCCSD(T)-F12］}},
+  url = {http://dx.doi.org/10.1021/acs.jctc.8b01098},
+  year = 2019
+}
+
+% Werner's open-shell PNO-MP2
+@article{publ9370681,
+  author = {Krause, Christine and Werner, Hans-Joachim},
+  doi = {10.1021/acs.jctc.8b01012},
+  issn = {1549-9618},
+  journal = {J. Chem. Theory Comput.},
+  title = {{Scalable Electron Correlation Methods. 6. Local Spin-Restricted Open-Shell Second-Order Møller–Plesset Perturbation Theory Using Pair Natural Orbitals: PNO-RMP2}},
+  url = {http://dx.doi.org/10.1021/acs.jctc.8b01012},
+  year = 2018
+}
+
+% Werner's PNO-CCSD(T)
+@article{publ8744633,
+  abstract = {We present an efficient explicitly correlated pair natural orbital local coupled cluster (PNO-LCCSD-F12) method. The method is an extension of our previously reported PNO-LCCSD approach (Schwilk et al., J. Chem. Theory Comput. 2017, 13, 3650−3675). Near linear scaling with the molecular size is achieved by using pair, domain, and projection approximations, local density fitting and local resolution of the identity, and by exploiting the sparsity of the local molecular orbitals as well as of the projected atomic orbitals. The effect of the various domain approximations is tested for a wide range of chemical reactions and intermolecular interactions. In accordance with previous findings, it is demonstrated that the F12 terms significantly reduce the domain errors. The convergence of the reaction and interaction energies with respect to the parameters that determine the domain sizes and pair approximations is extensively tested. The results obtained with our default thresholds agree within a few tenths of a kcal mol-1 with the ones computed with very tight options. For cases where canonical calculations are still feasible, the relative energies of local and canonical calculations agree within similar error bounds. The PNO-LCCSD-F12 method needs only 25-40 percent more computer time than a corresponding PNO-LCCSD calculation while greatly improving the accuracy. Our program is well parallelized and capable of computing accurate correlation energies for molecules with more than 150 atoms using augmented triple-ζ basis sets and more than 5000 basis functions. Using several nodes of a small computer cluster, such calculations can be carried out within a few hours.},
+  author = {Ma, Qianli and Werner, Hans Joachim},
+  doi = {10.1021/acs.jctc.7b01141},
+  issn = {15499626},
+  journal = {J. Chem. Theory Comput.},
+  number = 1,
+  pages = {198–215},
+  title = {{Scalable Electron Correlation Methods. 5. Parallel Perturbative Triples Correction for Explicitly Correlated Local Coupled Cluster with Pair Natural Orbitals}},
+  url = {http://dx.doi.org/10.1021/acs.jctc.7b01141},
+  volume = 14,
+  year = 2018
+}
+
+% Werner's something
+@article{publ7820099,
+  abstract = {The accuracy of multipole approximations for distant pair energies in local second-order Møller-Plesset perturbation theory (LMP2) as introduced by Hetzer et al. ［Chem. Phys. Lett. 290, 143 (1998)］ is investigated for three chemical reactions involving molecules with up to 92 atoms. Various iterative and non-iterative approaches are compared, using different energy thresholds for distant pair selection. It is demonstrated that the simple non-iterative dipole-dipole approximation, which has been used in several recent pair natural orbitals (PNO)-LMP2 and PNO-LCCSD (local coupled-cluster with singles and doubles) methods, may underestimate the distant pair energies by up to 50 percent and can lead to significant errors in relative energies, unless very tight thresholds are used. The accuracy can be much improved by including higher multipole orders and by optimizing the distant pair amplitudes iteratively along with all other amplitudes. A new approach is presented in which very small special PNO domains for distant pairs are used in the iterative approach. This reduces the number of distant pair amplitudes by 3 orders of magnitude and keeps the additional computational effort for the iterative optimization of distant pair amplitudes minimal. },
+  author = {Werner, Hans Joachim},
+  doi = {10.1063/1.4968595},
+  issn = {00219606},
+  journal = {J. Chem. Phys.},
+  number = 20,
+  title = {{Communication: Multipole approximations of distant pair energies in local correlation methods with pair natural orbitals}},
+  url = {http://dx.doi.org/10.1063/1.4968595},
+  volume = 145,
+  year = 2016
+}
+
+% DLPNO-Mk-CCSD
+@article{doi:10.1021/acs.jctc.7b01184,
+author = {Brabec, Jiri and Lang, Jakub and Saitow, Masaaki and Pittner, Jiří and Neese, Frank and Demel, Ondřej},
+title = {Domain-Based Local Pair Natural Orbital Version of Mukherjee’s State-Specific Coupled Cluster Method},
+journal = {Journal of Chemical Theory and Computation},
+volume = {14},
+number = {3},
+pages = {1370-1382},
+year = {2018},
+doi = {10.1021/acs.jctc.7b01184},
+    note ={PMID: 29345924},
+
+URL = { 
+        https://doi.org/10.1021/acs.jctc.7b01184
+    
+},
+eprint = { 
+        https://doi.org/10.1021/acs.jctc.7b01184
+    
+}
+
+}
+
+% DLPNO-Mk-CCSD(T)
+@Article{C8CP03577F,
+author ="Lang, Jakub and Brabec, Jiří and Saitow, Masaaki and Pittner, Jiří and Neese, Frank and Demel, Ondřej",
+title  ="Perturbative triples correction to domain-based local pair natural orbital variants of Mukherjee{'}s state specific coupled cluster method",
+journal  ="Phys. Chem. Chem. Phys.",
+year  ="2019",
+volume  ="21",
+issue  ="9",
+pages  ="5022-5038",
+publisher  ="The Royal Society of Chemistry",
+doi  ="10.1039/C8CP03577F",
+url  ="http://dx.doi.org/10.1039/C8CP03577F",
+abstract  ="In this article we report an implementation of the perturbative triples correction to Mukherjee{'}s state-specific multireference coupled cluster method based on the domain-based pair natural orbital approach (DLPNO-MkCC). We tested the performance of DLPNO-MkCCSD(T) in calculations involving tetramethyleneethane and isomers of naphthynes. These tests show that more than 97 percent of triples energy was recovered with respect to the canonical MkCCSD(T) method{,} which together with the DLPNO-MkCCSD part accounts for about 99.70–99.85 percent of the total correlation energy. The applicability of the method was demonstrated on calculations of singlet–triplet gaps for several large systems: triangulene{,} dynemicin A{,} and a beryllium complex."}
+
+% CEPA is beautiful
+@article{doi:10.1021/ar800241t,
+author = {Neese, Frank and Hansen, Andreas and Wennmohs, Frank and Grimme, Stefan},
+title = {Accurate Theoretical Chemistry with Coupled Pair Models},
+journal = {Accounts of Chemical Research},
+volume = {42},
+number = {5},
+pages = {641-648},
+year = {2009},
+doi = {10.1021/ar800241t},
+    note ={PMID: 19296607},
+
+URL = { 
+        https://doi.org/10.1021/ar800241t
+    
+},
+eprint = { 
+        https://doi.org/10.1021/ar800241t
+    
+}
+
+}
+
+% Liakos work on LPNO-CCSD
+@article{doi:10.1021/ct100445s,
+author = {Liakos, Dimitrios G. and Hansen, Andreas and Neese, Frank},
+title = {Weak Molecular Interactions Studied with Parallel Implementations of the Local Pair Natural Orbital Coupled Pair and Coupled Cluster Methods},
+journal = {Journal of Chemical Theory and Computation},
+volume = {7},
+number = {1},
+pages = {76-87},
+year = {2011},
+doi = {10.1021/ct100445s},
+    note ={PMID: 26606220},
+
+URL = { 
+        https://doi.org/10.1021/ct100445s
+    
+},
+eprint = { 
+        https://doi.org/10.1021/ct100445s
+    
+}
+
+}
+
 % THC-CASPT2
 @article{doi:10.1063/1.5037283,
 author = {Song,Chenchen  and Martínez,Todd J. },
@@ -619,7 +754,7 @@ eprint = {
 
 % Multireference correleration
 @article{doi:10.1021/cr2001417,
-author = {Lyakh, Dmitry I. and Musiał, Monika and Lotrich, Victor F. and Bartlett, Rodney J.},
+author = {Lyakh, Dmitry I. and Musia{\l}, Monika and Lotrich, Victor F. and Bartlett, Rodney J.},
 title = {Multireference Nature of Chemistry: The Coupled-Cluster View},
 journal = {Chemical Reviews},
 volume = {112},
