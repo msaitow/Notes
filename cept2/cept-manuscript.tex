@@ -94,12 +94,12 @@ The density-fitting (DF) or resolution-of-the-identity (RI) approximation has al
 Recently, Katz and Werner developed a CASPT2 approach in the so-called pair-natural orbital (PNO) framework, which has been coined PNO-CASPT2, and demonstrated its applicability to large, real-life MR systems composed of up to approximately 3,000 AO functions.\cite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019,doi:10.1063/1.5097644}
 
 %
-The original concept of PNOs was already realized in 60s in order to accelerate the concergence of the configuration interaction expansions.\cite{:/content/aip/journal/jcp/40/12/10.1063/1.1725065,:/content/aip/journal/jcp/48/4/10.1063/1.1668917,:/content/aip/journal/jcp/42/3/10.1063/1.1696050,:/content/aip/journal/jcp/45/5/10.1063/1.1727841,meyer1971ionization,:/content/aip/journal/jcp/58/3/10.1063/1.1679283,meyer1971ionization,Ahlrichs1968_2}
+The original concept of PNOs was already realized in 60s in order to accelerate the concergence of the configuration interaction (CI) expansions.\cite{:/content/aip/journal/jcp/40/12/10.1063/1.1725065,:/content/aip/journal/jcp/48/4/10.1063/1.1668917,:/content/aip/journal/jcp/42/3/10.1063/1.1696050,:/content/aip/journal/jcp/45/5/10.1063/1.1727841,meyer1971ionization,:/content/aip/journal/jcp/58/3/10.1063/1.1679283,meyer1971ionization,Ahlrichs1968_2}
 %
-Importantly, the PNO-based MRCI and the internally-contracted (IC) MR Coupled-Electron Pair Approximation (PNO-MCCEPA) were developed by Taylor\cite{:/content/aip/journal/jcp/74/2/10.1063/1.441186} and Staemmler {\it et al.},\cite{Staemmler1993} respectively.
+Importantly, the PNO-based MRCI and the internally-contracted MR Coupled-Electron Pair Approximation (PNO-MCCEPA) theories were developed by Taylor\cite{:/content/aip/journal/jcp/74/2/10.1063/1.441186} and Staemmler {\it et al.},\cite{Staemmler1993} respectively.
 
 %
-The use of PNOs in the context of modern wave function theories was introduced by Neese and coworkers in their local PNO-based (LPNO-) CEPA\cite{neeseefficient2009cepa} and Coupled-Cluster (LPNO-CC)\cite{neeseefficient2009,hansenefficient2011,doi:10.1021/ct100445s} methods implemented in Orca package.\cite{WCMS:WCMS1327}
+The use of PNOs in the context of modern wave function theories was first introduced by Neese and coworkers in their local PNO-based (LPNO-) CEPA\cite{neeseefficient2009cepa} and Coupled-Cluster (LPNO-CC)\cite{neeseefficient2009,hansenefficient2011,doi:10.1021/ct100445s} methods implemented in Orca package.\cite{WCMS:WCMS1327}
 %
 The LPNO-CEPA/CCSD is applicable to systems composed of up to 2,000 AO basis which is far beyond the reach of canonical counterpart while reconvering almost 99.9 $\%$ of the canonical correlation energy.
 %
@@ -107,20 +107,23 @@ Later they have developed a more sohisticated variant called domain-based LPNO-C
 %
 The DLPNO scheme has been extended to MR wave function theories resulting in DLPNO-Mk-MRCCSD\cite{doi:10.1021/acs.jctc.5b00334,doi:10.1021/acs.jctc.7b01184,C8CP03577F} and DLPNO-NEVPT2\cite{:/content/aip/journal/jcp/144/9/10.1063/1.4942769} methods.
 %
-In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and PNO-CC and PNO-ADC methods by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
+In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and a variant of PNO-CC method and PNO-ADC theory for the excited states by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
 
 %Nowadays, developments of highly accurate reduced-scaling SR and MR wave function methods using PNOs have become an active field
 In this paper, we report a hybrid of internally-contracted MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to ocnventional CASPT2 method.
 %
-In CEPT2 method, the IC basis of 2-external nature are treated at the MR-CEPA/0 level while the remaining IC functions are solved at the CASPT2 level.
+In CEPT2 method, the amplitudes of 2-external nature are solved at the MR-CEPA/0 level while the remaining amplitudes are treated at the CASPT2 level.
 %
-This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be a large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
+This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
 %
-Use of MR-CEPA ansatz for the 2-external subspaces introduces several terms involving 4-external MO integrals which potentially make the whole computation quite demanding even for relatively small systems.
+Use of MR-CEPA ansatz for the 2-external subspaces introduces several terms involving 4-external MO integrals which may potentially make the whole computation quite demanding even for relatively small systems.
 %
 To overcome this issue, we introduce PNO expansion in the 2-external subspace in a similar vein to Ref. ~\onlinecite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019}.
 %
-Derivation and implementation of our PNO-CASPT2/CEPT2 scheme have been achieved by an automatic code generation framework which was used in out previous works\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} and has been extended to handle PNOs.
+Derivation and implementation of our PNO-CASPT2/CEPT2 scheme have been achieved by an automatic code generation framework which was used in our previous works\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} and has been extended to handle PNOs.
+
+%
+This paper proceeds as follows:XXXX
 
 \section{Theory}\label{Sec:theory}
 
@@ -144,7 +147,7 @@ By using Eqs. (\ref{eq:e1}) and (\ref{eq:e2}), the Born-Oppenheimer Hamiltonian 
 %
 where $h_{wx}$ and $(wy|xz)$ are one- and two-electron integrals.
 %
-The redundant ICBs that span the first-order interacting space (FOIS) are generated by applying the following eight types of excitation operators to the reference function ($|\Psi_0\rangle$):
+The redundant internally-contracted basis (r-ICBs) that span the first-order interacting space (FOIS) are generated by applying the following eight types of excitation operators to the reference function ($|\Psi_0\rangle$):
 %
 \begin{align}
   E_{ij}^{ab},\ E_{pi}^{ab},\ E_{pq}^{ab} \label{eq:externalICB}
@@ -172,6 +175,28 @@ Such an expectation value is evaluated by invoking Wick's theorem for the $E$-op
   &D^{p}_{q} = \langle\Psi_0|E^{p}_{q}|\Psi_0\rangle  \\
   &D^{pq}_{rs} = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle
 \end{align}
+%
+The r-ICBs are non-orthonornal and linearly-independent set of functions as a basis of FOIS.
+%
+Therefore, the amplitude equations of MR wave function methods are solved in linearly-independent and orthonormalized IC representation spanned by the non-redundant (nr-) ICBs:
+%
+\begin{align}
+  |\Psi_{ij}^{ab}\rangle,\ |\Psi_{\rho i}^{ab}\rangle,\ |\Psi_{\rho}^{ab}\rangle 
+\end{align}
+%
+for the external subspaces,
+%
+\begin{align}
+  |\Psi_{\rho i}^{a}\rangle,\ |\Psi_{ij}^{\rho a}\rangle,\ |\Psi_{\rho}^{a}\rangle
+\end{align}
+%
+the semi-internal subspaces and
+%
+\begin{align}
+  |\Psi_{ij}^{\rho}\rangle,\ |\Psi_{i\rho}\rangle
+\end{align}
+%
+for the internal subspaces.
 
 \subsection{Brief Summary of PNO-CASPT2 Algorithm}
 
@@ -374,6 +399,8 @@ All the remaining terms from $\mathscr{F}_\text{PNO-CEPA/0}^\text{ext}$, which i
 Therefore, we only demonstrate and benchmark the accuracy of the PNO-CEPT2 model for small- to medium-size molecules and the benchmarking the efficiency is beyond the scope of this manuscript.
 
 \subsection{PNO-based Code Generation}
+%
+The automatic derivation and code generation technique has been a quite powerful strategy for developing the novel wave function methods (IMA KOKO)
 %
 To generate an efficient contraction code, each of the tensor contraction terms should be divided into a stream of binary contractions.
 %
