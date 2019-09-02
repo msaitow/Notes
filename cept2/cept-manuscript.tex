@@ -156,13 +156,13 @@ The redundant internally-contracted basis (r-ICBs) that span the first-order int
 for the external subspaces,
 %
 \begin{align}
-  \{E_{ip}^{aq},\ E_{ip}^{qa}\},\ E_{ij}^{pa},\ E_{pq}^{ra}
+  \{E_{ip}^{aq},\ E_{ip}^{qa}\},\ E_{ij}^{pa},\ E_{pq}^{ra} \label{eq:semiinternalICB}
 \end{align}
 %
 the semi-internal subspaces and
 %
 \begin{align}
-  E_{ij}^{pq},\ E_{ip}^{qr}
+  E_{ij}^{pq},\ E_{ip}^{qr} \label{eq:intternalICB}
 \end{align}
 %
 for the internal subspaces.
@@ -196,7 +196,8 @@ the semi-internal subspaces and
   |\Psi_{ij}^{\rho}\rangle,\ |\Psi_{i\rho}\rangle
 \end{align}
 %
-for the internal subspaces.
+for the internal subspaces where $\rho\tau\cdots$ are used to represent the eigenvectors of metric for each subspace (Eqs. (\ref{eq:externalICB}) -- (\ref{eq:intternalICB})).
+
 
 \subsection{Brief Summary of PNO-CASPT2 Algorithm}
 
@@ -400,7 +401,7 @@ Therefore, we only demonstrate and benchmark the accuracy of the PNO-CEPT2 model
 
 \subsection{PNO-based Code Generation}
 %
-The automatic derivation and code generation technique has been a quite powerful strategy for developing and testing the novel wave function methods which often involve hundreds or thousands of tensor contraction terms to implement.\cite{CJanssen1991,doi:10.1021/jp034596z,SHirataTCE2004,SHirataTCE2006,doi:10.1080/00268970500275780,KoehnJCP2009_1,KoehnJCP2009_2,MHandKoehn2009,MHandKoehn2011,ShiozakiJCP2008,ShiozakiPCCP2008,ShiozakiJCP2009_1,ShiozakiJCP2009_2,}
+The automatic derivation and code generation technique has been a quite powerful strategy for developing and testing the novel wave function methods which often involve hundreds or thousands of tensor contraction terms to implement.\cite{CJanssen1991,doi:10.1021/jp034596z,SHirataTCE2004,SHirataTCE2006,doi:10.1080/00268970500275780,KoehnJCP2009_1,KoehnJCP2009_2,MHandKoehn2009,MHandKoehn2011,AK74,AK77,ShiozakiJCP2008,ShiozakiPCCP2008,ShiozakiJCP2009_1,ShiozakiJCP2009_2,doi:10.1063/1.4907717,doi:10.1063/1.4959029,doi:10.1002/jcc.24833,doi:10.1063/1.5001320,doi:10.1063/1.5048688,dattaa2011,doi:10.1063/1.3089302,doi:10.1063/1.3664729,PCMRCI2011}
 %
 To generate an efficient contraction code, each of the tensor contraction terms should be divided into a stream of binary contractions.
 %
