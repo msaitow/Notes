@@ -65,9 +65,11 @@ Electronic wave function of the low-spin open-shell states where there are multi
 %
 The electron correlation effect that plays an important role in these problems is often referred to as static correlation.\cite{doi:10.1021/cr2001417}
 %
-The most stratghtforward way to take into account the static correlation is to use the multireference (MR) wave function theories\cite{MCSCFandMRCI2011,doi:10.1021/cr300500z} that are based on the multiconfigurational self-consistent field (CASSCF) reference function.\cite{roosa1980,Roos1987,ruedenbergmcscf1979}
+However, to obtain quantitave accuracy, it is often necessary to consider dynamic correlation which is the remaining component of the correlation effect.
 %
-Note that there are tremendous attempts to utilize the single-reference (SR) framework\cite{doi:10.1063/1.481769,doi:10.1063/1.1290609,doi:10.1021/jp056791e,doi:10.1021/acs.jctc.9b00456,doi:10.1063/1.4991020,doi:10.1063/1.5053605,doi:10.1063/1.5085314,doi:10.1021/acs.jpclett.7b00689,PhysRevB.96.155106,doi:10.1021/acs.jpclett.8b01754,doi:10.1021/acs.jctc.6b00137,doi:10.1063/1.5036542,doi:10.1002/jcc.25163} for capturing the static correlation effects.
+The most stratghtforward way to take into account both types of correlation in a well-balanced manner is the multireference (MR) wave function theories\cite{MCSCFandMRCI2011,doi:10.1021/cr300500z} that are based on the multiconfigurational self-consistent field (CASSCF) reference function.\cite{roosa1980,Roos1987,ruedenbergmcscf1979}
+%
+Note that there are tremendous attempts to utilize the single-reference (SR) framework\cite{doi:10.1063/1.481769,doi:10.1063/1.1290609,doi:10.1021/jp056791e,doi:10.1021/acs.jctc.9b00456,doi:10.1063/1.4991020,doi:10.1063/1.5053605,doi:10.1063/1.5085314,doi:10.1021/acs.jctc.6b00137,doi:10.1063/1.5036542,doi:10.1002/jcc.25163} for capturing the static correlation effect.
 
 %
 %For achieving quantitative accuracy, it is often necessary to consider the remaining components of the electron correlation effect which is known as dynamic correlation.
@@ -82,7 +84,7 @@ As both approaches converge to the conventional second-order M\o ller-Plesset (M
 %
 Before calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($c^2v^2$).
 %
-For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because theoir working equations involve the 1-, 2-, 3- and 4-body reduced-density matrices (RDMs).
+For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to 4th order.
 %
 Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions is often prohibited.
 
@@ -96,7 +98,7 @@ Recently, Katz and Werner developed a CASPT2 approach in the so-called pair-natu
 %
 The original concept of PNOs was already realized in 60s in order to accelerate the concergence of the configuration interaction (CI) expansions.\cite{:/content/aip/journal/jcp/40/12/10.1063/1.1725065,:/content/aip/journal/jcp/48/4/10.1063/1.1668917,:/content/aip/journal/jcp/42/3/10.1063/1.1696050,:/content/aip/journal/jcp/45/5/10.1063/1.1727841,meyer1971ionization,:/content/aip/journal/jcp/58/3/10.1063/1.1679283,meyer1971ionization,Ahlrichs1968_2}
 %
-Importantly, the PNO-based MRCI and the internally-contracted MR Coupled-Electron Pair Approximation (PNO-MCCEPA) theories were developed by Taylor\cite{:/content/aip/journal/jcp/74/2/10.1063/1.441186} and Staemmler {\it et al.},\cite{Staemmler1993} respectively.
+Importantly, the PNO-based MRCI theory and the MR Coupled-Electron Pair Approximation (PNO-MCCEPA) using internally-contracted (IC) configuration functions were developed by Taylor\cite{:/content/aip/journal/jcp/74/2/10.1063/1.441186} and Staemmler {\it et al.},\cite{Staemmler1993} respectively.
 
 %
 The use of PNOs in the context of modern wave function theories was first introduced by Neese and coworkers in their local PNO-based (LPNO-) CEPA\cite{neeseefficient2009cepa} and Coupled-Cluster (LPNO-CC)\cite{neeseefficient2009,hansenefficient2011,doi:10.1021/ct100445s} methods implemented in Orca package.\cite{WCMS:WCMS1327}
@@ -107,12 +109,23 @@ Later they have developed a more sohisticated variant called domain-based LPNO-C
 %
 The DLPNO scheme has been extended to MR wave function theories resulting in DLPNO-Mk-MRCCSD\cite{doi:10.1021/acs.jctc.5b00334,doi:10.1021/acs.jctc.7b01184,C8CP03577F} and DLPNO-NEVPT2\cite{:/content/aip/journal/jcp/144/9/10.1063/1.4942769} methods.
 %
-In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and a variant of PNO-CC method and PNO-ADC theory for the excited states by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
+In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and a variant of PNO-CC method and PNO-based theories for the excited states by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
+
+%
+%The IC-MRCI method and its size-consistency corrected variants often provides a much higher accuracy than CASPT2 for small molecules.
+%The IC-MRCC methods pioneered by Simons and extended by K\"ohn {\it et. al} often provide a sophisticated treatment of electron correlation than the MRCI and the second-order perturbation theories.
+%
+%However, 
+Alternatively to the generalized Fock operator for CASPT2 and to Dyall's Hamiltonian for NEVPT2, use of Fink's zeroth-order Hamiltonian\cite{FINK2006461,FINK200939} has been attracting much interest, leading to the so-called Retaining-degree-of-Excitation Perturbation Theory (REPT).
+%
+When applied to closed-shell single-reference function, the second-order REPT (REPT2) converges to the CEPA/0 Doubles (CEPA/0(D)) or alternatively known as Linearized Coupled-Cluster Doubles (L-CCD). 
+%
+
 
 %Nowadays, developments of highly accurate reduced-scaling SR and MR wave function methods using PNOs have become an active field
-In this paper, we report a hybrid of internally-contracted MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to ocnventional CASPT2 method.
+In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to conventional CASPT2 method.
 %
-Even though the standard variant MR-CEPA/0 lacks exact size-consistency, the MR-CEPA/0 often gives quite good (IKA-KOKO)
+Even though the standard variant MR-CEPA/0 lacks exact size-consistency, the MR-CEPA/0 and other variants of linearlized IC-MRCC can often reproduce the shape of potential energy curves to an accurate degree in comparison with a more complete version of IC-MRCC theory.\cite{AK74,AK77}
 %
 In CEPT2 method, the amplitudes of 2-external nature are solved at the MR-CEPA/0 level while the remaining amplitudes are treated at the CASPT2 level.
 %
@@ -382,7 +395,7 @@ However, such terms are typically not a bottleneck any more if the virtual space
 %
 Some of the PNO-CEPA terms involve the semi-joint pair-pair interactions and in the MR case these terms appear to be more invlved.
 %
-Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave function converge to those of PNO-CEPA/0 with double excitations.
+Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave function converge to those of PNO-CEPA/0(D) wave function.
 
 %
 Unlike CIPT2 which is designed to mitigate the intruder state problems typically stemming from the $\{\Psi_i^\rho\}$, $\{\Psi_\rho^a\}$ and the reference subspaces, in CEPT2, we use the CASPT2 ansatz for those subspaces.
