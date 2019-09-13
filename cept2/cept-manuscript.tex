@@ -116,16 +116,11 @@ In a similar vein, variants of PNO-based reduced-scaling wave function methods h
 %The IC-MRCC methods pioneered by Simons and extended by K\"ohn {\it et. al} often provide a sophisticated treatment of electron correlation than the MRCI and the second-order perturbation theories.
 %
 %However, 
-Alternatively to the generalized Fock operator for CASPT2 and to Dyall's Hamiltonian for NEVPT2, use of Fink's zeroth-order Hamiltonian\cite{FINK2006461,FINK200939} has been attracting much interest, leading to the so-called Retaining-degree-of-Excitation Perturbation Theory (REPT).
-%
-When applied to closed-shell single-reference function, the second-order REPT (REPT2) converges to the CEPA/0 Doubles (CEPA/0(D)) or alternatively known as Linearized Coupled-Cluster Doubles (L-CCD). 
-%
-
 
 %Nowadays, developments of highly accurate reduced-scaling SR and MR wave function methods using PNOs have become an active field
 In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to conventional CASPT2 method.
 %
-Even though the standard variant MR-CEPA/0 lacks exact size-consistency, the MR-CEPA/0 and other variants of linearlized IC-MRCC can often reproduce the shape of potential energy curves to an accurate degree in comparison with a more complete version of IC-MRCC theory.\cite{AK74,AK77}
+Even though the standard full of IC-MR-CEPA/0 lacks size-consistency, all the CEPA terms introduced are fully-connected and thus the near-size-consistent nature of CASPT2 is inherited to the CEPT2 model.
 %
 In CEPT2 method, the amplitudes of 2-external nature are solved at the MR-CEPA/0 level while the remaining amplitudes are treated at the CASPT2 level.
 %
@@ -348,6 +343,13 @@ The conventional formulation of the imaginary shifts is based on the diagonality
 Therefore, in our PNO-CASPT2 implementatin, the off-diagonal elements in the diagonal blocks are discarded, leading to a semi-canonical imaginary shift.
 
 \subsection{The Coupled-Electron Pair Perturbation Theory}\label{Subsec:cept2}
+%
+Being based on Fink's zeroth-order Hamiltonian\cite{FINK2006461,FINK200939} which does not involve any excitations that change the total number of electrons in the doubly-occupied, active and virtual orbital spaces, the so-called Retaining the Excitation degree Perturbation Theory (REPT) is obtained. 
+%
+When applied to closed-shell single-reference function, the second-order REPT (REPT2) converges to the CEPA/0 Doubles (CEPA/0(D)) or alternatively known as Linearized Coupled-Cluster Doubles (L-CCD). 
+%
+The MR variants of REPT in the Matrix Product State (MPS) and in the partially IC representations
+
 %
 In the PNO-CEPT2 ansatz, we minimize the following energy functonal
 %
