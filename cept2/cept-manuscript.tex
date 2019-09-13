@@ -331,7 +331,7 @@ Therefore, programming the residua (Eq. \ref{eq:caspt2-residua}) of diagonal blo
 %
 However, in the PNO-based counterpart, all the matrix blocks involving at least one DOMO index should be programmed, leading to a drastic increase in the number of terms that should be derived and programmed.
 %
-To this end, we extended our code generator framework\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} such that codes for the PNO-based tensor contractions can also be generated.
+To this end, we extended our code generator framework\cite{femto,saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} such that codes for the PNO-based tensor contractions can also be generated.
 %
 In our program, the PNO-CASPT2 residul equations are solved by the preconditioned conjugate gradient (PCG) algorithm.
 
@@ -344,11 +344,11 @@ Therefore, in our PNO-CASPT2 implementatin, the off-diagonal elements in the dia
 
 \subsection{The Coupled-Electron Pair Perturbation Theory}\label{Subsec:cept2}
 %
-Being based on Fink's zeroth-order Hamiltonian\cite{FINK2006461,FINK200939} which does not involve any excitations that change the total number of electrons in the doubly-occupied, active and virtual orbital spaces, the so-called Retaining the Excitation degree Perturbation Theory (REPT) is obtained. 
+%Being based on Fink's zeroth-order Hamiltonian\cite{FINK2006461,FINK200939} which does not involve any excitations that change the total number of electrons in the doubly-occupied, active and virtual orbital spaces, the so-called Retaining the Excitation degree Perturbation Theory (REPT) is obtained. 
 %
-When applied to closed-shell single-reference function, the second-order REPT (REPT2) converges to the CEPA/0 Doubles (CEPA/0(D)) or alternatively known as Linearized Coupled-Cluster Doubles (L-CCD). 
+%When applied to closed-shell single-reference function, the second-order REPT (REPT2) converges to the CEPA/0 Doubles (CEPA/0(D)) or alternatively known as Linearized Coupled-Cluster Doubles (L-CCD). 
 %
-The MR variants of REPT in the Matrix Product State (MPS) and in the partially IC representations
+%The MR variants of REPT in the Matrix Product State (MPS) and in the partially IC representations
 
 %
 In the PNO-CEPT2 ansatz, we minimize the following energy functonal
@@ -390,6 +390,7 @@ as we have also utilized in our previous works for developing an approximated FI
 Note that both the CEPT2 and the CIPT2\cite{celanithe2004} methods use the energy functional of the similar form.
 %
 The only difference between them consists in the choice of the CEPA subspaces; in the CEPT2 ansatz the external configurations are treated at the CEPA level while in the CIPT2 method the CEPA functional is used for in subspaces with three active MO indices i.e, $\{\Psi_i^\rho\}$ and $\{\Psi_\rho^a\}$.
+
 %
 The second term in Eq. (\ref{eq:CEPT-E}) involves contractions of the 4-external exchange-type integrals with the 2-external amplitudes which is known as the most expensice terms in the canonical CC or CEPA implementations.
 %
@@ -398,6 +399,13 @@ However, such terms are typically not a bottleneck any more if the virtual space
 Some of the PNO-CEPA terms involve the semi-joint pair-pair interactions and in the MR case these terms appear to be more invlved.
 %
 Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave function converge to those of PNO-CEPA/0(D) wave function.
+
+%
+All the CEPA terms in Eq. (\ref{eq:CEPT-E}) are {\it linked} in the sense that the amplitude is either directly or indirectly via 1-body density cumulant connected to the integral.
+%
+Therefore, as addressed in Ref. ~\onlinecite{AK74}, even for a super system ($A\cdots B$) composed of infinitely separated two subsystems ($A$ and $B$), no {\it unlinked} contractions appear.
+%
+This indicates that the CEPT2 extension does not violate the near-size-consistent character of original CASPT2 model.
 
 %
 Unlike CIPT2 which is designed to mitigate the intruder state problems typically stemming from the $\{\Psi_i^\rho\}$, $\{\Psi_\rho^a\}$ and the reference subspaces, in CEPT2, we use the CASPT2 ansatz for those subspaces.
