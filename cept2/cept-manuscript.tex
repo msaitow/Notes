@@ -10,6 +10,7 @@
 \usepackage{here}
 \usepackage{longtable}
 \usepackage{rotating}
+%\usepackage {threeparttable}
 %\usepackage[dvipdfmx]{graphicx}
 \newcommand{\half}{{\textstyle \frac{1}{2}}}
 \newcommand{\quarter}{{\textstyle \frac{1}{4}}}
@@ -24,6 +25,7 @@
 }
 
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\myfnmark}[1]{\mbox{\textsuperscript{\normalfont #1}}}
 
 \begin{document}
 
@@ -231,7 +233,7 @@ The PNO-CASPT2 wave function is defined as
 \begin{align}
   |\Psi\rangle&=\sum_{ij}\sum_{a_{ij}b_{ij}} t_{a_{ij}b_{ij}}^{ij}|\Psi_{ij}^{a_{ij}b_{ij}}\rangle+\sum_{\rho i}\sum_{a_{\rho i}b_{\rho i}} t_{a_{\rho i}b_{\rho i}}^{\rho i}|\Psi_{{\rho i}}^{a_{\rho i}b_{\rho i}}\rangle \nonumber \\
   &+\sum_{\rho}\sum_{a_{\rho}b_{\rho}} t_{a_{\rho}b_{\rho}}^{\rho}|\Psi_{{\rho}}^{a_{\rho}b_{\rho}}\rangle + \sum_{\rho ij}\sum_{a_{ij}} t_{a_{ij}\rho}^{ij}|\Psi_{ij}^{\rho a}\rangle +\sum_{\rho i}\sum_a t_{a}^{\rho i}|\Psi_{\rho i}^{a}\rangle \nonumber \\
-  &+\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle \nonumber + \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
+  &+\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle + \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
 \end{align}
 %
 in the nr-ICB which is constructed by orthonormalizing and canonicalizing the redundant r-ICBs.
@@ -520,6 +522,96 @@ For those subspaces which do not involve any PNOs and the coupling matrix elemen
 
 \section{Results and discussion}\label{Sec:results}
 
+\subsection{Non-Parallelity Errors for N${}_2$ Dissociation}
+
+%
+To assess the performance of canonical CEPT2 model and the validity of the PNO truncation, we calculated the dissociation curve of N${}_2$ molecule in the singlet state using canonical CASPT2 and CEPT2 models.
+%
+The results are compared with those obtained by Davidson-corrected Multireference Configuration Interaction (MRCI+Q) and the size-consistency-corrected variants such as Averaged-Coupled-Pair Functional (ACPF), and MR-CEPA/0.
+%
+In all the CASPT2 and CEPT2 computations, no IPEA and level shifts were used.
+%
+Errors from the MRCI+Q values are shown in Fig. \ref{tab:dissociationN2}.
+%
+The non-parallelity errors (NPEs) are given in Table \ref{tab:dissociationN2-NPE}.
+%
+Orca 4.2 program package\cite{WCMS:WCMS1327} was used for FIC-NEVPT2,\cite{angelin-electron2002} FIC-MRCI,\cite{doi:10.1063/1.4959029} FIC-CEPA/0 and FIC-ACPF\cite{Gdanitz1988} computations.
+%
+In Table \ref{tab:dissociationN2-NPE}, NPE by the CEPT2 model is shown to be smaller than that of the CASPT2 by about 3.8 kcal/mol.
+%
+Even though amounts of the dynamical correlation energies recovered by NEVPT2 model are smaller than those by CASPT2 by more than 15 kcal/mol, the NPE in the NEVPT2 energies is smaller than those by CASPT2 and CEPT2 models.
+
+%
+In Table \ref{tab:dissociationN2}, the dynamical correlation energies recovered by PNO-CEPT2 model are shown for N${}_2$ molecule with various internuclear distances.
+%
+To obtain approximately 99.9 $\%$ of the correlation energy, the PNO truncation threshold, which is coined {\tt TCutPNO}, should be tighted by up to $1.0\times 10^{-8}$.
+%
+Surprisingly, the correlation energy recovered appears to be smallest at 1.0 {\AA} which is close to the equilibrium internuclear distance.
+%
+On the other hand, in the strongly-correlated region where the triple bond is being broken, the PNO approximation performes relatively well recovering approximately 99.9 $\%$ of the canonical correlation energy even with {\tt TCutPNO}$=5.0\times 10^{-8}$.
+
+\subsection{Isomerization of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$}
+
+%
+We applied the PNO-CEPT2 model to isomerization of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex from the bis($\mu$-oxo) to the $\mu-\eta^2:\eta^2$-peroxo structures, which is a typical benchmark system for MR methods.\cite{Rode2005,AK74,doi:10.1063/1.4900878}
+%
+The O${}_2$ activation mechanism in enzymes such as hemocyanin is known th be mediated by interconversion of [Cu${}_2$($\mu-\eta^2:\eta^2$-peroxo)]${}^{+2}$ and [Cu${}_2$($\mu$-oxo)]${}^{+2}$ cores.
+%
+To accurately determine the isomerization pathways, numerous attempts have been made employing [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex as an active-site model for O${}_2$ activation reactions.
+
+%
+A particular difficulty of the isomerization of this complex consists in the fact that the CASPT2 and MRCI+Q results strongly disagree with each other: With CAS(8$e$, 10$o$), the CASPT2 predicts that the bis($\mu$-oxo) structure is lower in the energy while using the MRCI+Q and MR-ACPF models $\mu-\eta^2:\eta^2$-peroxo structure appears to be more stable.
+%
+Recently, K\"ohn and co-workers\cite{AK74} have performed a set of benchmark calculatons on this system using IC-MR Coupled-Cluster (IC-MRCC)\cite{MHandKoehn2011,hanauercommunication:2012} and the higher-order MRPT methods and found that all the higher-order methods than the second-order of perturbation expansion predicts that the $\mu-\eta^2:\eta^2$-peroxo structure is lower in the energy.
+%
+This is actually consistent with the IC-MRCI+Q calculations published by Rode and Werner in 2005.\cite{Rode2005}
+%
+To produce the consistent energy ordering to the IC-MRCI+Q and IC-MRCC calculations using CASPT2-type wave function, one has to employ a larger active space involving all the 3$d$ and the double-shell 4$d$ orbitals of copper atoms thus leading to active space icomposed of 24 electrons in 28 orbitals as reported in RAS(24$e$, 28$o$)PT2 study by Gagliardi and co-workers\cite{doi:10.1021/jp056791e} and cumulant-based DMRG-CASPT2 study by Yanai and co-workers\cite{doi:10.1063/1.4900878}
+%
+Therefore, it is interesting to see how much improvement over the PNO-CASPT2 is obtained by the PNO-CEPT2 model while keeping the active space CAS(8$e$, 10$o$).
+
+%
+Isomerization energy profiles calculated by PNO-CASPT2/CEPT2 methods are shown in Fig. \ref{fig:CEPT-Cu2O2} as a function of Cu-Cu distance.
+%
+The bis($\mu$-oxo) and $\mu-\eta^2:\eta^2$-peroxo structures were taken from Ref.~\onlinecite{PCMRCI2011} and all the intermediates geometries were generated as a superposition of two isomeric geometries.
+%
+The isomerization energies (E($\mu-\eta^2:\eta^2$-peroxo)-E(bis($\mu$-oxo))) calculated at CASSCF, PNO-CASPT2 and PNO-CEPT2 are -27.5 kcal/mol, +11.4 kcal/mol and +9.6 kcal/mol, respectively as can be seen in Table \ref{tab:isomerizationenergies}.
+%
+%By comparing the previous CASPT2(8$e$, 10$o$) calculations by Rode {\it et al.} that uses the effective core potentials (ECPs) to take into account the relativistic effects to our PNO-based calculations which are all non-relativistic and use larger basis sets, 
+Difference between the previous CASPT2(8$e$, 10$o$) results by Rode {\it et al.} and our PNO-CASPT2(8$e$, 10$o$) calculations with larger quadruple $\zeta$ basis sets is stemming from the difference in the basis sets, and PNO and weak-pair truncation errors. 
+%
+Still, the difference reaches only up to about 1.2 kcal/mol and is quite small in comparison with descrepancy between the MRCI+Q(8$e$, 10$o$) and the CASPT2(8$e$, 10$o$) results.
+%
+The PNO-CEPA extension in the PNO-CEPT2 model corrects the PNO-CASPT2 results in the direction of MRCI+Q(8$e$, 10$o$) result by up to about 1.8 kcal/mol.
+%
+However, the isomerization energy profile calculated by PNO-CEPT2 model is still similar to that by PNO-CASPT2 and the isomerization energy still appears to be far off from the IC-MRCI+Q and the IC-MRCC values.
+%
+Therefore, at least in this case, the CEPA extension in the 2-external subspaces gives only a minor correction to the CASPT2 isomerization energy. 
+
+\subsection{Ground and Excited States of Polyenes}
+
+\subsection{Singlet-Triplet Gap of Free-base Porphyrin}
+%
+We calculated the non-vertical singlet-triplet (S--T) energy gaps for free-base porphyrin molecule
+%
+The geometries for $\text{S}_0$ and $\text{T}_0$ states of free-base porphyrin were taken from Ref.~\onlinecite{saitowmultireference2013}.
+%
+In Table \ref{tab:H2P-ST-gap}, the S--T gaps and the dynamic correlation energies recovered by various PNO cutoff thresholds are shown.
+%
+It is seen that the PNO-CASPT2 model shows good agreement with the experimental value for all the PNO truncation thresholds even for quite loose threshold such as $1.0\times 10^{-6}$, thus indicating that the error cancellation works surprisingly fine for this systems.
+%
+This is most probably due to the fact that the S${}_0$ and T${}_0$ geometries are similar ehough to each other.
+%
+The PNO-CEPT2 model gives even closer values to the experimental one.
+%
+The compression ratios of the first-order amplitudes, which are calculated as a ratio between total number of amplitudes in Eq. (\ref{eq:pno-caspt2}) and the canonical counterpart, are also shown.
+%
+Even with the tighest threshold used, $1.0\times 10^{-9}$, the PNO-CASPT2/CEPT2 models require only less than 6 $\%$ of the amplitudes while giving quite good agreement with the untruncated value.
+%
+The PNO-CEPT2 values agree well also to the cumulant-approximated MRCI+Q and ACPF results that use the DMRG-CASSCF reference function with full-valence $\pi$ active space.
+%
+Note that none of computational values in Table \ref{tab:H2P-ST-gap} include the solvent-effects.
+
 \section{Conclusion}\label{Sec:Conclusion}
 
 \section*{supplementary material}
@@ -531,6 +623,25 @@ For those subspaces which do not involve any PNOs and the coupling matrix elemen
 \bibliography{saitow}
 
 %%-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW
+
+\newpage
+
+{
+  \begin{longtable}[!ht]{cccccccccccccc}
+  \caption{\label{tab:dissociationN2-NPE}
+    The NPEs in kcal/mol for N${}_2$ dissociation by various FIC methods with respect to the FIC-MRCI+Q energies.
+  }
+\\
+\hline
+\hline
+{}               && CASPT2 && CEPT2 && FIC-NEVPT2 && FIC-MRCI && FIC-CEPA/0 && FIC-ACPF \\
+\hline
+NPEs  / kcal/mol &&   9.98 &&  6.21 &&       2.99 &&     2.03 &&       0.98 && 0.68 \\
+\hline
+\hline
+\end{longtable}
+}
+
 \newpage
 
 {
@@ -548,7 +659,7 @@ For those subspaces which do not involve any PNOs and the coupling matrix elemen
 \\
 \hline
 \hline
-{}            && \multicolumn{24}{c}{PNO Cutoff Threshold} \\
+{}            && \multicolumn{24}{c}{\tt TCutPNO} \\
 \cline{3-26}    
 R (N-N) / \AA && $1.0\times 10^{-11}$ && $1.0\times 10^{-10}$ && $1.0\times 10^{-9}$ && $5.0\times 10^{-9}$ && $1.0\times 10^{-8}$ && $5.0\times 10^{-8}$ && $1.0\times 10^{-7}$ && $5.0\times 10^{-7}$ && $1.0\times 10^{-6}$ && $5.0\times 10^{-6}$ && $1.0\times 10^{-5}$ && $1.0\times 10^{-4}$ \\
 \hline
@@ -574,40 +685,99 @@ R (N-N) / \AA && $1.0\times 10^{-11}$ && $1.0\times 10^{-10}$ && $1.0\times 10^{
 \newpage
 
 {
+%\squeezetable
+\begin{longtable}[!ht]{cccc}
+  \caption{\label{tab:isomerizationenergies}
+    Isomerization energies calculated by size-extensive version of the completely-renormalized CCSD with perturbative triples (CR-CCSD(T)${}_L$) and various MR methods. For the PNO-CASPT2/CEPT2 calculations, the PNO and weak-pair truncation thresholds were set to $5.0\times 10^{-8}$ and $1.0\times 10^{-5}$ Eh, respectively and the relativistic effects were not included.
+}
+\\
+\hline
+\hline
+Method                                          && E($\mu-\eta^2:\eta^2$-peroxo)-E(bis($\mu$-oxo)) / kcal/mol \\
+\hline
+%CR-CCSD(T)${}_\text{L}$                         && -10.1 \\
+%FIC-MRCCSD(8$e$,10$o$)\footnotemark[1]          &&  -9.4 \\
+%IC-MRCI+Q(8$e$,10$o$)\footnotemark[1]           && -12.4 \\
+%DMRG-cu(4)-CASPT2(24$e$, 28$o$)\footnotemark[2] &&  +4.9 \\
+%DMRG-CASSCF(24$e$, 28$o$)\footnotemark[2]       && +21.3 \\
+%RASPT2(24$e$,28$o$)\footnotemark[3]             &&  +7.6 \\
+
+CR-CCSD(T)${}_\text{L}$ ${}^{a,b}$    && -10.1 \\
+FIC-MRCCSD(8$e$,10$o$)${}^{a,b}$      &&  -9.4 \\
+IC-MRCI+Q(8$e$,10$o$)${}^{a,b}$       && -12.4 \\
+DMRG-cu(4)-CASPT2(24$e$, 28$o$)${}^c$ &&  -4.9 \\
+DMRG-CASSCF(24$e$, 28$o$)${}^c$       && -21.3 \\
+RASPT2(24$e$,28$o$)${}^{b,d}$         &&  -7.6 \\
+CASSCF(16$e$,14$o$)${}^{a,b}$         && -29.8 \\
+CASPT2(16$e$,14$o$)${}^{a,b}$         && +17.2 \\
+CASSCF(8$e$,10$o$)${}^{b,e}$          && -23.4 \\
+CASPT2(8$e$,10$o$)${}^{b,e}$          && +10.2 \\
+IC-MRCI+Q(8$e$,10$o$)${}^{b,e}$       && -11.6 \\
+PNO-CASPT2(8$e$,10$o$) (This work)    && +11.4 \\
+PNO-CEPT2(8$e$,10$o$) (This work)     &&  +9.6 \\
+\hline
+\hline
+\multicolumn{4}{l}{${}^a$ Taken from Ref.~\onlinecite{AK74}} \\
+\multicolumn{4}{l}{${}^b$ Relativistic effects were included by the effective core potentials (ECPs) on copper atoms} \\ 
+\multicolumn{4}{l}{${}^c$ Taken from Ref.~\onlinecite{doi:10.1063/1.4900878}} \\ 
+\multicolumn{4}{l}{${}^d$ Taken from Ref.~\onlinecite{doi:10.1021/jp056791e}} \\
+\multicolumn{4}{l}{${}^d$ Taken from Ref.~\onlinecite{Rode2005}}
+\end{longtable}
+%\footnotetext[1]{Taken from Ref.~\onlinecite{AK74}}
+%\footnotetext[2]{Taken from Ref.~\onlinecite{doi:10.1063/1.4900878}}
+%\footnotetext[3]{Taken from Ref.~\onlinecite{doi:10.1021/jp056791e}}
+
+}
+
+\newpage
+
+{
 \squeezetable
 \begin{sidewaysfigure}  
- %\begin{longtable}[!ht]{rrrrrrrrrrrrrrrrrrrrrrrrrr}
-  \begin{longtable}[!ht]{cccccccccccccccc}
+\begin{longtable}[!ht]{cccccccccccccccccccc}
   \caption{\label{tab:H2P-ST-gap}
-    Dynamic electron correlation energies and S-T gaps for free-base porphyrin calculated at PNO-CASPT2/CEPT2 level with various PNO cutoff thresholds in comparison with experimental S-T gap.
+    Dynamic electron correlation energies and S--T gaps for free-base porphyrin calculated at PNO-CASPT2/CEPT2 level with various PNO cutoff thresholds in comparison with experimental S--T gap.
+    %
+    The def2-SVP basis set was used.
     %
     The threshold for weak-pair screening was set to $1\times 10^{-5}$ Eh.
     %
     All the 1$s$ orbitals of carbon atoms were kept frozen.
     %
     8 $\pi$ MOs composed of 2$p_z$ orbitals of carbon atoms were included in the active space thus leading to CAS(8$e$, 8$o$) settings which is consistent with CAS treatment of Ref.~\onlinecite{Roos1998}.
+    %
+    Ratios between total number of PNO-CASPT2/CEPT2 amplitudes to optimize and that of canonical CASPT2, both of which include internal and semi-internal amplitudes, are also shown.
+    %
+    Total number of AO basis functions is 406.
   }
 \\
 \hline
 \hline
-{\tt TCutPNO} && Total Energy (S${}_0$) / Eh && Correlation Energy / Eh && Accuracy ($\%$)  && Total Energy (T${}_0$) / Eh && Correlation Energy / Eh && Accuracy ($\%$) && S-T gap / eV \\
+{\tt TCutPNO} && Total Energy (S${}_0$) / Eh && Correlation Energy / Eh && Accuracy ($\%$) && Compression Ratio ($\%$) && Total Energy (T${}_0$) / Eh && Correlation Energy / Eh && Accuracy ($\%$) && Compression Ratio ($\%$) && S-T gap / eV \\
 \hline
-        && \multicolumn{12}{c}{PNO-CASPT2} \\
-Full    && -985.795110 && -3.233234 && (100.00) && -985.733659 && -3.219267 && (100.00) && 1.67 \\
-1.0E-09 && -985.791357 && -3.229481 && ( 99.88) && -985.729366 && -3.214973 && ( 99.87) && 1.69 \\
-1.0E-08 && -985.790258 && -3.228382 && ( 99.85) && -985.728332 && -3.213940 && ( 99.83) && 1.69 \\
-5.0E-08 && -985.788902 && -3.227025 && ( 99.81) && -985.726937 && -3.212544 && ( 99.79) && 1.69 \\
-1.0E-07 && -985.787947 && -3.226070 && ( 99.78) && -985.725979 && -3.211586 && ( 99.76) && 1.69 \\
-1.0E-06 && -985.781456 && -3.219580 && ( 99.58) && -985.719703 && -3.205310 && ( 99.57) && 1.68 \\
+                    && \multicolumn{16}{c}{PNO-CASPT2} \\
+Full                && -985.795110 && -3.233234 && (100.00) && (100.00) && -985.733659 && -3.219267 && (100.00) && (100.00) && 1.67 \\
+$1.0\times 10^{-9}$ && -985.791357 && -3.229481 && ( 99.88) && (  5.83) && -985.729366 && -3.214973 && ( 99.87) && (  4.69) && 1.69 \\
+$1.0\times 10^{-8}$ && -985.790258 && -3.228382 && ( 99.85) && (  3.02) && -985.728332 && -3.213940 && ( 99.83) && (  2.56) && 1.69 \\
+$5.0\times 10^{-8}$ && -985.788902 && -3.227025 && ( 99.81) && (  1.90) && -985.726937 && -3.212544 && ( 99.79) && (  1.68) && 1.69 \\
+$1.0\times 10^{-7}$ && -985.787947 && -3.226070 && ( 99.78) && (  1.57) && -985.725979 && -3.211586 && ( 99.76) && (  1.41) && 1.69 \\
+$1.0\times 10^{-6}$ && -985.781456 && -3.219580 && ( 99.58) && (  0.94) && -985.719703 && -3.205310 && ( 99.57) && (  0.90) && 1.68 \\
 \\
-        && \multicolumn{12}{c}{PNO-CEPT2} \\
-1.0E-09 && -985.982732 && -3.420855 && -      && -985.925605 && -3.411212 && -      && 1.55 \\
-1.0E-08 && -985.981451 && -3.419574 && -      && -985.924399 && -3.410006 && -      && 1.55 \\
-5.0E-08 && -985.979903 && -3.418026 && -      && -985.922854 && -3.408461 && -      && 1.55 \\
-1.0E-07 && n.y. && n.y. && n.y. && n.y. && n.y. && n.y. && n.y. \\
-1.0E-06 && n.y. && n.y. && n.y. && n.y. && n.y. && n.y. && n.y. \\
+                    && \multicolumn{16}{c}{PNO-CEPT2} \\
+$1.0\times 10^{-9}$ && -985.982732 && -3.420855 && -        && (  5.83) && -985.925605 && -3.411212 && -        && (  4.69) && 1.55 \\
+$1.0\times 10^{-8}$ && -985.981451 && -3.419574 && -        && (  3.02) && -985.924399 && -3.410006 && -        && (  2.56) && 1.55 \\
+$5.0\times 10^{-8}$ && -985.979903 && -3.418026 && -        && (  1.90) && -985.922854 && -3.408461 && -        && (  1.68) && 1.55 \\
+$1.0\times 10^{-7}$ && -985.978852 && -3.416975 && -        && (  1.57) && -985.921792 && -3.407399 && -        && (  1.41) && 1.55 \\
+$1.0\times 10^{-6}$ && -985.973026 && -3.411150 && -        && (  0.94) && -985.916193 && -3.401800 && -        && (  0.90) && 1.55 \\
 \\
-Exp. &&  &&  &&  &&  &&  &&  && 1.58 \\
+                    && \multicolumn{16}{c}{Other Methods} \\
+\multicolumn{5}{l}{DMRG-CASSCF(26$e$,24$o$)\cite{saitowmultireference2013}}       && && && &&       &&          &&          && 1.26 \\
+\multicolumn{5}{l}{DMRG-cu(4)-MRCI(26$e$,24$o$)\cite{saitowmultireference2013}}   && && && &&       &&          &&          && 1.41 \\
+\multicolumn{5}{l}{DMRG-cu(4)-MRCI+Q(26$e$,24$o$)\cite{saitowmultireference2013}} && && && &&       &&          &&          && 1.48 \\
+\multicolumn{5}{l}{DMRG-cu(4)-ACPF(26$e$,24$o$)\cite{saitowmultireference2013}}   && && && &&       &&          &&          && 1.55 \\
+\multicolumn{5}{l}{Diffusion Monte-Carlo (DMC)\cite{Aspuru-Guzik2004}}            && && && &&       &&          &&          && 1.60 \\
+\\
+Exp.\cite{Gouterman1974} &&  &&  &&  &&  &&  &&  && && && 1.58 \\
 
 \hline
 \hline
@@ -641,72 +811,22 @@ Exp. &&  &&  &&  &&  &&  &&  && 1.58 \\
     \caption{\label{fig:CEPT-Cu2O2}
       {
         %
-        Isomerization curves of [Cu${}_2$O${}_2$]$^{+2}$(NH${}_3$)${}_6$ calculated by PNO-CASPT2 and PNO-CEPT2 using def2-QZVPP basis set.
+        Isomerization curves of [Cu${}_2$O${}_2$]$^{+2}$(NH${}_3$)${}_6$ calculated by PNO-CASPT2 and PNO-CEPT2 using def2-QZVPP (O, Mn) and def2-TZVPP (H, N) basis sets.
+        %
+        For the RI treatment, def2-TZVPP/C auxiliary basis was used.
         %
         All the O(1$s$), N(1$s$), Fe(1$s$, 2$s$, 2$p$) orbitals were kept frozen at the PNO-CASPT2/CEPT2 steps.
         %
         The active space is composed of O(2$p_x$, 2$p_y$, 3$p_x$, 3$p_y$) and Fe(3$d_{xy}$) thus leading to CAS(8$e$, 10$o$) treatment.
+        %
+        The PNO and weak-pair truncation thresholds were set to $5\times 10^{-1}$ and $1\times 10^{-5}$ Eh, respectively.
+        %
+        Total number of AO basis functions is 752.
       }
     }
   \end{figure}
 }
 
 %%-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW-NEW
-
-
-%
-%\newpage
-%
-%{
-%  \begin{figure}[H]
-%    \scalebox{0.9}{\includegraphics{Simone-BarGraph.pdf}}
-%    \caption{\label{fig:Simone-BarGraph}
-%      {
-%        %
-%        The AAEs in isotropic and anisotropic components of the HFCCs for 28 small radicals computed by the DLPNO-CCSD and various DFTs.
-%        %
-%        For the DFT calculations, no approximations were used in the two-electron integral generations such as RI or COSX algorithm.
-%      }
-%    }
-%  \end{figure}
-%}
-%
-%\newpage
-%
-%{
-%  \begin{figure}[H]
-%    \scalebox{0.5}{\includegraphics{phenoxyl-v1.pdf}}
-%    \caption{\label{fig:phenoxyl-PNO-convergence}
-%      {
-%        %
-%        The convergence of (a) EFG tensors and (b) anisotropic and (c) isotropic HFCCs calculated using the unrelaxed DLPNO-CCSD density toward the canonical CCSD values.
-%        %
-%        The def2-TZVPP basis set and AutoAux procedure for the RI treatment.
-%        %
-%        No frozen core settings were used in all the calculations.
-%        %
-%        The following truncation settings were used for domain and pair truncations;
-%        %
-%        TCutPairs=$1.0\times 10^{-5}$ / TCutDO=$1.0\times 10^{-2}$ / TCutMKN=$1.0\times 10^{-3}$ / TCutPNOSingles=$0.0$ / TScalePNOCore=$1.0\times 10^{-3}$ / TScalePNOSOMO=$1.0\times 10^{-1}$.
-%      }
-%    }
-%  \end{figure}
-%}
-%
-%\newpage
-%
-%{
-%  \begin{figure}[H]
-%    \scalebox{0.8}{\includegraphics{Sinnecker-20-mod2}}
-%    \caption{\label{fig:Sinnecker-Water20}
-%      {
-%        %
-%        The structure of the {\it p}-benzosemiquinone radical in coordination with 20 water molecules taken from Ref.~\onlinecite{doi:10.1021/ja0392014}.
-%        %
-%        The bridging hydrogen atoms are indicated by the blue circles.
-%      }
-%    }
-%  \end{figure}
-%}
 
 \end{document}
