@@ -588,7 +588,48 @@ However, the isomerization energy profile calculated by PNO-CEPT2 model is still
 %
 Therefore, at least in this case, the CEPA extension in the 2-external subspaces gives only a minor correction to the CASPT2 isomerization energy. 
 
-\subsection{Ground and Excited States of Polyenes}
+\subsection{Ground and Excited States of Butadiene and Linear Polyenes}
+
+%
+Predicting low-lying dark (2${}^1\text{A}_\text{g}^{-}$) and bright (1${}^1\text{B}_\text{u}^{+}$) excited states of butadiene has been known as notoriously challenging despite as reported in Ref.~\onlinecite{doi:10.1021/ct300591z}.
+%
+To achieve qualitative accuracy in calculating the excitation energy (EE) for the accesible 1${}^1\text{B}_\text{u}^{+}$ state, inclusion of the dynamic correlation plays a key role.
+%
+On the other hand, the dipole-forbidden 2${}^1\text{A}_\text{g}^{-}$ state is dominated by doubly-excited character and is of strong multireference nature even though there is no reliable experimental EEs reported for this state.
+%
+Therefore, the typical single-reference excited state methods such as Equation-Of-Motion Coupled-Cluster with Singles and Doubles (EOM-CCSD) are not the appropriate choices for the 2${}^1\text{A}_\text{g}^{-}$ state even though there is no reliable experimental EE for this state.
+
+%
+In Table \ref{tab:butadiene}, EEs for the 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states calculated by canonical CASPT2 and CEPT2 models are shown in comparison with various theoretical and experimental values.
+%
+Geometries for butadiene and longer polyene chains were taken from Ref.~\onlinecite{doi:10.1063/1.4900878}.
+%
+In Ref.~\onlinecite{doi:10.1021/ct300591z}, Watson {\it et al.} have proposed the best theoretical EEs by using EOM-CC method including up to quadruple excitations (EOM-CCSDTQ).
+%
+It is seen that the CC2, EOM-CCSD and EOM-CCSD(T) values largely deviate from the EOM-CCSDTQ values for the 2${}^1\text{A}_\text{g}^{-}$ state that possesses doubly-excited character while giving reasonably well agreement for 1${}^1\text{B}_\text{u}^{+}$.
+%
+To obtain good agreement with the EOM-CCSDTQ results for both states in a single-reference framework, at least, CC3 level of theory should be used.
+%
+The CASSCF values which lacks dynamic correlation effects show large deviation by up to 2.3 eV from the EOM-CCSDTQ result for 1${}^1\text{B}_\text{u}^{+}$.
+%
+Addition of the dynamic correlation correction on top of the CASSCF energies significantly remedy the CASSCF results and the CASPT2 gives reasonably well agreement with the EOM-CCSDTQ values while in the CASPT2 results in Ref.~\onlinecite{doi:10.1063/1.465071} 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ are predicted to be almost degenerated.
+%
+The EEs calculated by CEPT2 model are quite close to those by MR-AQCC results and in good agreement with the EOM-CCSDTQ results.
+
+%
+The 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of longer polyene chains were used as a benchmark sets for the cumulant-approximated CASPT2\cite{doi:10.1063/1.4900878} and NEVPT2\cite{Zgid2009} studies to assess the errors caused by the cumulant approximations in the 3- and 4-RDMs.
+%
+In this study, we do not utilize the cumulant aproximations in the RDMs.
+%
+However, to assess the impact of CEPA/0 extensions in the PNO-CEPT2 model on the EEs, we calculated the vertical EEs for 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of conjugated linear polyene molecules (C${}_{2n}$H${}_{2n+2}$) using CAS(2n$e$, 2n$o$).
+%
+In Fig. \ref{fig:Polyene}, the EEs calculated at the canonical CASPT2 and PNO-CEPT2 level and the difference in the EEs are shown.
+%
+Interestingly, in both CASPT2 and PNO-CEPT2 results, the ${}^1\text{B}_\text{u}^{+}$ state appears to be lower for C${}_2$H${}_4$ in accordance with previous results\cite{doi:10.1063/1.4900878} while for C${}_2$H${}_4$ and the longer chains the order is switched.
+%
+As can be seen from Fig. \ref{fig:Polyene} c), the EEs calculated by the PNO-CEPT2 model are always higher than those by the CASPT2.
+%
+However, for C${}_4$H${}_4$ the PNO-CEPA correction works more strongly on the 2${}^1\text{A}_\text{g}^{-}$ state while for the other polyene molecules, the PNO-CEPA correction on the ${}^1\text{B}_\text{u}^{+}$ state is larger than the that on the other by up to about 0.1 eV for C${}_8$H${}_{10}$.
 
 \subsection{Singlet-Triplet Gap of Free-base Porphyrin}
 %
@@ -732,6 +773,56 @@ PNO-CEPT2(8$e$,10$o$) (This work)     &&  +9.6 \\
 \newpage
 
 {
+%\squeezetable
+\begin{longtable}[!ht]{cccccc}
+  \caption{\label{tab:butadiene}
+    %
+    Computed EEs for 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states at canonical CASPT2 and CEPT2 model in comparison with various theoretical and experimental data.
+    %
+    The def2-TZVPP basis and def2-TZVPP/JK auxiliary basis sets were used.
+    %
+    The C(1$s$) orbitals were frozen during CASPT2 and CEPT2 computations while all the C(2$p_z$) orbitals were included in the active space leading to CAS(4$e$, 4$o$) treaement.
+    %
+    No shifts were used in the zeroth-order Hamiltonian.
+}
+\\
+\hline
+\hline
+Method && 1${}^1\text{B}_\text{u}^{+}$ && 2${}^1\text{A}_\text{g}^{-}$ \\
+\hline
+
+EOM-CCSD\cite{doi:10.1063/1.471988}    && 6.42       && 7.23       \\
+EOM-CCSD(T)\cite{doi:10.1063/1.471988} && 6.13--6.36 && 6.76--6.92 \\
+CC2\cite{doi:10.1063/1.3158990}        && 6.15       && 7.04       \\
+CC3\cite{doi:10.1063/1.3158990}        && 6.19       && 6.58       \\
+CASSCF\cite{doi:10.1063/1.465071}      && 8.54       && 6.64       \\
+CASPT2\cite{doi:10.1063/1.465071}      && 6.23       && 6.27       \\
+MRCI\cite{SZALAY1989219}               && 6.70       && 6.78       \\
+MR-AQCC\cite{Dallos2004}               && 6.18       && 6.55       \\
+\\
+CASSCF (This work)      && 8.18       && 6.72       \\
+CASPT2 (This work)      && 6.00       && 6.29       \\
+CEPT2 (This work)       && 6.12       && 6.50       \\
+\\
+EOM-CCSDTQ\cite{doi:10.1021/ct300591z} && 6.21       && 6.41 \\
+Exp.\cite{doi:10.1063/1.440587}        && 5.96--6.05 && --   \\
+\hline
+\hline
+%%\multicolumn{4}{l}{${}^a$ Taken from Ref.~\onlinecite{AK74}} \\
+%%\multicolumn{4}{l}{${}^b$ Relativistic effects were included by the effective core potentials (ECPs) on copper atoms} \\ 
+%%\multicolumn{4}{l}{${}^c$ Taken from Ref.~\onlinecite{doi:10.1063/1.4900878}} \\ 
+%%\multicolumn{4}{l}{${}^d$ Taken from Ref.~\onlinecite{doi:10.1021/jp056791e}} \\
+%%\multicolumn{4}{l}{${}^d$ Taken from Ref.~\onlinecite{Rode2005}}
+\end{longtable}
+%\footnotetext[1]{Taken from Ref.~\onlinecite{AK74}}
+%\footnotetext[2]{Taken from Ref.~\onlinecite{doi:10.1063/1.4900878}}
+%\footnotetext[3]{Taken from Ref.~\onlinecite{doi:10.1021/jp056791e}}
+
+}
+
+\newpage
+
+{
 \squeezetable
 \begin{sidewaysfigure}  
 \begin{longtable}[!ht]{cccccccccccccccccccc}
@@ -822,6 +913,28 @@ Exp.\cite{Gouterman1974} &&  &&  &&  &&  &&  &&  && && && 1.58 \\
         The PNO and weak-pair truncation thresholds were set to $5\times 10^{-1}$ and $1\times 10^{-5}$ Eh, respectively.
         %
         Total number of AO basis functions is 752.
+      }
+    }
+  \end{figure}
+}
+
+\newpage
+
+{
+  \begin{figure}[H]
+    \scalebox{0.4}{\includegraphics{Fig-Polyene.pdf}}
+    \caption{\label{fig:Polyene}
+      {
+        %
+        Vertical EEs for linear polyene, C${}_{2n}$H${}_{2n+2}$, calculated by a) canonical CASPT2 and the b) PNO-CEPT2 methods using PNO and weak-pair truncation thresholds set to $5.0\times 10^{-8}$ and $1.0\times 10^{-5}$ Eh, respectively.
+        %
+        Figure c) represents difference between canonical CASPT2 and PNO-CEPT2 EEs, EE(PNO-CEPT2)-EE(CASPT2), while Figure d) showing the general chemical formula for polyene chains.
+        %
+        The def2-TZVPP basis and def2-TZVPP/JK auxiliary basis sets were used.
+        %
+        All the C(1$s$) orbitals were kep frozen after the reference CASSCF calculation while C($2p_z$) orbitals were included in the active space, thus leading to CAS(2n $e$, 2n $o$) treatment.
+        %
+        No shifts were used in the zeroth-order Hamiltonian.
       }
     }
   \end{figure}
