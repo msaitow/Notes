@@ -50,9 +50,9 @@
   %
   Moreover, using an automatic expression and code generation technique, we have implemented the CASPT2 and CEPT2 approaches in the pair-natural orbital (PNO) framework to reduce their computational costs with respect to the number of atomic orbital (AO) basis.
   %
-  To highlight the accuracy of the CEPT2 approach and to assess the errors caused by the PNO truncation, we have performed benchmark calculations on small- to medium-size molecules including dissociation of N${}_2$ molecule.
+  To highlight the accuracy of the CEPT2 approach and to assess the errors caused by the PNO truncation, we have performed benchmark calculations on small- to medium-size molecules including dissociation of N${}_2$ molecule, the singlet-triplet splitting of the free-base porphyrin molecule.
   %
-  MADA-MADA
+  We demonstrate that by tightening the truncation thresholds the PNO-CEPT2 energy converges toward the canonical counterpart and that the PNO-CEPT2 results are more accurate than that of PNO-CASPT2 as long as the same truncation thresholds are used.
   
 \end{abstract}
 
@@ -135,7 +135,21 @@ To overcome this issue, we introduce PNO expansion in the 2-external subspace in
 Derivation and implementation of our PNO-CASPT2/CEPT2 scheme have been achieved by an automatic code generation framework which was used in our previous works\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} and has been extended to handle PNOs.
 
 %
-This paper proceeds as follows:XXXX
+This paper proceeds as follows:
+%
+In Sec. \ref{Sec:theory}, we show how the PNOs are defined in the MR cases and used in the CASPT2 formalism.
+%
+The PNO-CEPT2 Ansatz is given as a extension to the PNO-CASPT2 model and the strategy we have chosen to use for the automatic code generation in the PNO framework is addressed.
+%
+In Sec. \ref{Sec:results}, the accuracy of the canonical CEPT2 model and the PNO trucation errors are validiated for N${}_2$ dissociation.
+%
+The isomerization energy profile calculated at the PNO-CEPT2 level of theory is shown and compared to those by the CASPT2 and the previous theoretical results.
+%
+The excitation energies (EEs) for the dipole-accessible and dipole-forbidden states of butadiene and longer polyene chains calculated by the PNO-CEPT2 theory are given and compared to the experimental and the theoretical values.
+%
+Accuracy of the PNO-CEPT2 model are examined by using various PNO truncation thresholds in calculating the Singlet--Triplet energy (S--T) gap for the free-base porphyrin.
+%
+In Sec. \ref{Sec:Conclusion} finally conclusions are drwan.
 
 \section{Theory}\label{Sec:theory}
 
@@ -400,7 +414,7 @@ However, such terms are typically not a bottleneck any more if the virtual space
 %
 Some of the PNO-CEPA terms involve the semi-joint pair-pair interactions and in the MR case these terms appear to be more invlved.
 %
-Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave function converge to those of PNO-CEPA/0(D) wave function.
+Apparently, in the single-reference limit, the PNO-CEPT2 energy and wave function converge to those of PNO-CEPA/0 with Doubles (PNO-CEPA/0(D)) or equivalently PNO-Linearlized Coupled-Cluster Doubles (PNO-LCCD) wave function.
 
 %
 All the CEPA terms in Eq. (\ref{eq:CEPT-E}) are {\it linked} in the sense that the amplitude is either directly or indirectly via 1-body density cumulant connected to the integral.
@@ -522,7 +536,7 @@ For those subspaces which do not involve any PNOs and the coupling matrix elemen
 
 \section{Results and discussion}\label{Sec:results}
 
-\subsection{Non-Parallelity Errors for N${}_2$ Dissociation}
+\subsection{Non-Parallelity Errors for N${}_2$ Dissociation}\label{Subsec:N2}
 
 %
 To assess the performance of canonical CEPT2 model and the validity of the PNO truncation, we calculated the dissociation curve of N${}_2$ molecule in the singlet state using canonical CASPT2 and CEPT2 models.
@@ -593,7 +607,7 @@ Therefore, at least in this case, the CEPA extension in the 2-external subspaces
 %
 Predicting low-lying dark (2${}^1\text{A}_\text{g}^{-}$) and bright (1${}^1\text{B}_\text{u}^{+}$) excited states of butadiene has been known as notoriously challenging despite as reported in Ref.~\onlinecite{doi:10.1021/ct300591z}.
 %
-To achieve qualitative accuracy in calculating the excitation energy (EE) for the accesible 1${}^1\text{B}_\text{u}^{+}$ state, inclusion of the dynamic correlation plays a key role.
+To achieve qualitative accuracy in calculating the EE for the accesible 1${}^1\text{B}_\text{u}^{+}$ state, inclusion of the dynamic correlation plays a key role.
 %
 On the other hand, the dipole-forbidden 2${}^1\text{A}_\text{g}^{-}$ state is dominated by doubly-excited character and is of strong multireference nature even though there is no reliable experimental EEs reported for this state.
 %
@@ -654,6 +668,60 @@ The PNO-CEPT2 values agree well also to the cumulant-approximated MRCI+Q and ACP
 Note that none of computational values in Table \ref{tab:H2P-ST-gap} include the solvent-effects.
 
 \section{Conclusion}\label{Sec:Conclusion}
+
+%
+To obtain qualitative accuracy in predicting the reaction energies and various chemical energetics, a balanced treatment between static and dynamic electron correlation effects plays a key role.
+%
+One of the most commonly used methods is the MR second-order perturbation theory such as CASPT2 and NEVPT2, both of which converge to the MP2 method in the closed-shell SR limit.
+%
+As a simple yet higher order extension to the CASPT2 method, we have developed a hybrid of MR-CEPA/0 and CASPT2 Ans\"atze that converges to the CEPA/0(D) in the closed-shell SR limit, which is coined CEPT2 Ansatz.
+%
+One of the largest bottleneck of the CEPT2 computation that is stemming from the MR-CEPA/0 terms in the residual equations is the presence of the so-called 4-EEOs involving a contraction of the 4-external two-electron integrals and the amplitude.
+%
+To accelerate the CEPT2 computation, the CEPT2 equations are expanded in the local PNO basis which a compact set of virtual orbitals specifically optimized to each pair of localized orbitals and the nr-ICBs.
+%
+Development of the PNO-CEPT2 computer programs was conducted using the automatic code generation technique and interfaced to our in-house quantum chemistry program package.
+
+%
+For N${}_2$ dissociation, the CEPT2 model was shown to give a smaller NPE than that of CASPT2 model in comparison with the reference FIC-MRCI+Q results.
+%
+The errors caused by the PNO truncation were examined and shown to be the largest at around the equilibrium internuclear distance.
+
+%
+The PNO-CEPT2 model was applied to calculating the isomerization energy profiles of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex from the bis($\mu$-oxo) to the $\mu-\eta^2:\eta^2$-peroxo structures.
+%
+The PNO-CEPT2 results show a similar trend to the CASPT2 as long as CAS(8$e$, 10$o$) is used and strongly disagree with the previous IC-MRCI+Q and IC-MRCC results.
+%
+To remedy the accuracy of the PNO-CEPT2 model, the higher-order treatment of the subspaces with three active MO indices ($E^{ip}_{qr}$ and $E^{ra}_{pq}$) will be necessary.
+%
+However, simple use of the IC-MR-CEPA ansatz into those subspaces introduce a complicated tensor contraction involving the 4-RDMs and the amplitude and the PNOs cannot accelerate construction of such terms.
+%
+Another possibility to improve the accuracy of the PNO-CEPT2 model is to use unconventionally large active space using the DMRG reference function.
+%
+As all the terms involving the 4-RDMs are not more complicated than those in the CASPT2 mode, combination of the PNO-CEPT2 model and the DMRG reference function via use of the cumulant-approximated 4-RDM is quite straightforward.
+%
+Nevertheless, previous studies have shown that simple use of cumulant-approximated RDM often introduces unavoidable instability in the residual equation.
+%
+Therefore, as a future development, we prefere to pursue other possibilities such as uncontracting the $E^{ip}_{qr}$ and $E^{ra}_{pq}$ subspaces using the Matrix-Product State (MPS) basis.
+
+%
+The CEPT2 was shown to give good agreement with the EOM-CCSDTQ results on calculating the excitation energies of butadiene achieving a good balance between dynamic and static electron correlations.
+%
+For longer polyene systems, the PNO-CEPT2 produces the larger EEs than those by the CASPT2 model by up to 0.29 eV.
+
+%
+For calculating the non-vertical S--T gap of free-base porphyrin where the relaxation of the geometry in the triplet state is relatively small, the PNO and weak-pair truncations work surprisingly fine thus producing a S--T gap in a good agreemtns with the experimental value.
+%
+Size of the PNO-CEPT2 amplitude is only up to less than 6 $\%$ of the canonical counterpart even with the PNO and the weak-pair truncation thresholds are set to $1.0\times10^{-9}$ and $1.0\times 10^{-5}$ Eh, respectively.
+
+%
+We find that the IC-MR-CEPA extension to the CASPT2 model in te 2-external subspaces leads to the improvement in the accuracy.
+%
+However, the PNO-CEPT2 model is not alwaysaccurate enough especially if the active space is too small.
+%
+To improve the accuracy while keeping the active space as small as possible, higher order extension to $E^{ip}_{qr}$ and $E^{ra}_{pq}$ subspaces will be important.
+%
+A production level implementation of the PNO-CEPT2 model is currently in progress.
 
 \section*{supplementary material}
 
@@ -898,7 +966,8 @@ Exp.\cite{Gouterman1974} &&  &&  &&  &&  &&  &&  && && && 1.58 \\
 
 {
   \begin{figure}[H]
-    \scalebox{0.5}{\includegraphics{Cu2O2-Isomerization-New.pdf}}
+    %\scalebox{0.5}{\includegraphics{Cu2O2-Isomerization-New.pdf}}
+    \scalebox{0.5}{\includegraphics{Cu2O2-Isomerization.pdf}}    
     \caption{\label{fig:CEPT-Cu2O2}
       {
         %
