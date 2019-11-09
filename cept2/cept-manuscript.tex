@@ -44,7 +44,7 @@
   %
   The Complete Active Space Second-order Perturbation Theory (CASPT2) has been one of the most widely used methods for caluclating the electronic structure of the multireference systems with semi-quantitative accuracy.
   %
-  As a simple, yet higher-order approach, we have developed a hybrid theory of the CASPT2 and a multireference variant of the Coupled-Electron Pair Approximation (CEPA) in the fully-internally contracted framework.
+  As a simple, yet higher-order approach, we have developed a hybrid theory of the CASPT2 and a multireference variant of the Coupled-Electron Pair Approximation (CEPA) in the fully-internally contracted (FIC) framework.
   %
   In the newly developed theory (CEPT2), the external components of the wave functions, which usually give the most significant contribution to the dynamic correlation energy, are solve at the CEPA level while the rests are treated at the CASPT2 level.
   %
@@ -82,11 +82,11 @@ Amongst the MR wave function theories, the Second-order Complete-Active-Space Pe
 %
 A newer variant of CASPT called N-Electron Valence-state Perturbvation Theory (NEVPT) was proposed by Angeli {\it et al.}\cite{angeliintroduction2001,angelin-electron2002,angelinew2006} using Dyall's zeroth-order Hamiltonian\cite{dyallthe1995} to overcome some of the shortcomings of CASPT approach.
 %
-As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($c^2v^2$) for system with a fixed number of active molecular orbitals (MOs) where $c$ and $v$ represent the number of doubly-occupied and virtual MOs, respectively.
+As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the closed-shell SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($c^2v^2$) for system with a fixed number of active molecular orbitals (MOs) where $c$ and $v$ represent the number of doubly-occupied and virtual MOs, respectively.
 %
 Before calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($c^2v^2$).
 %
-For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to 4th order.
+For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to four-body nature.
 %
 Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions is often prohibited.
 
@@ -119,12 +119,31 @@ In a similar vein, variants of PNO-based reduced-scaling wave function methods h
 %
 %However, 
 
-%Nowadays, developments of highly accurate reduced-scaling SR and MR wave function methods using PNOs have become an active field
-In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to conventional CASPT2 method.
+In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to the conventional CASPT2 method.
+%
+The 2-external configurations in the first-order CEPT wave function are treated at the IC-MR-CEPA level while the remaining semi-internal and the internal configurations are kept at the CASPT2 level for capturing more dynamic correlation.
+%
+The coupling between two Ans\"atze has been accomplished in a similar vein to the CIPT2 model by Werner and co-workers\cite{celanithe2004}.
+%
+In the CIPT2 extension to the CASPT2 theory, the reference configurations, ({\it active}, {\it active})$\rightarrow$({\it active}, {\it virtual}) and ({\it active}, {\it active})$\rightarrow$({\it virtual}, {\it virtual}) excited configurations are treated at the MRCI level while leaving the remaining ones at the CASPT2 level in order to remedy the intruder state problem without employing the real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts.
+%
+%Even though their CIPT2 model is based on partially-IC formulation,\cite{Celani2000,PCMRCI2011} the IC configurations involving three active MO indices, which are solved at the MRCI level 
+%
+Actually, treating the configurations with three active MO indices in the fully IC-MRCI level framework is know to cause several difficulties:
+%
+
+
+one of the semi-internal IC configurations with three active MO indices are treated at the MRCI level thus requiring evaluation of tensor contractions involving the four-body RDM (4-RDM) and the amplitudes 
+
+%
+Therefore, in the closed-shell single-reference limit, the CEPT2 model converges to the linearized coupled-cluster doubles (L-CCD) or equivalently the CEPA/0 doubles (CEPA/0(D)) that recovers more dynamic correlation energy than the MP2 model.
+%
+Note that Fink and co-workers proposed a variant of MR perturbation theory\cite{FINK2006461,FINK200939,doi:10.1021/acs.jctc.6b00898} that also converges to the L-CCD or CEPA/0(D) model in the closed-shell SR limit at the second-order level and is known as the so-called Retantion of Excitaton degree Perturbation Theory (REPT).
+%
+On the other hand, the CASPT2 and NEVPT2 models converge to the MP2 in the closed-shell single-reference limit.
+
 %
 Even though the standard full of IC-MR-CEPA/0 lacks size-consistency, all the CEPA terms introduced are fully-connected and thus the near-size-consistent nature of CASPT2 is inherited to the CEPT2 model.
-%
-In CEPT2 method, the amplitudes of 2-external nature are solved at the MR-CEPA/0 level while the remaining amplitudes are treated at the CASPT2 level.
 %
 This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
 %
@@ -149,7 +168,7 @@ The excitation energies (EEs) for the dipole-accessible and dipole-forbidden sta
 %
 Accuracy of the PNO-CEPT2 model are examined by using various PNO truncation thresholds in calculating the Singlet--Triplet energy (S--T) gap for the free-base porphyrin.
 %
-In Sec. \ref{Sec:Conclusion} finally conclusions are drwan.
+In Sec. \ref{Sec:Conclusion} finally conclusions are drawn.
 
 \section{Theory}\label{Sec:theory}
 
@@ -352,7 +371,7 @@ To this end, we extended our code generator framework\cite{femto,saitowmultirefe
 In our program, the PNO-CASPT2 residul equations are solved by the preconditioned conjugate gradient (PCG) algorithm.
 
 %
-We have also implemented real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts in our PNO-CASPT2 program in the same way as the canonical CASPT2 program.
+We have also implemented real and imaginary shifts in our PNO-CASPT2 program in the same way as the canonical CASPT2 program.
 %
 The conventional formulation of the imaginary shifts is based on the diagonality in the diagonal blocks of zeroth-order Hamiltonian matrix in FOIS which is not satisfied if the DOMOs are localized.
 %
