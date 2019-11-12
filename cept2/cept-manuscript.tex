@@ -88,10 +88,10 @@ Before calculating CASPT2 energy, one has to solve the first-order amplitude equ
 %
 For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to four-body nature.
 %
-Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions is often prohibited.
+Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions often becomes prohibitively expensive.
 
 %
-To improve the applicability of CASPT2 approach, numerous efforts have been including use of frozen-natural orbitals (FNOs)\cite{doi:10.1063/1.3157463,doi:10.1021/acs.jctc.5b00479} in the virtual space in conjunction with the Cholesky decomposition technique for reducing the costs of MO integral transformation\cite{doi:10.1063/1.2953696,doi:10.1021/ct9000284,doi:10.1021/ct700263h,doi:10.1021/ct900612k} and of the tensor-hyper-contraction-based (THC-) CASPT2.\cite{doi:10.1063/1.5037283}
+To improve the applicability of CASPT2 approach, numerous efforts have been made including use of frozen-natural orbitals (FNOs)\cite{doi:10.1063/1.3157463,doi:10.1021/acs.jctc.5b00479} in the virtual space in conjunction with the Cholesky decomposition technique for reducing the costs of MO integral transformation\cite{doi:10.1063/1.2953696,doi:10.1021/ct9000284,doi:10.1021/ct700263h,doi:10.1021/ct900612k} and of the tensor-hyper-contraction-based (THC-) CASPT2.\cite{doi:10.1063/1.5037283}
 %
 The density-fitting (DF) or resolution-of-the-identity (RI) approximation has also been used for accelerating CASPT2 computation.\cite{ShioWerner2013}
 %
@@ -114,40 +114,51 @@ The DLPNO scheme has been extended to MR wave function theories resulting in DLP
 In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and a variant of PNO-CC method and PNO-based theories for the excited states by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
 
 %
-%The IC-MRCI method and its size-consistency corrected variants often provides a much higher accuracy than CASPT2 for small molecules.
-%The IC-MRCC methods pioneered by Simons and extended by K\"ohn {\it et. al} often provide a sophisticated treatment of electron correlation than the MRCI and the second-order perturbation theories.
+In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extention to the conventional CASPT2 method for capturing more dynamic correlation.
 %
-%However, 
-
-In this paper, we report a hybrid of IC-MR-CEPA and CASPT2, which is conined CEPT2, as a higher-order, yet simple extenton to the conventional CASPT2 method.
-%
-The 2-external configurations in the first-order CEPT wave function are treated at the IC-MR-CEPA level while the remaining semi-internal and the internal configurations are kept at the CASPT2 level for capturing more dynamic correlation.
+The 2-external configurations in the first-order CEPT wave function are treated at the IC-MR-CEPA level while the remaining semi-internal and the internal configurations are kept at the CASPT2 level.
 %
 The coupling between two Ans\"atze has been accomplished in a similar vein to the CIPT2 model by Werner and co-workers\cite{celanithe2004}.
 %
-In the CIPT2 extension to the CASPT2 theory, the reference configurations, ({\it active}, {\it active})$\rightarrow$({\it active}, {\it virtual}) and ({\it active}, {\it active})$\rightarrow$({\it virtual}, {\it virtual}) excited configurations are treated at the MRCI level while leaving the remaining ones at the CASPT2 level in order to remedy the intruder state problem without employing the real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts.
-%
-%Even though their CIPT2 model is based on partially-IC formulation,\cite{Celani2000,PCMRCI2011} the IC configurations involving three active MO indices, which are solved at the MRCI level 
-%
-Actually, treating the configurations with three active MO indices in the fully IC-MRCI level framework is know to cause several difficulties:
-%
-
-
-one of the semi-internal IC configurations with three active MO indices are treated at the MRCI level thus requiring evaluation of tensor contractions involving the four-body RDM (4-RDM) and the amplitudes 
-
-%
-Therefore, in the closed-shell single-reference limit, the CEPT2 model converges to the linearized coupled-cluster doubles (L-CCD) or equivalently the CEPA/0 doubles (CEPA/0(D)) that recovers more dynamic correlation energy than the MP2 model.
+In the closed-shell SR limit, the CEPT2 model converges to the linearized coupled-cluster doubles (L-CCD) or equivalently the CEPA/0 doubles (CEPA/0(D)) that recovers more dynamic correlation energy than the MP2 model.
 %
 Note that Fink and co-workers proposed a variant of MR perturbation theory\cite{FINK2006461,FINK200939,doi:10.1021/acs.jctc.6b00898} that also converges to the L-CCD or CEPA/0(D) model in the closed-shell SR limit at the second-order level and is known as the so-called Retantion of Excitaton degree Perturbation Theory (REPT).
-%
-On the other hand, the CASPT2 and NEVPT2 models converge to the MP2 in the closed-shell single-reference limit.
 
 %
-Even though the standard full of IC-MR-CEPA/0 lacks size-consistency, all the CEPA terms introduced are fully-connected and thus the near-size-consistent nature of CASPT2 is inherited to the CEPT2 model.
+In the original CIPT2 model,\cite{Celani2000,PCMRCI2011} the reference configurations, ({\it active}, {\it active})$\rightarrow$({\it active}, {\it virtual}) and ({\it active}, {\it active})$\rightarrow$({\it virtual}, {\it virtual}) excited configurations are treated at the MRCI level while leaving the remaining ones at the CASPT2 level in order to remedy the intruder state problem without employing the real\cite{ROOS1995215} and imaginary\cite{FORSBERG1997196} shifts.
 %
-This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
+Actually, treating those configurations with three active MO indices in the IC framework at the MRCI level is known to cause several computational difficulties the most severe one of which is the appearance of 5-RDMs.\cite{doi:10.1063/1.443357}
 %
-Use of MR-CEPA ansatz for the 2-external subspaces introduces several terms involving 4-external MO integrals which may potentially make the whole computation quite demanding even for relatively small systems.
+An active space 5-RDM is a tensor quantity associated with 10 active MO indices and hence for those systems with 16 active MOs generation and storage of the 5-RDM require more than 8.0 terabytes of disk space.
+%
+Therefore, in the partially IC-MRCI models\cite{PCMRCI1988,PCMRCI2011} implemented in Molpro package, such configurations are uncontracted to remove them from the working equations.
+
+%
+Later, by rewriting the Hamiltonian matrix element into a commutator-based expression as done in the NEVPT2 formulation,\cite{angeliintroduction2001} the MRCI theory in a fully IC framework (FIC-MRCI) without 5-RDM was formulated.\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270,doi:10.1063/1.4907717,doi:10.1063/1.4959029}
+%
+However, tensor contractions involving the 4-RDM and the amplitude in the FIC-MRCI $\sigma$-equation can still be a bottleneck even for systems with relatively small active space as their computational scaling is either of $O(ca^8)$ or $O(a^8v)$ with $a$ being the number of active MOs.
+%
+In the CEPT2 model, on the other hand, such contractions do not appear in the residua and all the 4-RDMs are contracted to the Fock operator thus appearing as an effective 3-body tensor with $O(a^8)$ costs just as in case of CASPT2.
+
+%%
+%The commutator-based FIC-MRCI model was combined with the {\it ab initio} Density Matrix Renormalization Group (DMRG) algorithm as a large-scale CAS solver and has been applied to differate model with 32 active MOs.\cite{diferrate2014}
+%%
+%Combination of the FIC-MRCI framework and the DMRG solver was mediated by the cumulant-approximation\cite{ColmeneroValdemoro1993I,ColmeneroValdemoro1993II,ColmeneroValdemoro1994,Kutzelnigg_Mukherjee1997,doi:10.1063/1.2768354} to the 4-RDM whose size can also be prohibitively large.\footnote{As a 4-RDM is a tensor quantity with 8 active MO indices, the size becomes approximately 8.2 terabytes for systems involving 32 active MOs.}
+%%
+%However, as the cumulant-approximated 4-RDM does not fulfill the {\it N}-representability conditions, the DMRG-based FIC-MRCI model is no longer variational and often possesses a spurious, unphysical root that is far lower lying than the real FIC-MRCI ground state.
+%%
+%The cumulant-approximated 4-RDM was also applied to the DMRG-based CASPT2 implementation.\cite{doi:10.1063/1.3629454}
+%%
+%As the CAPST2 method is not variational, the CASPT2 energy with the cumulant-approximated 4-RDM\cite{doi:10.1063/1.4900878} is not as erratic as the MRCI counterpart showing an error of about 2 kcal/mol in the reaction energy.\cite{doi:10.1021/acs.jctc.9b00166}
+
+%
+Even though the full IC-MR-CEPA/0 lacks size-consistency, all the CEPA terms introduced are fully-connected and thus the near-size-consistent nature of CASPT2 is directly inherited to the CEPT2 model.
+%
+%This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
+%
+Use of MR-CEPA ansatz for the 2-external subspaces introduces several terms involving 4-external MO integrals contracted to the amplitude, which may potentially make the whole computation quite demanding even for relatively small systems.
+%
+This type of contraction terms are often referred to as 4-external exchange operators (4-EEOs) and are known to be the most expensive terms in the SR-CEPA and CCSD computations with $O(c^2 v^4)$ computational cost.
 %
 To overcome this issue, we introduce PNO expansion in the 2-external subspace in a similar vein to Ref. ~\onlinecite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019}.
 %
