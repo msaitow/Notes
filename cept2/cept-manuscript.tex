@@ -628,6 +628,14 @@ Still, the difference reaches only up to about 1.2 kcal/mol and is quite small i
 %
 The PNO-CEPA extension in the PNO-CEPT2 model corrects the PNO-CASPT2 results in the direction of MRCI+Q(8$e$, 10$o$) result by up to about 1.8 kcal/mol.
 %
+In Table \ref{tab:cu2o2-analysis}, the magnitude of the PNO-CEPT2 corrections to each subspace is analyzed.
+%
+As can be seen, the CEPA extension to ($c$,$c$)$\rightarrow$($v$,$v$) subspace corrects the dynamical correlation energy by about up to -21.0 kcal/mol for both bis($\mu$-oxo) and $\mu-\eta^2:\eta^2$-peroxo states thus resulting in almost perfect cancellation in the isomerization energy.
+%
+The 2-external subspaces with at least one active MO indices give rise to larger change in the isomerization energy by up to 1.52 kcal/mol.
+%
+Even though the zeroth Hamiltonian is left unmodified, ($c$,$c$)$\rightarrow$($a$,$v$) semi-internal subspace shows a relatively large correction of about 0.45 kcal/mol in comparison with those from the other semi-internal  and internal subspaces.
+%
 However, the isomerization energy profile calculated by PNO-CEPT2 model is still similar to that by PNO-CASPT2 and the isomerization energy still appears to be far off from the IC-MRCI+Q and the IC-MRCC values.
 %
 Therefore, at least in this case, the CEPA extension in the 2-external subspaces gives only a minor correction to the CASPT2 isomerization energy. 
@@ -865,6 +873,47 @@ PNO-CEPT2(8$e$,10$o$) (This work)     &&  +9.6 \\
 %\footnotetext[1]{Taken from Ref.~\onlinecite{AK74}}
 %\footnotetext[2]{Taken from Ref.~\onlinecite{doi:10.1063/1.4900878}}
 %\footnotetext[3]{Taken from Ref.~\onlinecite{doi:10.1021/jp056791e}}
+
+}
+
+\newpage
+
+{
+\squeezetable
+\begin{sidewaysfigure}    
+\begin{longtable}[!ht]{cccccccccccccc}
+  \caption{\label{tab:cu2o2-analysis}
+    %
+    Contributions from each subspace in the PNO-CASPT2 and PNO-CEPT2 dynamical correlation energies using {\tt TCutPairs}=$1.0\times 10^{-5}$ Eh and {\tt TCutPNO}=$5.0\times 10^{-8}$.
+    %
+    Magnitude of PNO-CEPT2 correction in each subspace is compared with that of PNO-CASPT2.
+}
+  \\
+\hline  
+\hline
+ {}                                                               && \multicolumn{5}{c}{R(Cu-Cu)=1.6 \AA} && \multicolumn{5}{c}{R(Cu-Cu)=2.2 \AA} \\
+%\cline{3-8} \cline{9-14} \\
+\cline{3-14} \\      
+ Subspace                                                         && PNO-CASPT2 / Eh && PNO-CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol && CASPT2 / Eh && CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol \\
+\hline
+                                                                  && \multicolumn{10}{c}{2-External Configurations} \\
+($c$,$c$)$\rightarrow$($v$,$v$)                                   && -2.641691 && -2.675058 && -2.09$\times 10^{ 1}$ && -2.632592 && -2.666005 && -2.10$\times 10^{ 1}$  \\ % E (0) 
+($c$,$a$)$\rightarrow$($v$,$v$)                                   && -0.320316 && -0.303014 && +1.09$\times 10^{ 1}$ && -0.331461 && -0.312859 && +1.17$\times 10^{ 1}$  \\ % E (-1)
+($a$,$a$)$\rightarrow$($v$,$v$)                                   && -0.051163 && -0.052895 && -1.09                 && -0.053697 && -0.054310 && -3.85$\times 10^{-1}$  \\ % E (-2)
+
+                                                                  && \multicolumn{10}{c}{Semi-Internal Configurations} \\
+($c$,$c$)$\rightarrow$($a$,$v$)                                   && -0.132298 && -0.130746 && +9.74$\times 10^{-1}$ && -0.154270 && -0.152005 && +1.42$\times 10^{ 0}$  \\   % $\times 10^{ (+1)
+($c$,$a$)$\rightarrow$($a$,$v$),\ ($c$,$a$)$\rightarrow$($v$,$a$) && -0.206663 && -0.207394 && -4.59$\times 10^{-1}$ && -0.238979 && -0.239850 && -5.46$\times 10^{-1}$  \\ % $\times 10^{ (0')
+($a$,$a$)$\rightarrow$($a$,$v$)                                   && -0.015565 && -0.015542 && +1.46$\times 10^{-2}$ && -0.013961 && -0.013962 && -1.01$\times 10^{-3}$  \\ % $\times 10^{(-1')
+
+                                                                  && \multicolumn{10}{c}{Internal Configurations} \\
+($c$,$c$)$\rightarrow$($a$,$a$)                                   && -0.006854 && -0.006793 && +3.83$\times 10^{-2}$ && -0.009053 && -0.008963 && +5.66$\times 10^{-2}$  \\ % $\times 10^{ (+2)
+($c$,$a$)$\rightarrow$($a$,$a$)                                   && -0.006606 && -0.006607 && -1.44$\times 10^{-4}$ && -0.009019 && -0.009018 && +5.91$\times 10^{-4}$  \\ % $\times 10^{(+1')
+
+\hline
+\hline
+\end{longtable}
+\end{sidewaysfigure}  
 
 }
 
