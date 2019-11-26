@@ -1,5 +1,5 @@
-%\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
-\documentclass[aip,jcp,amsmath]{revtex4-1}
+\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
+%\documentclass[aip,jcp,amsmath]{revtex4-1}
 \usepackage{amsmath}
 \usepackage{color}
 \usepackage{txfonts}
@@ -590,30 +590,34 @@ For those subspaces which do not involve any PNOs and the coupling matrix elemen
 \subsection{Non-Parallelity Errors for N${}_2$ Dissociation}\label{Subsec:N2}
 
 %
-To assess the performance of canonical CEPT2 model and the validity of the PNO truncation, we calculated the dissociation curve of N${}_2$ molecule in the singlet state using canonical CASPT2 and CEPT2 models.
+To assess the performance of canonical CEPT2 model and the validity of the PNO truncation, we calculated the dissociation curve of N${}_2$ molecule in the singlet state using CEPT2 model with and without the PNO truncations in comparison with the FIC-NEVPT2 and CASPT2 results.
 %
-The results are compared with those obtained by Davidson-corrected Multireference Configuration Interaction (MRCI+Q) and the size-consistency-corrected variants such as Averaged-Coupled-Pair Functional (ACPF), and MR-CEPA/0.
+The CEPT2 results are also compared with those obtained by higher-order approaches such as Davidson-corrected FIC-MRCI (MRCI+Q) and the Averaged-Coupled-Pair Functional (FIC-ACPF), and FIC-MR-CEPA/0.
 %
 In all the CASPT2 and CEPT2 computations, no IPEA and level shifts were used.
 %
-Errors from the MRCI+Q values are shown in Fig. \ref{fig:CEPT-Comparison}.
+Errors from the FIC-MRCI+Q values are shown in Fig. \ref{fig:CEPT-Comparison}.
 %
 The non-parallelity errors (NPEs) are given in Table \ref{tab:dissociationN2-NPE}.
 %
-Orca 4.2 program package\cite{WCMS:WCMS1327} was used for FIC-NEVPT2,\cite{angelin-electron2002} FIC-MRCI,\cite{doi:10.1063/1.4959029} FIC-CEPA/0 and FIC-ACPF\cite{Gdanitz1988} computations.
+Orca 4.2 program package\cite{WCMS:WCMS1327} was used for FIC-NEVPT2, FIC-MRCI,\cite{doi:10.1063/1.4959029} FIC-CEPA/0 and FIC-ACPF\cite{Gdanitz1988} computations.
 %
 In Table \ref{tab:dissociationN2-NPE}, NPE by the CEPT2 model is shown to be smaller than that of the CASPT2 by about 3.8 kcal/mol.
 %
-Even though amounts of the dynamical correlation energies recovered by NEVPT2 model are smaller than those by CASPT2 by more than 15 kcal/mol, the NPE in the NEVPT2 energies is smaller than those by CASPT2 and CEPT2 models.
+%Even though amounts of the dynamical correlation energies recovered by NEVPT2 model are smaller than those by CASPT2 by more than 15 kcal/mol, the NPE in the NEVPT2 energies is smaller than those by CASPT2 and CEPT2 models.
+%
+Even though the NEVPT2 shows the largest deviations from the reference FIC-MRCI+Q results and the dynamical correlation energies recovered are smaller than those by CASPT2 by more than 15 kcal/mol, the NPE in the NEVPT2 energies is smaller than those by CASPT2 and CEPT2 models.
+%
+The FIC-MRCI-based and its approximately size-consistent variants produce quite similar results showing the NPE by up to about 2.0 kcal/mol with respect to the FIC-MRCI+Q results even though their computational costs are higher than any of CASPT2 and CEPT2 models.
 
 %
 In Table \ref{tab:dissociationN2}, the dynamical correlation energies recovered by PNO-CEPT2 model are shown for N${}_2$ molecule with various internuclear distances.
 %
-To obtain approximately 99.9 $\%$ of the correlation energy, the PNO truncation threshold, which is coined {\tt TCutPNO}, should be tighted by up to $1.0\times 10^{-8}$.
+To obtain approximately 99.9 $\%$ of the correlation energy, the PNO truncation threshold, which is coined {\tt TCutPNO}, should be tightened by up to $1.0\times 10^{-8}$.
 %
-Surprisingly, the correlation energy recovered appears to be smallest at 1.0 {\AA} which is close to the equilibrium internuclear distance.
+Surprisingly, the correlation energy recovered appears to be smallest at 1.0 {\AA} which is close to the equilibrium internuclear distance where the static correlation effect is very minor in comparison with the dynamic counterpart.
 %
-On the other hand, in the strongly-correlated region where the triple bond is being broken, the PNO approximation performes relatively well recovering approximately 99.9 $\%$ of the canonical correlation energy even with {\tt TCutPNO}$=5.0\times 10^{-8}$.
+On the other hand, in the strongly-correlated region where the triple bond is being broken, the PNO approximation performs relatively well recovering approximately 99.9 $\%$ of the canonical correlation energy even with {\tt TCutPNO}$=5.0\times 10^{-8}$.
 
 \subsection{Isomerization of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$}
 
@@ -725,6 +729,14 @@ Even with the tighest threshold used, $1.0\times 10^{-9}$, the PNO-CASPT2/CEPT2 
 The PNO-CEPT2 values agree well also to the cumulant-approximated MRCI+Q and ACPF results that use the DMRG-CASSCF reference function with full-valence $\pi$ active space.
 %
 Note that none of computational values in Table \ref{tab:H2P-ST-gap} include the solvent-effects.
+
+%
+In Table \ref{tab:h2p-analysis} dynamic correlation contribution from each subspace is shown for both PNO-CASPT2 and PNO-CEPT2 models.
+%
+Interestingly, unlike the isomerization of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex, the ($c$,$c$)$\rightarrow$($v$,$v$) subspace, which does not involve any active MO indices, gives dominant correction to the S--T gap by up to -2.98 kcal/mol (-0.15 eV).
+%
+On the other hand, the other two types of the external subspaces give quite minor corrections that reach only to -0.15 kcal/mol in total.
+
 
 \section{Conclusion}\label{Sec:Conclusion}
 
@@ -899,38 +911,81 @@ PNO-CEPT2(8$e$,10$o$) (This work)     &&  +9.6 \\
 
 \clearpage
 
+%{
+%\squeezetable
+%\begin{sidewaysfigure}    
+%\begin{longtable}[!ht]{cccccccccccccc}
+%  \caption{\label{tab:cu2o2-analysis}
+%    %
+%    Contributions from each subspace in the PNO-CASPT2 and PNO-CEPT2 dynamical correlation energies using {\tt TCutPairs}=$1.0\times 10^{-5}$ Eh and {\tt TCutPNO}=$5.0\times 10^{-8}$.
+%    %
+%    Magnitude of PNO-CEPT2 correction in each subspace is compared with that of PNO-CASPT2.
+%}
+%  \\
+%\hline  
+%\hline
+% {}                                                               && \multicolumn{5}{c}{R(Cu-Cu)=1.6 \AA} && \multicolumn{5}{c}{R(Cu-Cu)=2.2 \AA} \\
+%%\cline{3-8} \cline{9-14} \\
+%\cline{3-14} \\      
+% Subspace                                                         && PNO-CASPT2 / Eh && PNO-CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol && CASPT2 / Eh && CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol \\
+%\hline
+%                                                                  && \multicolumn{10}{c}{2-External Configurations} \\
+%($c$,$c$)$\rightarrow$($v$,$v$)                                   && -2.641691 && -2.675058 && -2.09$\times 10^{ 1}$ && -2.632592 && -2.666005 && -2.10$\times 10^{ 1}$  \\ % E (0) 
+%($c$,$a$)$\rightarrow$($v$,$v$)                                   && -0.320316 && -0.303014 && +1.09$\times 10^{ 1}$ && -0.331461 && -0.312859 && +1.17$\times 10^{ 1}$  \\ % E (-1)
+%($a$,$a$)$\rightarrow$($v$,$v$)                                   && -0.051163 && -0.052895 && -1.09                 && -0.053697 && -0.054310 && -3.85$\times 10^{-1}$  \\ % E (-2)
+%
+%                                                                  && \multicolumn{10}{c}{Semi-Internal Configurations} \\
+%($c$,$c$)$\rightarrow$($a$,$v$)                                   && -0.132298 && -0.130746 && +9.74$\times 10^{-1}$ && -0.154270 && -0.152005 && +1.42$\times 10^{ 0}$  \\   % $\times 10^{ (+1)
+%($c$,$a$)$\rightarrow$($a$,$v$),\ ($c$,$a$)$\rightarrow$($v$,$a$) && -0.206663 && -0.207394 && -4.59$\times 10^{-1}$ && -0.238979 && -0.239850 && -5.46$\times 10^{-1}$  \\ % $\times 10^{ (0')
+%($a$,$a$)$\rightarrow$($a$,$v$)                                   && -0.015565 && -0.015542 && +1.46$\times 10^{-2}$ && -0.013961 && -0.013962 && -1.01$\times 10^{-3}$  \\ % $\times 10^{(-1')
+%
+%                                                                  && \multicolumn{10}{c}{Internal Configurations} \\
+%($c$,$c$)$\rightarrow$($a$,$a$)                                   && -0.006854 && -0.006793 && +3.83$\times 10^{-2}$ && -0.009053 && -0.008963 && +5.66$\times 10^{-2}$  \\ % $\times 10^{ (+2)
+%($c$,$a$)$\rightarrow$($a$,$a$)                                   && -0.006606 && -0.006607 && -1.44$\times 10^{-4}$ && -0.009019 && -0.009018 && +5.91$\times 10^{-4}$  \\ % $\times 10^{(+1')
+%
+%\hline
+%\hline
+%\end{longtable}
+%\end{sidewaysfigure}  
+%
+%}
+
 {
 \squeezetable
 \begin{sidewaysfigure}    
-\begin{longtable}[!ht]{cccccccccccccc}
+\begin{longtable}[!ht]{cccccccccccccccc}
   \caption{\label{tab:cu2o2-analysis}
     %
-    Contributions from each subspace in the PNO-CASPT2 and PNO-CEPT2 dynamical correlation energies using {\tt TCutPairs}=$1.0\times 10^{-5}$ Eh and {\tt TCutPNO}=$5.0\times 10^{-8}$.
+    Contributions from each subspace in the PNO-CASPT2 and PNO-CEPT2 dynamical correlation energies using {\tt TCutPairs}=$1.0\times 10^{-5}$ Eh and {\tt TCutPNO}=$5.0\times 10^{-8}$ for [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex.
     %
-    Magnitude of PNO-CEPT2 correction in each subspace is compared with that of PNO-CASPT2.
+    Magnitude of PNO-CEPT2 correction ($\delta$E${}_\text{CEPA}$) in each subspace is compared with that of PNO-CASPT2.
+    %
+    In addition, difference between PNO-CEPT2 corrections for two geometries, $\delta$E${}_\text{CEPA}$(R${}_\text{Cu-Cu}$=1.6 \AA)-$\delta$E${}_\text{CEPA}$(R${}_\text{Cu-Cu}$=2.2 \AA), are also shown as $\Delta$-Correction.
 }
   \\
 \hline  
 \hline
- {}                                                               && \multicolumn{5}{c}{R(Cu-Cu)=1.6 \AA} && \multicolumn{5}{c}{R(Cu-Cu)=2.2 \AA} \\
+ {}                                                               && \multicolumn{5}{c}{R${}_\text{Cu-Cu}$=1.6 \AA} && \multicolumn{5}{c}{R${}_\text{Cu-Cu}$=2.2 \AA} \\
 %\cline{3-8} \cline{9-14} \\
 \cline{3-14} \\      
- Subspace                                                         && PNO-CASPT2 / Eh && PNO-CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol && CASPT2 / Eh && CEPT2 / Eh && $\Delta$CEPT2 / kcal/mol \\
+ Subspace                                                         && PNO-CASPT2 / Eh && PNO-CEPT2 / Eh && $\delta$E${}_\text{CEPA}$ / kcal/mol && CASPT2 / Eh && CEPT2 / Eh && $\delta$E${}_\text{CEPA}$ / kcal/mol && $\Delta$-Correction / kcal/mol \\
 \hline
-                                                                  && \multicolumn{10}{c}{2-External Configurations} \\
-($c$,$c$)$\rightarrow$($v$,$v$)                                   && -2.641691 && -2.675058 && -2.09$\times 10^{ 1}$ && -2.632592 && -2.666005 && -2.10$\times 10^{ 1}$  \\ % E (0) 
-($c$,$a$)$\rightarrow$($v$,$v$)                                   && -0.320316 && -0.303014 && +1.09$\times 10^{ 1}$ && -0.331461 && -0.312859 && +1.17$\times 10^{ 1}$  \\ % E (-1)
-($a$,$a$)$\rightarrow$($v$,$v$)                                   && -0.051163 && -0.052895 && -1.09                 && -0.053697 && -0.054310 && -3.85$\times 10^{-1}$  \\ % E (-2)
-
-                                                                  && \multicolumn{10}{c}{Semi-Internal Configurations} \\
-($c$,$c$)$\rightarrow$($a$,$v$)                                   && -0.132298 && -0.130746 && +9.74$\times 10^{-1}$ && -0.154270 && -0.152005 && +1.42$\times 10^{ 0}$  \\   % $\times 10^{ (+1)
-($c$,$a$)$\rightarrow$($a$,$v$),\ ($c$,$a$)$\rightarrow$($v$,$a$) && -0.206663 && -0.207394 && -4.59$\times 10^{-1}$ && -0.238979 && -0.239850 && -5.46$\times 10^{-1}$  \\ % $\times 10^{ (0')
-($a$,$a$)$\rightarrow$($a$,$v$)                                   && -0.015565 && -0.015542 && +1.46$\times 10^{-2}$ && -0.013961 && -0.013962 && -1.01$\times 10^{-3}$  \\ % $\times 10^{(-1')
-
-                                                                  && \multicolumn{10}{c}{Internal Configurations} \\
-($c$,$c$)$\rightarrow$($a$,$a$)                                   && -0.006854 && -0.006793 && +3.83$\times 10^{-2}$ && -0.009053 && -0.008963 && +5.66$\times 10^{-2}$  \\ % $\times 10^{ (+2)
-($c$,$a$)$\rightarrow$($a$,$a$)                                   && -0.006606 && -0.006607 && -1.44$\times 10^{-4}$ && -0.009019 && -0.009018 && +5.91$\times 10^{-4}$  \\ % $\times 10^{(+1')
-
+                                                                  && \multicolumn{10}{c}{External} \\
+($c$,$c$)$\rightarrow$($v$,$v$)                                   && -2.641 691  && -2.675 058  && (-20.94)  && -2.632 592  && -2.666 005  && (-20.97) && (  0.03)\\
+($c$,$a$)$\rightarrow$($v$,$v$)                                   && -0.320 316  && -0.303 014  && ( 10.86)  && -0.331 461  && -0.312 859  && ( 11.67) && ( -0.82)\\
+($a$,$a$)$\rightarrow$($v$,$v$)                                   && -0.051 163  && -0.052 895  && ( -1.09)  && -0.053 697  && -0.054 310  && ( -0.39) && ( -0.70)\\
+Sum                                                               &&             &&             &&           &&             &&             &&          && ( -1.49)\\
+                                                                                                                                          
+                                                                  && \multicolumn{10}{c}{Semi-internal} \\                 
+($c$,$c$)$\rightarrow$($a$,$v$)                                   && -0.132 298  && -0.130 746  && (  0.97)  && -0.154 270  && -0.152 005  && (  1.42) && ( -0.45)\\
+($c$,$a$)$\rightarrow$($a$,$v$),\ ($c$,$a$)$\rightarrow$($v$,$a$) && -0.206 663  && -0.207 394  && ( -0.46)  && -0.238 979  && -0.239 850  && ( -0.55) && (  0.09)\\
+($a$,$a$)$\rightarrow$($a$,$v$)                                   && -0.015 565  && -0.015 542  && (  0.01)  && -0.013 961  && -0.013 962  && (  0.00) && (  0.02)\\
+Sum                                                               &&             &&             &&           &&             &&             &&          && ( -0.34)\\
+                                                                  && \multicolumn{10}{c}{Internal} \\                      
+($c$,$c$)$\rightarrow$($a$,$a$)                                   && -0.006 854  && -0.006 793  && (  0.04)  && -0.009 053  && -0.008 963  && (  0.06) && ( -0.02)\\
+($c$,$a$)$\rightarrow$($a$,$a$)                                   && -0.006 606  && -0.006 607  && (  0.00)  && -0.009 019  && -0.009 018  && (  0.00) && (  0.00)\\
+Sum                                                               &&             &&             &&           &&             &&             &&          && ( -0.02)\\
+Total sum                                                         &&             &&             &&           &&             &&             &&          && ( -1.85)\\
 \hline
 \hline
 \end{longtable}
@@ -1042,6 +1097,51 @@ Exp.\cite{Gouterman1974} &&  &&  &&  &&  &&  &&  && && && 1.58 \\
 \hline
 \end{longtable}
 \end{sidewaysfigure}  
+}
+
+\clearpage
+
+{
+\squeezetable
+\begin{sidewaysfigure}    
+\begin{longtable}[!ht]{cccccccccccccccc}
+  \caption{\label{tab:h2p-analysis}
+    %
+    Contribution from each subspace in the PNO-CASPT2 and PNO-CEPT2 dynamical correlation energies using {\tt TCutPairs}=$1.0\times 10^{-5}$ Eh and {\tt TCutPNO}=$5.0\times 10^{-8}$ for free-base porphyrin in singlet and triplet states.
+    %
+    Magnitude of PNO-CEPT2 correction ($\delta$E${}_\text{CEPA}$) in each subspace is compared with that of PNO-CASPT2.
+    %
+    In addition, difference between PNO-CEPT2 corrections for two geometries, $\delta$E${}_\text{CEPA}$(T${}_0$)-$\delta$E${}_\text{CEPA}$(S${}_0$)), are also shown as $\Delta$-Correction.
+}
+  \\
+\hline  
+\hline
+ {}                                                               && \multicolumn{5}{c}{S${}_0$ State} && \multicolumn{5}{c}{T${}_0$ State} \\
+%\cline{3-8} \cline{9-14} \\
+\cline{3-14} \\      
+ Subspace                                                         && PNO-CASPT2 / Eh && PNO-CEPT2 / Eh && $\delta$E${}_\text{CEPA}$ / kcal/mol && CASPT2 / Eh && CEPT2 / Eh && $\delta$E${}_\text{CEPA}$ / kcal/mol && $\Delta$-Correction / kcal/mol \\
+\hline
+                                                                  && \multicolumn{10}{c}{External} \\
+($c$,$c$)$\rightarrow$($v$,$v$)                                   && -2.38 0046  && -2.571 048  && (-119.86)  && -2.416 554  && -2.612 158  && (-122.74)  && (  -2.89)\\
+($c$,$a$)$\rightarrow$($v$,$v$)                                   && -0.401 660  && -0.401 882  && (  -0.14)  && -0.377 783  && -0.377 975  && (  -0.12)  && (   0.02)\\
+($a$,$a$)$\rightarrow$($v$,$v$)                                   && -0.027 777  && -0.027 339  && (   0.27)  && -0.022 754  && -0.022 585  && (   0.11)  && (  -0.17)\\
+Sum                                                               &&             &&             &&            &&             &&             &&            && (  -3.04)\\
+                                                                                                                                          
+                                                                  && \multicolumn{10}{c}{Semi-internal} \\                 
+($c$,$c$)$\rightarrow$($a$,$v$)                                   && -0.223 743  && -0.223 854  && (  -0.07)  && -0.208 821  && -0.209 014  && (  -0.12)  && (  -0.05)\\
+($c$,$a$)$\rightarrow$($a$,$v$),\ ($c$,$a$)$\rightarrow$($v$,$a$) && -0.166 721  && -0.166 812  && (  -0.06)  && -0.155 565  && -0.155 614  && (  -0.03)  && (   0.03)\\
+($a$,$a$)$\rightarrow$($a$,$v$)                                   && -0.008 111  && -0.008 122  && (  -0.01)  && -0.012 407  && -0.012 445  && (  -0.02)  && (  -0.02)\\
+Sum                                                               &&             &&             &&            &&             &&             &&            && (  -0.04)\\
+                                                                  && \multicolumn{10}{c}{Internal} \\                      
+($c$,$c$)$\rightarrow$($a$,$a$)                                   && -0.014 448  && -0.014 450  && (   0.00)  && -0.009 582  && -0.009 587  && (   0.00)  && (   0.00)\\
+($c$,$a$)$\rightarrow$($a$,$a$)                                   && -0.004 442  && -0.004 442  && (   0.00)  && -0.009 023  && -0.009 026  && (   0.00)  && (   0.00)\\
+Sum                                                               &&             &&             &&            &&             &&             &&            && (   0.00)\\
+Total sum                                                         &&             &&             &&            &&             &&             &&            && (  -3.08)\\
+\hline
+\hline
+\end{longtable}
+\end{sidewaysfigure}  
+
 }
 
 \clearpage
