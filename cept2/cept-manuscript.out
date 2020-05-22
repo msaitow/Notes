@@ -1,16 +1,16 @@
-\BOOKMARK [0][-]{section*.2}{blue Accurate Spin-density based on the Domain-based Local Pair-Natural Orbital Coupled-Cluster Theory}{}% 2
+\BOOKMARK [0][-]{section*.2}{blue A Multireference Coupeld-Eletron Pair Approximation combined with Complete-Active Space Perturbation Theory in Local Pair-Natural Orbital Framework}{}% 2
 \BOOKMARK [1][-]{section*.1}{Abstract}{section*.2}% 1
 \BOOKMARK [1][-]{section*.3}{Introduction}{section*.2}% 3
 \BOOKMARK [1][-]{section*.4}{Theory}{section*.2}% 4
-\BOOKMARK [2][-]{section*.5}{The -Equations for Unrelaxed CCSD Densities}{section*.4}% 5
-\BOOKMARK [2][-]{section*.6}{Summary of the Open-Shell DLPNO-CCSD Formalism}{section*.4}% 6
-\BOOKMARK [2][-]{section*.7}{The DLPNO-CCSD -Equations for Open-Shell Species}{section*.4}% 7
-\BOOKMARK [1][-]{section*.8}{Results and discussion}{section*.2}% 8
-\BOOKMARK [2][-]{section*.9}{Computational Details}{section*.8}% 9
-\BOOKMARK [1][-]{section*.10}{Discussion}{section*.2}% 10
-\BOOKMARK [2][-]{section*.11}{Accuracy of the DLPNO-based unrelaxed properties in comparison with the canonical CCSD}{section*.10}% 11
-\BOOKMARK [2][-]{section*.12}{Hyperfine interactions in the solvated quinone radical}{section*.10}% 12
-\BOOKMARK [2][-]{section*.13}{Accuracy of the DLPNO-based HFCCs for transition metal complexes}{section*.10}% 13
+\BOOKMARK [2][-]{section*.5}{Notations and Convention}{section*.4}% 5
+\BOOKMARK [2][-]{section*.6}{Brief Summary of PNO-CASPT2 Algorithm}{section*.4}% 6
+\BOOKMARK [2][-]{section*.7}{The Coupled-Electron Pair Perturbation Theory}{section*.4}% 7
+\BOOKMARK [2][-]{section*.8}{PNO-based Code Generation}{section*.4}% 8
+\BOOKMARK [1][-]{section*.9}{Results and discussion}{section*.2}% 9
+\BOOKMARK [2][-]{section*.10}{Non-Parallelity Errors for N2 Dissociation}{section*.9}% 10
+\BOOKMARK [2][-]{section*.11}{Isomerization of [Cu2O2]2+\(NH3\)6}{section*.9}% 11
+\BOOKMARK [2][-]{section*.12}{Ground and Excited States of Butadiene and Linear Polyenes}{section*.9}% 12
+\BOOKMARK [2][-]{section*.13}{Singlet-Triplet Gap of Free-base Porphyrin}{section*.9}% 13
 \BOOKMARK [1][-]{section*.14}{Conclusion}{section*.2}% 14
 \BOOKMARK [1][-]{section*.15}{supplementary material}{section*.2}% 15
 \BOOKMARK [1][-]{section*.16}{Acknowledgments}{section*.2}% 16

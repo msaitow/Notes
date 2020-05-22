@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{128}%
+\begin{thebibliography}{148}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,286 +50,550 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Improta}\ and\ \citenamefont
-  {Barone}(2004)}]{Improta2004}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Improta}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
-  {Barone}},\ }\href {\doibase 10.1021/cr960085f} {\bibfield  {journal}
-  {\bibinfo  {journal} {{Chem.\ Rev.}}\ }\textbf {\bibinfo {volume} {104}},\
-  \bibinfo {pages} {1231} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2017)}]{Neese_eMagRes2017}%
+\bibitem [{\citenamefont {Neese}(2009)}]{NEESE2009526}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\enquote {\bibinfo {title} {{Quantum Chemistry and EPR
-  Parameters}},}\ in\ \href {\doibase 10.1002/9780470034590.emrstm1505} {\emph
-  {\bibinfo {booktitle} {eMagRes}}}\ (\bibinfo  {publisher} {John Wiley \&
-  Sons, Ltd},\ \bibinfo {year} {2017})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Munzarov{\'a}}\ and\ \citenamefont
-  {Engels}(2004)}]{Munzarova2004}%
+  {Neese}},\ }\href {\doibase https://doi.org/10.1016/j.ccr.2008.05.014}
+  {\bibfield  {journal} {\bibinfo  {journal} {Coordination Chemistry Reviews}\
+  }\textbf {\bibinfo {volume} {253}},\ \bibinfo {pages} {526 } (\bibinfo {year}
+  {2009})},\ \bibinfo {note} {theory and Computing in Contemporary Coordination
+  Chemistry}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lyakh}\ \emph {et~al.}(2012)\citenamefont {Lyakh},
+  \citenamefont {Musia{\l}}, \citenamefont {Lotrich},\ and\ \citenamefont
+  {Bartlett}}]{doi:10.1021/cr2001417}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Munzarov{\'a}}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Engels}},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Calculation of
-  NMR and EPR Parameters: Theory and Applications}}},\ \bibinfo {editor}
-  {edited by\ \bibinfo {editor} {\bibfnamefont {M.}~\bibnamefont {Kaupp}},
-  \bibinfo {editor} {\bibfnamefont {M.}~\bibnamefont {B{\"u}hl}}, \ and\
-  \bibinfo {editor} {\bibfnamefont {V.~G.}\ \bibnamefont {Malkin}}}\ (\bibinfo
-  {publisher} {Wiley-VCH},\ \bibinfo {address} {Weinheim},\ \bibinfo {year}
-  {2004})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bartlett}\ and\ \citenamefont
-  {{Musia{\l}}}(2007)}]{Bartlett2007}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
-  {Bartlett}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {{Musia{\l}}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
-  Rev.\ Mod.\ Phys.}}\ }\textbf {\bibinfo {volume} {79}},\ \bibinfo {pages}
-  {291} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Purvis}\ and\ \citenamefont
-  {Bartlett}(1982)}]{Purvis_A_1982}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Purvis}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Bartlett}},\ }\href {\doibase 10.1063/1.443164} {\bibfield  {journal}
-  {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {76}},\
-  \bibinfo {pages} {1910} (\bibinfo {year} {1982})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pople}, \citenamefont {Head‐Gordon},\ and\
-  \citenamefont {Raghavachari}(1987)}]{doi:10.1063/1.453520}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
-  {Pople}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Head‐Gordon}}, \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Raghavachari}},\ }\href {\doibase 10.1063/1.453520} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {87}},\ \bibinfo {pages} {5968} (\bibinfo {year} {1987})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.453520}
-  {https://doi.org/10.1063/1.453520} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Feller}\ and\ \citenamefont
-  {Davidson}(1985)}]{Feller1985}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Feller}}\ and\ \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
-  {Davidson}},\ }\href {\doibase 10.1007/BF00698751} {\bibfield  {journal}
-  {\bibinfo  {journal} {Theoretica chimica acta}\ }\textbf {\bibinfo {volume}
-  {68}},\ \bibinfo {pages} {57} (\bibinfo {year} {1985})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Carmichael}(1990)}]{doi:10.1021/j100378a025}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
-  {Carmichael}},\ }\href {\doibase 10.1021/j100378a025} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Physical Chemistry}\ }\textbf {\bibinfo
-  {volume} {94}},\ \bibinfo {pages} {5734} (\bibinfo {year} {1990})},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/j100378a025}
-  {http://dx.doi.org/10.1021/j100378a025} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Perera}, \citenamefont {Salemi},\ and\ \citenamefont
-  {Bartlett}(1997)}]{doi:10.1063/1.473512}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
-  {Perera}}, \bibinfo {author} {\bibfnamefont {L.~M.}\ \bibnamefont {Salemi}},
-  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase 10.1063/1.473512} {\bibfield  {journal} {\bibinfo  {journal}
-  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {106}},\
-  \bibinfo {pages} {4061} (\bibinfo {year} {1997})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.473512}
-  {https://doi.org/10.1063/1.473512} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Perera}, \citenamefont {Watts},\ and\ \citenamefont
-  {Bartlett}(1994)}]{doi:10.1063/1.466620}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
-  {Perera}}, \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont {Watts}}, \
-  and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase 10.1063/1.466620} {\bibfield  {journal} {\bibinfo  {journal}
-  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {100}},\
-  \bibinfo {pages} {1425} (\bibinfo {year} {1994})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.466620}
-  {https://doi.org/10.1063/1.466620} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Puzzarini}\ and\ \citenamefont
-  {Barone}(2010)}]{doi:10.1063/1.3503763}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Puzzarini}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
-  {Barone}},\ }\href {\doibase 10.1063/1.3503763} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {133}},\ \bibinfo {pages} {184301} (\bibinfo {year} {2010})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.3503763}
-  {https://doi.org/10.1063/1.3503763} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Puzzarini}\ and\ \citenamefont
-  {Barone}(2008)}]{doi:10.1063/1.2969820}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Puzzarini}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
-  {Barone}},\ }\href {\doibase 10.1063/1.2969820} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {129}},\ \bibinfo {pages} {084306} (\bibinfo {year} {2008})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.2969820}
-  {https://doi.org/10.1063/1.2969820} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Munzarov{\'a}}\ and\ \citenamefont
-  {Kaupp}(1999)}]{doi:10.1021/jp992303p}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Munzarov{\'a}}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Kaupp}},\ }\href {\doibase 10.1021/jp992303p} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Physical Chemistry A}\ }\textbf
-  {\bibinfo {volume} {103}},\ \bibinfo {pages} {9966} (\bibinfo {year}
-  {1999})},\ \Eprint {http://arxiv.org/abs/http://dx.doi.org/10.1021/jp992303p}
-  {http://dx.doi.org/10.1021/jp992303p} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Gauss}\ and\ \citenamefont
-  {Cremer}(1988)}]{GAUSS1988280}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Gauss}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Cremer}},\
-  }\href {\doibase https://doi.org/10.1016/0009-2614(88)80042-3} {\bibfield
-  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo
-  {volume} {150}},\ \bibinfo {pages} {280 } (\bibinfo {year}
-  {1988})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Gauss}\ \emph {et~al.}(1991)\citenamefont {Gauss},
-  \citenamefont {Lauderdale}, \citenamefont {Stanton}, \citenamefont {Watts},\
-  and\ \citenamefont {Bartlett}}]{GAUSS1991207}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Gauss}}, \bibinfo {author} {\bibfnamefont {W.~J.}\ \bibnamefont
-  {Lauderdale}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
-  {Stanton}}, \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont {Watts}},
-  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase https://doi.org/10.1016/0009-2614(91)80203-A} {\bibfield
-  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo
-  {volume} {182}},\ \bibinfo {pages} {207 } (\bibinfo {year}
-  {1991})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Watts}, \citenamefont {Gauss},\ and\ \citenamefont
-  {Bartlett}(1993)}]{doi:10.1063/1.464480}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
-  {Watts}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Gauss}}, \ and\
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~I.}\ \bibnamefont
+  {Lyakh}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Musia{\l}}},
+  \bibinfo {author} {\bibfnamefont {V.~F.}\ \bibnamefont {Lotrich}}, \ and\
   \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\ }\href
-  {\doibase 10.1063/1.464480} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo
-  {pages} {8718} (\bibinfo {year} {1993})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.464480}
-  {https://doi.org/10.1063/1.464480} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Gauss}, \citenamefont {Stanton},\ and\ \citenamefont
-  {Bartlett}(1991)}]{doi:10.1063/1.460915}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Gauss}}, \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont {Stanton}},
-  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase 10.1063/1.460915} {\bibfield  {journal} {\bibinfo  {journal}
-  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {95}},\
-  \bibinfo {pages} {2623} (\bibinfo {year} {1991})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.460915}
-  {https://doi.org/10.1063/1.460915} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Watts}, \citenamefont {Gauss},\ and\ \citenamefont
-  {Bartlett}(1992)}]{WATTS19921}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
-  {Watts}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Gauss}}, \ and\
-  \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\ }\href
-  {\doibase https://doi.org/10.1016/0009-2614(92)87036-O} {\bibfield  {journal}
-  {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo {volume}
-  {200}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1992})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Szalay}(1995)}]{QUA:QUA560550210}%
+  {\doibase 10.1021/cr2001417} {\bibfield  {journal} {\bibinfo  {journal}
+  {Chemical Reviews}\ }\textbf {\bibinfo {volume} {112}},\ \bibinfo {pages}
+  {182} (\bibinfo {year} {2012})},\ \bibinfo {note} {pMID: 22220988},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/cr2001417}
+  {https://doi.org/10.1021/cr2001417} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Szalay}\ \emph {et~al.}(2012)\citenamefont {Szalay},
+  \citenamefont {{M\"{u}ller}}, \citenamefont {Gidofalvi}, \citenamefont
+  {Lischka},\ and\ \citenamefont {Shepard}}]{MCSCFandMRCI2011}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~G.}\ \bibnamefont
-  {Szalay}},\ }\href {\doibase 10.1002/qua.560550210} {\bibfield  {journal}
-  {\bibinfo  {journal} {International Journal of Quantum Chemistry}\ }\textbf
-  {\bibinfo {volume} {55}},\ \bibinfo {pages} {151} (\bibinfo {year}
-  {1995})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sekino}\ and\ \citenamefont
-  {Bartlett}(1984)}]{QUA:QUA560260826}%
+  {Szalay}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {{M\"{u}ller}}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Gidofalvi}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lischka}},
+  \ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Shepard}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ Chem.\ Rev.}}\
+  }\textbf {\bibinfo {volume} {112}},\ \bibinfo {pages} {108} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Malrieu}\ \emph {et~al.}(2014)\citenamefont
+  {Malrieu}, \citenamefont {Caballol}, \citenamefont {Calzado}, \citenamefont
+  {de~Graaf},\ and\ \citenamefont {Guihéry}}]{doi:10.1021/cr300500z}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
-  {Sekino}}\ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
-  {Bartlett}},\ }\href {\doibase 10.1002/qua.560260826} {\bibfield  {journal}
-  {\bibinfo  {journal} {International Journal of Quantum Chemistry}\ }\textbf
-  {\bibinfo {volume} {26}},\ \bibinfo {pages} {255} (\bibinfo {year}
-  {1984})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Salter}, \citenamefont {Trucks},\ and\ \citenamefont
-  {Bartlett}(1989)}]{doi:10.1063/1.456069}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Malrieu}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Caballol}},
+  \bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont {Calzado}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {de~Graaf}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Guihéry}},\ }\href {\doibase
+  10.1021/cr300500z} {\bibfield  {journal} {\bibinfo  {journal} {Chemical
+  Reviews}\ }\textbf {\bibinfo {volume} {114}},\ \bibinfo {pages} {429}
+  (\bibinfo {year} {2014})},\ \bibinfo {note} {pMID: 24102410},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/cr300500z}
+  {https://doi.org/10.1021/cr300500z} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Roos}, \citenamefont {Taylor},\ and\ \citenamefont
+  {Siegbahn}(1980)}]{roosa1980}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~A.}\ \bibnamefont
-  {Salter}}, \bibinfo {author} {\bibfnamefont {G.~W.}\ \bibnamefont {Trucks}},
-  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase 10.1063/1.456069} {\bibfield  {journal} {\bibinfo  {journal}
-  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {90}},\
-  \bibinfo {pages} {1752} (\bibinfo {year} {1989})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.456069}
-  {https://doi.org/10.1063/1.456069} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Hirata}(2004)}]{SHirataTCE2004}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont
+  {Roos}}, \bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont {Taylor}}, \
+  and\ \bibinfo {author} {\bibfnamefont {P.~E.}\ \bibnamefont {Siegbahn}},\
+  }\href {\doibase 10.1016/0301-0104(80)80045-0} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {48}},\
+  \bibinfo {pages} {157} (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Roos}(1987)}]{Roos1987}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont
+  {Roos}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ Adv.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {69}},\ \bibinfo {pages} {399}
+  (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ruedenberg}, \citenamefont {Cheung},\ and\
+  \citenamefont {Elbert}(1979)}]{ruedenbergmcscf1979}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Ruedenberg}}, \bibinfo {author} {\bibfnamefont {L.~M.}\ \bibnamefont
+  {Cheung}}, \ and\ \bibinfo {author} {\bibfnamefont {S.~T.}\ \bibnamefont
+  {Elbert}},\ }\href {\doibase 10.1002/qua.560160511} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ Int.\ J.\ Quantum\ Chem.}}\ }\textbf {\bibinfo
+  {volume} {16}},\ \bibinfo {pages} {1069} (\bibinfo {year}
+  {1979})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kowalski}\ and\ \citenamefont
+  {Piecuch}(2000{\natexlab{a}})}]{doi:10.1063/1.481769}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Kowalski}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Piecuch}},\ }\href {\doibase 10.1063/1.481769} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {113}},\ \bibinfo {pages} {18} (\bibinfo {year}
+  {2000}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.481769}
+  {https://doi.org/10.1063/1.481769} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kowalski}\ and\ \citenamefont
+  {Piecuch}(2000{\natexlab{b}})}]{doi:10.1063/1.1290609}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Kowalski}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Piecuch}},\ }\href {\doibase 10.1063/1.1290609} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {113}},\ \bibinfo {pages} {5644} (\bibinfo {year}
+  {2000}{\natexlab{b}})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.1290609}
+  {https://doi.org/10.1063/1.1290609} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cramer}\ \emph {et~al.}(2006)\citenamefont {Cramer},
+  \citenamefont {W{\l}och}, \citenamefont {Piecuch}, \citenamefont
+  {Puzzarini},\ and\ \citenamefont {Gagliardi}}]{doi:10.1021/jp056791e}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Cramer}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {W{\l}och}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Piecuch}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Puzzarini}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Gagliardi}},\ }\href {\doibase
+  10.1021/jp056791e} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Physical Chemistry A}\ }\textbf {\bibinfo {volume} {110}},\ \bibinfo {pages}
+  {1991} (\bibinfo {year} {2006})},\ \bibinfo {note} {pMID: 16451035},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/jp056791e}
+  {https://doi.org/10.1021/jp056791e} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Eriksen}\ and\ \citenamefont
+  {Gauss}(0)}]{doi:10.1021/acs.jctc.9b00456}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Eriksen}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Gauss}},\ }\href {\doibase 10.1021/acs.jctc.9b00456} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
+  {\bibinfo {volume} {0}},\ \bibinfo {pages} {null} (\bibinfo {year} {0})},\
+  \bibinfo {note} {pMID: 31381327},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.9b00456}
+  {https://doi.org/10.1021/acs.jctc.9b00456} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Qiu}\ \emph {et~al.}(2017)\citenamefont {Qiu},
+  \citenamefont {Henderson}, \citenamefont {Zhao},\ and\ \citenamefont
+  {Scuseria}}]{doi:10.1063/1.4991020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Qiu}}, \bibinfo {author} {\bibfnamefont {T.~M.}\ \bibnamefont {Henderson}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zhao}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Scuseria}},\ }\href {\doibase
+  10.1063/1.4991020} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Chemical Physics}\ }\textbf {\bibinfo {volume} {147}},\ \bibinfo {pages}
+  {064111} (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.4991020}
+  {https://doi.org/10.1063/1.4991020} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Qiu}\ \emph {et~al.}(2018)\citenamefont {Qiu},
+  \citenamefont {Henderson}, \citenamefont {Zhao},\ and\ \citenamefont
+  {Scuseria}}]{doi:10.1063/1.5053605}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Qiu}}, \bibinfo {author} {\bibfnamefont {T.~M.}\ \bibnamefont {Henderson}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zhao}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Scuseria}},\ }\href {\doibase
+  10.1063/1.5053605} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Chemical Physics}\ }\textbf {\bibinfo {volume} {149}},\ \bibinfo {pages}
+  {164108} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.5053605}
+  {https://doi.org/10.1063/1.5053605} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gomez}, \citenamefont {Henderson},\ and\
+  \citenamefont {Scuseria}(2019)}]{doi:10.1063/1.5085314}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Gomez}}, \bibinfo {author} {\bibfnamefont {T.~M.}\ \bibnamefont
+  {Henderson}}, \ and\ \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont
+  {Scuseria}},\ }\href {\doibase 10.1063/1.5085314} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {150}},\ \bibinfo {pages} {144108} (\bibinfo {year} {2019})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.5085314}
+  {https://doi.org/10.1063/1.5085314} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tsuchimochi}\ and\ \citenamefont
+  {Ten-no}(2016)}]{doi:10.1021/acs.jctc.6b00137}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Tsuchimochi}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ten-no}},\ }\href {\doibase 10.1021/acs.jctc.6b00137} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
+  {\bibinfo {volume} {12}},\ \bibinfo {pages} {1741} (\bibinfo {year}
+  {2016})},\ \bibinfo {note} {pMID: 26950651},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.6b00137}
+  {https://doi.org/10.1021/acs.jctc.6b00137} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tsuchimochi}\ and\ \citenamefont
+  {Ten-no}(2018)}]{doi:10.1063/1.5036542}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Tsuchimochi}}\ and\ \bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {Ten-no}},\ }\href {\doibase 10.1063/1.5036542} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {149}},\ \bibinfo {pages} {044109} (\bibinfo {year} {2018})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.5036542}
+  {https://doi.org/10.1063/1.5036542} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Xu}\ and\ \citenamefont
+  {Ten-no}(2018)}]{doi:10.1002/jcc.25163}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Xu}}\ and\ \bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {Ten-no}},\ }\href {\doibase 10.1002/jcc.25163} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Computational Chemistry}\ }\textbf {\bibinfo
+  {volume} {39}},\ \bibinfo {pages} {875} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.25163}
+  {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.25163} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Andersson}\ \emph {et~al.}(1990)\citenamefont
+  {Andersson}, \citenamefont {Malmqvist}, \citenamefont {Roos}, \citenamefont
+  {Sadlej},\ and\ \citenamefont {Wolinski}}]{doi:10.1021/j100377a012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Andersson}}, \bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Malmqvist}}, \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},
+  \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont {Sadlej}}, \ and\
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Wolinski}},\ }\href
+  {\doibase 10.1021/j100377a012} {\bibfield  {journal} {\bibinfo  {journal}
+  {The Journal of Physical Chemistry}\ }\textbf {\bibinfo {volume} {94}},\
+  \bibinfo {pages} {5483} (\bibinfo {year} {1990})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/j100377a012}
+  {https://doi.org/10.1021/j100377a012} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Andersson}, \citenamefont {Malmqvist},\ and\
+  \citenamefont {Roos}(1992)}]{doi:10.1063/1.462209}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Andersson}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Malmqvist}}, \ and\ \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont
+  {Roos}},\ }\href {\doibase 10.1063/1.462209} {\bibfield  {journal} {\bibinfo
+  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
+  {96}},\ \bibinfo {pages} {1218} (\bibinfo {year} {1992})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.462209}
+  {https://doi.org/10.1063/1.462209} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schreiber}\ \emph {et~al.}(2008)\citenamefont
+  {Schreiber}, \citenamefont {Silva-Junior}, \citenamefont {Sauer},\ and\
+  \citenamefont {Thiel}}]{doi:10.1063/1.2889385}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Schreiber}}, \bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont
+  {Silva-Junior}}, \bibinfo {author} {\bibfnamefont {S.~P.~A.}\ \bibnamefont
+  {Sauer}}, \ and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Thiel}},\ }\href {\doibase 10.1063/1.2889385} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {128}},\ \bibinfo {pages} {134110} (\bibinfo {year} {2008})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.2889385}
+  {https://doi.org/10.1063/1.2889385} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vancoillie}\ \emph {et~al.}(2010)\citenamefont
+  {Vancoillie}, \citenamefont {Zhao}, \citenamefont {Rado{\'n}},\ and\
+  \citenamefont {Pierloot}}]{doi:10.1021/ct900567c}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Hirata}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
-  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {121}},\ \bibinfo {pages} {51}
-  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2007)}]{doi:10.1080/00268970701549389}%
+  {Vancoillie}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Zhao}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rado{\'n}}}, \ and\
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Pierloot}},\ }\href
+  {\doibase 10.1021/ct900567c} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {576} (\bibinfo {year} {2010})},\ \bibinfo {note}
+  {pMID: 26617311},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct900567c}
+  {https://doi.org/10.1021/ct900567c} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Phung}\ and\ \citenamefont
+  {Pierloot}(2019)}]{doi:10.1021/acs.jctc.9b00166}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1080/00268970701549389} {\bibfield  {journal}
-  {\bibinfo  {journal} {Molecular Physics}\ }\textbf {\bibinfo {volume}
-  {105}},\ \bibinfo {pages} {2507} (\bibinfo {year} {2007})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1080/00268970701549389}
-  {https://doi.org/10.1080/00268970701549389} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2003{\natexlab{a}})}]{NEESE2003721}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.~M.}\ \bibnamefont
+  {Phung}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Pierloot}},\ }\href {\doibase 10.1021/acs.jctc.9b00166} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\
+  }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {3033} (\bibinfo {year}
+  {2019})},\ \bibinfo {note} {pMID: 30995039},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.9b00166}
+  {https://doi.org/10.1021/acs.jctc.9b00166} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Malmqvist}\ \emph {et~al.}(2008)\citenamefont
+  {Malmqvist}, \citenamefont {Pierloot}, \citenamefont {Rehaman}, \citenamefont
+  {Shahi}, \citenamefont {Cramer},\ and\ \citenamefont
+  {Gagliardi}}]{Cramer2008}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase https://doi.org/10.1016/j.cplett.2003.09.047}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.-{\AA}.}\
+  \bibnamefont {Malmqvist}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Pierloot}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Rehaman}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Shahi}}, \bibinfo
+  {author} {\bibfnamefont {C.~J.}\ \bibnamefont {Cramer}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Gagliardi}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {128}},\ \bibinfo {pages} {204109} (\bibinfo {year}
+  {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Phung}\ and\ \citenamefont
+  {Pierloot}()}]{doi:10.1002/chem.201902766}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.~M.}\ \bibnamefont
+  {Phung}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Pierloot}},\ }\href {\doibase 10.1002/chem.201902766} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chemistry – A European Journal}\ }\textbf {\bibinfo
+  {volume} {0}},\ 10.1002/chem.201902766},\ \Eprint
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/chem.201902766}
+  {https://onlinelibrary.wiley.com/doi/pdf/10.1002/chem.201902766} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Roos}\ and\ \citenamefont
+  {Andersson}(1995)}]{ROOS1995215}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont
+  {Roos}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Andersson}},\ }\href {\doibase https://doi.org/10.1016/0009-2614(95)01010-7}
   {\bibfield  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\
-  }\textbf {\bibinfo {volume} {380}},\ \bibinfo {pages} {721 } (\bibinfo {year}
-  {2003}{\natexlab{a}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Ganyushin}\ and\ \citenamefont
-  {Neese}(2013)}]{doi:10.1063/1.4793736}%
+  }\textbf {\bibinfo {volume} {245}},\ \bibinfo {pages} {215 } (\bibinfo {year}
+  {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Forsberg}\ and\ \citenamefont
+  {Malmqvist}(1997)}]{FORSBERG1997196}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Forsberg}}\ and\ \bibinfo {author} {\bibfnamefont {P.-{\AA}.}\ \bibnamefont
+  {Malmqvist}},\ }\href {\doibase
+  https://doi.org/10.1016/S0009-2614(97)00669-6} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo {volume}
+  {274}},\ \bibinfo {pages} {196 } (\bibinfo {year} {1997})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Angeli}\ \emph {et~al.}(2001)\citenamefont {Angeli},
+  \citenamefont {Cimiraglia}, \citenamefont {Evangelisti}, \citenamefont
+  {Leininger},\ and\ \citenamefont {Malrieu}}]{angeliintroduction2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Angeli}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cimiraglia}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Evangelisti}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Leininger}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Malrieu}},\ }\href {\doibase
+  10.1063/1.1361246} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {114}},\ \bibinfo {pages} {10252}
+  (\bibinfo {year} {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Angeli}, \citenamefont {Cimiraglia},\ and\
+  \citenamefont {Malrieu}(2002)}]{angelin-electron2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Angeli}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cimiraglia}},
+  \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Malrieu}},\ }\href
+  {\doibase 10.1063/1.1515317} {\bibfield  {journal} {\bibinfo  {journal} {{J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {117}},\ \bibinfo {pages} {9138}
+  (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Angeli}, \citenamefont {Pastore},\ and\ \citenamefont
+  {Cimiraglia}(2006)}]{angelinew2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Angeli}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Pastore}}, \
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cimiraglia}},\
+  }\href {\doibase 10.1007/s00214-006-0207-0} {\bibfield  {journal} {\bibinfo
+  {journal} {{ Theor.\ Chem.\ Acc.}}\ }\textbf {\bibinfo {volume} {117}},\
+  \bibinfo {pages} {743} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dyall}(1995)}]{dyallthe1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~G.}\ \bibnamefont
+  {Dyall}},\ }\href {\doibase 10.1063/1.469539} {\bibfield  {journal} {\bibinfo
+   {journal} {{J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {102}},\
+  \bibinfo {pages} {4909} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{M\o ller}}\ and\ \citenamefont
+  {Plesset}(1934)}]{MP2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {{M\o
+  ller}}}\ and\ \bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Plesset}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Phys.\ Rev.}}\ }\textbf {\bibinfo {volume} {46}},\ \bibinfo {pages} {618}
+  (\bibinfo {year} {1934})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aquilante}\ \emph {et~al.}(2009)\citenamefont
+  {Aquilante}, \citenamefont {Todorova}, \citenamefont {Gagliardi},
+  \citenamefont {Pedersen},\ and\ \citenamefont
+  {Roos}}]{doi:10.1063/1.3157463}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Aquilante}}, \bibinfo {author} {\bibfnamefont {T.~K.}\ \bibnamefont
+  {Todorova}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Gagliardi}},
+  \bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont {Pedersen}}, \ and\
+  \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},\ }\href
+  {\doibase 10.1063/1.3157463} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {131}},\ \bibinfo
+  {pages} {034113} (\bibinfo {year} {2009})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.3157463}
+  {https://doi.org/10.1063/1.3157463} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Segarra-Martí}, \citenamefont {Garavelli},\ and\
+  \citenamefont {Aquilante}(2015)}]{doi:10.1021/acs.jctc.5b00479}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Segarra-Martí}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Garavelli}}, \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Aquilante}},\ }\href {\doibase 10.1021/acs.jctc.5b00479} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\
+  }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages} {3772} (\bibinfo {year}
+  {2015})},\ \bibinfo {note} {pMID: 26574459},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.5b00479}
+  {https://doi.org/10.1021/acs.jctc.5b00479} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aquilante}\ \emph
+  {et~al.}(2008{\natexlab{a}})\citenamefont {Aquilante}, \citenamefont
+  {Pedersen}, \citenamefont {Lindh}, \citenamefont {Roos}, \citenamefont
+  {Sánchez~de Merás},\ and\ \citenamefont {Koch}}]{doi:10.1063/1.2953696}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Aquilante}}, \bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont
+  {Pedersen}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}},
+  \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Sánchez~de Merás}}, \ and\
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Koch}},\ }\href {\doibase
+  10.1063/1.2953696} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Chemical Physics}\ }\textbf {\bibinfo {volume} {129}},\ \bibinfo {pages}
+  {024113} (\bibinfo {year} {2008}{\natexlab{a}})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.2953696}
+  {https://doi.org/10.1063/1.2953696} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bostr{\"o}m}\ \emph {et~al.}(2009)\citenamefont
+  {Bostr{\"o}m}, \citenamefont {Aquilante}, \citenamefont {Pedersen},\ and\
+  \citenamefont {Lindh}}]{doi:10.1021/ct9000284}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bostr{\"o}m}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Aquilante}}, \bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont
+  {Pedersen}}, \ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Lindh}},\ }\href {\doibase 10.1021/ct9000284} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
+  {\bibinfo {volume} {5}},\ \bibinfo {pages} {1545} (\bibinfo {year} {2009})},\
+  \bibinfo {note} {pMID: 26609847},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct9000284}
+  {https://doi.org/10.1021/ct9000284} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aquilante}\ \emph
+  {et~al.}(2008{\natexlab{b}})\citenamefont {Aquilante}, \citenamefont
+  {Malmqvist}, \citenamefont {Pedersen}, \citenamefont {Ghosh},\ and\
+  \citenamefont {Roos}}]{doi:10.1021/ct700263h}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Aquilante}}, \bibinfo {author} {\bibfnamefont {P.-{\AA}.}\ \bibnamefont
+  {Malmqvist}}, \bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont
+  {Pedersen}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Ghosh}}, \
+  and\ \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},\ }\href
+  {\doibase 10.1021/ct700263h} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume}
+  {4}},\ \bibinfo {pages} {694} (\bibinfo {year} {2008}{\natexlab{b}})},\
+  \bibinfo {note} {pMID: 26621084},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct700263h}
+  {https://doi.org/10.1021/ct700263h} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bostr{\"o}m}\ \emph {et~al.}(2010)\citenamefont
+  {Bostr{\"o}m}, \citenamefont {Delcey}, \citenamefont {Aquilante},
+  \citenamefont {Serrano-Andrés}, \citenamefont {Pedersen},\ and\
+  \citenamefont {Lindh}}]{doi:10.1021/ct900612k}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bostr{\"o}m}}, \bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {Delcey}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Aquilante}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Serrano-Andrés}},
+  \bibinfo {author} {\bibfnamefont {T.~B.}\ \bibnamefont {Pedersen}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}},\ }\href
+  {\doibase 10.1021/ct900612k} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {747} (\bibinfo {year} {2010})},\ \bibinfo {note}
+  {pMID: 26613305},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct900612k}
+  {https://doi.org/10.1021/ct900612k} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Song}\ and\ \citenamefont
+  {Martínez}(2018)}]{doi:10.1063/1.5037283}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Song}}\ and\ \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {Martínez}},\ }\href {\doibase 10.1063/1.5037283} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {149}},\ \bibinfo {pages} {044108} (\bibinfo {year} {2018})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.5037283}
+  {https://doi.org/10.1063/1.5037283} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Gy\H{o}ffy}}\ \emph {et~al.}(2013)\citenamefont
+  {{Gy\H{o}ffy}}, \citenamefont {Shiozaki}, \citenamefont {Knizia},\ and\
+  \citenamefont {Werner}}]{ShioWerner2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {{Gy\H{o}ffy}}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Knizia}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {138}},\ \bibinfo {pages} {104104}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Menezes}, \citenamefont {Kats},\ and\ \citenamefont
+  {Werner}(2016)}]{:/content/aip/journal/jcp/145/12/10.1063/1.4963019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Menezes}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Kats}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\
+  }\href {\doibase http://dx.doi.org/10.1063/1.4963019} {\bibfield  {journal}
+  {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {145}},\
+  \bibinfo {eid} {124115} (\bibinfo {year} {2016}),\
+  http://dx.doi.org/10.1063/1.4963019}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kats}\ and\ \citenamefont
+  {Werner}(2019)}]{doi:10.1063/1.5097644}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Ganyushin}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1063/1.4793736} {\bibfield  {journal}
+  {Kats}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1063/1.5097644} {\bibfield  {journal}
   {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {138}},\ \bibinfo {pages} {104113} (\bibinfo {year} {2013})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.4793736}
-  {https://doi.org/10.1063/1.4793736} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Shiozaki}\ and\ \citenamefont
-  {Yanai}(2016)}]{doi:10.1021/acs.jctc.6b00646}%
+  {volume} {150}},\ \bibinfo {pages} {214107} (\bibinfo {year} {2019})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.5097644}
+  {https://doi.org/10.1063/1.5097644} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Kutzelnigg}(1964)}]{:/content/aip/journal/jcp/40/12/10.1063/1.1725065}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Shiozaki}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Yanai}},\ }\href {\doibase 10.1021/acs.jctc.6b00646} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
-  {\bibinfo {volume} {12}},\ \bibinfo {pages} {4347} (\bibinfo {year}
-  {2016})},\ \bibinfo {note} {pMID: 27479148},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.jctc.6b00646}
-  {http://dx.doi.org/10.1021/acs.jctc.6b00646} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lan}, \citenamefont {Chalupsk{\'y}},\ and\
-  \citenamefont {Yanai}(2015)}]{doi:10.1080/00268976.2015.1012128}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Kutzelnigg}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1725065}
+  {\bibfield  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf
+  {\bibinfo {volume} {40}},\ \bibinfo {pages} {3640} (\bibinfo {year}
+  {1964})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ahlrichs}\ and\ \citenamefont
+  {Kutzelnigg}(1968{\natexlab{a}})}]{:/content/aip/journal/jcp/48/4/10.1063/1.1668917}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.}\ \bibnamefont
-  {Lan}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Chalupsk{\'y}}},
-  \ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Yanai}},\ }\href
-  {\doibase 10.1080/00268976.2015.1012128} {\bibfield  {journal} {\bibinfo
-  {journal} {Molecular Physics}\ }\textbf {\bibinfo {volume} {113}},\ \bibinfo
-  {pages} {1750} (\bibinfo {year} {2015})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1080/00268976.2015.1012128}
-  {https://doi.org/10.1080/00268976.2015.1012128} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nguyen~Lan}, \citenamefont {Kurashige},\ and\
-  \citenamefont {Yanai}(2015)}]{doi:10.1021/ct5007778}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Ahlrichs}}\ and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Kutzelnigg}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1668917}
+  {\bibfield  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf
+  {\bibinfo {volume} {48}},\ \bibinfo {pages} {1819} (\bibinfo {year}
+  {1968}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Edmiston}\ and\ \citenamefont
+  {Krauss}(1965)}]{:/content/aip/journal/jcp/42/3/10.1063/1.1696050}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Nguyen~Lan}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Kurashige}}, \ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Yanai}},\ }\href {\doibase 10.1021/ct5007778} {\bibfield  {journal}
-  {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\ }\textbf
-  {\bibinfo {volume} {11}},\ \bibinfo {pages} {73} (\bibinfo {year} {2015})},\
-  \bibinfo {note} {pMID: 26574205},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/ct5007778}
-  {http://dx.doi.org/10.1021/ct5007778} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lan}, \citenamefont {Kurashige},\ and\ \citenamefont
-  {Yanai}(2014)}]{doi:10.1021/ct400978j}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Edmiston}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Krauss}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1696050} {\bibfield
+  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
+  {volume} {42}},\ \bibinfo {pages} {1119} (\bibinfo {year}
+  {1965})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Edmiston}\ and\ \citenamefont
+  {Krauss}(1966)}]{:/content/aip/journal/jcp/45/5/10.1063/1.1727841}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.}\ \bibnamefont
-  {Lan}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kurashige}}, \
-  and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Yanai}},\ }\href
-  {\doibase 10.1021/ct400978j} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume}
-  {10}},\ \bibinfo {pages} {1953} (\bibinfo {year} {2014})},\ \bibinfo {note}
-  {pMID: 26580523},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/ct400978j}
-  {http://dx.doi.org/10.1021/ct400978j} \BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Edmiston}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Krauss}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1727841} {\bibfield
+  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
+  {volume} {45}},\ \bibinfo {pages} {1833} (\bibinfo {year}
+  {1966})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Meyer}(1971)}]{meyer1971ionization}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Meyer}},\ }\href {\doibase 10.1002/qua.560050839} {\bibfield  {journal}
+  {\bibinfo  {journal} {Int.\ J.\ Quantum\ Chem.}\ }\textbf {\bibinfo {volume}
+  {5}},\ \bibinfo {pages} {341} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Meyer}(1973)}]{:/content/aip/journal/jcp/58/3/10.1063/1.1679283}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Meyer}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1679283} {\bibfield
+  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
+  {volume} {58}},\ \bibinfo {pages} {1017} (\bibinfo {year}
+  {1973})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ahlrichs}\ and\ \citenamefont
+  {Kutzelnigg}(1968{\natexlab{b}})}]{Ahlrichs1968_2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Ahlrichs}}\ and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Kutzelnigg}},\ }\href {\doibase 10.1007/BF00528769} {\bibfield  {journal}
+  {\bibinfo  {journal} {{Theor.\ Chim.\ Acta.}}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {377} (\bibinfo {year}
+  {1968}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Taylor}(1981)}]{:/content/aip/journal/jcp/74/2/10.1063/1.441186}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont
+  {Taylor}},\ }\href {\doibase http://dx.doi.org/10.1063/1.441186} {\bibfield
+  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
+  {volume} {74}},\ \bibinfo {pages} {1256} (\bibinfo {year}
+  {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fink}\ and\ \citenamefont
+  {Staemmler}(1993)}]{Staemmler1993}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Fink}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Staemmler}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Theor.\ Chim.\ Acta.}}\ }\textbf {\bibinfo {volume} {87}},\ \bibinfo {pages}
+  {129} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Neese}, \citenamefont {Wennmohs},\ and\ \citenamefont
   {Hansen}(2009)}]{neeseefficient2009cepa}%
   \BibitemOpen
@@ -357,6 +621,26 @@
   {\doibase 10.1063/1.3663855} {\bibfield  {journal} {\bibinfo  {journal} {J.\
   Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages} {214102}
   (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liakos}, \citenamefont {Hansen},\ and\ \citenamefont
+  {Neese}(2011)}]{doi:10.1021/ct100445s}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont
+  {Liakos}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Hansen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
+  {\doibase 10.1021/ct100445s} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume}
+  {7}},\ \bibinfo {pages} {76} (\bibinfo {year} {2011})},\ \bibinfo {note}
+  {pMID: 26606220},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct100445s}
+  {https://doi.org/10.1021/ct100445s} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Neese}(2018)}]{WCMS:WCMS1327}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Neese}},\ }\href {\doibase 10.1002/wcms.1327} {\bibfield  {journal}
+  {\bibinfo  {journal} {Wiley Interdisciplinary Reviews: Computational
+  Molecular Science}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages}
+  {e1327} (\bibinfo {year} {2018})},\ \bibinfo {note} {e1327}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Riplinger}\ and\ \citenamefont
   {Neese}(2013)}]{riplingeran2013}%
   \BibitemOpen
@@ -413,105 +697,69 @@
   {164105} (\bibinfo {year} {2017})},\ \Eprint
   {http://arxiv.org/abs/https://doi.org/10.1063/1.4981521}
   {https://doi.org/10.1063/1.4981521} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pulay}(1983)}]{pulaylocalizability1983}%
+\bibitem [{\citenamefont {Datta}, \citenamefont {Kossmann},\ and\ \citenamefont
+  {Neese}(2016)}]{dipayan2016}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Pulay}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Chem.\
-  Phys.\ Lett.}\ }\textbf {\bibinfo {volume} {100}},\ \bibinfo {pages} {151}
-  (\bibinfo {year} {1983})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pulay}\ and\ \citenamefont
-  {Saeb{\o}}(1986)}]{Pulay_Orbital_1986}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Pulay}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Saeb{\o}}},\ }\href {\doibase 10.1007/BF00526697} {\bibfield  {journal}
-  {\bibinfo  {journal} {{ Theor.\ Chim.\ Acta.}}\ }\textbf {\bibinfo {volume}
-  {69}},\ \bibinfo {pages} {357} (\bibinfo {year} {1986})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Saeb{\o}}\ and\ \citenamefont
-  {Pulay}(1987)}]{Saebo_Fourth_1987}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Saeb{\o}}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {Pulay}},\ }\href {\doibase 10.1063/1.452293} {\bibfield  {journal} {\bibinfo
-   {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {86}},\
-  \bibinfo {pages} {914} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Hampel}\ and\ \citenamefont
-  {Werner}(1996)}]{Hampel_Local_1996}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Hampel}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}},\ }\href {\doibase 10.1063/1.471289} {\bibfield  {journal}
-  {\bibinfo  {journal} {J. Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {104}},\
-  \bibinfo {pages} {6286} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sch{\"u}tz}, \citenamefont {Hetzer},\ and\
-  \citenamefont {Werner}(1999)}]{schutz1999low}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Hetzer}},
-  \ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Datta}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kossmann}}, \
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\
   }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\
-  }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages} {5691} (\bibinfo {year}
-  {1999})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sch{\"u}tz}\ and\ \citenamefont
-  {Werner}(2001)}]{schutz2001low}%
+  }\textbf {\bibinfo {volume} {145}},\ \bibinfo {pages} {114101} (\bibinfo
+  {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Demel}, \citenamefont {Pittner},\ and\ \citenamefont
+  {Neese}(2015)}]{doi:10.1021/acs.jctc.5b00334}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
-  Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {114}},\ \bibinfo {pages} {661}
-  (\bibinfo {year} {2001})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sch{\"u}tz}\ and\ \citenamefont
-  {Werner}(2000)}]{Schutz_Local_2000}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}},\ }\href {\doibase 10.1016/S0009-2614(00)00066-X} {\bibfield
-  {journal} {\bibinfo  {journal} {Chem.\ Phys.\ Lett.}\ }\textbf {\bibinfo
-  {volume} {318}},\ \bibinfo {pages} {370} (\bibinfo {year}
-  {2000})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Korona}\ and\ \citenamefont
-  {Werner}(2003)}]{Korona_Local_2003}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Korona}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}},\ }\href {\doibase 10.1063/1.1537718} {\bibfield  {journal}
-  {\bibinfo  {journal} {J. Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {118}},\
-  \bibinfo {pages} {3006} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Werner}\ and\ \citenamefont
-  {Sch{\"u}tz}(2011)}]{doi:10.1063/1.3641642}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
-  {Werner}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}},\ }\href {\doibase 10.1063/1.3641642} {\bibfield  {journal}
-  {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {135}},\
-  \bibinfo {pages} {144116} (\bibinfo {year} {2011})},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1063/1.3641642}
-  {http://dx.doi.org/10.1063/1.3641642} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(2012)\citenamefont {Yang},
-  \citenamefont {Chan}, \citenamefont {Manby}, \citenamefont {Sch{\"u}tz},\
-  and\ \citenamefont {Werner}}]{Yang_The_2012}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Demel}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Pittner}}, \
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
+  {\doibase 10.1021/acs.jctc.5b00334} {\bibfield  {journal} {\bibinfo
+  {journal} {{ J.\ Chem.\ Theory\ Comput.}}\ }\textbf {\bibinfo {volume}
+  {11}},\ \bibinfo {pages} {3104} (\bibinfo {year} {2015})},\ \bibinfo {note}
+  {pMID: 26575747},\ \Eprint
+  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.jctc.5b00334}
+  {http://dx.doi.org/10.1021/acs.jctc.5b00334} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brabec}\ \emph {et~al.}(2018)\citenamefont {Brabec},
+  \citenamefont {Lang}, \citenamefont {Saitow}, \citenamefont {Pittner},
+  \citenamefont {Neese},\ and\ \citenamefont
+  {Demel}}]{doi:10.1021/acs.jctc.7b01184}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Yang}}, \bibinfo {author} {\bibfnamefont {G.~K.}\ \bibnamefont {Chan}},
-  \bibinfo {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}}, \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Sch{\"u}tz}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {H.~J.}\ \bibnamefont {Werner}},\ }\href {\doibase
-  10.1063/1.3696963} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
-  Phys.}}\ }\textbf {\bibinfo {volume} {136}},\ \bibinfo {pages} {144105}
-  (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sch{\"u}tz}\ \emph {et~al.}(2013)\citenamefont
-  {Sch{\"u}tz}, \citenamefont {Yang}, \citenamefont {Chan}, \citenamefont
-  {Manby},\ and\ \citenamefont {Werner}}]{Schutz_The_2013}%
+  {Brabec}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Lang}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Saitow}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Pittner}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Neese}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {O.}~\bibnamefont {Demel}},\ }\href {\doibase
+  10.1021/acs.jctc.7b01184} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume} {14}},\
+  \bibinfo {pages} {1370} (\bibinfo {year} {2018})},\ \bibinfo {note} {pMID:
+  29345924},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.7b01184}
+  {https://doi.org/10.1021/acs.jctc.7b01184} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lang}\ \emph {et~al.}(2019)\citenamefont {Lang},
+  \citenamefont {Brabec}, \citenamefont {Saitow}, \citenamefont {Pittner},
+  \citenamefont {Neese},\ and\ \citenamefont {Demel}}]{C8CP03577F}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Yang}},
-  \bibinfo {author} {\bibfnamefont {G.~K.}\ \bibnamefont {Chan}}, \bibinfo
-  {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\ }\href {\doibase
-  10.1063/1.4789415} {\bibfield  {journal} {\bibinfo  {journal} {{J.\ Chem.\
-  Phys.}}\ }\textbf {\bibinfo {volume} {138}},\ \bibinfo {pages} {054109}
-  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Lang}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Brabec}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Saitow}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Pittner}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Neese}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {O.}~\bibnamefont {Demel}},\ }\href {\doibase
+  10.1039/C8CP03577F} {\bibfield  {journal} {\bibinfo  {journal} {Phys. Chem.
+  Chem. Phys.}\ }\textbf {\bibinfo {volume} {21}},\ \bibinfo {pages} {5022}
+  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Guo}\ \emph {et~al.}(2016)\citenamefont {Guo},
+  \citenamefont {Sivalingam}, \citenamefont {Valeev},\ and\ \citenamefont
+  {Neese}}]{:/content/aip/journal/jcp/144/9/10.1063/1.4942769}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Guo}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Sivalingam}},
+  \bibinfo {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Valeev}}, \ and\
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
+  {\doibase http://dx.doi.org/10.1063/1.4942769} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
+  {144}},\ \bibinfo {eid} {094111} (\bibinfo {year} {2016}),\
+  http://dx.doi.org/10.1063/1.4942769}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Werner}\ \emph {et~al.}(2015)\citenamefont {Werner},
   \citenamefont {Knizia}, \citenamefont {Krause}, \citenamefont {Schwilk},\
   and\ \citenamefont {Dornbach}}]{doi:10.1021/ct500725e}%
@@ -526,6 +774,15 @@
   (\bibinfo {year} {2015})},\ \bibinfo {note} {pMID: 26580908},\ \Eprint
   {http://arxiv.org/abs/http://dx.doi.org/10.1021/ct500725e}
   {http://dx.doi.org/10.1021/ct500725e} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schwilk}, \citenamefont {Usvyat},\ and\ \citenamefont
+  {Werner}(2015)}]{wernersdecay}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Schwilk}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Usvyat}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {142}},\ \bibinfo {pages} {121102}
+  (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Schwilk}\ \emph {et~al.}(2017)\citenamefont
   {Schwilk}, \citenamefont {Ma}, \citenamefont {K{\"o}ppl},\ and\ \citenamefont
   {Werner}}]{doi:10.1021/acs.jctc.7b00554}%
@@ -540,74 +797,37 @@
   {note} {pMID: 28661673},\ \Eprint
   {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.jctc.7b00554}
   {http://dx.doi.org/10.1021/acs.jctc.7b00554} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Tew}, \citenamefont {Helmich},\ and\ \citenamefont
-  {H{\"a}ttig}(2011)}]{:/content/aip/journal/jcp/135/7/10.1063/1.3624370}%
+\bibitem [{\citenamefont {Werner}(2016)}]{publ7820099}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont
-  {Tew}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Helmich}}, \ and\
-  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},\ }\href
-  {\doibase http://dx.doi.org/10.1063/1.3624370} {\bibfield  {journal}
-  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
-  {135}},\ \bibinfo {eid} {074107} (\bibinfo {year} {2011}),\
-  http://dx.doi.org/10.1063/1.3624370}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Schmitz}, \citenamefont {H{\"a}ttig},\ and\
-  \citenamefont {Tew}(2014)}]{C4CP03502J}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1063/1.4968595} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {145}}
+  (\bibinfo {year} {2016}),\ 10.1063/1.4968595}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ma}\ and\ \citenamefont
+  {Werner}(2018)}]{publ8744633}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Schmitz}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},
-  \ and\ \bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont {Tew}},\ }\href
-  {\doibase 10.1039/C4CP03502J} {\bibfield  {journal} {\bibinfo  {journal}
-  {{Phys.\ Chem.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo
-  {pages} {22167} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Helmich}\ and\ \citenamefont
-  {H{\"a}ttig}(2011)}]{:/content/aip/journal/jcp/135/21/10.1063/1.3664902}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Ma}}\ and\ \bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1021/acs.jctc.7b01141} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Theory Comput.}\ }\textbf {\bibinfo {volume}
+  {14}},\ \bibinfo {pages} {198–215} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Krause}\ and\ \citenamefont
+  {Werner}(2018)}]{publ9370681}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Helmich}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {H{\"a}ttig}},\ }\href {\doibase http://dx.doi.org/10.1063/1.3664902}
-  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
-  {\bibinfo {volume} {135}},\ \bibinfo {eid} {214106} (\bibinfo {year}
-  {2011}),\ http://dx.doi.org/10.1063/1.3664902}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Helmich}\ and\ \citenamefont
-  {H{\"a}ttig}(2013)}]{:/content/aip/journal/jcp/139/8/10.1063/1.4819071}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Krause}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1021/acs.jctc.8b01012} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Theory Comput.}\ } (\bibinfo {year} {2018}),\
+  10.1021/acs.jctc.8b01012}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ma}\ and\ \citenamefont
+  {Werner}(2019)}]{publ9337428}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Helmich}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {H{\"a}ttig}},\ }\href {\doibase http://dx.doi.org/10.1063/1.4819071}
-  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
-  {\bibinfo {volume} {139}},\ \bibinfo {eid} {084114} (\bibinfo {year}
-  {2013}),\ http://dx.doi.org/10.1063/1.4819071}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Tew}\ and\ \citenamefont
-  {H{\"a}ttig}(2013)}]{QUA:QUA24098}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont
-  {Tew}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {H{\"a}ttig}},\ }\href {\doibase 10.1002/qua.24098} {\bibfield  {journal}
-  {\bibinfo  {journal} {International Journal of Quantum Chemistry}\ }\textbf
-  {\bibinfo {volume} {113}},\ \bibinfo {pages} {224} (\bibinfo {year}
-  {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Schmitz}\ and\ \citenamefont
-  {H{\"a}ttig}(2016)}]{doi:10.1063/1.4972001}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Schmitz}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {H{\"a}ttig}},\ }\href {\doibase 10.1063/1.4972001} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {145}},\ \bibinfo {pages} {234107} (\bibinfo {year} {2016})},\
-  \Eprint
-  {http://arxiv.org/abs/http://aip.scitation.org/doi/pdf/10.1063/1.4972001}
-  {http://aip.scitation.org/doi/pdf/10.1063/1.4972001} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Frank}, \citenamefont {Schmitz},\ and\ \citenamefont
-  {H{\"a}ttig}(2017)}]{doi:10.1080/00268976.2016.1263762}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
-  {Frank}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Schmitz}}, \
-  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},\
-  }\href {\doibase 10.1080/00268976.2016.1263762} {\bibfield  {journal}
-  {\bibinfo  {journal} {Molecular Physics}\ }\textbf {\bibinfo {volume}
-  {115}},\ \bibinfo {pages} {343} (\bibinfo {year} {2017})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1080/00268976.2016.1263762}
-  {https://doi.org/10.1080/00268976.2016.1263762} \BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Ma}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1021/acs.jctc.8b01098} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Theory Comput.}\ } (\bibinfo {year} {2019}),\
+  10.1021/acs.jctc.8b01098}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Schmitz}, \citenamefont {Helmich},\ and\
   \citenamefont {H{\"a}ttig}(2013)}]{doi:10.1080/00268976.2013.794314}%
   \BibitemOpen
@@ -619,587 +839,665 @@
   {111}},\ \bibinfo {pages} {2463} (\bibinfo {year} {2013})},\ \Eprint
   {http://arxiv.org/abs/https://doi.org/10.1080/00268976.2013.794314}
   {https://doi.org/10.1080/00268976.2013.794314} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Li}, \citenamefont {Ma},\ and\ \citenamefont
-  {Jiang}(2002)}]{JCC:JCC10003}%
+\bibitem [{\citenamefont {Frank}, \citenamefont {Schmitz},\ and\ \citenamefont
+  {H{\"a}ttig}(2017)}]{doi:10.1080/00268976.2016.1263762}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Li}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ma}}, \ and\
-  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Jiang}},\ }\href
-  {\doibase 10.1002/jcc.10003} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Computational Chemistry}\ }\textbf {\bibinfo {volume} {23}},\
-  \bibinfo {pages} {237} (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2009)\citenamefont {Li},
-  \citenamefont {Piecuch}, \citenamefont {Gour},\ and\ \citenamefont
-  {Li}}]{doi:10.1063/1.3218842}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Frank}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Schmitz}}, \
+  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},\
+  }\href {\doibase 10.1080/00268976.2016.1263762} {\bibfield  {journal}
+  {\bibinfo  {journal} {Molecular Physics}\ }\textbf {\bibinfo {volume}
+  {115}},\ \bibinfo {pages} {343} (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1080/00268976.2016.1263762}
+  {https://doi.org/10.1080/00268976.2016.1263762} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schmitz}\ and\ \citenamefont
+  {H{\"a}ttig}(2016)}]{doi:10.1063/1.4972001}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
-  {Li}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Piecuch}},
-  \bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont {Gour}}, \ and\
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Li}},\ }\href {\doibase
-  10.1063/1.3218842} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
-  Chemical Physics}\ }\textbf {\bibinfo {volume} {131}},\ \bibinfo {pages}
-  {114109} (\bibinfo {year} {2009})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3218842}
-  {https://doi.org/10.1063/1.3218842} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kurashige}\ \emph {et~al.}(2012)\citenamefont
-  {Kurashige}, \citenamefont {Yang}, \citenamefont {Chan},\ and\ \citenamefont
-  {Manby}}]{doi:10.1063/1.3696962}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Kurashige}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Yang}},
-  \bibinfo {author} {\bibfnamefont {G.~K.-L.}\ \bibnamefont {Chan}}, \ and\
-  \bibinfo {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}},\ }\href
-  {\doibase 10.1063/1.3696962} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {136}},\ \bibinfo
-  {pages} {124106} (\bibinfo {year} {2012})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3696962}
-  {https://doi.org/10.1063/1.3696962} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yang}\ \emph {et~al.}(2011)\citenamefont {Yang},
-  \citenamefont {Kurashige}, \citenamefont {Manby},\ and\ \citenamefont
-  {Chan}}]{doi:10.1063/1.3528935}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Yang}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kurashige}},
-  \bibinfo {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}}, \ and\
-  \bibinfo {author} {\bibfnamefont {G.~K.~L.}\ \bibnamefont {Chan}},\ }\href
-  {\doibase 10.1063/1.3528935} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {134}},\ \bibinfo
-  {pages} {044123} (\bibinfo {year} {2011})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3528935}
-  {https://doi.org/10.1063/1.3528935} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rolik}\ and\ \citenamefont
-  {K{\'a}llay}(2011)}]{rolik2011general}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Rolik}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {K{\'a}llay}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages}
-  {104111} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nagy}\ and\ \citenamefont
-  {K{\'a}llay}(2017)}]{doi:10.1063/1.4984322}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~R.}\ \bibnamefont
-  {Nagy}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {K{\'a}llay}},\ }\href {\doibase 10.1063/1.4984322} {\bibfield  {journal}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Schmitz}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {H{\"a}ttig}},\ }\href {\doibase 10.1063/1.4972001} {\bibfield  {journal}
   {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {146}},\ \bibinfo {pages} {214106} (\bibinfo {year} {2017})},\
+  {volume} {145}},\ \bibinfo {pages} {234107} (\bibinfo {year} {2016})},\
   \Eprint
-  {http://arxiv.org/abs/http://aip.scitation.org/doi/pdf/10.1063/1.4984322}
-  {http://aip.scitation.org/doi/pdf/10.1063/1.4984322} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kitaura}\ \emph {et~al.}(1999)\citenamefont
-  {Kitaura}, \citenamefont {Ikeo}, \citenamefont {Asada}, \citenamefont
-  {Nakano},\ and\ \citenamefont {Uebayasi}}]{Kitaura1999701}%
+  {http://arxiv.org/abs/http://aip.scitation.org/doi/pdf/10.1063/1.4972001}
+  {http://aip.scitation.org/doi/pdf/10.1063/1.4972001} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tew}\ and\ \citenamefont
+  {H{\"a}ttig}(2013)}]{QUA:QUA24098}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont
+  {Tew}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {H{\"a}ttig}},\ }\href {\doibase 10.1002/qua.24098} {\bibfield  {journal}
+  {\bibinfo  {journal} {International Journal of Quantum Chemistry}\ }\textbf
+  {\bibinfo {volume} {113}},\ \bibinfo {pages} {224} (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schmitz}, \citenamefont {H{\"a}ttig},\ and\
+  \citenamefont {Tew}(2014)}]{C4CP03502J}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Schmitz}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},
+  \ and\ \bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont {Tew}},\ }\href
+  {\doibase 10.1039/C4CP03502J} {\bibfield  {journal} {\bibinfo  {journal}
+  {{Phys.\ Chem.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo
+  {pages} {22167} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tew}, \citenamefont {Helmich},\ and\ \citenamefont
+  {H{\"a}ttig}(2011)}]{:/content/aip/journal/jcp/135/7/10.1063/1.3624370}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont
+  {Tew}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Helmich}}, \ and\
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {H{\"a}ttig}},\ }\href
+  {\doibase http://dx.doi.org/10.1063/1.3624370} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
+  {135}},\ \bibinfo {eid} {074107} (\bibinfo {year} {2011}),\
+  http://dx.doi.org/10.1063/1.3624370}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Helmich}\ and\ \citenamefont
+  {H{\"a}ttig}(2011)}]{:/content/aip/journal/jcp/135/21/10.1063/1.3664902}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Helmich}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {H{\"a}ttig}},\ }\href {\doibase http://dx.doi.org/10.1063/1.3664902}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {135}},\ \bibinfo {eid} {214106} (\bibinfo {year}
+  {2011}),\ http://dx.doi.org/10.1063/1.3664902}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {H{\"a}ttig}, \citenamefont {Tew},\ and\ \citenamefont
+  {Helmich}(2012)}]{:/content/aip/journal/jcp/136/20/10.1063/1.4719981}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {H{\"a}ttig}}, \bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont {Tew}},
+  \ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Helmich}},\ }\href
+  {\doibase http://dx.doi.org/10.1063/1.4719981} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
+  {136}},\ \bibinfo {eid} {204105} (\bibinfo {year} {2012}),\
+  http://dx.doi.org/10.1063/1.4719981}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Helmich}\ and\ \citenamefont
+  {H{\"a}ttig}(2013)}]{:/content/aip/journal/jcp/139/8/10.1063/1.4819071}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Helmich}}\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {H{\"a}ttig}},\ }\href {\doibase http://dx.doi.org/10.1063/1.4819071}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {139}},\ \bibinfo {eid} {084114} (\bibinfo {year}
+  {2013}),\ http://dx.doi.org/10.1063/1.4819071}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Roos}\ \emph {et~al.}(1982)\citenamefont {Roos},
+  \citenamefont {Linse}, \citenamefont {Siegbahn},\ and\ \citenamefont
+  {Blomberg}}]{ROOS1982197}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont
+  {Roos}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Linse}},
+  \bibinfo {author} {\bibfnamefont {P.~E.}\ \bibnamefont {Siegbahn}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont {Blomberg}},\ }\href
+  {\doibase https://doi.org/10.1016/0301-0104(82)88019-1} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chemical Physics}\ }\textbf {\bibinfo {volume} {66}},\
+  \bibinfo {pages} {197 } (\bibinfo {year} {1982})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pulay}(2011)}]{doi:10.1002/qua.23052}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Pulay}},\ }\href {\doibase 10.1002/qua.23052} {\bibfield  {journal}
+  {\bibinfo  {journal} {International Journal of Quantum Chemistry}\ }\textbf
+  {\bibinfo {volume} {111}},\ \bibinfo {pages} {3273} (\bibinfo {year}
+  {2011})},\ \Eprint
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/qua.23052}
+  {https://onlinelibrary.wiley.com/doi/pdf/10.1002/qua.23052} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Banerjee}\ and\ \citenamefont
+  {Simons}(1981)}]{simons1981}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Banerjee}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Simons}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Int.\ J.\ Quantum\ Chem.}}\ }\textbf {\bibinfo {volume} {19}},\ \bibinfo
+  {pages} {207} (\bibinfo {year} {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Celani}\ \emph {et~al.}(2004)\citenamefont {Celani},
+  \citenamefont {Stoll}, \citenamefont {Werner},\ and\ \citenamefont
+  {Knowles}}]{celanithe2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Celani}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Stoll}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Werner}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Knowles}},\ }\href {\doibase
+  10.1080/00268970412331317788} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Mol.\ Phys.}}\ }\textbf {\bibinfo {volume} {102}},\ \bibinfo {pages} {2369}
+  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fink}(2006)}]{FINK2006461}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~F.}\ \bibnamefont
+  {Fink}},\ }\href {\doibase https://doi.org/10.1016/j.cplett.2006.07.081}
+  {\bibfield  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\
+  }\textbf {\bibinfo {volume} {428}},\ \bibinfo {pages} {461 } (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fink}(2009)}]{FINK200939}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~F.}\ \bibnamefont
+  {Fink}},\ }\href {\doibase https://doi.org/10.1016/j.chemphys.2008.10.004}
+  {\bibfield  {journal} {\bibinfo  {journal} {Chemical Physics}\ }\textbf
+  {\bibinfo {volume} {356}},\ \bibinfo {pages} {39 } (\bibinfo {year}
+  {2009})},\ \bibinfo {note} {moving Frontiers in Quantum
+  Chemistry:}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sharma}\ \emph {et~al.}(2017)\citenamefont {Sharma},
+  \citenamefont {Knizia}, \citenamefont {Guo},\ and\ \citenamefont
+  {Alavi}}]{doi:10.1021/acs.jctc.6b00898}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Sharma}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Knizia}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Guo}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Alavi}},\ }\href {\doibase
+  10.1021/acs.jctc.6b00898} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume} {13}},\
+  \bibinfo {pages} {488} (\bibinfo {year} {2017})},\ \bibinfo {note} {pMID:
+  28060507},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.6b00898}
+  {https://doi.org/10.1021/acs.jctc.6b00898} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Celani}\ and\ \citenamefont
+  {Werner}(2000)}]{Celani2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Celani}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {112}},\ \bibinfo {pages} {5546}
+  (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shamasundar}, \citenamefont {Knizia},\ and\
+  \citenamefont {Werner}(2011)}]{PCMRCI2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~R.}\ \bibnamefont
+  {Shamasundar}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Knizia}},
+  \ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages} {054101}
+  (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {This indicate the ($a$, $a$)$\rightarrow $($a$, $v$) and
+  ($a$, $a$)$\rightarrow $($v$, $v$) configurations where $a$ and $v$ represent
+  the active and virtual MOs.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Werner}\ and\ \citenamefont
+  {Reinsch}(1982)}]{doi:10.1063/1.443357}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Werner}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Reinsch}},\ }\href {\doibase 10.1063/1.443357} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {76}},\ \bibinfo {pages} {3144} (\bibinfo {year} {1982})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.443357}
+  {https://doi.org/10.1063/1.443357} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Werner}\ and\ \citenamefont
+  {Knowles}(1988)}]{PCMRCI1988}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}}\ and\ \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont
+  {Knowles}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo {pages} {5803}
+  (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Werner}\ \emph {et~al.}(2012)\citenamefont {Werner},
+  \citenamefont {Knowles}, \citenamefont {Knizia}, \citenamefont {Manby},\ and\
+  \citenamefont {{Sch\"{u}tz}}}]{Molpro}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}}, \bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont {Knowles}},
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Knizia}}, \bibinfo
+  {author} {\bibfnamefont {F.~R.}\ \bibnamefont {Manby}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {{Sch\"{u}tz}}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ WIREs.\ Comput.\ Mol.\ Sci.}}\
+  }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {242} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saitow}, \citenamefont {Kurashige},\ and\
+  \citenamefont {Yanai}(2013)}]{saitowmultireference2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Saitow}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kurashige}}, \
+  and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Yanai}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {139}},\ \bibinfo {pages} {044118}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saitow}, \citenamefont {Kurashige},\ and\
+  \citenamefont {Yanai}(2015)}]{doi:10.1021/acs.jctc.5b00270}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Saitow}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kurashige}}, \
+  and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Yanai}},\ }\href
+  {\doibase 10.1021/acs.jctc.5b00270} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo
+  {volume} {11}},\ \bibinfo {pages} {5120} (\bibinfo {year} {2015})},\ \bibinfo
+  {note} {pMID: 26574310},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.5b00270}
+  {https://doi.org/10.1021/acs.jctc.5b00270} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {MacLeod}\ and\ \citenamefont
+  {Shiozaki}(2015)}]{doi:10.1063/1.4907717}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~K.}\ \bibnamefont
+  {MacLeod}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shiozaki}},\ }\href {\doibase 10.1063/1.4907717} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {142}},\ \bibinfo {pages} {051103} (\bibinfo {year} {2015})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.4907717}
+  {https://doi.org/10.1063/1.4907717} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sivalingam}\ \emph {et~al.}(2016)\citenamefont
+  {Sivalingam}, \citenamefont {Krupi{\v c}ka}, \citenamefont {Auer},\ and\
+  \citenamefont {Neese}}]{doi:10.1063/1.4959029}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Kitaura}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Ikeo}},
-  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Asada}}, \bibinfo
-  {author} {\bibfnamefont {T.}~\bibnamefont {Nakano}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {Uebayasi}},\ }\href {\doibase
-  http://dx.doi.org/10.1016/S0009-2614(99)00874-X} {\bibfield  {journal}
-  {\bibinfo  {journal} {{Chem.\ Phys.\ Lett.}}\ }\textbf {\bibinfo {volume}
-  {313}},\ \bibinfo {pages} {701 } (\bibinfo {year} {1999})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Fedorov}\ and\ \citenamefont
-  {Kitaura}(2004)}]{:/content/aip/journal/jcp/120/15/10.1063/1.1687334}%
+  {Sivalingam}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Krupi{\v
+  c}ka}}, \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Auer}}, \
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
+  {\doibase 10.1063/1.4959029} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {145}},\ \bibinfo
+  {pages} {054104} (\bibinfo {year} {2016})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.4959029}
+  {https://doi.org/10.1063/1.4959029} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Planelles}, \citenamefont {Valdemoro},\ and\
+  \citenamefont {Karwowski}(1991)}]{PhysRevA.43.3392}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont
-  {Fedorov}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Kitaura}},\ }\href {\doibase http://dx.doi.org/10.1063/1.1687334} {\bibfield
-   {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
-  {volume} {120}},\ \bibinfo {pages} {6832} (\bibinfo {year}
-  {2004})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yang}(1991)}]{PhysRevLett.66.1438}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Planelles}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Valdemoro}}, \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Karwowski}},\ }\href {\doibase 10.1103/PhysRevA.43.3392} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume}
+  {43}},\ \bibinfo {pages} {3392} (\bibinfo {year} {1991})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Planelles}, \citenamefont {Valdemoro},\ and\
+  \citenamefont {Karwowski}(1990)}]{PhysRevA.41.2391}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Planelles}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Valdemoro}}, \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Karwowski}},\ }\href {\doibase 10.1103/PhysRevA.41.2391} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. A}\ }\textbf {\bibinfo {volume}
+  {41}},\ \bibinfo {pages} {2391} (\bibinfo {year} {1990})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kutzelnigg}(1985)}]{doi:10.1063/1.448859}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
-  {Yang}},\ }\href {\doibase 10.1103/PhysRevLett.66.1438} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys.\ Rev.\ Lett.}\ }\textbf {\bibinfo {volume}
-  {66}},\ \bibinfo {pages} {1438} (\bibinfo {year} {1991})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Friedrich}, \citenamefont {Hanrath},\ and\
-  \citenamefont
-  {Dolg}(2007)}]{:/content/aip/journal/jcp/126/15/10.1063/1.2721538}%
+  {Kutzelnigg}},\ }\href {\doibase 10.1063/1.448859} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {82}},\ \bibinfo {pages} {4166} (\bibinfo {year} {1985})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.448859}
+  {https://doi.org/10.1063/1.448859} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kutzelnigg}\ and\ \citenamefont
+  {Mukherjee}(1997)}]{Kutzelnigg_Mukherjee1997}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Friedrich}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hanrath}},
-  \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Dolg}},\ }\href
-  {\doibase http://dx.doi.org/10.1063/1.2721538} {\bibfield  {journal}
-  {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {126}},\
-  \bibinfo {eid} {154110} (\bibinfo {year} {2007}),\
-  http://dx.doi.org/10.1063/1.2721538}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {H{\o}yvik}\ \emph {et~al.}(2012)\citenamefont
-  {H{\o}yvik}, \citenamefont {Kristensen}, \citenamefont {Jansik},\ and\
-  \citenamefont {J{\o}rgensen}}]{doi:10.1063/1.3667266}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Kutzelnigg}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Mukherjee}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {107}},\ \bibinfo {pages}
+  {432} (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Saitow}\ and\ \citenamefont
+  {Neese}(2018)}]{doi:10.1063/1.5027114}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.-M.}\ \bibnamefont
-  {H{\o}yvik}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Kristensen}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Jansik}},
-  \ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {J{\o}rgensen}},\
-  }\href {\doibase 10.1063/1.3667266} {\bibfield  {journal} {\bibinfo
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Saitow}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\
+  }\href {\doibase 10.1063/1.5027114} {\bibfield  {journal} {\bibinfo
   {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
-  {136}},\ \bibinfo {pages} {014105} (\bibinfo {year} {2012})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3667266}
-  {https://doi.org/10.1063/1.3667266} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kristensen}\ \emph {et~al.}(2011)\citenamefont
-  {Kristensen}, \citenamefont {Zi{\'o}{\l}kowski}, \citenamefont {Jans{\'i}k},
-  \citenamefont {Kj{\ae}rgaard},\ and\ \citenamefont
-  {J{\o}rgensen}}]{doi:10.1021/ct200114k}%
+  {149}},\ \bibinfo {pages} {034104} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.5027114}
+  {https://doi.org/10.1063/1.5027114} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ma}\ and\ \citenamefont
+  {Werner}(2015)}]{doi:10.1021/acs.jctc.5b00843}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Kristensen}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Zi{\'o}{\l}kowski}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Jans{\'i}k}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Kj{\ae}rgaard}}, \ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
-  {J{\o}rgensen}},\ }\href {\doibase 10.1021/ct200114k} {\bibfield  {journal}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Ma}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1021/acs.jctc.5b00843} {\bibfield  {journal}
   {\bibinfo  {journal} {{ J.\ Chem.\ Theory\ Comput.}}\ }\textbf {\bibinfo
-  {volume} {7}},\ \bibinfo {pages} {1677} (\bibinfo {year} {2011})},\ \bibinfo
-  {note} {pMID: 26596432},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/ct200114k}
-  {http://dx.doi.org/10.1021/ct200114k} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kats}, \citenamefont {Korona},\ and\ \citenamefont
-  {Sch{\"u}tz}(2006)}]{doi:10.1063/1.2339021}%
+  {volume} {11}},\ \bibinfo {pages} {5291} (\bibinfo {year} {2015})},\ \bibinfo
+  {note} {pMID: 26574323},\ \Eprint
+  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.jctc.5b00843}
+  {http://dx.doi.org/10.1021/acs.jctc.5b00843} \BibitemShut {NoStop}%
+\bibitem [{fem()}]{femto}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Kats}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Korona}}, \ and\
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sch{\"u}tz}},\ }\href
-  {\doibase 10.1063/1.2339021} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {125}},\ \bibinfo
-  {pages} {104106} (\bibinfo {year} {2006})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.2339021}
-  {https://doi.org/10.1063/1.2339021} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kats}, \citenamefont {Korona},\ and\ \citenamefont
-  {Sch{\"u}tz}(2007)}]{doi:10.1063/1.2755778}%
+  \href@noop {} {}\bibinfo {note} {{\sc FEMTO :: An Integrated Toolset For The
+  Automated Tensor Generation, Version 0.1.0, M. Saitow}
+  (https://github.com/msaitow), Accessed September 17, 2015}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aoto}\ \emph {et~al.}(2019)\citenamefont {Aoto},
+  \citenamefont {Bargholz}, \citenamefont {Kats}, \citenamefont {Werner},\ and\
+  \citenamefont {K{\"o}hn}}]{AK74}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Kats}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Korona}}, \ and\
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sch{\"u}tz}},\ }\href
-  {\doibase 10.1063/1.2755778} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {127}},\ \bibinfo
-  {pages} {064107} (\bibinfo {year} {2007})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.2755778}
-  {https://doi.org/10.1063/1.2755778} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Freundorfer}\ \emph {et~al.}(2010)\citenamefont
-  {Freundorfer}, \citenamefont {Kats}, \citenamefont {Korona},\ and\
-  \citenamefont {Sch{\"u}tz}}]{doi:10.1063/1.3506684}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.~A.}\ \bibnamefont
+  {Aoto}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Bargholz}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Kats}}, \bibinfo {author}
+  {\bibfnamefont {H.-J.}\ \bibnamefont {Werner}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {K{\"o}hn}},\ }\href {\doibase
+  10.1021/acs.jctc.8b01301} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Chem. Theory Comput.}\ }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages}
+  {2291} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Taube}\ and\ \citenamefont
+  {Bartlett}(2009)}]{doi:10.1063/1.3115467}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Freundorfer}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Kats}},
-  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Korona}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Sch{\"u}tz}},\ }\href {\doibase
-  10.1063/1.3506684} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
-  Chemical Physics}\ }\textbf {\bibinfo {volume} {133}},\ \bibinfo {pages}
-  {244110} (\bibinfo {year} {2010})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3506684}
-  {https://doi.org/10.1063/1.3506684} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {W{\"a}lz}\ \emph {et~al.}(2016)\citenamefont
-  {W{\"a}lz}, \citenamefont {Usvyat}, \citenamefont {Korona},\ and\
-  \citenamefont {Sch{\"u}tz}}]{doi:10.1063/1.4942234}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Taube}}\ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
+  {Bartlett}},\ }\href {\doibase 10.1063/1.3115467} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {130}},\ \bibinfo {pages} {144112} (\bibinfo {year} {2009})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.3115467}
+  {https://doi.org/10.1063/1.3115467} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Janssen}\ and\ \citenamefont
+  {Schaefer}(1991)}]{CJanssen1991}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {W{\"a}lz}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Usvyat}},
-  \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Korona}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Sch{\"u}tz}},\ }\href {\doibase
-  10.1063/1.4942234} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
-  Chemical Physics}\ }\textbf {\bibinfo {volume} {144}},\ \bibinfo {pages}
-  {084117} (\bibinfo {year} {2016})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.4942234}
-  {https://doi.org/10.1063/1.4942234} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Crawford}\ and\ \citenamefont
-  {King}(2002)}]{CRAWFORD2002611}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~L.}\ \bibnamefont
+  {Janssen}}\ and\ \bibinfo {author} {\bibfnamefont {H.~F.}\ \bibnamefont
+  {Schaefer}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Theor.\ Chim.\ Acta.}}\ }\textbf {\bibinfo {volume} {79}},\ \bibinfo {pages}
+  {1} (\bibinfo {year} {1991})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hirata}(2003)}]{doi:10.1021/jp034596z}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Hirata}},\ }\href {\doibase 10.1021/jp034596z} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Phys.\ Chem.\ A}}\ }\textbf {\bibinfo {volume}
+  {107}},\ \bibinfo {pages} {9887} (\bibinfo {year} {2003})},\ \Eprint
+  {http://arxiv.org/abs/http://dx.doi.org/10.1021/jp034596z}
+  {http://dx.doi.org/10.1021/jp034596z} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hirata}(2004)}]{SHirataTCE2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Hirata}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {121}},\ \bibinfo {pages} {51}
+  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hirata}(2006)}]{SHirataTCE2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Hirata}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Theor.\ Chem.\ Acc.}}\ }\textbf {\bibinfo {volume} {116}},\ \bibinfo {pages}
+  {2} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Auer}\ \emph {et~al.}(2006)\citenamefont {Auer},
+  \citenamefont {Baumgartner}, \citenamefont {Bernholdt}, \citenamefont
+  {Bibireata}, \citenamefont {Choppella}, \citenamefont {Cociorva},
+  \citenamefont {Gao}, \citenamefont {Harrison}, \citenamefont
+  {Krishnamoorthy}, \citenamefont {Krishnan}, \citenamefont {Lam},
+  \citenamefont {Lu}, \citenamefont {Nooijen}, \citenamefont {Pitzer},
+  \citenamefont {Ramanujam}, \citenamefont {Sadayappan},\ and\ \citenamefont
+  {Sibiryakov}}]{doi:10.1080/00268970500275780}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {Auer}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Baumgartner}},
+  \bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont {Bernholdt}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Bibireata}}, \bibinfo {author}
+  {\bibfnamefont {V.}~\bibnamefont {Choppella}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Cociorva}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Gao}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Harrison}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Krishnamoorthy}}, \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Krishnan}}, \bibinfo {author} {\bibfnamefont {C.-C.}\
+  \bibnamefont {Lam}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Lu}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Nooijen}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Pitzer}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Ramanujam}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Sadayappan}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Sibiryakov}},\ }\href {\doibase
+  10.1080/00268970500275780} {\bibfield  {journal} {\bibinfo  {journal}
+  {Molecular Physics}\ }\textbf {\bibinfo {volume} {104}},\ \bibinfo {pages}
+  {211} (\bibinfo {year} {2006})},\ \Eprint
+  {http://arxiv.org/abs/http://dx.doi.org/10.1080/00268970500275780}
+  {http://dx.doi.org/10.1080/00268970500275780} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{K\"{o}hn}}(2009{\natexlab{a}})}]{KoehnJCP2009_1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{K\"{o}hn}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {130}},\ \bibinfo {pages}
+  {104104} (\bibinfo {year} {2009}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{K\"{o}hn}}(2009{\natexlab{b}})}]{KoehnJCP2009_2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{K\"{o}hn}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {130}},\ \bibinfo {pages}
+  {131101} (\bibinfo {year} {2009}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hanauer}\ and\ \citenamefont
+  {{K\"{o}hn}}(2009)}]{MHandKoehn2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hanauer}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{K\"{o}hn}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {131}},\ \bibinfo {pages}
+  {124118} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hanauer}\ and\ \citenamefont
+  {{K\"{o}hn}}(2011)}]{MHandKoehn2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hanauer}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{K\"{o}hn}}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {134}},\ \bibinfo {pages}
+  {20411} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Black}\ and\ \citenamefont {K{\"o}hn}(2019)}]{AK77}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Black}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {K{\"o}hn}},\ }\href {\doibase 10.1063/1.5095070} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {150}},\
+  \bibinfo {pages} {194107} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shiozaki}\ \emph
+  {et~al.}(2008{\natexlab{a}})\citenamefont {Shiozaki}, \citenamefont {Kamiya},
+  \citenamefont {Hirata},\ and\ \citenamefont {Valeev}}]{ShiozakiJCP2008}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Crawford}}\ and\ \bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont
-  {King}},\ }\href {\doibase https://doi.org/10.1016/S0009-2614(02)01639-1}
-  {\bibfield  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\
-  }\textbf {\bibinfo {volume} {366}},\ \bibinfo {pages} {611 } (\bibinfo {year}
-  {2002})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Russ}\ and\ \citenamefont
-  {Crawford}(2004)}]{RUSS2004104}%
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kamiya}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hirata}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Valeev}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {129}},\ \bibinfo {pages} {071101} (\bibinfo {year}
+  {2008}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shiozaki}\ \emph
+  {et~al.}(2008{\natexlab{b}})\citenamefont {Shiozaki}, \citenamefont {Kamiya},
+  \citenamefont {Hirata},\ and\ \citenamefont {Valeev}}]{ShiozakiPCCP2008}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~J.}\ \bibnamefont
-  {Russ}}\ and\ \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
-  {Crawford}},\ }\href {\doibase https://doi.org/10.1016/j.cplett.2004.10.083}
-  {\bibfield  {journal} {\bibinfo  {journal} {Chemical Physics Letters}\
-  }\textbf {\bibinfo {volume} {400}},\ \bibinfo {pages} {104 } (\bibinfo {year}
-  {2004})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {McAlexander}, \citenamefont {Mach},\ and\
-  \citenamefont {Crawford}(2012)}]{C2CP23797K}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kamiya}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hirata}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Valeev}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ Phys.\ Chem.\ Chem.\ Phys.}}\
+  }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {3358} (\bibinfo {year}
+  {2008}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shiozaki}\ \emph
+  {et~al.}(2009{\natexlab{a}})\citenamefont {Shiozaki}, \citenamefont {Kamiya},
+  \citenamefont {Hirata},\ and\ \citenamefont {Valeev}}]{ShiozakiJCP2009_1}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~R.}\ \bibnamefont
-  {McAlexander}}, \bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
-  {Mach}}, \ and\ \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
-  {Crawford}},\ }\href {\doibase 10.1039/C2CP23797K} {\bibfield  {journal}
-  {\bibinfo  {journal} {Phys. Chem. Chem. Phys.}\ }\textbf {\bibinfo {volume}
-  {14}},\ \bibinfo {pages} {7830} (\bibinfo {year} {2012})}\BibitemShut
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kamiya}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hirata}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Valeev}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {130}},\ \bibinfo {pages} {054101} (\bibinfo {year}
+  {2009}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Shiozaki}\ \emph
+  {et~al.}(2009{\natexlab{b}})\citenamefont {Shiozaki}, \citenamefont {Kamiya},
+  \citenamefont {Hirata},\ and\ \citenamefont {Valeev}}]{ShiozakiJCP2009_2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kamiya}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hirata}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~F.}\ \bibnamefont {Valeev}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf
+  {\bibinfo {volume} {131}},\ \bibinfo {pages} {044118} (\bibinfo {year}
+  {2009}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Krupi{\v c}ka}\ \emph {et~al.}(2017)\citenamefont
+  {Krupi{\v c}ka}, \citenamefont {Sivalingam}, \citenamefont {Huntington},
+  \citenamefont {Auer},\ and\ \citenamefont {Neese}}]{doi:10.1002/jcc.24833}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Krupi{\v c}ka}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sivalingam}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Huntington}}, \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
+  {Auer}}, \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\
+  }\href {\doibase 10.1002/jcc.24833} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Computational Chemistry}\ }\textbf {\bibinfo {volume}
+  {38}},\ \bibinfo {pages} {1853} (\bibinfo {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.24833}
+  {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.24833} \BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {McAlexander}\ and\ \citenamefont
-  {Crawford}(2016)}]{doi:10.1021/acs.jctc.5b00898}%
+\bibitem [{\citenamefont {Huntington}\ \emph {et~al.}(2017)\citenamefont
+  {Huntington}, \citenamefont {Krupi{\v c}ka}, \citenamefont {Neese},\ and\
+  \citenamefont {Izs{\' a}k}}]{doi:10.1063/1.5001320}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~R.}\ \bibnamefont
-  {McAlexander}}\ and\ \bibinfo {author} {\bibfnamefont {T.~D.}\ \bibnamefont
-  {Crawford}},\ }\href {\doibase 10.1021/acs.jctc.5b00898} {\bibfield
-  {journal} {\bibinfo  {journal} {Journal of Chemical Theory and Computation}\
-  }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {209} (\bibinfo {year}
-  {2016})},\ \bibinfo {note} {pMID: 26626230},\ \Eprint
-  {http://arxiv.org/abs/http://dx.doi.org/10.1021/acs.jctc.5b00898}
-  {http://dx.doi.org/10.1021/acs.jctc.5b00898} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Datta}, \citenamefont {Kossmann},\ and\ \citenamefont
-  {Neese}(2016)}]{dipayan2016}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~M.~J.}\
+  \bibnamefont {Huntington}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Krupi{\v c}ka}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Neese}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Izs{\' a}k}},\ }\href {\doibase 10.1063/1.5001320}
+  {\bibfield  {journal} {\bibinfo  {journal} {The Journal of Chemical Physics}\
+  }\textbf {\bibinfo {volume} {147}},\ \bibinfo {pages} {174104} (\bibinfo
+  {year} {2017})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.5001320}
+  {https://doi.org/10.1063/1.5001320} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sen}\ \emph {et~al.}(2018)\citenamefont {Sen},
+  \citenamefont {de~Souza}, \citenamefont {Huntington}, \citenamefont {Krupi{\v
+  c}ka}, \citenamefont {Neese},\ and\ \citenamefont {Izs{\'
+  a}k}}]{doi:10.1063/1.5048688}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Sen}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {de~Souza}},
+  \bibinfo {author} {\bibfnamefont {L.~M.~J.}\ \bibnamefont {Huntington}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Krupi{\v c}ka}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Neese}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Izs{\' a}k}},\ }\href {\doibase
+  10.1063/1.5048688} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Chemical Physics}\ }\textbf {\bibinfo {volume} {149}},\ \bibinfo {pages}
+  {114108} (\bibinfo {year} {2018})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.5048688}
+  {https://doi.org/10.1063/1.5048688} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Datta}, \citenamefont {Kong},\ and\ \citenamefont
+  {Nooijen}(2011)}]{dattaa2011}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Datta}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kossmann}}, \
-  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\
-  }\textbf {\bibinfo {volume} {145}},\ \bibinfo {pages} {114101} (\bibinfo
-  {year} {2016})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2018)}]{WCMS:WCMS1327}%
+  {Datta}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Kong}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Nooijen}},\ }\href
+  {\doibase 10.1063/1.3592494} {\bibfield  {journal} {\bibinfo  {journal} {{
+  J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {134}},\ \bibinfo {pages}
+  {214116} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kong}\ \emph {et~al.}(2009)\citenamefont {Kong},
+  \citenamefont {Shamasundar}, \citenamefont {Demel},\ and\ \citenamefont
+  {Nooijen}}]{doi:10.1063/1.3089302}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1002/wcms.1327} {\bibfield  {journal}
-  {\bibinfo  {journal} {Wiley Interdisciplinary Reviews: Computational
-  Molecular Science}\ }\textbf {\bibinfo {volume} {8}},\ \bibinfo {pages}
-  {e1327} (\bibinfo {year} {2018})},\ \bibinfo {note} {e1327}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Stanton}\ and\ \citenamefont
-  {Bartlett}(1993)}]{:/content/aip/journal/jcp/98/9/10.1063/1.464746}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Kong}}, \bibinfo {author} {\bibfnamefont {K.~R.}\ \bibnamefont
+  {Shamasundar}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Demel}},
+  \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Nooijen}},\ }\href
+  {\doibase 10.1063/1.3089302} {\bibfield  {journal} {\bibinfo  {journal} {The
+  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {130}},\ \bibinfo
+  {pages} {114101} (\bibinfo {year} {2009})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.3089302}
+  {https://doi.org/10.1063/1.3089302} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kong}\ and\ \citenamefont
+  {Valeev}(2011)}]{doi:10.1063/1.3664729}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
-  {Stanton}}\ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
-  {Bartlett}},\ }\href {\doibase http://dx.doi.org/10.1063/1.464746} {\bibfield
-   {journal} {\bibinfo  {journal} {J.\ Chem.\ Phys.}\ }\textbf {\bibinfo
-  {volume} {98}},\ \bibinfo {pages} {7029} (\bibinfo {year}
-  {1993})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Geertsen}, \citenamefont {Rittby},\ and\
-  \citenamefont {Bartlett}(1989)}]{GEERTSEN198957}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Kong}}\ and\ \bibinfo {author} {\bibfnamefont {E.~F.}\ \bibnamefont
+  {Valeev}},\ }\href {\doibase 10.1063/1.3664729} {\bibfield  {journal}
+  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
+  {volume} {135}},\ \bibinfo {pages} {214105} (\bibinfo {year} {2011})},\
+  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.3664729}
+  {https://doi.org/10.1063/1.3664729} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hanrath}\ and\ \citenamefont
+  {{Engels-Putzka}}(2010)}]{hanrathan2010}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Geertsen}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rittby}}, \
-  and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
-  }\href {\doibase http://dx.doi.org/10.1016/0009-2614(89)85202-9} {\bibfield
-  {journal} {\bibinfo  {journal} {{Chem.\ Phys.\ Lett.}}\ }\textbf {\bibinfo
-  {volume} {164}},\ \bibinfo {pages} {57 } (\bibinfo {year}
-  {1989})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Angeli}\ \emph {et~al.}(2001)\citenamefont {Angeli},
-  \citenamefont {Cimiraglia}, \citenamefont {Evangelisti}, \citenamefont
-  {Leininger},\ and\ \citenamefont {Malrieu}}]{angeliintroduction2001}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Angeli}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cimiraglia}},
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Evangelisti}}, \bibinfo
-  {author} {\bibfnamefont {T.}~\bibnamefont {Leininger}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Malrieu}},\ }\href {\doibase
-  10.1063/1.1361246} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
-  Phys.}}\ }\textbf {\bibinfo {volume} {114}},\ \bibinfo {pages} {10252}
-  (\bibinfo {year} {2001})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Angeli}, \citenamefont {Cimiraglia},\ and\
-  \citenamefont {Malrieu}(2002)}]{angelin-electron2002}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
-  {Angeli}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cimiraglia}},
-  \ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Malrieu}},\ }\href
-  {\doibase 10.1063/1.1515317} {\bibfield  {journal} {\bibinfo  {journal} {{J.\
-  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {117}},\ \bibinfo {pages} {9138}
-  (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Stoychev}, \citenamefont {Auer},\ and\ \citenamefont
-  {Neese}(2017)}]{doi:10.1021/acs.jctc.6b01041}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~L.}\ \bibnamefont
-  {Stoychev}}, \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Auer}},
-  \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
-  {\doibase 10.1021/acs.jctc.6b01041} {\bibfield  {journal} {\bibinfo
-  {journal} {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo
-  {volume} {13}},\ \bibinfo {pages} {554} (\bibinfo {year} {2017})},\ \bibinfo
-  {note} {pMID: 28005364},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.6b01041}
-  {https://doi.org/10.1021/acs.jctc.6b01041} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Dunlap}, \citenamefont {Connolly},\ and\
-  \citenamefont {Sabin}(1979)}]{Sabin1979}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~I.}\ \bibnamefont
-  {Dunlap}}, \bibinfo {author} {\bibfnamefont {J.~W.~D.}\ \bibnamefont
-  {Connolly}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
-  {Sabin}},\ }\href {\doibase http://dx.doi.org/10.1063/1.438728} {\bibfield
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hanrath}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Engels-Putzka}}},\ }\href {\doibase 10.1063/1.3467878} {\bibfield
   {journal} {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo
-  {volume} {71}},\ \bibinfo {pages} {3396} (\bibinfo {year}
-  {1979})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Baerends}, \citenamefont {Ellis},\ and\ \citenamefont
-  {Ros}(1973)}]{BAERENDS197341}%
+  {volume} {133}},\ \bibinfo {pages} {064108} (\bibinfo {year}
+  {2010})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Engels-Putzka}}\ and\ \citenamefont
+  {Hanrath}(2011)}]{engels-putzkaa2011}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Baerends}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Ellis}}, \
-  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Ros}},\ }\href
-  {\doibase http://dx.doi.org/10.1016/0301-0104(73)80059-X} {\bibfield
-  {journal} {\bibinfo  {journal} {{Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
-  {2}},\ \bibinfo {pages} {41 } (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Vahtras}, \citenamefont {Alml{\"o}f},\ and\
-  \citenamefont {Feyereisen}(1993)}]{Feyereisen1993_2}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{Engels-Putzka}}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Hanrath}},\ }\href {\doibase 10.1063/1.3561739} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
+  {134}},\ \bibinfo {pages} {124106} (\bibinfo {year} {2011})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gdanitz}\ and\ \citenamefont
+  {Ahlrichs}(1988)}]{Gdanitz1988}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
-  {Vahtras}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Alml{\"o}f}},
-  \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Feyereisen}},\
-  }\href {\doibase http://dx.doi.org/10.1016/0009-2614(93)89151-7} {\bibfield
-  {journal} {\bibinfo  {journal} {Chem.\ Phys.\ Lett.}\ }\textbf {\bibinfo
-  {volume} {213}},\ \bibinfo {pages} {514 } (\bibinfo {year}
-  {1993})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sch{\"u}tz}\ and\ \citenamefont
-  {Manby}(2003)}]{schutz2003linear}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Gdanitz}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Ahlrichs}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{
+  Chem.\ Phys.\ Lett.}}\ }\textbf {\bibinfo {volume} {143}},\ \bibinfo {pages}
+  {413} (\bibinfo {year} {1988})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rode}\ and\ \citenamefont {Werner}(2005)}]{Rode2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~F.}\ \bibnamefont
+  {Rode}}\ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href {\doibase 10.1007/s00214-005-0692-6} {\bibfield  {journal}
+  {\bibinfo  {journal} {Theoretical Chemistry Accounts}\ }\textbf {\bibinfo
+  {volume} {114}},\ \bibinfo {pages} {309} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kurashige}\ \emph {et~al.}(2014)\citenamefont
+  {Kurashige}, \citenamefont {Chalupsk{\'y}}, \citenamefont {Lan},\ and\
+  \citenamefont {Yanai}}]{doi:10.1063/1.4900878}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Kurashige}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Chalupsk{\'y}}}, \bibinfo {author} {\bibfnamefont {T.~N.}\ \bibnamefont
+  {Lan}}, \ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Yanai}},\
+  }\href {\doibase 10.1063/1.4900878} {\bibfield  {journal} {\bibinfo
+  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
+  {141}},\ \bibinfo {pages} {174111} (\bibinfo {year} {2014})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.4900878}
+  {https://doi.org/10.1063/1.4900878} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hanauer}\ and\ \citenamefont
+  {{K\"{o}hn}}(2012)}]{hanauercommunication:2012}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Sch{\"u}tz}}\ and\ \bibinfo {author} {\bibfnamefont {F.~R.}\ \bibnamefont
-  {Manby}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.\
-  Chem.\ Chem.\ Phys.}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
-  {3349} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bistoni}\ \emph {et~al.}(2017)\citenamefont
-  {Bistoni}, \citenamefont {Riplinger}, \citenamefont {Minenkov}, \citenamefont
-  {Cavallo}, \citenamefont {Auer},\ and\ \citenamefont
-  {Neese}}]{doi:10.1021/acs.jctc.7b00352}%
+  {Hanauer}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {{K\"{o}hn}}},\ }\href {\doibase 10.1063/1.4757728} {\bibfield  {journal}
+  {\bibinfo  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume}
+  {137}},\ \bibinfo {pages} {131103} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Watson}\ and\ \citenamefont
+  {Chan}(2012)}]{doi:10.1021/ct300591z}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Bistoni}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Riplinger}},
-  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Minenkov}}, \bibinfo
-  {author} {\bibfnamefont {L.}~\bibnamefont {Cavallo}}, \bibinfo {author}
-  {\bibfnamefont {A.~A.}\ \bibnamefont {Auer}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href {\doibase
-  10.1021/acs.jctc.7b00352} {\bibfield  {journal} {\bibinfo  {journal} {Journal
-  of Chemical Theory and Computation}\ }\textbf {\bibinfo {volume} {13}},\
-  \bibinfo {pages} {3220} (\bibinfo {year} {2017})},\ \bibinfo {note} {pMID:
-  28605579},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/acs.jctc.7b00352}
-  {https://doi.org/10.1021/acs.jctc.7b00352} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Kossmann}\ and\ \citenamefont
-  {Neese}(2010)}]{doi:10.1021/jp105647c}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Watson}}\ and\ \bibinfo {author} {\bibfnamefont {G.~K.-L.}\ \bibnamefont
+  {Chan}},\ }\href {\doibase 10.1021/ct300591z} {\bibfield  {journal} {\bibinfo
+   {journal} {Journal of Chemical Theory and Computation}\ }\textbf {\bibinfo
+  {volume} {8}},\ \bibinfo {pages} {4013} (\bibinfo {year} {2012})},\ \bibinfo
+  {note} {pMID: 26605568},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1021/ct300591z}
+  {https://doi.org/10.1021/ct300591z} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Serrano‐Andr{\'e}s}\ \emph
+  {et~al.}(1993)\citenamefont {Serrano‐Andr{\'e}s}, \citenamefont
+  {Merch{\'a}n}, \citenamefont {Nebot‐Gil}, \citenamefont {Lindh},\ and\
+  \citenamefont {Roos}}]{doi:10.1063/1.465071}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Kossmann}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1021/jp105647c} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Physical Chemistry A}\ }\textbf
-  {\bibinfo {volume} {114}},\ \bibinfo {pages} {11768} (\bibinfo {year}
-  {2010})},\ \bibinfo {note} {pMID: 20931951},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/jp105647c}
-  {https://doi.org/10.1021/jp105647c} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {T.~H.~Dunning}(1989)}]{ccpVTZ}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Serrano‐Andr{\'e}s}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Merch{\'a}n}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Nebot‐Gil}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}},
+  \ and\ \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},\
+  }\href {\doibase 10.1063/1.465071} {\bibfield  {journal} {\bibinfo  {journal}
+  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {98}},\
+  \bibinfo {pages} {3151} (\bibinfo {year} {1993})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.465071}
+  {https://doi.org/10.1063/1.465071} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zgid}\ \emph {et~al.}(2009)\citenamefont {Zgid},
+  \citenamefont {Ghosh}, \citenamefont {Neuscamman},\ and\ \citenamefont
+  {Chan}}]{Zgid2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Zgid}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Ghosh}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Neuscamman}}, \ and\
+  \bibinfo {author} {\bibfnamefont {G.~K.-L.}\ \bibnamefont {Chan}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\ Chem.\
+  Phys.}}\ }\textbf {\bibinfo {volume} {130}},\ \bibinfo {pages} {194107}
+  (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Finley}\ \emph {et~al.}(1998)\citenamefont {Finley},
+  \citenamefont {Åke Malmqvist}, \citenamefont {Roos},\ and\ \citenamefont
+  {Serrano-Andrés}}]{FINLEY1998299}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {T.~H.~Dunning}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {90}},\ \bibinfo {pages}
-  {1007} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Balabanov}\ and\ \citenamefont
-  {Peterson}(2005)}]{doi:10.1063/1.1998907}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~B.}\ \bibnamefont
-  {Balabanov}}\ and\ \bibinfo {author} {\bibfnamefont {K.~A.}\ \bibnamefont
-  {Peterson}},\ }\href {\doibase 10.1063/1.1998907} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {123}},\ \bibinfo {pages} {064107} (\bibinfo {year} {2005})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.1998907}
-  {https://doi.org/10.1063/1.1998907} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Becke}(1993)}]{B3LYP}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~D.}\ \bibnamefont
-  {Becke}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
-  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {98}},\ \bibinfo {pages} {5648}
-  (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Perdew}, \citenamefont {Burke},\ and\ \citenamefont
-  {Ernzerhof}(1996)}]{PhysRevLett.77.3865}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
-  {Perdew}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Burke}}, \
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ernzerhof}},\ }\href
-  {\doibase 10.1103/PhysRevLett.77.3865} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys.\ Rev.\ Lett.}\ }\textbf {\bibinfo {volume} {77}},\ \bibinfo
-  {pages} {3865} (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Perdew}, \citenamefont {Burke},\ and\ \citenamefont
-  {Ernzerhof}(1997)}]{PhysRevLett.78.1396}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
-  {Perdew}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Burke}}, \
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Ernzerhof}},\ }\href
-  {\doibase 10.1103/PhysRevLett.78.1396} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys.\ Rev.\ Lett.}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
-  {pages} {1396} (\bibinfo {year} {1997})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Zhao}\ and\ \citenamefont
-  {Truhlar}(2006{\natexlab{a}})}]{doi:10.1063/1.2370993}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Zhao}}\ and\ \bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont
-  {Truhlar}},\ }\href {\doibase 10.1063/1.2370993} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {125}},\ \bibinfo {pages} {194101} (\bibinfo {year}
-  {2006}{\natexlab{a}})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.2370993}
-  {https://doi.org/10.1063/1.2370993} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Zhao}\ and\ \citenamefont
-  {Truhlar}(2006{\natexlab{b}})}]{doi:10.1021/jp066479k}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Zhao}}\ and\ \bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont
-  {Truhlar}},\ }\href {\doibase 10.1021/jp066479k} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Physical Chemistry A}\ }\textbf
-  {\bibinfo {volume} {110}},\ \bibinfo {pages} {13126} (\bibinfo {year}
-  {2006}{\natexlab{b}})},\ \bibinfo {note} {pMID: 17149824},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/jp066479k}
-  {https://doi.org/10.1021/jp066479k} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Zhao}\ and\ \citenamefont
-  {Truhlar}(2008)}]{Zhao2008}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Zhao}}\ and\ \bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont
-  {Truhlar}},\ }\href {\doibase 10.1007/s00214-007-0310-x} {\bibfield
-  {journal} {\bibinfo  {journal} {Theoretical Chemistry Accounts}\ }\textbf
-  {\bibinfo {volume} {120}},\ \bibinfo {pages} {215} (\bibinfo {year}
-  {2008})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Yanai}, \citenamefont {Tew},\ and\ \citenamefont
-  {Handy}(2004)}]{CAM}%
+  {Finley}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Åke
+  Malmqvist}}, \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},
+  \ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Serrano-Andrés}},\ }\href {\doibase
+  https://doi.org/10.1016/S0009-2614(98)00252-8} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo {volume}
+  {288}},\ \bibinfo {pages} {299 } (\bibinfo {year} {1998})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Shiozaki}\ \emph {et~al.}(2011)\citenamefont
+  {Shiozaki}, \citenamefont {{Gy\H{o}ffy}}, \citenamefont {Celani},\ and\
+  \citenamefont {Werner}}]{ShioWerner2011}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Yanai}}, \bibinfo {author} {\bibfnamefont {D.~P.}\ \bibnamefont {Tew}}, \
-  and\ \bibinfo {author} {\bibfnamefont {N.~C.}\ \bibnamefont {Handy}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ Chem.\ Phys.\
-  Lett.}}\ }\textbf {\bibinfo {volume} {393}},\ \bibinfo {pages} {51} (\bibinfo
-  {year} {2004})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Grimme}(2006)}]{doi:10.1063/1.2148954}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Grimme}},\ }\href {\doibase 10.1063/1.2148954} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {124}},\ \bibinfo {pages} {034108} (\bibinfo {year} {2006})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.2148954}
-  {https://doi.org/10.1063/1.2148954} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}, \citenamefont {Schwabe},\ and\ \citenamefont
-  {Grimme}(2007)}]{doi:10.1063/1.2712433}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Schwabe}}, \
-  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Grimme}},\ }\href
-  {\doibase 10.1063/1.2712433} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {126}},\ \bibinfo
-  {pages} {124115} (\bibinfo {year} {2007})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.2712433}
-  {https://doi.org/10.1063/1.2712433} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sinnecker}\ \emph {et~al.}(2004)\citenamefont
-  {Sinnecker}, \citenamefont {Reijerse}, \citenamefont {Neese},\ and\
-  \citenamefont {Lubitz}}]{doi:10.1021/ja0392014}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Sinnecker}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Reijerse}},
-  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {W.}~\bibnamefont {Lubitz}},\ }\href {\doibase
-  10.1021/ja0392014} {\bibfield  {journal} {\bibinfo  {journal} {Journal of the
-  American Chemical Society}\ }\textbf {\bibinfo {volume} {126}},\ \bibinfo
-  {pages} {3280} (\bibinfo {year} {2004})},\ \bibinfo {note} {pMID: 15012159},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1021/ja0392014}
-  {https://doi.org/10.1021/ja0392014} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Burghaus}\ \emph {et~al.}(1993)\citenamefont
-  {Burghaus}, \citenamefont {Plato}, \citenamefont {Rohrer}, \citenamefont
-  {Moebius}, \citenamefont {MacMillan},\ and\ \citenamefont
-  {Lubitz}}]{doi:10.1021/j100131a037}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
-  {Burghaus}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Plato}},
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rohrer}}, \bibinfo
-  {author} {\bibfnamefont {K.}~\bibnamefont {Moebius}}, \bibinfo {author}
-  {\bibfnamefont {F.}~\bibnamefont {MacMillan}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {W.}~\bibnamefont {Lubitz}},\ }\href {\doibase
-  10.1021/j100131a037} {\bibfield  {journal} {\bibinfo  {journal} {The Journal
-  of Physical Chemistry}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {pages}
-  {7639} (\bibinfo {year} {1993})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/j100131a037}
-  {https://doi.org/10.1021/j100131a037} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Flores}\ \emph {et~al.}(2003)\citenamefont {Flores},
-  \citenamefont {Isaacson}, \citenamefont {Calvo}, \citenamefont {Feher},\ and\
-  \citenamefont {Lubitz}}]{FLORES2003401}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Flores}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Isaacson}},
-  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Calvo}}, \bibinfo
-  {author} {\bibfnamefont {G.}~\bibnamefont {Feher}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {W.}~\bibnamefont {Lubitz}},\ }\href {\doibase
-  https://doi.org/10.1016/S0301-0104(03)00321-5} {\bibfield  {journal}
-  {\bibinfo  {journal} {Chemical Physics}\ }\textbf {\bibinfo {volume} {294}},\
-  \bibinfo {pages} {401 } (\bibinfo {year} {2003})},\ \bibinfo {note}
-  {structure-Mechanism in Photosynthesis Dedicated to the Memory of Professor
-  Arnold Jan Hoff}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2003{\natexlab{b}})}]{doi:10.1063/1.1540619}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1063/1.1540619} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {118}},\ \bibinfo {pages} {3939} (\bibinfo {year}
-  {2003}{\natexlab{b}})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.1540619}
-  {https://doi.org/10.1063/1.1540619} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Tao}\ \emph {et~al.}(2003)\citenamefont {Tao},
-  \citenamefont {Perdew}, \citenamefont {Staroverov},\ and\ \citenamefont
-  {Scuseria}}]{PhysRevLett.91.146401}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Tao}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont {Perdew}},
-  \bibinfo {author} {\bibfnamefont {V.~N.}\ \bibnamefont {Staroverov}}, \ and\
-  \bibinfo {author} {\bibfnamefont {G.~E.}\ \bibnamefont {Scuseria}},\ }\href
-  {\doibase 10.1103/PhysRevLett.91.146401} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {91}},\ \bibinfo
-  {pages} {146401} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Grimme}\ \emph {et~al.}(2010)\citenamefont {Grimme},
-  \citenamefont {Antony}, \citenamefont {Ehrlich},\ and\ \citenamefont
-  {Krieg}}]{doi:10.1063/1.3382344}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Grimme}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Antony}},
-  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ehrlich}}, \ and\
-  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Krieg}},\ }\href
-  {\doibase 10.1063/1.3382344} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {132}},\ \bibinfo
-  {pages} {154104} (\bibinfo {year} {2010})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.3382344}
-  {https://doi.org/10.1063/1.3382344} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Grimme}, \citenamefont {Ehrlich},\ and\ \citenamefont
-  {Goerigk}(2011)}]{JCC:JCC21759}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Grimme}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Ehrlich}}, \
-  and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Goerigk}},\ }\href
-  {\doibase 10.1002/jcc.21759} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Computational Chemistry}\ }\textbf {\bibinfo {volume} {32}},\
-  \bibinfo {pages} {1456} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Barone}\ and\ \citenamefont
-  {Cossi}(1998)}]{doi:10.1021/jp9716997}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
-  {Barone}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Cossi}},\
-  }\href {\doibase 10.1021/jp9716997} {\bibfield  {journal} {\bibinfo
-  {journal} {The Journal of Physical Chemistry A}\ }\textbf {\bibinfo {volume}
-  {102}},\ \bibinfo {pages} {1995} (\bibinfo {year} {1998})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/jp9716997}
-  {https://doi.org/10.1021/jp9716997} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Cossi}\ \emph {et~al.}(2003)\citenamefont {Cossi},
-  \citenamefont {Rega}, \citenamefont {Scalmani},\ and\ \citenamefont
-  {Barone}}]{JCC:JCC10189}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Cossi}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Rega}},
-  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Scalmani}}, \ and\
-  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Barone}},\ }\href
-  {\doibase 10.1002/jcc.10189} {\bibfield  {journal} {\bibinfo  {journal}
-  {Journal of Computational Chemistry}\ }\textbf {\bibinfo {volume} {24}},\
-  \bibinfo {pages} {669} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {van Lenthe}, \citenamefont {Baerends},\ and\
-  \citenamefont {Snijders}(1993)}]{doi:10.1063/1.466059}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {van
-  Lenthe}}, \bibinfo {author} {\bibfnamefont {E.~J.}\ \bibnamefont {Baerends}},
-  \ and\ \bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont {Snijders}},\
-  }\href {\doibase 10.1063/1.466059} {\bibfield  {journal} {\bibinfo  {journal}
-  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {99}},\
-  \bibinfo {pages} {4597} (\bibinfo {year} {1993})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.466059}
-  {https://doi.org/10.1063/1.466059} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {van W{\"u}llen}(1998)}]{doi:10.1063/1.476576}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {van
-  W{\"u}llen}},\ }\href {\doibase 10.1063/1.476576} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {109}},\ \bibinfo {pages} {392} (\bibinfo {year} {1998})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.476576}
-  {https://doi.org/10.1063/1.476576} \BibitemShut {NoStop}%
+  {Shiozaki}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {{Gy\H{o}ffy}}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Celani}}, \ and\ \bibinfo {author} {\bibfnamefont {H.-J.}\ \bibnamefont
+  {Werner}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {135}},\ \bibinfo {pages}
+  {081106} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Weigend}\ and\ \citenamefont
   {Ahlrichs}(2005)}]{B508541A}%
   \BibitemOpen
@@ -1216,137 +1514,86 @@
   {\bibinfo  {journal} {Phys. Chem. Chem. Phys.}\ }\textbf {\bibinfo {volume}
   {8}},\ \bibinfo {pages} {1057} (\bibinfo {year} {2006})}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Reiher}\ and\ \citenamefont
-  {Wolf}(2004{\natexlab{a}})}]{reiherexact2004_I}%
+\bibitem [{\citenamefont {Watts}, \citenamefont {Gwaltney},\ and\ \citenamefont
+  {Bartlett}(1996)}]{doi:10.1063/1.471988}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Watts}}, \bibinfo {author} {\bibfnamefont {S.~R.}\ \bibnamefont {Gwaltney}},
+  \ and\ \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Bartlett}},\
+  }\href {\doibase 10.1063/1.471988} {\bibfield  {journal} {\bibinfo  {journal}
+  {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume} {105}},\
+  \bibinfo {pages} {6979} (\bibinfo {year} {1996})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.471988}
+  {https://doi.org/10.1063/1.471988} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lehtonen}\ \emph {et~al.}(2009)\citenamefont
+  {Lehtonen}, \citenamefont {Sundholm}, \citenamefont {Send},\ and\
+  \citenamefont {Johansson}}]{doi:10.1063/1.3158990}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Lehtonen}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Sundholm}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Send}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.~P.}\ \bibnamefont {Johansson}},\ }\href {\doibase
+  10.1063/1.3158990} {\bibfield  {journal} {\bibinfo  {journal} {The Journal of
+  Chemical Physics}\ }\textbf {\bibinfo {volume} {131}},\ \bibinfo {pages}
+  {024301} (\bibinfo {year} {2009})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.3158990}
+  {https://doi.org/10.1063/1.3158990} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Szalay}, \citenamefont {Karpfen},\ and\ \citenamefont
+  {Lischka}(1989)}]{SZALAY1989219}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Szalay}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Karpfen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lischka}},\ }\href
+  {\doibase https://doi.org/10.1016/0301-0104(89)87052-1} {\bibfield  {journal}
+  {\bibinfo  {journal} {Chemical Physics}\ }\textbf {\bibinfo {volume} {130}},\
+  \bibinfo {pages} {219 } (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dallos}\ and\ \citenamefont
+  {Lischka}(2004)}]{Dallos2004}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Reiher}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Wolf}},\
-  }\href {\doibase 10.1063/1.1768160} {\bibfield  {journal} {\bibinfo
-  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {121}},\
-  \bibinfo {pages} {2037} (\bibinfo {year} {2004}{\natexlab{a}})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Reiher}\ and\ \citenamefont
-  {Wolf}(2004{\natexlab{b}})}]{reiherexact2004_II}%
+  {Dallos}}\ and\ \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Lischka}},\ }\href {\doibase 10.1007/s00214-003-0557-9} {\bibfield
+  {journal} {\bibinfo  {journal} {Theoretical Chemistry Accounts}\ }\textbf
+  {\bibinfo {volume} {112}},\ \bibinfo {pages} {16} (\bibinfo {year}
+  {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Doering}\ and\ \citenamefont
+  {McDiarmid}(1980)}]{doi:10.1063/1.440587}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Reiher}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Wolf}},\
-  }\href {\doibase 10.1063/1.1818681} {\bibfield  {journal} {\bibinfo
-  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {121}},\
-  \bibinfo {pages} {10945} (\bibinfo {year} {2004}{\natexlab{b}})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Wolf}\ and\ \citenamefont
-  {Reiher}(2006)}]{wolfexact2006}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Wolf}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Reiher}},\
-  }\href {\doibase 10.1063/1.2161179} {\bibfield  {journal} {\bibinfo
-  {journal} {{ J.\ Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {124}} (\bibinfo
-  {year} {2006}),\ 10.1063/1.2161179}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Mastalerz}, \citenamefont {Lindh},\ and\
-  \citenamefont {Reiher}(2008)}]{MASTALERZ2008157}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Mastalerz}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Lindh}}, \
-  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Reiher}},\ }\href
-  {\doibase https://doi.org/10.1016/j.cplett.2008.09.068} {\bibfield  {journal}
-  {\bibinfo  {journal} {Chemical Physics Letters}\ }\textbf {\bibinfo {volume}
-  {465}},\ \bibinfo {pages} {157 } (\bibinfo {year} {2008})}\BibitemShut
-  {NoStop}%
-\bibitem [{\citenamefont {Malkin}\ \emph {et~al.}(2006)\citenamefont {Malkin},
-  \citenamefont {Malkin}, \citenamefont {Malkina}, \citenamefont {G~Malkin},\
-  and\ \citenamefont {Kaupp}}]{article}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
-  {Malkin}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Malkin}},
-  \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Malkina}}, \bibinfo
-  {author} {\bibfnamefont {V.}~\bibnamefont {G~Malkin}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Kaupp}},\ }\bibfield  {booktitle}
-  {\emph {\bibinfo {booktitle} {Physical chemistry chemical physics : PCCP}},\
-  }\href@noop {} {\ \textbf {\bibinfo {volume} {8}},\ \bibinfo {pages} {4079}
-  (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sandhoefer}, \citenamefont {Kossmann},\ and\
-  \citenamefont {Neese}(2013)}]{doi:10.1063/1.4792362}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Sandhoefer}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Kossmann}}, \ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1063/1.4792362} {\bibfield  {journal}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Doering}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {McDiarmid}},\ }\href {\doibase 10.1063/1.440587} {\bibfield  {journal}
   {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {138}},\ \bibinfo {pages} {104102} (\bibinfo {year} {2013})},\
-  \Eprint {http://arxiv.org/abs/https://doi.org/10.1063/1.4792362}
-  {https://doi.org/10.1063/1.4792362} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Visscher}\ and\ \citenamefont
-  {Dyall}(1997)}]{finitenucleus}%
+  {volume} {73}},\ \bibinfo {pages} {3617} (\bibinfo {year} {1980})},\ \Eprint
+  {http://arxiv.org/abs/https://doi.org/10.1063/1.440587}
+  {https://doi.org/10.1063/1.440587} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Serrano-Andr{\'e}s}\ \emph
+  {et~al.}(1998)\citenamefont {Serrano-Andr{\'e}s}, \citenamefont
+  {Merch{\'a}n}, \citenamefont {Rubio},\ and\ \citenamefont {Roos}}]{Roos1998}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
-  {Visscher}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
-  {Dyall}},\ }\href
-  {http://www.chem.vu.nl/~visscher/FiniteNuclei/FiniteNuclei.htm} {\bibfield
-  {journal} {\bibinfo  {journal} {Atom. Data Nucl. Data Tabl.}\ }\textbf
-  {\bibinfo {volume} {67}},\ \bibinfo {pages} {207} (\bibinfo {year}
-  {1997})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Gauss}, \citenamefont {K{\'a}llay},\ and\
-  \citenamefont {Neese}(2009)}]{doi:10.1021/jp9028535}%
+  {Serrano-Andr{\'e}s}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Merch{\'a}n}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Rubio}},
+  \ and\ \bibinfo {author} {\bibfnamefont {B.~O.}\ \bibnamefont {Roos}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ Chem.\ Phys.\
+  Lett.}}\ }\textbf {\bibinfo {volume} {295}},\ \bibinfo {pages} {195}
+  (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aspuru-Guzik}\ \emph {et~al.}(2004)\citenamefont
+  {Aspuru-Guzik}, \citenamefont {Akramine}, \citenamefont {Grossman},\ and\
+  \citenamefont {Lester}}]{Aspuru-Guzik2004}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Gauss}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {K{\'a}llay}}, \
-  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Neese}},\ }\href
-  {\doibase 10.1021/jp9028535} {\bibfield  {journal} {\bibinfo  {journal} {The
-  Journal of Physical Chemistry A}\ }\textbf {\bibinfo {volume} {113}},\
-  \bibinfo {pages} {11541} (\bibinfo {year} {2009})},\ \bibinfo {note} {pMID:
-  19848425},\ \Eprint {http://arxiv.org/abs/https://doi.org/10.1021/jp9028535}
-  {https://doi.org/10.1021/jp9028535} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}\ and\ \citenamefont
-  {Solomon}(2003)}]{gandasoc}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Aspuru-Guzik}}, \bibinfo {author} {\bibfnamefont {O.~E.}\ \bibnamefont
+  {Akramine}}, \bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {Grossman}}, \ and\ \bibinfo {author} {\bibfnamefont {W.~A.}\ \bibnamefont
+  {Lester}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Chem.\ Phys.}}\ }\textbf {\bibinfo {volume} {120}},\ \bibinfo {pages} {3049}
+  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gouterman}\ and\ \citenamefont
+  {Khalil}(1974)}]{Gouterman1974}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}}\ and\ \bibinfo {author} {\bibfnamefont {E.~I.}\ \bibnamefont
-  {Solomon}},\ }\enquote {\bibinfo {title} {Interpretation and calculation of
-  spin-hamiltonian parameters in transition metal complexes},}\ in\ \href
-  {\doibase 10.1002/9783527620548.ch9c} {\emph {\bibinfo {booktitle}
-  {Magnetism: Molecules to Materials}}}\ (\bibinfo  {publisher} {Wiley-VCH
-  Verlag GmbH},\ \bibinfo {year} {2003})\ pp.\ \bibinfo {pages}
-  {345--466}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2001{\natexlab{a}})}]{doi:10.1063/1.1419058}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1063/1.1419058} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {115}},\ \bibinfo {pages} {11080} (\bibinfo {year}
-  {2001}{\natexlab{a}})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.1419058}
-  {https://doi.org/10.1063/1.1419058} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Patchkovskii}\ and\ \citenamefont
-  {Ziegler}(1999)}]{doi:10.1063/1.479869}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
-  {Patchkovskii}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Ziegler}},\ }\href {\doibase 10.1063/1.479869} {\bibfield  {journal}
-  {\bibinfo  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo
-  {volume} {111}},\ \bibinfo {pages} {5730} (\bibinfo {year} {1999})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1063/1.479869}
-  {https://doi.org/10.1063/1.479869} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Malkina}\ \emph {et~al.}(2000)\citenamefont
-  {Malkina}, \citenamefont {Vaara}, \citenamefont {Schimmelpfennig},
-  \citenamefont {Munzarová}, \citenamefont {Malkin},\ and\ \citenamefont
-  {Kaupp}}]{doi:10.1021/ja000984s}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~L.}\ \bibnamefont
-  {Malkina}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Vaara}},
-  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Schimmelpfennig}},
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Munzarová}}, \bibinfo
-  {author} {\bibfnamefont {V.~G.}\ \bibnamefont {Malkin}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Kaupp}},\ }\href {\doibase
-  10.1021/ja000984s} {\bibfield  {journal} {\bibinfo  {journal} {Journal of the
-  American Chemical Society}\ }\textbf {\bibinfo {volume} {122}},\ \bibinfo
-  {pages} {9206} (\bibinfo {year} {2000})},\ \Eprint
-  {http://arxiv.org/abs/https://doi.org/10.1021/ja000984s}
-  {https://doi.org/10.1021/ja000984s} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Neese}(2001{\natexlab{b}})}]{QUA:QUA1202}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Neese}},\ }\href {\doibase 10.1002/qua.1202} {\bibfield  {journal} {\bibinfo
-   {journal} {International Journal of Quantum Chemistry}\ }\textbf {\bibinfo
-  {volume} {83}},\ \bibinfo {pages} {104} (\bibinfo {year}
-  {2001}{\natexlab{b}})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gouterman}}\ and\ \bibinfo {author} {\bibfnamefont {G.-E.}\ \bibnamefont
+  {Khalil}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {{ J.\
+  Mol.\ Spectrosc.}}\ }\textbf {\bibinfo {volume} {53}},\ \bibinfo {pages} {88}
+  (\bibinfo {year} {1974})}\BibitemShut {NoStop}%
 \end{thebibliography}%

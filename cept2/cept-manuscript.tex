@@ -1,5 +1,5 @@
-\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
-%\documentclass[aip,jcp,amsmath]{revtex4-1}
+%\documentclass[aip,jcp,amsmath,twocolumn,floatfix,reprint,fleqn]{revtex4-1}
+\documentclass[aip,jcp,amsmath]{revtex4-1}
 \usepackage{amsmath}
 \usepackage{color}
 \usepackage{txfonts}
@@ -86,16 +86,16 @@ There have been several regularization techniques proposed in order to remedy th
 %
 A newer variant of CASPT called N-Electron Valence-state Perturbvation Theory (NEVPT) was proposed by Angeli {\it et al.}\cite{angeliintroduction2001,angelin-electron2002,angelinew2006} using Dyall's zeroth-order Hamiltonian\cite{dyallthe1995} to overcome some of the shortcomings of CASPT approach.
 %
-As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the closed-shell SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($N_c^2N_v^2$) for system with a fixed number of active molecular orbitals (MOs) where $N_c$ and $N_v$ represent the number of doubly-occupied and virtual MOs, respectively.
+As both approaches converge to the conventional second-order M\o ller-Plesset (MP2) perturbation theory\cite{MP2} in the closed-shell SR limit, floating-point operations (FPOs) needed to calculate CASPT2 and NEVPT2 energies scale at least as O($N_c^2N_v^2$) for system with a fixed number of active molecular orbitals (MOs) where $N_c$ and $N_v$ represent the numbers of doubly-occupied and virtual MOs, respectively.
 %
-Before calculating CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($N_c^2N_v^2$).
+Before calculating the CASPT2 energy, one has to solve the first-order amplitude equations and hence the memory or storage requirement scales also as O($N_c^2N_v^2$).
 %
-For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to four-body nature.
+For a system with more active MOs, the prefactors of both memory and FPO requiremtns steeply increase because their working equations involve the reduced-density matrices (RDMs) of up to four-body nature whose size scale as O($N_a^8$) with $N_a$ being the number of active MOs.
 %
 Therefore, routine application of CASPT2 methods to systems with more than 1,000 atomic orbital (AO) functions often becomes prohibitively expensive.
 
 %
-To improve the applicability of CASPT2 approach, numerous efforts have been made including use of frozen-natural orbitals (FNOs)\cite{doi:10.1063/1.3157463,doi:10.1021/acs.jctc.5b00479} in the virtual space in conjunction with the Cholesky decomposition technique for reducing the costs of MO integral transformation\cite{doi:10.1063/1.2953696,doi:10.1021/ct9000284,doi:10.1021/ct700263h,doi:10.1021/ct900612k} and of the tensor-hyper-contraction-based (THC-) CASPT2.\cite{doi:10.1063/1.5037283}
+To improve the applicability of CASPT2 approach, numerous efforts have been made including use of frozen-natural orbitals (FNOs)\cite{doi:10.1063/1.3157463,doi:10.1021/acs.jctc.5b00479} in the virtual space in conjunction with the Cholesky decomposition technique for reducing the costs of MO integral transformation\cite{doi:10.1063/1.2953696,doi:10.1021/ct9000284,doi:10.1021/ct700263h,doi:10.1021/ct900612k} and of the tensor-hypercontraction-based (THC-) CASPT2.\cite{doi:10.1063/1.5037283}
 %
 The density-fitting (DF) or resolution-of-the-identity (RI) approximation has also been used for accelerating CASPT2 computation.\cite{ShioWerner2013}
 %
@@ -113,18 +113,18 @@ The LPNO-CEPA/CCSD is applicable to systems composed of up to 2,000 AO basis whi
 %
 Later they have developed a more sohisticated variant called domain-based LPNO-CC (DLPNO-CC) methods for large, real-life systems involving hundreds of atoms and thousands of AO functions.\cite{riplingeran2013,riplingernatural2013,pinskisparse2015,riplingersparse2016,doi:10.1063/1.4981521,dipayan2016}
 %
-The DLPNO scheme has been extended to MR wave function theories resulting in DLPNO-MR-CC based on the Mukherjee-Kutzelnigg formalism\cite{doi:10.1021/acs.jctc.5b00334,doi:10.1021/acs.jctc.7b01184,C8CP03577F} and DLPNO-NEVPT2\cite{:/content/aip/journal/jcp/144/9/10.1063/1.4942769} method.
+The DLPNO scheme has been extended to MR wave function theories resulting in DLPNO-MR-CC based on the Mukherjee-Kutzelnigg formalism\cite{doi:10.1021/acs.jctc.5b00334,doi:10.1021/acs.jctc.7b01184,C8CP03577F} and DLPNO-NEVPT2\cite{:/content/aip/journal/jcp/144/9/10.1063/1.4942769} methods.
 %
 In a similar vein, variants of PNO-based reduced-scaling wave function methods have been developed by many research groups including PNO-LCC methods by Werner {\it et al.}\cite{doi:10.1021/ct500725e,wernersdecay,doi:10.1021/acs.jctc.7b00554,publ7820099,publ8744633,publ9370681,publ9337428} and a variant of PNO-CC method and PNO-based theories for the excited states by H\"attig {\it at al.}\cite{doi:10.1080/00268976.2013.794314,doi:10.1080/00268976.2016.1263762,doi:10.1063/1.4972001,QUA:QUA24098,C4CP03502J,:/content/aip/journal/jcp/135/7/10.1063/1.3624370,:/content/aip/journal/jcp/135/21/10.1063/1.3664902,:/content/aip/journal/jcp/136/20/10.1063/1.4719981,:/content/aip/journal/jcp/139/8/10.1063/1.4819071} to only name a few.
 
 %
 The IC basis functions spanning the first-order interacting space (FOIS) are classified into three types according to their excitation characters:
 %
-Those configurations with single and double excitations into virtual space are called semi-internal and external, respectively.
+Those configurations with single and double excitations into the virtual space are called semi-internal and external, respectively.
 %
 The remaining IC configurations which do not involve any excitations into virtual space are labeled as internal.
 %
-In the closed-shell SR limit, the external configurations converge simply to the doubly-excited configurations while all the excitations vanish.
+In the closed-shell SR limit, the external configurations converge simply to the doubly-excited configurations while all the remaining configuration vanish.
 %
 In the general MR cases, actually, the semi-internal and internal IC configurations involve not only simple single-excitations but also the pseudo-double excitations because some of the active MOs may possess occupation number very close to zero.
 %
@@ -141,10 +141,10 @@ The coupling between two Ans\"atze has been accomplished in a similar vein to th
 %
 In the closed-shell SR limit, the CEPT2 model converges to the Linearized Coupled-Cluster Doubles (L-CCD) or equivalently the CEPA/0 Doubles (CEPA/0(D)) that recovers more dynamic correlation energy than the MP2 model.
 %
-Note that Fink and coworkers proposed a variant of MR perturbation theory\cite{FINK2006461,FINK200939,doi:10.1021/acs.jctc.6b00898} that also converges to the L-CCD or CEPA/0(D) model in the closed-shell SR limit at the second-order level and is known as the so-called Retantion of Excitaton degree Perturbation Theory (REPT).
+Note that Fink and coworkers proposed a variant of MR perturbation theory\cite{FINK2006461,FINK200939,doi:10.1021/acs.jctc.6b00898} that also converges to the L-CCD or CEPA/0(D) model in the closed-shell SR limit at the second-order level and is known as the so-called Retantion-of-Excitaton-degree Perturbation Theory (REPT).
 
 %
-In the original CIPT2 model,\cite{Celani2000,PCMRCI2011} the reference configurations, and all the excited configurations involving excitations solely from the active MO space\footnote{This indicate the ($a$, $a$)$\rightarrow$($a$, $v$) and ($a$, $a$)$\rightarrow$($v$, $v$) configurations where $a$ and $v$ represent the active and virtual MOs.} are treated at the MRCI level while leaving the remaining ones at the CASPT2 level in order to remedy the intruder state problem without employing any emprical shifts.
+In the original CIPT2 model,\cite{Celani2000,PCMRCI2011} the reference configurations, and all the excited configurations involving excitations solely from the active MO space are treated at the MRCI level while leaving the remaining ones at the CASPT2 level in order to remedy the intruder state problems without employing any emprical level shifts.
 %
 Actually, treating those configurations in the IC framework at the MRCI level is known to cause several computational difficulties the most severe one of which is the appearance of 5-RDMs.\cite{doi:10.1063/1.443357}
 %
@@ -155,7 +155,7 @@ Therefore, in the partially IC-MRCI models\cite{PCMRCI1988,PCMRCI2011} implement
 %
 Later, by rewriting the Hamiltonian matrix element into a commutator-based expression as done in the NEVPT2 formalism,\cite{angeliintroduction2001} the MRCI theory in a fully IC framework (FIC-MRCI) without 5-RDM was formulated.\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270,doi:10.1063/1.4907717,doi:10.1063/1.4959029}
 %
-However, tensor contractions involving the 4-RDM and the $t$-amplitude in the FIC-MRCI $\sigma$-equation can still be a bottleneck even for systems with relatively small active space as their computational scaling is either of $O(N_c N_a^8)$ or $O(N_a^8v)$ with $N_a$ being the number of active MOs.
+However, tensor contractions involving the 4-RDM and the $t$-amplitude in the FIC-MRCI $\sigma$-equation can still be a bottleneck even for systems with relatively small active space as their computational scaling is either of $O(N_c N_a^8)$, $O(N_a^9)$ or $O(N_a^8v)$.
 %
 In the CEPT2 model, on the other hand, such contractions do not appear in the residua and all the 4-RDMs are contracted to the Fock operator thus appearing as an effective 3-body tensor with $O(N_a^8)$ costs just as in case of CASPT2.
 %
@@ -177,9 +177,9 @@ Even though the full IC-MR-CEPA/0 lacks size-consistency, all the CEPA terms int
 %
 %This way of combining two methods does not introduce any further terms involving 4-RDMs, which can be large data even for a medium-size CAS space, in comparison with the conventional CASPT2 approach.
 %
-Use of MR-CEPA ansatz for the external subspaces introduces several terms involving 4-external MO integrals contracted to the $t$-amplitude, which may potentially make the whole computation quite demanding even for relatively small systems.
+Use of MR-CEPA Ansatz for the external subspaces introduces several terms involving 4-external MO integrals contracted to the $t$-amplitude, which may potentially make the whole computation quite demanding even for relatively small systems.
 %
-This type of contraction terms are often referred to as the 4-External Exchange Operators (4-EEOs) and are known to be the most expensive terms in the SR-CEPA and CCSD computations with $O(N_c^2 N_v^4)$ computational cost.
+This type of contraction terms are often referred to as the 4-External Exchange Operators (4-EEOs) and are known to be the most expensive terms in the SR-CEPA and CCSD computations with $O(N_c^2 N_v^4)$ computational costs.
 %
 To overcome this issue, we introduce PNO expansion in the external subspace in a similar vein to Ref. ~\onlinecite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019}.
 %
@@ -194,11 +194,11 @@ The PNO-CEPT2 Ansatz is given as a extension to the PNO-CASPT2 model and the str
 %
 In Sec. \ref{Sec:results}, the accuracy of the canonical CEPT2 model and the PNO trucation errors are validiated for N${}_2$ dissociation.
 %
-The isomerization energy profile calculated at the PNO-CEPT2 level of theory is shown and compared to those by the CASPT2 and the previous theoretical results.
+The isomerization energy profile of [Cu${}_2$O${}_2$]${}^{2+}$(NH${}_3$)${}_{6}$ complex calculated at the PNO-CEPT2 level of theory is shown and compared to those by the CASPT2 and the previous theoretical results.
 %
 The excitation energies (EEs) for the dipole-accessible and dipole-forbidden states of butadiene and longer polyene chains calculated by the PNO-CEPT2 theory are given and compared to the experimental and the theoretical values.
 %
-Accuracy of the PNO-CEPT2 model are examined by using various PNO truncation thresholds in calculating the Singlet--Triplet energy (S--T) gap for the free-base porphyrin.
+Accuracy of the PNO-CEPT2 model is examined by using various PNO truncation thresholds in calculating the Singlet--Triplet energy (S--T) gap for the free-base porphyrin.
 %
 In Sec. \ref{Sec:Conclusion} finally conclusions are drawn.
 
@@ -224,7 +224,7 @@ By using Eqs. (\ref{eq:e1}) and (\ref{eq:e2}), the Born-Oppenheimer Hamiltonian 
 %
 where $h_{wx}$ and $(wy|xz)$ are one- and two-electron integrals.
 %
-The redundant internally-contracted basis (r-ICBs) that span the first-order interacting space (FOIS) are generated by applying the following eight types of excitation operators to the reference function ($|\Psi_0\rangle$):
+The redundant internally-contracted basis (r-ICB) functions that span the first-order interacting space (FOIS) are generated by applying the following eight types of excitation operators to the reference CASSCF wave function ($|\Psi_0\rangle$):
 %
 \begin{align}
   E_{ij}^{ab},\ E_{pi}^{ab},\ E_{pq}^{ab} \label{eq:externalICB}
@@ -253,9 +253,9 @@ Such an expectation value is evaluated by invoking Wick's theorem for the $E$-op
   &D^{pq}_{rs} = \langle\Psi_0|E^{pq}_{rs}|\Psi_0\rangle
 \end{align}
 %
-The r-ICBs are non-orthonornal and linearly-independent set of functions as a basis of FOIS.
+The r-ICB functions are non-orthonornal and linearly-dependent set of functions as a basis of FOIS.
 %
-Therefore, the amplitude equations of MR wave function methods are solved in linearly-independent and orthonormalized IC representation spanned by the non-redundant (nr-) ICBs:
+Therefore, the amplitude equations of MR wave function methods are solved in the linearly-independent and orthonormalized IC representation spanned by the non-redundant (nr-) ICB functions:
 %
 \begin{align}
   |\Psi_{ij}^{ab}\rangle,\ |\Psi_{\rho i}^{ab}\rangle,\ |\Psi_{\rho}^{ab}\rangle 
@@ -301,7 +301,7 @@ The PNO-CASPT2 wave function is defined as
   &+\sum_{\rho}\sum_a t_{a}^\rho|\Psi_\rho^a\rangle + \sum_{\rho ij} t_{\rho}^{ij}|\Psi_{ij}^\rho\rangle+\sum_{\rho i} t_{\rho}^i|\Psi_{i}^\rho\rangle \label{eq:pno-caspt2}
 \end{align}
 %
-in the nr-ICB which is constructed by orthonormalizing and canonicalizing the redundant r-ICBs.
+using the nr-ICB functions which are constructed by orthonormalizing and canonicalizing the redundant counterpart.
 %
 For instance, an nr-ICB with double excitations to the active space, $\{\Psi^{\rho}_{ij}\}$, is related to its redundant counterpart as
 %
@@ -324,7 +324,7 @@ The PNO-CASPT2 amplitudes are determined by solving the residual equations
 %
 where $IJ$ represent one of the eight non-redundant subspaces of FOIS.
 %
-The Hylleraas-type energy functional for PNO-CASPT2 ansatz is given as
+The Hylleraas-type energy functional for PNO-CASPT2 Ansatz is given as
 %
 \begin{align}
   \mathscr{F}_\text{PNO-CASPT2}=\langle\Psi|H|\Psi_0\rangle+\langle\Psi_0|H|\Psi\rangle+\langle\Psi|F-\langle F\rangle|\Psi\rangle.
@@ -336,7 +336,7 @@ The amplitudes in the r-ICB representation ($\tilde{\mathbf{t}}$) can be obtaine
   \tilde{t}^{pq}_{ij} = \sum_{\rho} C_{pq}^\rho  t^{\rho}_{ij}.
 \end{align}
 %
-In typical canonical CASPT2 implementation, the residua that correspond to Eq. (\ref{eq:caspt2-residua}) are evaluated in r-ICB representation using the $\tilde{\mathbf{t}}$ amplitudes, and then transformed into the nr-ICB representation as
+In the typical canonical CASPT2 implementation, the residua that correspond to Eq. (\ref{eq:caspt2-residua}) are evaluated in r-ICB representation using the $\tilde{\mathbf{t}}$ amplitudes, and then transformed into the nr-ICB representation as
 %
 \begin{align}
   r^{\rho}_{ij}=\sum_{\rho} C_{pq}^\rho \tilde{r}^{pq}_{ij}.
@@ -346,11 +346,11 @@ for the $\{\Psi^{\rho}_{ij}\}$ subspace.
 %
 In Eq. (\ref{eq:pno-caspt2}), the PNOs are introduced only in the external subspaces and a semi-internal subspace spanned by $\{\Psi_{ij}^{\rho a_{ij}}\}$ function.
 %
-Since the PNOs for $\{\Psi_{\rho}^{a_{\rho}b_{\rho}}\}$ and $\{\Psi_{\rho i}^{a_{\rho i}b_{\rho i}}\}$ subspaces are dependent also on the nr-ICBs, in the PNO-CASPT2 implementation, one cannot back-transform the external amplitudes ($\mathbf{t}$) and the residua ($\mathbf{r}$) into the r-ICB representation while taking advantage of compactness of the PNO space.
+Since the PNOs for $\{\Psi_{\rho}^{a_{\rho}b_{\rho}}\}$ and $\{\Psi_{\rho i}^{a_{\rho i}b_{\rho i}}\}$ subspaces are dependent not only on the localized doubly-occupied MOs but also on the nr-ICBs, in the PNO-CASPT2 implementation, one cannot back-transform the external amplitudes ($\mathbf{t}$) and the residua ($\mathbf{r}$) into the r-ICB representation while taking advantage of compactness of the PNO space.
 %
 Therefore, in our PNO-CASPT2 implementation, we do not perform any back-transformation into the r-ICB representatation and the residua are constructed directly in the nr-ICB representation using the orthonormalized amplitudes.
 %
-Thee explicit formuals for the orthonormalized amplitudes are given in Appendix I.
+%%The explicit formuals for the orthonormalized amplitudes are given in Appendix I.
 
 %
 The PNOs for $ij-$, $\rho i-$ and $\rho-$pairs are generated by diagonalizing the pair-densities for the corresponding pairs:
@@ -361,11 +361,11 @@ The PNOs for $ij-$, $\rho i-$ and $\rho-$pairs are generated by diagonalizing th
   &(D^{\rho})_{ab}  =\langle\Psi_{\rho}  |E^a_b|\Psi_{\rho}  \rangle \ \ \ \ (\text{for}\ \{\Psi_{\rho}^{ab}\}\ \text{subspsace})\\  
 \end{align}
 %
-For $\{\Psi_{ij}^{\rho a_{ij}}\}$ subspace, we use the $ij-$PNOs obtained as eigenfunctions of Eq. (\ref{eq:Dij}).
+For the $\{\Psi_{ij}^{\rho a_{ij}}\}$ subspace, we use the $ij-$PNOs obtained as eigenfunctions of Eq. (\ref{eq:Dij}).
 %
 Those PNOs with smaller occupation numbers than a user defined threshold are screened out.
 %
-The PNO truncation error for a pair is estimated by taking difference between full and truncated semi-local (SL-) CASPT2-D pair-energies.
+The PNO truncation error for a pair is estimated by taking difference between full and truncated semi-local diagonally-approximated CASPT2 (SL-CASPT2-D) pair-energies.
 %
 \begin{align}
   &e_{ij}=\langle\Psi_0|H|\Psi_{ij}\rangle \\
@@ -383,20 +383,20 @@ The SL-CASPT2-D pair-functions are used for defining the pair-densities
   &|\Psi_{\rho}\rangle=\sum_{ab}\frac{\langle\Psi_{\rho}^{ab}|H|\Psi_0\rangle}{e_\rho-\epsilon_a-\epsilon_b}\ \sum_{pq} C_{pq}^\rho E_{pq}^{ab}|\Psi_0\rangle.
 \end{align}
 %
-The numerators in the SL-CASPT2-D amplitudes involve 2-external two-electron integrals and hence this part will be a computational bottleneck in a whole PNO-CASPT2 computation.
+The numerators in the SL-CASPT2-D amplitudes involve the 2-external exchange operators (2-EEOs) and hence this part will be a computational bottleneck in a whole PNO-CASPT2 computation.
 %
-In our current implementation, we generate a full set of canonical 2-external integrals using the resolution-of-the-identity (RI) approximation and store them on disk.
+In our current implementation, we generate a full set of those integrals using the resolution-of-the-identity (RI) approximation\cite{Feyereisen1993_2} and store them on disk.
 %
 This choice limits the applicability of our PNO-CASPT2 only up to systems composed of not more than 2,000 AO functions.
 %
-To overcome such a difficulty, domain truncation should be introduced in the RI 3-index integral generation and the final 2-external integral construction steps as done in the original PNO-CASPT2 implementations,\cite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019,doi:10.1063/1.5097644} in the DLPNO-CC and NEVPT2 algorithms by Neese and coworkers\cite{riplingeran2013,riplingernatural2013,pinskisparse2015,riplingersparse2016,doi:10.1063/1.4981521,:/content/aip/journal/jcp/144/9/10.1063/1.4942769,dipayan2016,doi:10.1063/1.5027114} and in the PNO-LCC programs by Werner {\it et al.}.\cite{doi:10.1021/ct500725e,doi:10.1021/acs.jctc.5b00843,wernersdecay,doi:10.1021/acs.jctc.7b00554}
+To overcome such a difficulty, domain truncation should be introduced in the RI 3-index integral generation and the final 2-EEO construction steps as done in the original PNO-CASPT2 implementations,\cite{:/content/aip/journal/jcp/145/12/10.1063/1.4963019,doi:10.1063/1.5097644} in the DLPNO-CC and NEVPT2 algorithms by Neese and coworkers\cite{riplingeran2013,riplingernatural2013,pinskisparse2015,riplingersparse2016,doi:10.1063/1.4981521,:/content/aip/journal/jcp/144/9/10.1063/1.4942769,dipayan2016,doi:10.1063/1.5027114} and in the PNO-LCC programs by Werner {\it et al.}.\cite{doi:10.1021/ct500725e,doi:10.1021/acs.jctc.5b00843,wernersdecay,doi:10.1021/acs.jctc.7b00554}
 
 %
-In the canonical CASPT2 implementation, the nr-ICBs are constructed as eigenfunctions of diagonal blocks of the zeroth-order Hamiltonian by solving the generalized eigenvalue problems akin to Eq. (\ref{eq:eigen-Vp2}) for all the eight subspaces.
+In the canonical CASPT2 implementation, the nr-ICBs are constructed as eigenfunctions of diagonal blocks of the zeroth-order Hamiltonian by solving the generalized eigenvalue problems akin to Eq. (\ref{eq:eigen-Vp2}) for all the subspaces of FOIS except $\{\Psi_{ij}^{ab}\}$.
 %
 Therefore, programming the residua (Eq. \ref{eq:caspt2-residua}) of diagonal blocks in the first term is quite simple.
 %
-However, in the PNO-based counterpart, all the matrix blocks involving at least one DOMO index should be programmed, leading to a drastic increase in the number of terms that should be derived and programmed.
+However, in the PNO-based counterpart, all the matrix blocks involving at least one doubly-occupied MO indexshould be programmed, leading to a drastic increase in the number of terms that should be derived and programmed.
 %
 To this end, we extended our code generator framework\cite{femto,saitowmultireference2013,doi:10.1021/acs.jctc.5b00270} such that codes for the PNO-based tensor contractions can also be generated.
 %
@@ -405,7 +405,7 @@ In our program, the PNO-CASPT2 residul equations are solved by the preconditione
 %
 We have also implemented real and imaginary shifts in our PNO-CASPT2 program in the same way as the canonical CASPT2 program.
 %
-The conventional formulation of the imaginary shifts is based on the diagonality in the diagonal blocks of zeroth-order Hamiltonian matrix in FOIS which is not satisfied if the DOMOs are localized.
+The conventional formulation of the imaginary shifts is based on the diagonality in the diagonal blocks of zeroth-order Hamiltonian matrix in FOIS which is not satisfied if the doubly-occupied MOs are localized.
 %
 Therefore, in our PNO-CASPT2 implementatin, the off-diagonal elements in the diagonal blocks are discarded, leading to a semi-canonical imaginary shift.
 
@@ -418,7 +418,7 @@ Therefore, in our PNO-CASPT2 implementatin, the off-diagonal elements in the dia
 %The MR variants of REPT in the Matrix Product State (MPS) and in the partially IC representations
 
 %
-In the PNO-CEPT2 ansatz, we minimize the following energy functonal
+In the PNO-CEPT2 Ansatz, we minimize the following energy functonal
 %
 \begin{align}
   &\mathscr{F}_\text{PNO-CEPT2} = \mathscr{F}_\text{PNO-CEPA/0}^\text{ext}+\mathscr{F}_\text{PNO-CASPT2}-\mathscr{F}_\text{PNO-CASPT2}^\text{ext} \label{eq:F-CEPT2} \\
@@ -454,12 +454,14 @@ To eliminate such expensive contractions, we employ a commutator-based transform
 \end{align}
 as we have also utilized in our previous works for developing an approximated FIC-MRCI variants with a DMRG reference function.\cite{saitowmultireference2013,doi:10.1021/acs.jctc.5b00270}
 %
-Note that both the CEPT2 and the CIPT2\cite{celanithe2004} methods use the energy functional of the similar form.
+Note that both the canonical CEPT2 and the CIPT2\cite{celanithe2004} methods use the energy functional of the similar form.
 %
-The only difference between them consists in the choice of the CEPA subspaces; in the CEPT2 ansatz the external configurations are treated at the CEPA level while in the CIPT2 method the CEPA functional is used for in subspaces with three active MO indices i.e, $\{\Psi_i^\rho\}$ and $\{\Psi_\rho^a\}$.
+The only difference between them consists in the choice of the CEPA subspaces; in the CEPT2 Ansatz the external IC configurations are treated at the CEPA level while in the CIPT2 method the CEPA or CISD functional is used for those esubspaces involving the excitations solely from the active MO space i.e, $\{\Psi_0\}$, $\{\Psi_\rho^{ab}\}$ and $\{\Psi_\rho^a\}$.
+%
+To the best of our knowledge, the original CIPT2 theory is based on the partially IC-MRCI formulation and hence the reference subspace ($\{\Psi_0\}$) is also decontracted and re-optimized at the CEPA or MRCI level.
 
 %
-The second term in Eq. (\ref{eq:CEPT-E}) involves contractions of the 4-external exchange-type integrals with the 2-external amplitudes which is known as the most expensice terms in the canonical CC or CEPA implementations.
+The second term in Eq. (\ref{eq:CEPT-E}) involves contractions of the 4-EEO with the 2-external amplitude which is known as the most expensice terms in the canonical CC or CEPA implementations.
 %
 However, such terms are typically not a bottleneck any more if the virtual space is spanned by the PNOs.
 %
@@ -475,7 +477,7 @@ Therefore, as addressed in Ref. ~\onlinecite{AK74}, even for a super system ($A\
 This indicates that the CEPT2 extension does not violate the near-size-consistent character of original CASPT2 model.
 
 %
-Unlike CIPT2 which is designed to mitigate the intruder state problems typically stemming from the $\{\Psi_i^\rho\}$, $\{\Psi_\rho^a\}$ and the reference subspaces, in CEPT2, we use the CASPT2 ansatz for those subspaces.
+Unlike CIPT2 which is designed to mitigate the intruder state problems typically stemming from the $\{\Psi_i^\rho\}$, $\{\Psi_\rho^a\}$ and the reference subspaces, in CEPT2, we use the CASPT2 Ansatz for those subspaces.
 %
 In the single-reference case, it is known that the CEPA/0 energy can be irregular thus showing discontinuity in the potential energy surface.
 %
@@ -670,14 +672,18 @@ Therefore, at least in this case, the CEPA extension in the 2-external subspaces
 %
 Predicting low-lying dark (2${}^1\text{A}_\text{g}^{-}$) and bright (1${}^1\text{B}_\text{u}^{+}$) excited states of butadiene has been known as notoriously challenging despite as reported in Ref.~\onlinecite{doi:10.1021/ct300591z}.
 %
-To achieve qualitative accuracy in calculating the EE for the accesible 1${}^1\text{B}_\text{u}^{+}$ state, inclusion of the dynamic correlation plays a key role.
+To achieve qualitative accuracy in calculating the EE for the accessible 1${}^1\text{B}_\text{u}^{+}$ state, inclusion of the dynamic correlation plays a key role.
 %
-On the other hand, the dipole-forbidden 2${}^1\text{A}_\text{g}^{-}$ state is dominated by doubly-excited character and is of strong multireference nature even though there is no reliable experimental EEs reported for this state.
+On the other hand, the dipole-forbidden 2${}^1\text{A}_\text{g}^{-}$ state is dominated by doubly-excited character and is of strong MR nature even though there is no reliable experimental EEs reported for this state.
 %
-Therefore, the typical single-reference excited state methods such as Equation-Of-Motion Coupled-Cluster with Singles and Doubles (EOM-CCSD) are not the appropriate choices for the 2${}^1\text{A}_\text{g}^{-}$ state even though there is no reliable experimental EE for this state.
+%Therefore, the typical single-reference excited state methods such as Equation-Of-Motion Coupled-Cluster with Singles and Doubles (EOM-CCSD) are not the appropriate choices for the 2${}^1\text{A}_\text{g}^{-}$ state.
+%
+Therefore, the typical single-reference excited state methods such as Equation-Of-Motion Coupled-Cluster with Singles and Doubles (EOM-CCSD) are not the appropriate choices for the 2${}^1\text{A}_\text{g}^{-}$ state.
 
 %
-In Table \ref{tab:butadiene}, EEs for the 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states calculated by canonical CASPT2 and CEPT2 models are shown in comparison with various theoretical and experimental values.
+In Table \ref{tab:butadiene}, EEs for the 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states calculated by canonical CASPT2 and CEPT2 models for butadiene are shown in comparison with various theoretical and experimental values.
+%
+The reference CASSCF wave functions were calculated in a state specific (SS) manner to each of 1${}^1\text{A}_\text{g}^{-}$, 2${}^1\text{A}_\text{g}^{-}$ and 1${}^1\text{B}_\text{u}^{+}$.
 %
 Geometries for butadiene and longer polyene chains were taken from Ref.~\onlinecite{doi:10.1063/1.4900878}.
 %
@@ -694,19 +700,37 @@ Addition of the dynamic correlation correction on top of the CASSCF energies sig
 The EEs calculated by CEPT2 model are quite close to those by MR-AQCC results and in good agreement with the EOM-CCSDTQ results.
 
 %
-The 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of longer polyene chains were used as a benchmark sets for the cumulant-approximated CASPT2\cite{doi:10.1063/1.4900878} and NEVPT2\cite{Zgid2009} studies to assess the errors caused by the cumulant approximations in the 3- and 4-RDMs.
+The 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of longer polyene chains were used as a benchmark set for the cumulant-approximated CASPT2\cite{doi:10.1063/1.4900878} and NEVPT2\cite{Zgid2009} studies to assess the errors caused by the cumulant approximations in the 3- and 4-RDMs.
 %
-In this study, we do not utilize the cumulant aproximations in the RDMs.
+In this study, we do not utilize the cumulant approximations in the RDMs.
 %
-However, to assess the impact of CEPA/0 extensions in the PNO-CEPT2 model on the EEs, we calculated the vertical EEs for 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of conjugated linear polyene molecules (C${}_{2n}$H${}_{2n+2}$) using CAS(2n$e$, 2n$o$).
+To assess the impact of CEPA/0 extensions in the PNO-CEPT2 model, we calculated the vertical EEs for 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states of conjugated linear polyene molecules (C${}_{2n}$H${}_{2n+2}$) using CAS(2n$e$, 2n$o$).
 %
-In Fig. \ref{fig:Polyene}, the EEs calculated at the canonical CASPT2 and PNO-CEPT2 level and the difference in the EEs are shown.
+As SS-CASSCF calculations did not converge to C${}_6$H${}_8$ and longer polyenes, we performed state-average (SA-) CASSCF calculations involving the three lowest $\text{A}_\text{g}$ and $\text{B}_{u}$ states for obtaining the MOs for the ${}^1\text{A}_\text{g}^{-}$ and 1${}^1\text{B}_\text{u}^{+}$ states, respectively.
 %
-Interestingly, in both CASPT2 and PNO-CEPT2 results, the ${}^1\text{B}_\text{u}^{+}$ state appears to be lower for C${}_2$H${}_4$ in accordance with previous results\cite{doi:10.1063/1.4900878} while for C${}_2$H${}_4$ and the longer chains the order is switched.
+The following CASPT2 and CEPT2 computations were performed in a SS manner to each state.
+
 %
-As can be seen from Fig. \ref{fig:Polyene} c), the EEs calculated by the PNO-CEPT2 model are always higher than those by the CASPT2.
+In Fig. \ref{fig:Polyene}, the EEs calculated at the canonical CASPT2 and PNO-CEPT2 levels are shown.
 %
-However, for C${}_4$H${}_4$ the PNO-CEPA correction works more strongly on the 2${}^1\text{A}_\text{g}^{-}$ state while for the other polyene molecules, the PNO-CEPA correction on the ${}^1\text{B}_\text{u}^{+}$ state is larger than the that on the other by up to about 0.1 eV for C${}_8$H${}_{10}$.
+As can be seen from Fig. \ref{fig:Polyene}, the EEs calculated by the PNO-CEPT2 model are always higher than those by the CASPT2 theory.
+%
+This means that the PNO-CEPA/0 correction on the ground 1${}^1\text{A}_\text{g}^{-}$ state is even larger than those on the 1${}^1\text{B}_\text{u}^{+}$ and 2${}^1\text{A}_\text{g}^{-}$ states.
+
+%
+The doubly-excited 2${}^1\text{A}_\text{g}^{-}$ state is higher in energy than the bright 1${}^1\text{B}_\text{u}^{+}$ state by 0.06 eV for C${}_{14}$H${}_{16}$ and the crossover is not observed at PNO-CEPT2 level in Fig. \ref{fig:Polyene}.
+%
+On the other hand, at the CASPT2 level, the 2${}^1\text{A}_\text{g}^{-}$ is calculated to be very slightly lower in the energy for C${}_{14}$H${}_{16}$ by up to 0.002 eV.
+%
+By treating the external IC configurations at the CEPA/0 level in PNO-CEPT2 model for recovering more dynamic correlation effect, the valence 1${}^1\text{B}_\text{u}^{+}$ state is more lowered in the energy than the doubly-excited 2${}^1\text{A}_\text{g}^{-}$ state.
+%
+This behavior of CASPT2 model is actually in contrast to previous studies such as Ref. ~\onlinecite{doi:10.1063/1.4900878} where the 2${}^1\text{A}_\text{g}^{-}$ state becomes lower in the energy for C$_{8}$H${}_{10}$ with cc-pVDZ basis set.
+%
+We found that use of larger def2-TZVPP basis set drastically stabilizes the 1${}^1\text{B}_\text{u}^{+}$ state in comparison with the 2${}^1\text{A}_\text{g}^{-}$ state of strong MR character thus pushing the crossover point to even longer polyenes.
+%
+Moreover, the 1${}^1\text{B}_\text{u}^{+}$ and the higher 1${}^1\text{B}_\text{u}^{-}$ states are closely-lying in the energy at the CASSCF level for C${}_6$H${}_8$ thus showing a discontinuity.
+%
+For a more thorough computation of the quasi-degenerated electronic states at the PNO-CEPT level, multi-state (MS)\cite{FINLEY1998299} or the extended multi-state (XMS)\cite{ShioWerner2011} extension is necessary.
 
 \subsection{Singlet-Triplet Gap of Free-base Porphyrin}
 %
@@ -718,13 +742,13 @@ In Table \ref{tab:H2P-ST-gap}, the S--T gaps and the dynamic correlation energie
 %
 It is seen that the PNO-CASPT2 model shows good agreement with the experimental value for all the PNO truncation thresholds even for quite loose threshold such as $1.0\times 10^{-6}$, thus indicating that the error cancellation works surprisingly fine for this systems.
 %
-This is most probably due to the fact that the S${}_0$ and T${}_0$ geometries are similar ehough to each other.
+This is most probably due to the fact that the S${}_0$ and T${}_0$ geometries are similar enough to each other.
 %
 The PNO-CEPT2 model gives even closer values to the experimental one.
 %
 The compression ratios of the first-order amplitudes, which are calculated as a ratio between total number of amplitudes in Eq. (\ref{eq:pno-caspt2}) and the canonical counterpart, are also shown.
 %
-Even with the tighest threshold used, $1.0\times 10^{-9}$, the PNO-CASPT2/CEPT2 models require only less than 6 $\%$ of the amplitudes while giving quite good agreement with the untruncated value.
+Even with the tightest threshold used, $1.0\times 10^{-9}$, the PNO-CASPT2/CEPT2 models require only less than 6 $\%$ of the amplitudes while giving quite good agreement with the untruncated value.
 %
 The PNO-CEPT2 values agree well also to the cumulant-approximated MRCI+Q and ACPF results that use the DMRG-CASSCF reference function with full-valence $\pi$ active space.
 %
@@ -765,7 +789,7 @@ The PNO-CEPT2 results show a similar trend to the CASPT2 as long as CAS(8$e$, 10
 %
 To remedy the accuracy of the PNO-CEPT2 model, the higher-order treatment of the subspaces with three active MO indices ($E^{ip}_{qr}$ and $E^{ra}_{pq}$) will be necessary.
 %
-However, simple use of the IC-MR-CEPA ansatz into those subspaces introduce a complicated tensor contraction involving the 4-RDMs and the amplitude and the PNOs cannot accelerate construction of such terms.
+However, simple use of the IC-MR-CEPA Ansatz into those subspaces introduce a complicated tensor contraction involving the 4-RDMs and the amplitude and the PNOs cannot accelerate construction of such terms.
 %
 Another possibility to improve the accuracy of the PNO-CEPT2 model is to use unconventionally large active space using the DMRG reference function.
 %
@@ -830,7 +854,7 @@ NPEs  / kcal/mol &&   9.98 &&  6.21 &&       2.99 &&     2.03 &&       0.98 && 0
  %\begin{longtable}[!ht]{rrrrrrrrrrrrrrrrrrrrrrrrrr}
   \begin{longtable}[!ht]{cccccccccccccccccccccccccc}
   \caption{\label{tab:dissociationN2}
-    Dynamic correlation energies recovered ($\%$) by PNO-CEPT2 model for $\text{N}_2$ with various PNO truncation thresholds with def2-QZVPP basis set.
+    Dynamic correlation energies recovered ($\%$) by PNO-CEPT2 model for $\text{N}_2$ with various PNO truncation thresholds with def2-QZVPP\cite{B508541A,B515623H} basis set.
     %
     No pair-energy-based screening of weak-pairs were performed.
     %
@@ -1023,7 +1047,7 @@ CASPT2\cite{doi:10.1063/1.465071}      && 6.23       && 6.27       \\
 MRCI\cite{SZALAY1989219}               && 6.70       && 6.78       \\
 MR-AQCC\cite{Dallos2004}               && 6.18       && 6.55       \\
 \\
-CASSCF (This work)      && 8.18       && 6.72       \\
+SS-CASSCF (This work)   && 8.18       && 6.72       \\
 CASPT2 (This work)      && 6.00       && 6.29       \\
 CEPT2 (This work)       && 6.12       && 6.50       \\
 \\
@@ -1191,13 +1215,13 @@ Total sum                                                         &&            
 
 {
   \begin{figure}[H]
-    \scalebox{0.4}{\includegraphics{Fig-Polyene.pdf}}
+    \scalebox{1.0}{\includegraphics{Fig-Polyene-v2.pdf}}
     \caption{\label{fig:Polyene}
       {
         %
-        Vertical EEs for linear polyene, C${}_{2n}$H${}_{2n+2}$, calculated by a) canonical CASPT2 and the b) PNO-CEPT2 methods using PNO and weak-pair truncation thresholds set to $5.0\times 10^{-8}$ and $1.0\times 10^{-5}$ Eh, respectively.
+        Vertical EEs for linear polyene, C${}_{2n}$H${}_{2n+2}$ where $n=2$--$7$, calculated by canonical CASPT2 and the PNO-CEPT2 methods.
         %
-        Figure c) represents difference between canonical CASPT2 and PNO-CEPT2 EEs, EE(PNO-CEPT2)-EE(CASPT2), while Figure d) showing the general chemical formula for polyene chains.
+        For the PNO-CEPT2 computation, PNO and weak-pair truncation thresholds were set to $5.0\times 10^{-8}$ and $1.0\times 10^{-5}$ Eh, respectively.
         %
         The def2-TZVPP basis and def2-TZVPP/JK auxiliary basis sets were used.
         %

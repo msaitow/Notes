@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.3)  9 AUG 2019 09:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.12)  9 DEC 2019 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cept-manuscript
 (./cept-manuscript.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 30 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
@@ -444,61 +444,61 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip57
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 Class revtex4-1 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 28.
+lass! (Proceeding with fingers crossed.) on input line 30.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
 Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with
- fingers crossed) on input line 28.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 28.
+ fingers crossed) on input line 30.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 30.
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 28.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 28.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 28.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 30.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 30.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 30.
 (./cept-manuscript.aux)
 \openout1 = `cept-manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 28.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 28.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -534,7 +534,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 28.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -544,15 +544,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (./cept-manuscript.out) (./cept-manuscript.out)
 \@outlinefile=\write4
 \openout4 = `cept-manuscript.out'.
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 28.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 30.
 \openout3 = `cept-manuscriptNotes.bib'.
 
 LaTeX Font Info:    Try loading font information for U+txmia on input line 53.
@@ -580,312 +580,330 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 59.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 65.
+(Font)              scaled to size 11.39996pt on input line 59.
 LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <12> not available
-(Font)              Font shape `OT1/txss/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/txss/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 65.
+(Font)              scaled to size 11.39996pt on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 65.
+(hyperref)                removing `\@ifnextchar' on input line 59.
 
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 65.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (3.5673pt too wide) in paragraph at lines 119--132
-\OT1/txr/m/n/12 spect to the PNO-based clus-ter am-pli-tudes, the DLPNO-CCSD $^
-^C$-equations have been formulated$[]$
+(Font)              scaled to size 7.59998pt on input line 59.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+Overfull \hbox (7.0313pt too wide) in paragraph at lines 254--260
+\OT1/txr/m/n/12 There-fore, the am-pli-tude equa-tions of MR wave func-tion met
+h-ods are solved in linearly-independent
  []
 
+[6] [7] [8] [9] [10] [11] [12] [13] [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 135.
+(hyperref)                removing `math shift' on input line 590.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
+(hyperref)                removing `subscript' on input line 590.
 
-[4] [5] [6] [7]
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 317
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 590.
+
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 616
 .
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-)
-[8] [9]
-Overfull \hbox (5.81653pt too wide) detected at line 392
-[]
+) [15]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 622.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 622.
+
+[16] [17] [18]
+Overfull \hbox (5.1473pt too wide) in paragraph at lines 735--754
+[]\OT1/txr/m/n/12 We cal-cu-lated the non-vertical singlet-triplet (S--T) en-er
+gy gaps for free-base por-phyrin molecule
+ []
+
+[19] [20] (./cept-manuscript.bbl
+Missing character: There is no √ in font txr!
+Missing character: There is no © in font txr!
+ [21]
+Underfull \hbox (badness 5345) in paragraph at lines 130--137
+[]\OT1/txr/m/n/12 K. Kowal-ski and P. Piecuch, [][]The Jour-nal of Chem-i-cal P
+hysics \OT1/txr/bx/n/12 113\OT1/txr/m/n/12 , 18 (2000)[][],
  []
 
 
-Overfull \hbox (5.27861pt too wide) detected at line 419
-[]
+Underfull \hbox (badness 3312) in paragraph at lines 141--149
+[]\OT1/txr/m/n/12 K. Kowal-ski and P. Piecuch, [][]The Jour-nal of Chem-i-cal P
+hysics \OT1/txr/bx/n/12 113\OT1/txr/m/n/12 , 5644 (2000)[][],
  []
 
-[10]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 433.
+Underfull \hbox (badness 6236) in paragraph at lines 235--243
+[]\OT1/txr/m/n/12 E. Xu and S. L. Ten-no, [][]Jour-nal of Com-pu-ta-tional Chem
+-istry \OT1/txr/bx/n/12 39\OT1/txr/m/n/12 , 875 (2018)[][],
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 433.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 433.
-
-[11] [12] [13]
-
-LaTeX Warning: Reference `fig:Simone-BarGraph' on page 14 undefined on input li
-ne 533.
-
-
-LaTeX Warning: Reference `fig:phenoxyl-PNO-convergence' on page 14 undefined on
- input line 544.
-
-
-LaTeX Warning: Reference `fig:Sinnecker-Water20' on page 14 undefined on input 
-line 569.
-
-[14]
-
-LaTeX Warning: Command \textregistered invalid in math mode on input line 584.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 584.
-
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 584.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 584.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 584.
-
-[15] [16] [17] (./cept-manuscript.bbl [18]
+[22]
 Missing character: There is no ‚ in font txr!
 Missing character: There is no Ä in font txr!
-Missing character: There is no ê in font txr!
+Missing character: There is no ì in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no ≠ in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no ° in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no ° in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no © in font txr!
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
-[]\OT1/txr/m/n/12 I. Carmichael, [][]The Jour-nal of Phys-i-cal Chem-istry \OT1
-/txr/bx/n/12 94\OT1/txr/m/n/12 , 5734 (1990)[][],
+Underfull \hbox (badness 2600) in paragraph at lines 475--483
+[]\OT1/txr/m/n/12 J. Bostr[]om, M. G. Del-cey, F. Aquilante, L. Serrano-Andrs, 
+T. B. Ped-er-sen,  and
+ []
+
+Missing character: There is no √ in font txr!
+Missing character: There is no ≠ in font txr!
+
+Underfull \hbox (badness 2119) in paragraph at lines 487--494
+[]\OT1/txr/m/n/12 C. Song and T. J. Mart-nez, [][]The Jour-nal of Chem-i-cal Ph
+ysics \OT1/txr/bx/n/12 149\OT1/txr/m/n/12 , 044108 (2018)[][],
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 150--156
-[]\OT1/txr/m/n/12 C. Puz-zarini and V. Barone, [][]The Jour-nal of Chem-i-cal P
-hysics \OT1/txr/bx/n/12 133\OT1/txr/m/n/12 , 184301 (2010)[][],
+Underfull \hbox (badness 5022) in paragraph at lines 509--514
+[]\OT1/txr/m/n/12 F. Menezes, D. Kats,  and H.-J. Werner, [][]J. Chem. Phys. \O
+T1/txr/bx/n/12 145\OT1/txr/m/n/12 , 124115 (2016),
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 160--166
-[]\OT1/txr/m/n/12 C. Puz-zarini and V. Barone, [][]The Jour-nal of Chem-i-cal P
-hysics \OT1/txr/bx/n/12 129\OT1/txr/m/n/12 , 084306 (2008)[][],
+Underfull \hbox (badness 3260) in paragraph at lines 518--524
+[]\OT1/txr/m/n/12 D. Kats and H.-J. Werner, [][]The Jour-nal of Chem-i-cal Phys
+ics \OT1/txr/bx/n/12 150\OT1/txr/m/n/12 , 214107 (2019)[][],
  []
 
+[23] [24]
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ì in font txr!
 
-Underfull \hbox (badness 2042) in paragraph at lines 282--288
-[]\OT1/txr/m/n/12 D. Ganyushin and F. Neese, [][]The Jour-nal of Chem-i-cal Phy
-sics \OT1/txr/bx/n/12 138\OT1/txr/m/n/12 , 104113 (2013)[][],
- []
-
-[19]
-Underfull \hbox (badness 4832) in paragraph at lines 303--310
-[]\OT1/txr/m/n/12 T. N. Lan, J. Chalupsk[]y,  and T. Yanai, [][]Molec-u-lar Phy
-sics \OT1/txr/bx/n/12 113\OT1/txr/m/n/12 , 1750 (2015)[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 486--493
-[]\OT1/txr/m/n/12 H.-J. Werner and M. Sch[]utz, [][]J. Chem. Phys. \OT1/txr/bx/
-n/12 135\OT1/txr/m/n/12 , 144116 (2011)[][],
- []
-
-[20]
-Underfull \hbox (badness 3612) in paragraph at lines 548--554
-[]\OT1/txr/m/n/12 D. P. Tew, B. Helmich,  and C. H[]attig, [][] J. Chem. Phys. 
-\OT1/txr/bx/n/12 135\OT1/txr/m/n/12 , 074107 (2011),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--572
-[]\OT1/txr/m/n/12 B. Helmich and C. H[]attig, [][] J. Chem. Phys. \OT1/txr/bx/n
-/12 135\OT1/txr/m/n/12 , 214106 (2011),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--581
-[]\OT1/txr/m/n/12 B. Helmich and C. H[]attig, [][] J. Chem. Phys. \OT1/txr/bx/n
-/12 139\OT1/txr/m/n/12 , 084114 (2013),
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 594--601
-[]\OT1/txr/m/n/12 G. Schmitz and C. H[]attig, [][]The Jour-nal of Chem-i-cal Ph
-ysics \OT1/txr/bx/n/12 145\OT1/txr/m/n/12 , 234107 (2016)[][],
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 606--612
-[]\OT1/txr/m/n/12 M. S. Frank, G. Schmitz,  and C. H[]attig, [][]Molec-u-lar Ph
-ysics \OT1/txr/bx/n/12 115\OT1/txr/m/n/12 , 343 (2017)[][],
- []
-
-
-Underfull \hbox (badness 4995) in paragraph at lines 617--623
+Underfull \hbox (badness 4995) in paragraph at lines 837--843
 []\OT1/txr/m/n/12 G. Schmitz, B. Helmich,  and C. H[]attig, [][]Molec-u-lar Phy
 sics \OT1/txr/bx/n/12 111\OT1/txr/m/n/12 , 2463 (2013)[][],
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 683--691
-[]\OT1/txr/m/n/12 P. R. Nagy and M. K[]allay, [][]The Jour-nal of Chem-i-cal Ph
-ysics \OT1/txr/bx/n/12 146\OT1/txr/m/n/12 , 214106 (2017)[][],
- []
-
-[21]
-Underfull \hbox (badness 5231) in paragraph at lines 724--731
-[]\OT1/txr/m/n/12 J. Friedrich, M. Han-rath,  and M. Dolg, [][]J. Chem. Phys. \
-OT1/txr/bx/n/12 126\OT1/txr/m/n/12 , 154110 (2007),
- []
-
-[22]
-Underfull \hbox (badness 3029) in paragraph at lines 961--969
-[]\OT1/txr/m/n/12 G. Bis-toni, C. Riplinger, Y. Mi-nenkov, L. Cav-allo, A. A. A
-uer,  and F. Neese,
+Underfull \hbox (badness 4569) in paragraph at lines 848--854
+[]\OT1/txr/m/n/12 M. S. Frank, G. Schmitz,  and C. H[]attig, [][]Molec-u-lar Ph
+ysics \OT1/txr/bx/n/12 115\OT1/txr/m/n/12 , 343 (2017)[][],
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 961--969
-[][]\OT1/txr/m/n/12 Jour-nal of Chem-i-cal The-ory and Com-pu-ta-tion \OT1/txr/
-bx/n/12 13\OT1/txr/m/n/12 , 3220 (2017)[][], pMID: 28605579,
+Underfull \hbox (badness 3199) in paragraph at lines 858--865
+[]\OT1/txr/m/n/12 G. Schmitz and C. H[]attig, [][]The Jour-nal of Chem-i-cal Ph
+ysics \OT1/txr/bx/n/12 145\OT1/txr/m/n/12 , 234107 (2016)[][],
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 1024--1031
-[]\OT1/txr/m/n/12 Y. Zhao and D. G. Truh-lar, [][]The Jour-nal of Chem-i-cal Ph
-ysics \OT1/txr/bx/n/12 125\OT1/txr/m/n/12 , 194101 (2006)[][],
+Underfull \hbox (badness 3612) in paragraph at lines 887--893
+[]\OT1/txr/m/n/12 D. P. Tew, B. Helmich,  and C. H[]attig, [][] J. Chem. Phys. 
+\OT1/txr/bx/n/12 135\OT1/txr/m/n/12 , 074107 (2011),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1068
-[]\OT1/txr/m/n/12 S. Grimme, [][]The Jour-nal of Chem-i-cal Physics \OT1/txr/bx
-/n/12 124\OT1/txr/m/n/12 , 034108 (2006)[][],
+Underfull \hbox (badness 10000) in paragraph at lines 897--902
+[]\OT1/txr/m/n/12 B. Helmich and C. H[]attig, [][] J. Chem. Phys. \OT1/txr/bx/n
+/12 135\OT1/txr/m/n/12 , 214106 (2011),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1124--1132
-[]\OT1/txr/m/n/12 F. Neese, [][]The Jour-nal of Chem-i-cal Physics \OT1/txr/bx/
-n/12 118\OT1/txr/m/n/12 , 3939 (2003)[][],
- []
-
-[23]
-Underfull \hbox (badness 2426) in paragraph at lines 1168--1175
-[]\OT1/txr/m/n/12 V. Barone and M. Cossi, [][]The Jour-nal of Phys-i-cal Chem-i
-stry A \OT1/txr/bx/n/12 102\OT1/txr/m/n/12 , 1995 (1998)[][],
+Underfull \hbox (badness 3612) in paragraph at lines 906--912
+[]\OT1/txr/m/n/12 C. H[]attig, D. P. Tew,  and B. Helmich, [][] J. Chem. Phys. 
+\OT1/txr/bx/n/12 136\OT1/txr/m/n/12 , 204105 (2012),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1204
-[]\OT1/txr/m/n/12 C. van W[]ullen, [][]The Jour-nal of Chem-i-cal Physics \OT1/
-txr/bx/n/12 109\OT1/txr/m/n/12 , 392 (1998)[][],
+Underfull \hbox (badness 10000) in paragraph at lines 916--922
+[]\OT1/txr/m/n/12 B. Helmich and C. H[]attig, [][] J. Chem. Phys. \OT1/txr/bx/n
+/12 139\OT1/txr/m/n/12 , 084114 (2013),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1313--1320
-[]\OT1/txr/m/n/12 F. Neese, [][]The Jour-nal of Chem-i-cal Physics \OT1/txr/bx/
-n/12 115\OT1/txr/m/n/12 , 11080 (2001)[][],
+Underfull \hbox (badness 10000) in paragraph at lines 934--942
+[]\OT1/txr/m/n/12 P. Pu-lay, [][]In-ter-na-tional Jour-nal of Quan-tum Chem-ist
+ry \OT1/txr/bx/n/12 111\OT1/txr/m/n/12 , 3273 (2011)[][],
+ []
+
+[25]
+Underfull \hbox (badness 5652) in paragraph at lines 1016--1022
+[]\OT1/txr/m/n/12 H. Werner and E. Rein-sch, [][]The Jour-nal of Chem-i-cal Phy
+sics \OT1/txr/bx/n/12 76\OT1/txr/m/n/12 , 3144 (1982)[][],
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 1324--1332
-[]\OT1/txr/m/n/12 S. Patchkovskii and T. Ziegler, [][]The Jour-nal of Chem-i-ca
-l Physics \OT1/txr/bx/n/12 111\OT1/txr/m/n/12 , 5730 (1999)[][],
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1114
+[]\OT1/txr/m/n/12 W. Kutzel-nigg, [][]The Jour-nal of Chem-i-cal Physics \OT1/t
+xr/bx/n/12 82\OT1/txr/m/n/12 , 4166 (1985)[][],
  []
 
-Missing character: There is no √ in font txr!
-Missing character: There is no ° in font txr!
-[24]) [25] [26]
-Overfull \hbox (15.5839pt too wide) in paragraph at lines 728--740
- []$ 
+
+Underfull \hbox (badness 4328) in paragraph at lines 1126--1132
+[]\OT1/txr/m/n/12 M. Saitow and F. Neese, [][]The Jour-nal of Chem-i-cal Physic
+s \OT1/txr/bx/n/12 149\OT1/txr/m/n/12 , 034104 (2018)[][],
+ []
+
+[26]
+Underfull \hbox (badness 2717) in paragraph at lines 1379--1385
+[]\OT1/txr/m/n/12 L. Kong and E. F. Valeev, [][]The Jour-nal of Chem-i-cal Phys
+ics \OT1/txr/bx/n/12 135\OT1/txr/m/n/12 , 214105 (2011)[][],
  []
 
 [27]
-Overfull \hbox (37.04831pt too wide) in alignment at lines 750--787
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
-[] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ê in font txr!
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ê in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no Ö in font txr!
+Missing character: There is no √ in font txr!
+Missing character: There is no © in font txr!
+
+Underfull \hbox (badness 1173) in paragraph at lines 1564--1571
+[]\OT1/txr/m/n/12 J. P. Do-er-ing and R. Mc-Di-armid, [][]The Jour-nal of Chem-
+i-cal Physics \OT1/txr/bx/n/12 73\OT1/txr/m/n/12 , 3617 (1980)[][],
+ []
+
+) [28] [29] [30] [31] [32] [33]
+Overfull \hbox (22.12354pt too wide) in alignment at lines 1073--1112
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (37.04831pt too wide) in alignment at lines 787--807
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
-[] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (22.12354pt too wide) in alignment at lines 1112--1120
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
+[34] [35]
+<CEPT-Comparison-CCSDT.pdf, id=845, 860.58379pt x 442.6588pt>
+File: CEPT-Comparison-CCSDT.pdf Graphic file (type pdf)
+<use CEPT-Comparison-CCSDT.pdf>
+Package pdftex.def Info: CEPT-Comparison-CCSDT.pdf  used on input line 1173.
+(pdftex.def)             Requested size: 860.58168pt x 442.65771pt.
+ [36 <./CEPT-Comparison-CCSDT.pdf>]
+<Cu2O2-Isomerization.pdf, id=1071, 705.9512pt x 376.56033pt>
+File: Cu2O2-Isomerization.pdf Graphic file (type pdf)
+<use Cu2O2-Isomerization.pdf>
+Package pdftex.def Info: Cu2O2-Isomerization.pdf  used on input line 1192.
+(pdftex.def)             Requested size: 705.94946pt x 376.5594pt.
+ [37 <./Cu2O2-Isomerization.pdf>]
 
-Overfull \hbox (37.04831pt too wide) in alignment at lines 807--827
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
-[] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (37.04831pt too wide) in alignment at lines 827--832
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
-[] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-[28] [29] [30] [31] [32] [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1082.
+pdfTeX warning: pdflatex (file ./Fig-Polyene-v2.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<Fig-Polyene-v2.pdf, id=1095, 362.85562pt x 293.59688pt>
+File: Fig-Polyene-v2.pdf Graphic file (type pdf)
+<use Fig-Polyene-v2.pdf>
+Package pdftex.def Info: Fig-Polyene-v2.pdf  used on input line 1216.
+(pdftex.def)             Requested size: 362.85474pt x 293.59615pt.
+[38 <./Fig-Polyene-v2.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1236.
  (./cept-manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1082.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1082.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1236.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1236.
 
 Package rerunfilecheck Info: File `cept-manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 82159819B3B207B73AA4B27D709A5905;1370.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 20AEF8326DB0B42FE4A284B54E421FCA;1352.
  ) 
 Here is how much of TeX's memory you used:
- 9556 strings out of 494406
- 141158 string characters out of 6169676
- 369720 words of memory out of 5000000
- 12637 multiletter control sequences out of 15000+600000
- 62647 words of font info for 157 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 34i,14n,33p,1130b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 9659 strings out of 494333
+ 144165 string characters out of 6168092
+ 252468 words of memory out of 5000000
+ 12709 multiletter control sequences out of 15000+600000
+ 61837 words of font info for 155 fonts, out of 8000000 for 9000
+ 309 hyphenation exceptions out of 8191
+ 34i,14n,42p,908b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cept-manuscript.pdf (33 pages, 180570 bytes).
+e/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
+nts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cept-manuscript.pdf (38 pages, 380250 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 792 compressed objects within 8 object streams
- 223 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1231 PDF objects out of 1440 (max. 8388607)
+ 1077 compressed objects within 11 object streams
+ 262 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
