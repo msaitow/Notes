@@ -1,5 +1,6 @@
 \documentclass[12pt,pra,aps]{revtex4}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
 \usepackage{float}
 \usepackage{rotating}
 \usepackage{array}
@@ -9,6 +10,7 @@
 \usepackage{braket}
 \usepackage{epstopdf}
 \usepackage{moreverb}
+\usepackage{wrapfig}
 
 \usepackage{color}                            
                                               
@@ -44,7 +46,13 @@
 
 \noindent
 {\bf 1.(d)} $k=1,2,3$についても1.(c)と同様の計算を行い、鎖長の増加に伴う吸収波長の変化を示せ。
-    
+
+\begin{wrapfigure}{r}[10pt]{0.3\textwidth}
+  \centering
+  \includegraphics[width=4.5cm]{porph1.png}
+  \caption{Structure of porphyrin}
+\end{wrapfigure}
+
 % Nakai & Ando, p. 88    
 \noindent
 {\bf 問題2.} ポルフィリン化合物は様々な波長の可視光を吸収する。これは26個の$\pi$電子が分子平面全体に広がり、$\pi$共役するためである。この現象は$\pi$電子を二次元自由電子モデルで取り扱うことで理解できる。分子平面を正方形としたときの一辺の長さを$L$($=1.00$ nm)として、以下の問いに答えよ。
@@ -59,5 +67,37 @@
 \noindent
 {\bf 2.(b)} HOMO$\rightarrow$LUMO遷移の吸収波長を求めよ。
 
-    
+\vspace{2cm}
+\noindent
+{\bf 問題3.} 力定数$k$の調和振動子ポテンシャル中の質量$m$粒子の運動を考える。また調和振動子の平衡点は$x=0$にあるものとする。このとき以下の問いに答えよ。
+
+\noindent
+{\bf 3.(a)} この粒子のハミルトニアン演算子を書き下せ。
+
+\noindent
+{\bf 3.(b)} ビリアル定理を示す（仮）
+
+\noindent
+{\bf 3.(c)} この系のエネルギーは
+%    
+\begin{align}
+  E_\text{vib}=\hbar \omega\left(n+\frac{1}{2}\right)
+\end{align}
+%
+と与えられる。振動量子数$n$は0以上の整数であるが、$n=0$の場合であってもエネルギーは0とはならない。このことを、3.(b)の結果を踏まえて不確定性関係の観点から考察せよ。
+
+\noindent
+{\bf 3.(d)} 作用することで座標軸を原点に対して反転させる軸反転演算子$\hat{P}$を考える。関数$f(x)$に対して
+\begin{align}
+  \hat{P}f(x)=f(-x)
+\end{align}
+として作用する。$\hat{P}$と3.(a)で求めたハミルトニアン演算子とは交換するか。即ち任意の関数$f(x)$に対して
+\begin{align}
+  (\hat{H}\hat{P}-\hat{P}\hat{H})f(x)=0
+\end{align}
+が成立することを示せ。
+
+\noindent
+{\bf 3.(e)} $v=0,1,2$に対応する調和振動波動関数に対して$\hat{P}$を作用させ、これらが$\hat{P}$の固有関数となることを示せ。またこれらの固有値を計算せよ。このことはハミルトニアン演算子を不変に保つような対象操作に対して、その固有関数が特別な対称性を示すことの一例である。
+
 \end{document}
