@@ -1,6 +1,7 @@
 \documentclass[12pt,pra,aps]{revtex4}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage[dvipdfmx]{color}
+\usepackage[version=3]{mhchem}
 \usepackage{float}
 \usepackage{rotating}
 \usepackage{array}
@@ -33,7 +34,10 @@
 
 % Nakai & Ando, p. 87
 \noindent
-{\bf 問題1.} 次の共役二重結合をもつ1価の有機色素分子は、分子鎖の長さに対応する$k$の値 ($k=0\cdots 3$) が1増すごとに吸収する光の波長がおよそ100nmずつ長くなることが知られている。この現象は、$\pi$電子を自由電子模型により取り扱うことで理解される。このとき以下の問いに答えよ。
+{\bf 問題1.} 次の共役二重結合をもつ1価の有機色素分子は、分子鎖の長さに対応する$k$の値 ($k=0,\cdots 3$) が1増すごとに吸収する光の波長がおよそ100nmずつ長くなることが知られている。この現象は、$\pi$電子を自由電子模型により取り扱うことで理解される。このとき以下の問いに答えよ。
+    
+%
+\ce{H2N^+=CH-(CH=CH)_k-CH=CH-NH2 <=> H2N-CH-(CH=CH)_k-CH=CH=N^+H2 }
 
 \noindent
 {\bf 1.(a)} 長さ$L$の一次元の無限に高いポテンシャル中の電子のSchr\"odinger方程式を解き、エネルギー準位を求めよ。電子質量は$m_e$とせよ。自由電子模型の場合、$L$は共役長に対応し、$0.60+0.25k$ nmと与えられる。また$\pi$電子数は$4+2k$である。
@@ -75,7 +79,13 @@
 {\bf 3.(a)} この粒子のハミルトニアン演算子を書き下せ。
 
 \noindent
-{\bf 3.(b)} ビリアル定理を示す（仮）
+{\bf 3.(b)} $v=0$及び$v=1$の調和振動子波動関数に対して以下の関係式が成立することを示せ。
+%
+\begin{align}
+  \langle K\rangle=\langle V\rangle=\frac{E_\text{vib}}{2}
+\end{align}
+%
+ここで$K$及び$V$はそれぞれハミルトニアンの運動エネルギー部分とポテンシャルエネルギー部分とを表す。
 
 \noindent
 {\bf 3.(c)} この系のエネルギーは
