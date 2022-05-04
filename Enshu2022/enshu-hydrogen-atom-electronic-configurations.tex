@@ -1,0 +1,104 @@
+\documentclass[11pt,pra,aps]{revtex4}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{braket}
+\usepackage{epstopdf}
+\usepackage{moreverb}
+
+\usepackage{color}                            
+                                              
+\newcommand{\red}[1]{\textcolor{red}{#1}}     
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\newcommand{\boxz}[1]{\boxed{\phantom{\text{#1}}}}
+\newcommand{\boxa}[1]{\boxed{\phantom{}}}
+
+%%\renewcommand{\baselinestretch}{2.0}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+\title{水素類似原子と電子配置}
+\author{齋藤　雅明 \\ 量子化学研究室 \\ email: masa.saitow@chem.nagoya-u.ac.jp}
+
+\maketitle
+
+\noindent
+{\bf 問題1.} 以下の文を読んで、空欄を埋めよ。
+
+\noindent
+電荷$Z$の核を持つ水素様原子のハミルトニアン演算子は原点に置かれた核からの距離を$r$として、\boxz{$H=-\frac{\hbar^2}{2m_e}\nabla^2-\frac{Ze^2}{4\pi\epsilon_0 r}$}と与えられる。ここで$\nabla^2$は\boxz{ラプラス演算子}であり、$m_e$は電子質量である。ポテンシャルが$r$のみに依存するために、極座標表示を導入することでシュレーディンガー方程式は同径部分と角度部分とに分離される。
+\begin{align}
+  \Psi_{nlm}(r,\theta,\phi)=R_{nl}(r)Y^m_l(\theta,\phi)\label{eq:Psi-H}
+\end{align}
+ここで３つの整数$n \ (n=1,2,\cdots)$、$l \ (l=0,1,..,n-1)$、$m \ (m=0,\pm1,\pm1,\cdots,\pm l)$はそれぞれ\boxz{主量子数}、\boxz{角運動量量子数}、\boxz{磁気量子数}と呼ばれる。またエネルギーは\boxz{$E_n=-\frac{Z^2e^2}{8\pi\epsilon_0a_0n^2}$}と得られる。ここで$a_0$はボーア半径と呼ばれ、
+\begin{align}
+  a_0 = \frac{4\pi\epsilon_0\hbar^2}{m_e e^2}
+\end{align}
+と与えられる。エネルギー準位は\boxz{$n^2$}重に縮重している。式(\ref{eq:Psi-H})における$Y^m_l(\theta,\phi)$は\boxz{球面調和関数}と呼ばれ、角運動量演算子の固有関数となる。
+\begin{align}
+  &L^2Y^m_l(\theta,\phi)=l(l+1)\hbar^2Y^m_l(\theta,\phi)
+\end{align}
+%\begin{align}
+%  -\hbar^2\left[\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right]Y^m_l(\theta,\phi)=l(l+1)\hbar^2Y^m_l(\theta,\phi)
+%\end{align}
+
+
+\noindent
+{\bf 問題2.} 無限に高い井戸型ポテンシャルや、調和振動ポテンシャル中の粒子の定常状態波動関数は常に離散化されており、連続状態は存在しない。一方で水素原子中の電子の場合は、連続状態を取り得る。これをポテンシャル関数の性質の違いから説明せよ。
+
+\noindent
+{\bf 問い3} 極座標系においては、角運動量の2乗演算子及び、角運動量の各成分の演算子は以下のように与えられる。
+\begin{align}
+  &L^2 = -\hbar^2\left[\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right]\\
+  &L_x = -i\hbar\left(-\sin\phi\frac{\partial}{\partial \theta}-\cot\theta\cos\phi\frac{\partial}{\partial\phi}\right)\\
+  &L_y = -i\hbar\left(\cos\phi\frac{\partial}{\partial \theta}-\cot\theta\sin\phi\frac{\partial}{\partial\phi}\right)\\    
+  &L_z = -i\hbar\frac{\partial}{\partial \phi}
+\end{align}
+このとき以下の言明の正誤を答えよ。\\
+\noindent
+{\bf 3.1} $[L^2,L_z]=0$である。\\
+\noindent    
+{\bf 3.2} $L^2$演算子の固有関数は、$L_z$の固有関数でもある。\\
+\noindent        
+{\bf 3.3} $L_z$演算子の固有値は$\sqrt{m(m+1)}\hbar$である。\\
+\noindent
+{\bf 3.4} $Y^{-1}_1$は以下のように与えられる。
+\begin{align}
+  Y^{-1}_1(\theta,\phi)=\sqrt{\frac{3}{8\pi}}\sin\theta e^{-i\phi}
+\end{align}
+これは$L_x$演算子の固有関数である。
+
+\noindent
+{\bf 問い4} 以下の２つの文言の正誤を答えよ。\\
+\noindent
+{\bf (1)} $N$個の相互作用していない粒子からなる系の定常状態波動関数は
+\begin{align}
+  \psi = \psi(p_1) + \psi(p_2) + \psi(p_3) + \psi(p_4) + \cdots
+\end{align}
+と書ける。ここで$\psi(p_i)$はi番目の粒子の波動関数である。\\
+\noindent
+{\bf (2)} $N$個の相互作用していない粒子からなる系のエネルギーは、それぞれの粒子に関するSchr\"odinger方程式を解いて得られたエネルギーの和として表せる。
+
+\noindent
+{\bf 問い5} 陽電子は+$e$の電荷と質量$m_e$をもつ粒子である。w電子と陽電子とがクーロン相互作用により結合している系を考える。これはポジトロニウムと呼ばれる水素様原子の一種と捉えることができる。
+\noindent
+{\bf 5.1} ポジトロニウムに関するSchr\"odinger方程式を書け。
+\noindent
+{\bf 5.2} ポジトロニウムの基底状態エネルギーを電子ボルト単位で求めよ。
+
+\noindent
+% Levine, p.329 Example (a) and (b)
+{\bf 問い6} 原子における電子配置の項の記号 (${}^{2S+1}\text{L}$) について、次の問いに答えよ。\\
+\noindent
+{\bf 6.1} $1s2p$配置から考えられる全ての項の記号を列挙せよ。また縮重度も示せ。\\
+\noindent
+{\bf 6.2} $1s^22s^22p3d$配置から考えられる全ての項の記号を列挙せよ。また縮重度も示せ。
+    
+\end{document}
