@@ -15,7 +15,8 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}}     
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 
-\newcommand{\boxz}[1]{\boxed{\phantom{\text{#1}}}}
+%\newcommand{\boxz}[1]{\boxed{\phantom{\text{#1}}}}
+\newcommand{\boxz}[1]{\boxed{\red{\text{#1}}}}
 \newcommand{\boxa}[1]{\boxed{\phantom{}}}
 
 %%\renewcommand{\baselinestretch}{2.0}
@@ -61,15 +62,16 @@
   &L_y = -i\hbar\left(\cos\phi\frac{\partial}{\partial \theta}-\cot\theta\sin\phi\frac{\partial}{\partial\phi}\right)\\    
   &L_z = -i\hbar\frac{\partial}{\partial \phi}
 \end{align}
-このとき以下の言明の正誤を答えよ。\\
 \noindent
-{\bf 3.1} $[L^2,L_z]=0$である。\\
+{\bf 3.1} $[L^2,L_z]=0$であることを示せ。\\
+\noindent
+{\bf 3.2} このとき以下の文言の正誤を答えよ。\\
 \noindent    
-{\bf 3.2} $L^2$演算子の固有関数は、$L_z$の固有関数でもある。\\
+{\bf (1)} $L^2$演算子の固有関数は、$L_z$の固有関数でもある。\\
 \noindent        
-{\bf 3.3} $L_z$演算子の固有値は$\sqrt{m(m+1)}\hbar$である。\\
+{\bf (2)} $L_z$演算子の固有値は$\sqrt{m(m+1)}\hbar$である。\\
 \noindent
-{\bf 3.4} $Y^{-1}_1$は以下のように与えられる。
+{\bf (3)} $Y^{-1}_1$は以下のように与えられる。
 \begin{align}
   Y^{-1}_1(\theta,\phi)=\sqrt{\frac{3}{8\pi}}\sin\theta e^{-i\phi}
 \end{align}
@@ -87,11 +89,11 @@
 {\bf (2)} $N$個の相互作用していない粒子からなる系のエネルギーは、それぞれの粒子に関するSchr\"odinger方程式を解いて得られたエネルギーの和として表せる。
 
 \noindent
-{\bf 問い5} 陽電子は+$e$の電荷と質量$m_e$をもつ粒子である。w電子と陽電子とがクーロン相互作用により結合している系を考える。これはポジトロニウムと呼ばれる水素様原子の一種と捉えることができる。
+{\bf 問い5} 陽電子は+$e$の電荷と質量$m_e$をもつ粒子である。電子と陽電子とがクーロン相互作用により結合している系を考える。これはポジトロニウムと呼ばれる水素様原子の一種と捉えることができる。\\
 \noindent
-{\bf 5.1} ポジトロニウムに関するSchr\"odinger方程式を書け。
+{\bf 5.1} ポジトロニウムに関するSchr\"odinger方程式を書け。\\
 \noindent
-{\bf 5.2} ポジトロニウムの基底状態エネルギーを電子ボルト単位で求めよ。
+{\bf 5.2} ポジトロニウムの基底状態エネルギーを電子ボルト単位で求めよ。\\
 
 \noindent
 % Levine, p.329 Example (a) and (b)
