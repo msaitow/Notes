@@ -13,7 +13,10 @@
 \usepackage{longtable}
 
 \usepackage{color}                            
-                                              
+
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+
 \newcommand{\red}[1]{\textcolor{red}{#1}}     
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 
@@ -83,13 +86,15 @@
 である。
 
 \noindent
-{\bf 問題3.} 位置–運動量の不確定性関係を含む、種々の不確定性関係は以下のRobertsonの不等式より導くことができる（証明は例えば文献[1]）。
+{\bf 問題3.}
+%位置–運動量の不確定性関係を含む、種々の不確定性関係は以下のRobertsonの不等式より導くことができる。\footnote{証明は例えばJ. J. サクライ著「現代の量子力学 第１版」第一章にある。}
+演算子$A$及び$B$で表される二つの物理量の間に存在する不確定性関係は、次のRobertsonの不等式で与えられる。\footnote{証明は例えばJ. J. サクライ著「現代の量子力学 第１版」第一章にある。}
 \begin{align}
-  \Delta A\ \Delta B \geq \frac{1}{2}\langle\psi|[A,B]|\psi\rangle\label{eq:Robertson}
+  \Delta A\ \Delta B \geq \frac{1}{2}|\langle\psi|[A,B]|\psi\rangle|\label{eq:Robertson}
 \end{align}
 
 \noindent
-{\bf 3.1} 式(\ref{eq:Robertson})から位置-運動量間の不確定性関係を計算せよ。
+{\bf 3.1} 式(\ref{eq:Robertson})において、$A\rightarrow x$、$B\rightarrow p$として、位置-運動量間の不確定性関係を導出せよ。
 
 \noindent
 {\bf 3.2} $x-y$面上を円運動する電子について考える（図\ref{fig:circ}）。球座標系を用いると角運動量のz成分を記述する演算子は以下のように与えられる。
@@ -105,12 +110,12 @@
 \end{wrapfigure}
 
 \noindent
-{\bf 3.3} 問い3.2で計算した不確定性関係はこの系には適さない。それは何故か。
+{\bf 3.3} 問い3.2で計算した不確定性関係はこの系に対しては正しくない。それは何故か。
 
 \noindent
-{\bf 3.4} 円環上の粒子の$L_z$と$\phi$との不確定性関係にも適用可能となるように、Krausらは式(\ref{eq:Robertson})を次のように一般化した（文献[2]）。
+{\bf 3.4} 円環上の粒子の$L_z$と$\phi$との不確定性関係にも適用可能となるように、Krausらは式(\ref{eq:Robertson})を次のように一般化した。\footnote{K. Kraus, Z. Physik. 188, 374-377 (1965).}
 \begin{align}
-  \Delta A\ \Delta B \geq \frac{1}{2}\int_A dx \left[(A\psi)^{*} (B\psi) - (B\psi)^{*} (A\psi)\right]\label{eq:kraus}
+  \Delta A\ \Delta B \geq \frac{1}{2}\left|\int_A dx \left[(A\psi)^{*} (B\psi) - (B\psi)^{*} (A\psi)\right]\right|\label{eq:kraus}
 \end{align}
 ここで$A$は問題で与えられた積分範囲を意味する。式(\ref{eq:kraus})を用いて円環上の電子について$L_z$と$\phi$との不確定性関係を計算せよ。
 
@@ -145,10 +150,13 @@
   \psi_2^{(0)}(\xi)&=\frac{1}{\pi^{1/4}2\cdot 2^{1/2}} (4\xi^2-2)e^{-\xi^2/2}
 \end{align}
 
-式(\ref{eq:harm4_2})の$\lambda\xi^4$を摂動と見なして、上の３状態に対して$\epsilon\approx\epsilon^{(0)}+\epsilon^{(1)}$を$\lambda$の関数として計算せよ。$\lambda=0.01,\ 0.10,\ 1.00$の場合、コンピュータを用いて厳密に計算した$\epsilon$は以下のようになる（表\ref{tab:exact}）。1次摂動計算の結果と厳密解を比較せよ。$\lambda$の値の変化に対して、1次摂動計算の精度を議論せよ。
+式(\ref{eq:harm4_2})の$-\lambda\xi^4$を摂動と見なして、上の３状態に対して１次摂動補正項までを考慮して、$\epsilon\approx\epsilon^{(0)}+\epsilon^{(1)}$を$\lambda$の関数として計算せよ。$\lambda=0.01,\ 0.10,\ 1.00$の場合、コンピュータを用いて厳密に計算した$\epsilon$は以下のようになる（表\ref{tab:exact}）。\footnote{数値計算には波動関数の離散変数表現を用いた。プログラムのソースコードは\href{https://github.com/msaitow/okiba/blob/main/dvr-anharmonic.py}
+ {github}にある。原理的には積分範囲が[$-\infty,\infty$]である任意の一次元Schr\"odinger方程式を解ける（はず）。また計算に用いられている行列要素はD. T. Colbert, and W. H. Miller, J. Chem. Phys. 96, 1982 (1992)を参照。またプログラムの実行には{\tt Numpy}が必要。} 1次摂動計算の結果と厳密解を比較せよ。$\lambda$の値の変化に対して、1次摂動計算の精度を議論せよ。
+
+\clearpage
 
 \begin{longtable}[!h]{cccccccccc}
-  \caption{\label{tab:exact} 様々な$\lambda$に対して計算した式(\ref{eq:harm4_2})の厳密解。}\\
+  \caption{\label{tab:exact} 様々な$\lambda$に対して式(\ref{eq:harm4_2})を解いて得られた厳密な$\epsilon$の値。}\\
   \hline
   \hline
   {}    && \multicolumn{8}{c}{Value of quantum number $n$} \\
@@ -162,12 +170,12 @@
   \hline        
 \end{longtable}
 
-\noindent
-{\bf 参考文献}
-\begin{enumerate}
-\item J. J. サクライ著「現代の量子力学 第１版」第一章
-\item K. Kraus, Z. Physik. 188, 374-377 (1965).
-\end{enumerate}
+%\noindent
+%{\bf 参考文献}
+%\begin{enumerate}
+%\item J. J. サクライ著「現代の量子力学 第１版」第一章
+%\item K. Kraus, Z. Physik. 188, 374-377 (1965).
+%\end{enumerate}
 
 %% Levine 9.8
 %\noindent
