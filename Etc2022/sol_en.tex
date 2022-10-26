@@ -30,7 +30,7 @@ The eigenvalues are directly computed by the quadratic formulae
 
 With the following Maclaurin expansion
 \begin{eqnarray}
-    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2sqrt{a}}x+\cdots
+    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2\sqrt{a}}x+\cdots
 \end{eqnarray}  
 the second term is approximated as
 \begin{eqnarray}
@@ -50,7 +50,7 @@ and
 
 The energy difference between the two MOs are
 \begin{eqnarray}
-\delta E=\frac{\Delta^2\lambda^2}{E_1-E_2}
+\delta E=\frac{2\Delta^2\lambda^2}{E_1-E_2}
 \end{eqnarray}
 which is maximized when $E_1$ is equal to $E_2$.
 
@@ -113,7 +113,7 @@ the following pairs of energy and the MO coefficients are obtained:
 \noindent   
 \textbf{In case of $\lambda=1$}\\ 
 \begin{eqnarray}
-    \epsilon_2=\alpha+\beta
+    \epsilon_2=\alpha-\beta
 \end{eqnarray}  
 \begin{eqnarray}
     \mathbf{C}_2=\frac{1}{\sqrt{2}}
@@ -144,7 +144,7 @@ and so
 \end{eqnarray}
 Substituting it into the definition of the RSE gives
 \begin{eqnarray}
-    \Delta E_\text{RSE}\approx\left[4\frac{N}{\pi}-1\right]\beta N=0.2732N\beta.
+    \Delta E_\text{RSE}\approx\left[\frac{4}{\pi}-1\right]\beta N=0.2732N\beta.
 \end{eqnarray}
 Importantly the RSE is exactly proportional to $N$ in this limit and so is a size-extensive property.
 
@@ -170,9 +170,9 @@ The kinetic part of the Hamiltonian requires the following derivatives
     \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-2\beta |x|}
 \end{align}
 \begin{align}
-    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}.
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}
 \end{align}
-Integration of the potential operator leads to
+where $(2\theta(x)-1)^2=1$. Integration of the potential operator leads to
 \begin{align}
     \int^\infty_{-\infty} x^2 e^{-2\beta|x|}dx=2\int^{\infty}_0 x^2 e^{-2\beta x}dx=\frac{1}{2\beta^3}.
 \end{align}

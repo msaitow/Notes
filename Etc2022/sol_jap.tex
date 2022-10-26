@@ -30,7 +30,7 @@
 \textbf{(b).}
 
 \begin{eqnarray}
-    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2sqrt{a}}x+\cdots
+    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2\sqrt{a}}x+\cdots
 \end{eqnarray}  
 
 であるから
@@ -57,7 +57,7 @@
 エネルギー差は
 
 \begin{eqnarray}
-\delta E=\frac{\Delta^2\lambda^2}{E_1-E_2}
+\delta E=\frac{2\Delta^2\lambda^2}{E_1-E_2}
 \end{eqnarray}
 
 となる。これが最大化されるのは$E_1$と$E_2$とが等しいときである。
@@ -120,7 +120,7 @@
 \noindent   
 \textbf{$\lambda=1$の場合:}\\ 
 \begin{eqnarray}
-    \epsilon_2=\alpha+\beta
+    \epsilon_2=\alpha-\beta
 \end{eqnarray}  
 \begin{eqnarray}
     \mathbf{C}_2=\frac{1}{\sqrt{2}}
@@ -152,7 +152,7 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
 \end{eqnarray}
 故に
 \begin{eqnarray}
-    \Delta E_\text{RSE}\approx\left[4\frac{N}{\pi}-1\right]\beta N=0.2732N\beta
+    \Delta E_\text{RSE}\approx\left[\frac{4}{\pi}-1\right]\beta N=0.2732N\beta
 \end{eqnarray}
 となる。$\Delta E_\text{RSE}$は正確に$N$に正比例するから、厳密に示量性といえる。
 
@@ -180,7 +180,7 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
 \begin{align}
     \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}
 \end{align} 
-またポテンシャル部分の積分は
+ここで$(2\theta(x)-1)^2=1$となることを使った。またポテンシャル部分の積分は
 \begin{align}
     \int^\infty_{-\infty} x^2 e^{-2\beta|x|}dx=2\int^{\infty}_0 x^2 e^{-2\beta x}dx=\frac{1}{2\beta^3}
 \end{align}
