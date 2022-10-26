@@ -1,0 +1,206 @@
+\documentclass{jlreq}
+
+\usepackage{luatexja-fontspec}
+\usepackage{amsmath,amssymb,amsfonts}
+
+\begin{document}
+
+\noindent
+\textbf{問1.}\\
+
+
+\noindent
+\textbf{(a).}
+
+Solve the following equation:
+\begin{eqnarray}
+    \det
+    \begin{vmatrix}
+        E_1-\epsilon & \lambda\Delta \\
+        \lambda\Delta & E_2-\epsilon 
+    \end{vmatrix}=0\Rightarrow \epsilon^2+\epsilon(-E_1-E_2)+(E_1E_2-\lambda^2\Delta^2)=0   
+\end{eqnarray}  
+The eigenvalues are directly computed by the quadratic formulae
+\begin{eqnarray}
+    \epsilon_{1,2}=\frac{E_1+E_2}{2}\pm\sqrt{\left(\frac{E_1-E_2}{2}\right)^2+\lambda^2\Delta^2}.
+\end{eqnarray}  
+
+\noindent
+\textbf{(b).}
+
+With the following Maclaurin expansion
+\begin{eqnarray}
+    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2sqrt{a}}x+\cdots
+\end{eqnarray}  
+the second term is approximated as
+\begin{eqnarray}
+    \sqrt{\left(\frac{E_1-E_2}{2}\right)^2+\lambda^2\Delta^2}\approx\frac{E_1-E_2}{2}+\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+and hence the the energies for the molecular orbitals (MOs) are determined as
+\begin{eqnarray}
+    \epsilon_1\approx E_1+\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+and
+\begin{eqnarray}
+    \epsilon_2\approx E_2-\frac{\Delta^2\lambda^2}{E_1-E_2}.
+\end{eqnarray}
+
+\noindent
+\textbf{(c).}
+
+The energy difference between the two MOs are
+\begin{eqnarray}
+\delta E=\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+which is maximized when $E_1$ is equal to $E_2$.
+
+\clearpage
+
+\noindent
+\textbf{問2.}\\
+
+\noindent
+\textbf{(a).} 
+
+To calculate the resonance stabilization energy (RSE), the total $\pi$ electronic energy of ethylene is needed. The Hamiltonian matrix reads
+\begin{eqnarray}
+    \mathbf{H}=
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \beta & \alpha
+    \end{pmatrix}.   
+\end{eqnarray}  
+Substituting it into the Schr\"odinger equation 
+\begin{eqnarray}
+    \mathbf{HC}=\epsilon\mathbf{C}
+\end{eqnarray}  
+gives
+\begin{eqnarray}
+    %\mathbf{xC}=\frac{E-\alpha}{\beta}\mathbf{C}
+    \mathbf{xC}=\lambda\mathbf{C}
+\end{eqnarray}
+after some manipulation where $x$ and $\lambda$ are
+\begin{eqnarray}
+    \mathbf{x}=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix}
+\end{eqnarray}
+and
+\begin{eqnarray}
+\lambda=\frac{\epsilon-\alpha}{\beta}
+\end{eqnarray}  
+respectively. By solving the following characteristic equations
+\begin{eqnarray}
+    \det|\mathbf{x}-\lambda\mathbf{E}|=0
+\end{eqnarray}  
+the following pairs of energy and the MO coefficients are obtained:
+
+\noindent
+\textbf{In case of $\lambda=-1$}\\
+\begin{eqnarray}
+    \epsilon_1=\alpha+\beta
+\end{eqnarray}  
+\begin{eqnarray}
+    \mathbf{C}_1=\frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+        1 \\
+        1
+    \end{pmatrix}   
+\end{eqnarray}
+
+\noindent   
+\textbf{In case of $\lambda=1$}\\ 
+\begin{eqnarray}
+    \epsilon_2=\alpha+\beta
+\end{eqnarray}  
+\begin{eqnarray}
+    \mathbf{C}_2=\frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+         1 \\
+        -1
+    \end{pmatrix}   
+\end{eqnarray}
+Therefore, the total $\pi$ electronic energy for ethylene is
+\begin{eqnarray}
+    E_\text{ethylene}=2\alpha+2\beta.
+\end{eqnarray}  
+Then, the RSE is
+\begin{eqnarray}
+    \Delta E_\text{RSE}=N\alpha+\frac{4\beta}{\sin(\pi/N)}-\frac{N}{2}\left(2\alpha+2\beta\right)=\beta\left(\frac{4}{\sin(\pi/N)}-N\right).
+\end{eqnarray}
+
+\noindent
+\textbf{(b).}
+
+In the limit of large $N$, one notices $\pi/N\rightarrow 0$ and hence $\sin(x)$ behaves as
+\begin{eqnarray}
+    \sin(x)=x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots
+\end{eqnarray}
+and so
+\begin{eqnarray}
+    \sin\left(\frac{\pi}{N}\right)\approx\frac{\pi}{N}.
+\end{eqnarray}
+Substituting it into the definition of the RSE gives
+\begin{eqnarray}
+    \Delta E_\text{RSE}\approx\left[4\frac{N}{\pi}-1\right]\beta N=0.2732N\beta.
+\end{eqnarray}
+Importantly the RSE is exactly proportional to $N$ in this limit and so is a size-extensive property.
+
+\clearpage
+
+\noindent
+\textbf{問3.}\\
+
+The Hamiltonian operator is given as
+\begin{align}
+    H=-\frac{\hbar^2}{2m}\frac{d^2}{sx^2}+\frac{1}{2}m\omega^2x^2.
+\end{align}
+Then, compute the expectation value of it with $\beta$ as a variational parameter
+\begin{align}
+    \langle H\rangle_\beta\equiv\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}
+\end{align}
+where the denominator is easily calculated as
+\begin{align}
+    \langle\tilde{\phi}|\tilde{\phi}\rangle=\int^\infty_{-\infty}e^{-2\beta|x|} dx=2\int^\infty_{0}e^{-2\beta x} dx = -\frac{1}{\beta}[e^{-2\beta x}]^\infty_0=\frac{1}{\beta}.
+\end{align}
+The kinetic part of the Hamiltonian requires the following derivatives
+\begin{align}
+    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-2\beta |x|}
+\end{align}
+\begin{align}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}.
+\end{align}
+Integration of the potential operator leads to
+\begin{align}
+    \int^\infty_{-\infty} x^2 e^{-2\beta|x|}dx=2\int^{\infty}_0 x^2 e^{-2\beta x}dx=\frac{1}{2\beta^3}.
+\end{align}
+Using the follwoing formula
+\begin{align}
+    \int^\infty_{-\infty} \delta(x) e^{-2\beta|x|}dx=1
+\end{align}
+the kinetic energy integral becomes
+\begin{align}
+    \langle\tilde{\phi}|\frac{d^2}{dx^2}|\tilde{\phi}\rangle=-\beta
+\end{align}
+and hence one finally reaches at
+\begin{align}
+    \langle\tilde{\phi}|H|\tilde{\phi}\rangle=-\frac{\hbar^2}{2m}(-\beta)+\frac{1}{2}m\omega^2\frac{1}{2\beta^3}.
+\end{align}
+Therefore, the expectation value reads
+\begin{align}
+    \frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{2m}\beta^2+\frac{m\omega^2}{4\beta^2}.
+\end{align}
+Differentiation of it with respect to $\beta$ leads to
+\begin{align}
+    &\frac{\partial}{\partial\beta}\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{m}\beta-\frac{m\omega^2}{2\beta^3}\rightarrow 0 \\
+    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}}m\omega.
+\end{align}
+Pluggint in it for $\beta$ gives the following variational energy
+\begin{align}
+    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
+\end{align}
+which is about 41 \% higher than the exact value of $0.5\hbar\omega$.
+\end{document}
+	

@@ -1,0 +1,214 @@
+\documentclass{jlreq}
+
+\usepackage{luatexja-fontspec}
+\usepackage{amsmath,amssymb,amsfonts}
+
+\begin{document}
+
+\noindent
+\textbf{問1.}\\
+
+
+\noindent
+\textbf{(a).}
+
+次の特性多項式を解く。  
+\begin{eqnarray}
+    \det
+    \begin{vmatrix}
+        E_1-\epsilon & \lambda\Delta \\
+        \lambda\Delta & E_2-\epsilon 
+    \end{vmatrix}=0\Rightarrow \epsilon^2+\epsilon(-E_1-E_2)+(E_1E_2-\lambda^2\Delta^2)=0   
+\end{eqnarray}  
+2次方程式の解の公式から
+\begin{eqnarray}
+    \epsilon_{1,2}=\frac{E_1+E_2}{2}\pm\sqrt{\left(\frac{E_1-E_2}{2}\right)^2+\lambda^2\Delta^2}
+\end{eqnarray}  
+と求まる。
+
+\noindent
+\textbf{(b).}
+
+\begin{eqnarray}
+    \sqrt{a+bx}=\sqrt{a}+\frac{b}{2sqrt{a}}x+\cdots
+\end{eqnarray}  
+
+であるから
+
+\begin{eqnarray}
+    \sqrt{\left(\frac{E_1-E_2}{2}\right)^2+\lambda^2\Delta^2}\approx\frac{E_1-E_2}{2}+\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+
+となり、故にエネルギーは
+
+\begin{eqnarray}
+    \epsilon_1\approx E_1+\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+
+\begin{eqnarray}
+    \epsilon_2\approx E_2-\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+
+となる。
+
+\noindent
+\textbf{(c).}
+
+エネルギー差は
+
+\begin{eqnarray}
+\delta E=\frac{\Delta^2\lambda^2}{E_1-E_2}
+\end{eqnarray}
+
+となる。これが最大化されるのは$E_1$と$E_2$とが等しいときである。
+
+\clearpage
+
+\noindent
+\textbf{問2.}\\
+
+\noindent
+\textbf{(a).} 
+
+共鳴安定化エネルギーを計算するために、まずエチレンの全$\pi$電子エネルギーを求める。ハミルトニアンは
+\begin{eqnarray}
+    \mathbf{H}=
+    \begin{pmatrix}
+        \alpha & \beta \\
+        \beta & \alpha
+    \end{pmatrix}   
+\end{eqnarray}  
+である。Schr\"odinger方程式は
+\begin{eqnarray}
+    \mathbf{HC}=\epsilon\mathbf{C}
+\end{eqnarray}  
+であり、これを変形すると
+\begin{eqnarray}
+    %\mathbf{xC}=\frac{E-\alpha}{\beta}\mathbf{C}
+    \mathbf{xC}=\lambda\mathbf{C}
+\end{eqnarray}
+となる。ここで
+\begin{eqnarray}
+    \mathbf{x}=
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix}
+\end{eqnarray}
+\begin{eqnarray}
+\lambda=\frac{\epsilon-\alpha}{\beta}
+\end{eqnarray}  
+である。次の特性多項式を解く。
+\begin{eqnarray}
+    \det|\mathbf{x}-\lambda\mathbf{E}|=0
+\end{eqnarray}  
+以下の二つの固有値及び固有ベクトルを得る。
+
+\noindent
+\textbf{$\lambda=-1$の場合:}\\
+\begin{eqnarray}
+    \epsilon_1=\alpha+\beta
+\end{eqnarray}  
+\begin{eqnarray}
+    \mathbf{C}_1=\frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+        1 \\
+        1
+    \end{pmatrix}   
+\end{eqnarray}
+
+\noindent   
+\textbf{$\lambda=1$の場合:}\\ 
+\begin{eqnarray}
+    \epsilon_2=\alpha+\beta
+\end{eqnarray}  
+\begin{eqnarray}
+    \mathbf{C}_2=\frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+         1 \\
+        -1
+    \end{pmatrix}   
+\end{eqnarray}
+故にエチレンの全$\pi$電子エネルギーは
+\begin{eqnarray}
+    E_\text{ethylene}=2\alpha+2\beta
+\end{eqnarray}  
+となる。共鳴安定化エネルギーは
+\begin{eqnarray}
+    \Delta E_\text{RSE}=N\alpha+\frac{4\beta}{\sin(\pi/N)}-\frac{N}{2}\left(2\alpha+2\beta\right)=\beta\left(\frac{4}{\sin(\pi/N)}-N\right)
+\end{eqnarray}
+となる。
+
+\noindent
+\textbf{(b).}
+
+$N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
+\begin{eqnarray}
+    \sin(x)=x-\frac{x^2}{2!}+\frac{x^3}{3!}-\cdots
+\end{eqnarray}
+であるから
+\begin{eqnarray}
+    \sin\left(\frac{\pi}{N}\right)\approx\frac{\pi}{N}
+\end{eqnarray}
+故に
+\begin{eqnarray}
+    \Delta E_\text{RSE}\approx\left[4\frac{N}{\pi}-1\right]\beta N=0.2732N\beta
+\end{eqnarray}
+となる。$\Delta E_\text{RSE}$は正確に$N$に正比例するから、厳密に示量性といえる。
+
+\clearpage
+
+\noindent
+\textbf{問3.}\\
+
+ハミルトニアンは
+\begin{align}
+    H=-\frac{\hbar^2}{2m}\frac{d^2}{sx^2}+\frac{1}{2}m\omega^2x^2
+\end{align}
+と与えられ、$\beta$をパラメータとしたエネルギー積分を考える。
+\begin{align}
+    \langle H\rangle_\beta\equiv\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}
+\end{align}
+分母は
+\begin{align}
+    \langle\tilde{\phi}|\tilde{\phi}\rangle=\int^\infty_{-\infty}e^{-2\beta|x|} dx=2\int^\infty_{0}e^{-2\beta x} dx = -\frac{1}{\beta}[e^{-2\beta x}]^\infty_0=\frac{1}{\beta}
+\end{align}
+となる。分子の微分を逐次計算していく。
+\begin{align}
+    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-2\beta |x|}
+\end{align}
+\begin{align}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}
+\end{align} 
+またポテンシャル部分の積分は
+\begin{align}
+    \int^\infty_{-\infty} x^2 e^{-2\beta|x|}dx=2\int^{\infty}_0 x^2 e^{-2\beta x}dx=\frac{1}{2\beta^3}
+\end{align}
+となる。また
+\begin{align}
+    \int^\infty_{-\infty} \delta(x) e^{-2\beta|x|}dx=1
+\end{align}
+だから、以上より
+\begin{align}
+    \langle\tilde{\phi}|\frac{d^2}{dx^2}|\tilde{\phi}\rangle=-\beta
+\end{align}
+となり
+\begin{align}
+    \langle\tilde{\phi}|H|\tilde{\phi}\rangle=-\frac{\hbar^2}{2m}(-\beta)+\frac{1}{2}m\omega^2\frac{1}{2\beta^3}
+\end{align}
+故に
+\begin{align}
+    \frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{2m}\beta^2+\frac{m\omega^2}{4\beta^2}
+\end{align}
+を得る。これを$\beta$について微分すると
+\begin{align}
+    &\frac{\partial}{\partial\beta}\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{m}\beta-\frac{m\omega^2}{2\beta^3}\rightarrow 0 \\
+    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}}m\omega
+\end{align}
+となる。得られた$\beta$をエネルギー積分に代入すると
+\begin{align}
+    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
+\end{align}
+となる。正確な値である$0.5\hbar\omega$の約41\%高い値であることが分かる。
+\end{document}
+	

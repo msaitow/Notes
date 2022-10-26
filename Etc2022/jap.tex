@@ -1,0 +1,78 @@
+\documentclass{jlreq}
+
+\usepackage{luatexja-fontspec}
+\usepackage{amsmath,amssymb,amsfonts}
+
+\begin{document}
+
+\noindent
+\textbf{問1.}\\
+
+\noindent
+化学結合の生成は、次の二準位系ハミルトニアン行列で大雑把にモデル化できる。
+\begin{eqnarray}
+    \mathbf{H}(\lambda)=
+    \begin{pmatrix}
+    E_1 & \lambda\Delta \\ 
+    \lambda\Delta & E_2
+    \end{pmatrix}
+\end{eqnarray}
+ここで$E_1$および$E_2$は、結合生成に関与する原子軌道のエネルギー準位であり、$\lambda$は原子軌道間に働く相互作用（摂動）の強さである。このとき、以下の問い答えよ。\\
+
+\noindent
+\textbf{(a).} ハミルトニアン行列$\mathbf{H}(\lambda)$のエネルギー固有値$\epsilon_1$及び$\epsilon_2$を相互作用$\lambda$の関数として計算せよ。\\
+\noindent
+\textbf{(b).} 問い(a)で得られたエネルギーは、$\lambda \ll |E_1-E_2|$と仮定出来る場合にはどうなるか。$\lambda$に関して２次の項まで考えよ。\\
+\noindent
+\textbf{(c).} 問い(b)で得られたネルギーは、それぞれ結合性、反結合性軌道のエネルギーである。このとき、これらのエネルギーギャップが最も大きくなるのはどのような場合か。\\
+
+\noindent
+\textbf{ヒント:} $\sqrt{a+bx}$を$x$に関してマクローリン展開し、$x$の1次の項まで考える。これに$\lambda^2$などを適宜代入する。
+
+\clearpage
+
+\noindent
+\textbf{問2.}\\
+
+\noindent
+環状ポリエン $(\text{CH}_2)_N$ の全$\pi$電子エネルギーはH\"uckel法では厳密に計算でき、以下のように与えられる。
+
+\begin{eqnarray}
+    E_\pi(N)=N\alpha+\frac{4\beta}{\sin(\pi/N)}
+\end{eqnarray}
+
+\noindent
+このとき以下の問いに答えよ。\\
+
+\noindent
+\textbf{(a).} 環状ポリエン $(\text{CH}_2)_N$の共鳴安定化エネルギーを計算せよ。\\
+\noindent
+\textbf{(b).} $N$が大きくなる極限での共鳴安定化エネルギーを$N$の関数として計算せよ。このとき共鳴安定化エネルギーは厳密に示量性を示すであろうか？\\
+
+\noindent
+\textbf{ヒント:} $x$が小さい場合、$\sin(x)$はどのように振舞うかを考える。
+
+\clearpage
+
+\noindent
+\textbf{問3.}\\
+
+\noindent
+調和振動子の基底状態エネルギーを次の試行関数で変分原理に従い計算する。
+\begin{eqnarray}
+    \tilde{\phi}(x)=\exp(-\beta|x|) \ \ \ (\beta>0)
+\end{eqnarray}  
+ここで$\beta$は変分パラメータである。このとき以下の公式を使ってよい。
+\begin{eqnarray}
+    &\frac{d|x|}{dx}=2\theta(x)-1 \\
+    &\frac{d\theta(x)}{dx}=\delta(x) \\
+    %&\int_{-\infty}^\infty \delta(x) f(x) dx = f(0) \\
+    &\int_0^\infty \exp(-ax)x^n dx=\frac{n!}{a^{n+1}} \\
+\end{eqnarray}  
+ここで$\theta(x)$および$\delta(x)$はそれぞれヘヴィサイドの階段関数およびディラックのデルタ関数である。\\
+
+%\noindent
+%\textbf{ヒント:} $(2\theta(x)-1)^2=1$であることを利用する。
+
+\end{document}
+	
