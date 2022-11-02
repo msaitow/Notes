@@ -163,7 +163,7 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
 
 ハミルトニアンは
 \begin{align}
-    H=-\frac{\hbar^2}{2m}\frac{d^2}{sx^2}+\frac{1}{2}m\omega^2x^2
+    H=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2
 \end{align}
 と与えられ、$\beta$をパラメータとしたエネルギー積分を考える。
 \begin{align}
@@ -175,10 +175,10 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
 \end{align}
 となる。分子の微分を逐次計算していく。
 \begin{align}
-    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-2\beta |x|}
+    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-\beta |x|}
 \end{align}
 \begin{align}
-    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 e^{-\beta |x|}
 \end{align} 
 ここで$(2\theta(x)-1)^2=1$となることを使った。またポテンシャル部分の積分は
 \begin{align}

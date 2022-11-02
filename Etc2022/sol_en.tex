@@ -154,7 +154,7 @@ Importantly the RSE is exactly proportional to $N$ in this limit and so is a siz
 
 The Hamiltonian operator is given as
 \begin{align}
-    H=-\frac{\hbar^2}{2m}\frac{d^2}{sx^2}+\frac{1}{2}m\omega^2x^2.
+    H=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\frac{1}{2}m\omega^2x^2.
 \end{align}
 Then, compute the expectation value of it with $\beta$ as a variational parameter
 \begin{align}
@@ -166,10 +166,10 @@ where the denominator is easily calculated as
 \end{align}
 The kinetic part of the Hamiltonian requires the following derivatives
 \begin{align}
-    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-2\beta |x|}
+    \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-\beta |x|}
 \end{align}
 \begin{align}
-    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 (2\delta(x)-1)^2 e^{-2\beta |x|}=-\beta (2\delta(x)-1)e^{-2\beta |x|}+\beta^2 e^{-2\beta |x|}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 e^{-2\beta |x|}
 \end{align}
 where $(2\theta(x)-1)^2=1$. Integration of the potential operator leads to
 \begin{align}
