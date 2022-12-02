@@ -169,7 +169,7 @@ The kinetic part of the Hamiltonian requires the following derivatives
     \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-\beta |x|}
 \end{align}
 \begin{align}
-    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 e^{-\beta |x|}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta 2\delta(x)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta 2\delta(x)e^{-\beta |x|}+\beta^2 e^{-\beta |x|}
 \end{align}
 where $(2\theta(x)-1)^2=1$. Integration of the potential operator leads to
 \begin{align}
@@ -194,11 +194,11 @@ Therefore, the expectation value reads
 Differentiation of it with respect to $\beta$ leads to
 \begin{align}
     &\frac{\partial}{\partial\beta}\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{m}\beta-\frac{m\omega^2}{2\beta^3}\rightarrow 0 \\
-    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}}m\omega.
+    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}\hbar}m\omega.
 \end{align}
 Pluggint in it for $\beta$ gives the following variational energy
 \begin{align}
-    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
+    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}\hbar}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
 \end{align}
 which is about 41 \% higher than the exact value of $0.5\hbar\omega$.
 \end{document}

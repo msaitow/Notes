@@ -178,7 +178,7 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
     \frac{d}{dx}e^{-\beta |x|}=-\beta (2\theta(x)-1)e^{-\beta |x|}
 \end{align}
 \begin{align}
-    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta (2\delta(x)-1)e^{-\beta |x|}+\beta^2 e^{-\beta |x|}
+    \frac{d^2}{dx^2}e^{-\beta |x|}=-\beta 2\delta(x)e^{-\beta |x|}+\beta^2 (2\theta(x)-1)^2 e^{-\beta |x|}=-\beta 2\delta(x)e^{-\beta |x|}+\beta^2 e^{-\beta |x|}
 \end{align} 
 ここで$(2\theta(x)-1)^2=1$となることを使った。またポテンシャル部分の積分は
 \begin{align}
@@ -203,11 +203,11 @@ $N$が大きい極限では$\pi/N\rightarrow 0$である。そこで
 を得る。これを$\beta$について微分すると
 \begin{align}
     &\frac{\partial}{\partial\beta}\frac{\langle\tilde{\phi}|H|\tilde{\phi}\rangle}{\langle\tilde{\phi}|\tilde{\phi}\rangle}=\frac{\hbar^2}{m}\beta-\frac{m\omega^2}{2\beta^3}\rightarrow 0 \\
-    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}}m\omega
+    &\Rightarrow \beta^2=\frac{1}{\sqrt{2}\hbar}m\omega
 \end{align}
 となる。得られた$\beta$をエネルギー積分に代入すると
 \begin{align}
-    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
+    \langle H\rangle^\text{min}=\frac{\hbar^2}{2m}\frac{1}{\sqrt{2}\hbar}m\omega+\frac{m\omega^2}{4} \frac{\sqrt{2}\hbar}{m\omega}=\frac{1}{\sqrt{2}}\hbar\omega=0.707\hbar\omega
 \end{align}
 となる。正確な値である$0.5\hbar\omega$の約41\%高い値であることが分かる。
 \end{document}
